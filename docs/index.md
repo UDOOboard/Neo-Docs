@@ -23,7 +23,7 @@ UDOO NEO retail line up consists of three models
 <h3>Specifications</h3>
 <hr/>
 
-<img src="/docs-neo/img/udoo_neo_docs.png" alt="alt text" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
+<img src="/img/udoo_neo_docs.png" alt="alt text" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
 
 <br />

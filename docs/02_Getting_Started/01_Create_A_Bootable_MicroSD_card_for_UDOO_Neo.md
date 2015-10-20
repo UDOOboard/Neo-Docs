@@ -13,7 +13,7 @@ The following paragraphs will guide to in the creation of a bootable micro SD ca
 
 ###Write the image on micro SD card Using Linux
 
-<img style="width:400px; height:218px" src="/docs/img/Box2_Tutorials_UdooSite.png">
+<img style="width:400px; height:218px" src="../img/Box2_Tutorials_UdooSite.png">
 
 From the terminal run:
 
@@ -84,7 +84,7 @@ Here you can find the video tutorial of [Creating a bootable MicroSD card with L
 
 ###Write the image on micro SD card using Mac OSX
 
-<img style="width:400px; height:218px" src="/docs/img/Box4_Tutorials_UdooSite.png">
+<img style="width:400px; height:218px" src="../img/Box4_Tutorials_UdooSite.png">
 
 Note: May not work with OSX 10.9 Mavericks
 
@@ -170,7 +170,7 @@ Here you can find the video tutorial of [Creating a bootable MicroSD card with M
 
 ###Write the image on micro SD card Using Windows
 
-<img style="width:400px; height:218px" src="/docs/img/Box3_Tutorials_UdooSite.png">
+<img style="width:400px; height:218px" src="../img/Box3_Tutorials_UdooSite.png">
 
 Extract the downloaded zip file and you'll have a .img image file (do not use the preinstalled archive extractor, use <a href="http://www.7-zip.org/" target="_blank">7-zip</a> or similar).
 

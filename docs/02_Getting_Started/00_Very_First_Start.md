@@ -8,7 +8,7 @@ This easy step by step guide will lead you through the procedure to boot your UD
 
 ## What do you need?
 
-<img src="/docs-neo/img/whatdoyouneed1.png">
+<img src="../img/whatdoyouneed1.png">
 
 1. Micro USB Cable: Micro USB to USB cable. You can find it in <a href="http://shop.udoo.org/other/catalog/product/view/id/9/s/cables-kit/category/3/" target="_blank">our shop.</a>
 2. UDOO NEO: Don’t have one? <a href="#" target="_blank">Get it now!.</a>
@@ -16,7 +16,7 @@ This easy step by step guide will lead you through the procedure to boot your UD
 
 ## 1. Burn UDOO OS
 
-<img src="/docs-neo/img/distros1.png">
+<img src="../img/distros1.png">
 
 Follow the guide to <a href="http://www.udoo.org/docs-neo/Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_Neo">create a bootable Micro SD card for UDOO Neo.</a>
 
@@ -28,7 +28,7 @@ Are you an expert user? <a href="http://www.udoo.org/docs-neo/Getting_Started/Cr
 
 Insert the flashed MicroSD into your UDOO Neo
 
-<img src="/docs-neo/img/neo_microsd1.png">
+<img src="../img/neo_microsd1.png">
 
 Then select how to power up the board via a USB to Micro USB cable or a power adapter.  
 
@@ -36,12 +36,12 @@ Then select how to power up the board via a USB to Micro USB cable or a power ad
 #### - Power Up using a USB to Micro USB cable
 
 
-<img src="/docs-neo/img/standard_img_neo_dwnlod1.png">
+<img src="../img/standard_img_neo_dwnlod1.png">
 
 
 #### - Power Up using the power adapter
 
-<img src="/docs-neo/img/powerup_padapter1.png">
+<img src="../img/powerup_padapter1.png">
 
 
 ## 3. Connect to your computer
@@ -51,7 +51,7 @@ Connect your UDOO Neo via Wi-Fi* or via USB
 
 #### Connect Via USB
 
-<img src="/docs-neo/img/connect_via_usb2.png">
+<img src="../img/connect_via_usb2.png">
 
 – Plug the UDOO Neo via USB
 
@@ -62,7 +62,7 @@ Connect your UDOO Neo via Wi-Fi* or via USB
 
 #### Connect Via Wi-Fi*
 
-<img src="/docs-neo/img/connect_via_wifi2.png">
+<img src="../img/connect_via_wifi2.png">
 
 – Power Up the UDOO Neo with the power adapter or a USB cable
 

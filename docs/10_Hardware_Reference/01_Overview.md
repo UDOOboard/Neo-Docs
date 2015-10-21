@@ -37,7 +37,7 @@ In some cases the same signal are available in more then one pin.
 |       | UART3_RX_DATA |                   |                   | RESERVED FOR BLUETOOTH CHIP |
 | UART5 | UART5_TX_DATA |                   | 0                 |                             |
 |       | UART5_RX_DATA |                   | 1                 |                             |
-| UART6 | UART6_RI_B    |                   |                   |                             |
+| UART6 | UART6_RI_B    | 40                |                   |                             |
 |       | UART6_DSR_B   | 39                |                   |                             |
 |       | UART6_DTR_B   | 38                |                   |                             |
 |       | UART6_DCD_B   | 37                |                   |                             |

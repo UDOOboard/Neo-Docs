@@ -61,4 +61,10 @@ In some cases the same signal are available in more then one pin.
 |       | I2C4_SDA      | 33                | 35                |                             |
 
 
-
+### CAN
+| PORT  | Signal Name  | PCB pin number A9 | PCB pin number M4 |                             |
+|-------|--------------|-------------------|-------------------|-----------------------------|
+| CAN1  | CAN1_RX      | 40                |                   |                             |
+|       | CAN1_TX      | 41                |                   |                             |
+| CAN2  | CAN2_RX      | 42                |                   |                             |
+|       | CAN2_TX      | 43                |                   |                             |

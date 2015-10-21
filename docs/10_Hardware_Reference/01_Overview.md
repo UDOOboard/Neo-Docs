@@ -28,7 +28,7 @@ In the following tables are listed all the functional block with relatives signa
 In some cases the same signal are available in more then one pin.
 
 ### UART serial ports
-| PORT  | Signal Name   | PCB pin number A9 | PCB pin number M4 |                             |
+| PORT  | Signal Name   | Internal Pin      | External Pin      |                             |
 |-------|---------------|-------------------|-------------------|-----------------------------|
 | UART1 | UART1_TX_DATA | 47                |                   |                             |
 |       | UART1_RX_DATA | 46                |                   |                             |
@@ -49,7 +49,7 @@ In some cases the same signal are available in more then one pin.
 
 
 ### I2C
-| PORT  | Signal Name   | PCB pin number A9 | PCB pin number M4 |                             |
+| PORT  | Signal Name   | Internal Pin      | External Pin      |                             |
 |-------|---------------|-------------------|-------------------|-----------------------------|
 | I2C1  | I2C1_SCL      | 26                |                   |                             |
 |       | I2C1_SDA      | 27                |                   |                             |
@@ -62,7 +62,7 @@ In some cases the same signal are available in more then one pin.
 
 
 ### CAN
-| PORT  | Signal Name  | PCB pin number A9 | PCB pin number M4 |                             |
+| PORT  | Signal Name  | Internal Pin      | External Pin      |                             |
 |-------|--------------|-------------------|-------------------|-----------------------------|
 | CAN1  | CAN1_RX      | 40                |                   |                             |
 |       | CAN1_TX      | 41                |                   |                             |
@@ -70,7 +70,7 @@ In some cases the same signal are available in more then one pin.
 |       | CAN2_TX      | 43                |                   |                             |
 
 ### PWM - Pulse Width Modulation
-| PORT  | Signal Name   | PCB pin number A9 | PCB pin number M4 |                             |
+| PORT  | Signal Name   | Internal Pin      | External Pin      |                             |
 |-------|---------------|-------------------|-------------------|-----------------------------|
 | PWM1  | PWM1_OUT      |                   | 3                 |                             |
 | PWM2  | PWM2_OUT      |                   | 4                 |                             |
@@ -80,3 +80,37 @@ In some cases the same signal are available in more then one pin.
 | PWM6  | PWM6_OUT      | 31                | 9                 |                             |
 | PWM7  | PWM7_OUT      |                   | 11                |                             |
 | PWM8  | PWM8_OUT      |                   | 10                |                             |
+
+### PWM - Pulse Width Modulation
+| PORT  | Signal Name   | Internal Pin      | External Pin    |                             |
+|-------|---------------|-------------------|-----------------|-----------------------------|
+| CSI1  | CSI1_VSYNC    | 24                |                 |                             |
+|       | CSI1_HSYNC    | 25                |                 |                             |
+|       | CSI1_DATA02   | 26                |                 |                             |
+|       | CSI1_DATA03   | 27                |                 |                             |
+|       | CSI1_DATA04   | 28                |                 |                             |
+|       | CSI1_DATA05   | 29                |                 |                             |
+|       | CSI1_DATA06   | 30                |                 |                             |
+|       | CSI1_DATA07   | 31                |                 |                             |
+|       | CSI1_DATA08   | 32                |                 |                             |
+|       | CSI1_DATA09   | 33                |                 |                             |
+
+
+### SPI
+| PORT    | Signal Name   | Internal Pin      | External Pin    |                             |
+|---------|---------------|-------------------|-----------------|-----------------------------|
+| ECSPI2  | MISO          | 20                |                 |                             |
+|         | MOSI          | 21                |                 |                             |
+|         | SCLK          | 38                |                 |                             |
+|         | SS0           | 39                |                 |                             |
+| ECSPI3  | MISO          | 18                | A1              |                             |
+|         | MOSI          |                   | A0              |                             |
+|         | READY         |                   |                 |                             |
+|         | SCLK          | A4                |                 |                             |
+|         | SS0           | A5                | 19              |                             |
+|         | SS1           | 21                |                 |                             |
+|         | SS2           | 22                |                 |                             |
+| ECSPI5  | MISO          | 40                |                 |                             |
+|         | MOSI          | 43                |                 |                             |
+|         | SCLK          | 42                |                 |                             |
+|         | SS0           | 41                |                 |                             |

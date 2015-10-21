@@ -8,7 +8,7 @@ This easy step by step guide will lead you through the procedure to boot your UD
 
 ## What do you need?
 
-<img src="/img/whatdoyouneed1.png">
+<img src="../img/whatdoyouneed1.png">
 
 1. Micro USB Cable: Micro USB to USB cable. You can find it in <a href="http://shop.udoo.org/other/catalog/product/view/id/9/s/cables-kit/category/3/" target="_blank">our shop.</a>
 2. UDOO NEO: Don’t have one? <a href="#" target="_blank">Get it now!.</a>

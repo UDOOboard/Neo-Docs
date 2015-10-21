@@ -68,3 +68,15 @@ In some cases the same signal are available in more then one pin.
 |       | CAN1_TX      | 41                |                   |                             |
 | CAN2  | CAN2_RX      | 42                |                   |                             |
 |       | CAN2_TX      | 43                |                   |                             |
+
+### PWM - Pulse Width Modulation
+| PORT  | Signal Name   | PCB pin number A9 | PCB pin number M4 |                             |
+|-------|---------------|-------------------|-------------------|-----------------------------|
+| PWM1  | PWM1_OUT      |                   | 3                 |                             |
+| PWM2  | PWM2_OUT      |                   | 4                 |                             |
+| PWM3  | PWM3_OUT      | 16                | 5                 |                             |
+| PWM4  | PWM4_OUT      | 17                | 6                 |                             |
+| PWM5  | PWM5_OUT      | 30                | 7                 |                             |
+| PWM6  | PWM6_OUT      | 31                | 9                 |                             |
+| PWM7  | PWM7_OUT      |                   | 11                |                             |
+| PWM8  | PWM8_OUT      |                   | 10                |                             |

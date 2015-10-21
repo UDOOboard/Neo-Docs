@@ -7,17 +7,17 @@ The board is equipped with Freescale i.MX 6SoloX. It is the first SoC exploiting
 * Backed by a strong enablement ecosystem for better customer solutions and faster time-to-market
 
 ## Main Features
-* 1x ARM® Cortex™-A9 up to 1 GHz
-** 512 KB L2 cache
-** 32 KB instruction and data caches
-** NEON SIMD media accelerator
-* 1x ARM® Cortex™-M4 up to 200 MHz
-** 16 KB instruction and data caches
-** 64 KB TCM
-** MPU and FPU
-* GPU 2D/3D
-** Vivante GC400T
-** 17Mtri/s 133Mpxl/s Open GL ES 2.0
-* Camera Interface
-** 20-bit parallel CMOS sensor interface
-** NTSC/PAL analog video input interface
+1x ARM® Cortex™-A9 up to 1 GHz
+* 512 KB L2 cache
+* 32 KB instruction and data caches
+* NEON SIMD media accelerator
+ 1x ARM® Cortex™-M4 up to 200 MHz
+* 16 KB instruction and data caches
+* 64 KB TCM
+* MPU and FPU
+ GPU 2D/3D
+* Vivante GC400T
+* 17Mtri/s 133Mpxl/s Open GL ES 2.0
+ Camera Interface
+* 20-bit parallel CMOS sensor interface
+* NTSC/PAL analog video input interface

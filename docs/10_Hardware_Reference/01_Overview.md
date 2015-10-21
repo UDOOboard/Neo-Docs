@@ -5,7 +5,7 @@ I.MX 6SoloX embedded on single chip a single core ARM Cortex A9 and a ARM cortex
 * spi
 * analogs ADCs
 
-These two processors are connected to all interfaces and peripherials thru an high speed AXI bus. It’s up to the programmer or the "system" admin to define witch features are assigned to each processors.
+These two processors are connected to all interfaces and peripherials through an high speed AXI bus. It’s up to the programmer or the "system" admin to define witch features are assigned to each processors.
 
 All the hardware features block can be accessed and connected via processors pad with a editable muxing. So the functions are not fixed but can accessed on different pads.
 Some of these pads are connected to external pins to allow the users to connect their stuff.
@@ -17,14 +17,14 @@ The external pinout is organized as follows and all pins are theoretically divid
 Immagineeee
 
 External pins (orange) are by default assigned to A9 in GPIO mode. So these pins can be controlled directly from the file system (Linux, Android).
-Internal pins (blue) are assigned and controlled by Cortex M4 with the same dimensions of Arduino UNO pinout. All the arduino shields compatible can be plugged directly on UDOO Neo board
+Internal pins (blue) are assigned and controlled by Cortex M4 with the same dimensions of Arduino UNO pinout. All the arduino shields compatible can be plugged directly on UDOO Neo board.
 
 ## Pinout Available features
 
 I.MX 6SoloX provides the following functions, part of them are fully available on the pinout. 
 
 ## Hardware features
-In the following tables are listed all the functional block with relatives signals and pin numbers.
+In the following tables are listed all the functional block with relative signals and pin numbers.
 In some cases the same signal are available in more then one pin.
 
 ### UART serial ports

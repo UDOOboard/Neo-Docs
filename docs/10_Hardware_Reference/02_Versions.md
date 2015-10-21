@@ -6,3 +6,10 @@ It’s equipped with 1 GB DDR3 RAM. Wi-Fi/Bluetooth module is mounted but no 10/
 
 ## Full
 Everything is on the board! It’s equipped with 1 GB DDR3 RAM. Wi-Fi/Bluetooth module and 10/100 Mbps fast Ethernet RJ45 port are mounted. 9-axis motion sensors are embedded on board.
+
+|                      | Basic       | Extended  | Full      |
+|----------------------|-------------|-----------|-----------|
+| RAM                  | 512 MB DDR3 | 1 GB DDR3 | 1 GB DDR3 |
+| Wifi / Bluetooth     | no          | YES       | YES       |
+| Ethernet 10/100      | YES         | no        | YES       |
+| 9-axis Motion Sensor |             | YEs       | YES       |

@@ -5,3 +5,10 @@ Signals can be accessed with a USB to TTL adapter on pins:
 |-----------|-----------------|-------------|-------------|
 | Cortex A9 | UART1           | 46          | 47          |
 | Cortex M4 | UART2           | 44          |             |
+
+
+Immagineeee
+
+## Access serial from microUSB
+
+

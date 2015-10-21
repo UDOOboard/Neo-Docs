@@ -313,7 +313,6 @@
     <!-- hightlight.js -->
     <script src="<?php echo $base_url; ?>js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-
     <!-- JS -->
     <?php foreach ($page['theme']['js'] as $js) echo '<script src="' . $js . '"></script>'; ?>
 
@@ -323,7 +322,7 @@
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+	<script>codeBlockState = 1;</script>
 </body>
 </html>
 

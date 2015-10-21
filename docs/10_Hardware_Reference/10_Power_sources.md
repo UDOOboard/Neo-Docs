@@ -1,4 +1,4 @@
-## Power Sources
+
 You can power up the board in 3 ways
 
 * DC-jack: internal positive, Voltage 5 to 18.

@@ -27,6 +27,7 @@ I.MX 6SoloX provides the following functions, part of them are fully available o
 In the following tables are listed all the functional block with relatives signals and pin numbers.
 In some cases the same signal are available in more then one pin.
 
+### UART serial ports
 | PORT  | Signal Name   | PCB pin number A9 | PCB pin number M4 |                             |
 |-------|---------------|-------------------|-------------------|-----------------------------|
 | UART1 | UART1_TX_DATA | 47                |                   |                             |
@@ -46,6 +47,18 @@ In some cases the same signal are available in more then one pin.
 |       | UART6_RTS_B   | 34                |                   |                             |
 |       | UART6_CTS_B   | 33                |                   |                             |
 
+
+### I2C
+| PORT  | Signal Name   | PCB pin number A9 | PCB pin number M4 |                             |
+|-------|---------------|-------------------|-------------------|-----------------------------|
+| I2C1  | I2C1_SCL      | 26                |                   |                             |
+|       | I2C1_SDA      | 27                |                   |                             |
+| I2C2  | I2C2_SCL      | 36                | 14 - SCL          |                             |
+|       | I2C2_SDA      | 37                | 15 - SDA          |                             |
+| I2C3  | I2C3_SCL      |                   |                   | RESERVED FOR LCD / HDMI     |
+|       | I2C3_SDA      |                   |                   | RESERVED FOR LCD / HDMI     |
+| I2C4  | I2C4_SCL      | 32                | 34                |                             |
+|       | I2C4_SDA      | 33                | 35                |                             |
 
 
 

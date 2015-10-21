@@ -81,7 +81,7 @@ In some cases the same signal are available in more then one pin.
 | PWM7  | PWM7_OUT      |                   | 11                |                             |
 | PWM8  | PWM8_OUT      |                   | 10                |                             |
 
-### PWM - Pulse Width Modulation
+### CSI - Camera 
 | PORT  | Signal Name   | Internal Pin      | External Pin    |                             |
 |-------|---------------|-------------------|-----------------|-----------------------------|
 | CSI1  | CSI1_VSYNC    | 24                |                 |                             |

@@ -12,4 +12,4 @@ Everything is on the board! It’s equipped with 1 GB DDR3 RAM. Wi-Fi/Bluetooth 
 | RAM                  | 512 MB DDR3 | 1 GB DDR3 | 1 GB DDR3 |
 | Wifi / Bluetooth     | NO          | YES       | YES       |
 | Ethernet 10/100      | YES         | NO        | YES       |
-| 9-axis Motion Sensor | NO          | YES       | YES       |
+| 9-axis Motion Sensor | No          | YES       | YES       |

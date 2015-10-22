@@ -13,9 +13,14 @@ After you connected the board and you boot the desktop environment:
 
 Now the sketch will be run on M4 side.
 
-### External Arduino IDE
-Coming soon
 
 ## Precompiled binary
 It's possible to upload a precompiled binary firmware on the M4 using this command:
 
+```bash
+fw_uploader.sh <BINARY_PATH>
+```
+
+
+### External Arduino IDE
+Coming soon

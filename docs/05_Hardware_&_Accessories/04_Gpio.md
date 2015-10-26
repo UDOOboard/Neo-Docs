@@ -36,12 +36,12 @@ echo 25 > /sys/class/gpio/export
 #### Set direction
 It's possible to choose INPUT or OUTPUT mode writing a string into a file.
 
-INPUT:
+Input:
 ``` bash
 echo in > /sys/class/gpio/gpio25/direction
 ```
 
-OUTPUT:
+Output:
 ``` bash
 echo out > /sys/class/gpio/gpio25/direction
 ```
@@ -50,9 +50,26 @@ To verify the direction just read the same file:
 ``` bash
 cat /sys/class/gpio/gpio25/direction
 ```
-#### Read value
 
 #### Write value
+To write a LOW or HIGH value on a gpio you need to write 0 or 1 in this file.
+
+Low value - 0 Volts
+``` bash
+echo 0 > /sys/class/gpio/gpio25/value
+```
+HIgh value - 3.3 Volts
+``` bash
+echo 1 > /sys/class/gpio/gpio25/value
+```
+#### Read value
+If the direction is set to in it's possible to read gpio value reading the same file.
+``` bash
+cat /sys/class/gpio/gpio25/value
+```
+
+If the direction i set to out and you try to read the value is not guarranted that the kernel value is coherent with the voltage found on the external pinout.
 
 ### Examples
+coming soon
 

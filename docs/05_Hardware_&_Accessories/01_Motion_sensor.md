@@ -1,2 +1,85 @@
+## Onboard 9-axis sensors
 
 
+## FXOS8700CQ - Accelerometer/Magnetometer
+FXOS8700CQ is a small, low-power, 3-axis, linear accelerometer and 3-axis, magnetometer combined into a single package. The device features an I2C with 14-bit accelerometer and 16-bit magnetometer ADC resolution along with smart-embedded functions. FXOS8700CQ has dynamically selectable acceleration full scale ranges of ±2g / ±4g /±8g and a fixed magnetic measurement range of ±1200μT. Output data rates (ODR) from 1.563 Hz to 800 Hz are selectable by the user for each sensor. Interleaved magnetic and acceleration data is available at ODR rates of up to 400 Hz. FXOS8700CQ is guaranteed to operate over the extended temperature range of -40 °C to +85 °C.
+
+* I2C address: 0x1E
+
+### Direct I2C register access
+
+``` bash
+\#!/bin/sh
+
+\# set to active mode
+i2cset -f -y 1 0x1e 0x2a 1 
+\# enable both accelerometer and magnetometer
+i2cset -f -y 1 0x1e 0x5b 3
+
+while [ 1 ]; do
+  # accelerometer vector
+  a_x=$(( $( i2cget -f -y 1 0x1e 0x01 ) << 8 | $( i2cget -f -y 1 0x1e 0x02 ) ))
+  a_y=$(( $( i2cget -f -y 1 0x1e 0x03 ) << 8 | $( i2cget -f -y 1 0x1e 0x04 ) ))
+  a_z=$(( $( i2cget -f -y 1 0x1e 0x05 ) << 8 | $( i2cget -f -y 1 0x1e 0x06 ) ))
+
+  # magnetometer vector
+  m_x=$(( $( i2cget -f -y 1 0x1e 0x33 ) << 8 | $( i2cget -f -y 1 0x1e 0x34 ) ))
+  m_y=$(( $( i2cget -f -y 1 0x1e 0x35 ) << 8 | $( i2cget -f -y 1 0x1e 0x36 ) ))
+  m_z=$(( $( i2cget -f -y 1 0x1e 0x37 ) << 8 | $( i2cget -f -y 1 0x1e 0x38 ) ))
+  echo "acc: $a_x/$a_y/$a_z - mag: $m_x/$m_y/$m_z"
+done
+```
+
+### Driver data
+To enable accelerometer you need to write "1" in file below:
+``` bash
+echo 1 > /sys/class/misc/FreescaleAccelerometer/enable
+```
+
+It's possible to read accelerometer data from file:
+``` bash
+/sys/class/misc/FreescaleAccelerometer/data
+```
+
+To enable magnetometer you need to write "1" in file below:
+``` bash
+echo 1 > /sys/class/misc/FreescaleMagnetometer/enable
+```
+
+It's possible to read magnetometer data from file:
+``` bash
+/sys/class/misc/FreescaleMagnetometer/data
+```
+
+## FXAS21002 - Gyroscope
+
+* I2C address: 0x20
+
+### Direct I2C register access
+
+``` bash
+\#!/bin/sh
+
+\# set to active mode
+i2cset -f -y 1 0x20 0x13 0x16
+
+while [ 1 ]; do
+  # gyro vector
+  g_x=$(( $( i2cget -f -y 1 0x20 0x01 ) << 8 | $( i2cget -f -y 1 0x20 0x02 ) ))
+  g_y=$(( $( i2cget -f -y 1 0x20 0x03 ) << 8 | $( i2cget -f -y 1 0x20 0x04 ) ))
+  g_z=$(( $( i2cget -f -y 1 0x20 0x05 ) << 8 | $( i2cget -f -y 1 0x20 0x06 ) ))
+
+  echo "$g_x/$g_y/$g_z"
+done
+```
+
+### Driver data
+To enable gyroscope you need to write "1" in file below:
+``` bash
+echo 1 > /sys/class/misc/FreescaleGyroscope/enable
+```
+
+It's possible to read gyroscope data from file:
+``` bash
+/sys/class/misc/FreescaleGyroscope/data
+```

@@ -29,6 +29,6 @@ SerialDebug.println("A9 core!");
 
 It' possible to access this serial by A9 side on device:
 ```bash
-/dev/ttyACM0
+/dev/ttyMCC
 ```
 

@@ -3,6 +3,7 @@ The GPIO general-purpose input/output peripheral provides dedicated general-purp
 When configured as an output, it is possible to write to an internal register to control the state driven on the output pin. When configured as an input, it is possible to detect the state of the input by reading the state of an internal register. In addition, the GPIO peripheral can produce CORE interrupts. The GPIO is one of the blocks controlling the IOMUX of the chip.
 
 To see more detailed information look at iMX 6SoloX Reference Manual Chapter 30.
+http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYPE=Reference%20Manuals&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation&fileExt=.pdf
 
 ### How to access GPIO from Linux
 It's possible to read and control digital input/output signals on the compatible Arduino pinout.

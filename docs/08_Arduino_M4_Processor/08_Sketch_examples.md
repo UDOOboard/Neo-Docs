@@ -25,4 +25,4 @@ void loop() {
 
 ### Adafruit gas sensor v2
 
-### Infrared distance SHARP
+### Infra-Red distance SHARP

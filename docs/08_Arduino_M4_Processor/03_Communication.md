@@ -1,5 +1,7 @@
-## External communication
+## External pinout communication
 On the iMX 6SoloX we can communicate with external pheriperials in different modes.
+
+<img style="width:400px; height:218px" src="../img/08_arduino_serial.png">
 
 The most common is the Serial object. 
 
@@ -18,6 +20,9 @@ CAREFUL: This are not connected with A9 Linux/Android side but allows only to co
 ## Internal communication
 To communicate beetwen the two SoloX core we implemented another dedicated object "SerialDebug".
 It is a virtualized serial that uses the shared memory to exchange datas on chip.
+
+
+<img style="width:400px; height:218px" src="../img/08_a9_m4_serial.png">
 
 ```bash
 SerialDebug.begin(115200);

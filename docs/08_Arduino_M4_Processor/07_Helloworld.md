@@ -38,6 +38,7 @@ void loop(){
 4. Save the sketch if you want
 5. Wait "Compiling sketch..." until "Done uploading." appears.
 6. Open on a terminal console 
+7. 
 ``` bash
 minicom -D /dev/ttyMCC
 ```

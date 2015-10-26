@@ -43,5 +43,5 @@ minicom -D /dev/ttyMCC
 ```
 You will see "Hello A9!"
 
-If you connect to pin 0 and 1 a Serial Adapter you can read "Hellow world!"
+If you connect to pin 0 and 1 a Serial Adapter you can read "Hello world!"
 

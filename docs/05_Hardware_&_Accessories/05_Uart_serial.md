@@ -17,3 +17,16 @@ Table below gives a short UARTS description
 | UART_4 | n.c.                    | n.a.                                                               |
 | UART_5 | Arduino pin 0 /1 serial | It can be used by M4 microcontroller through the Serial0 object    |
 | UART_6 | Cortex A9 user serial   | Not enabled by default. It can be enabled on external A9 pinout    |
+
+
+## Detailed description
+
+### UART 1
+
+### UART 2
+
+### UART 3
+
+### UART 5
+
+### UART 6

@@ -23,4 +23,4 @@ fw_uploader.sh <BINARY_PATH>
 
 
 ### External Arduino IDE
-Coming soon
+External programming mode will be available on half November 2015.

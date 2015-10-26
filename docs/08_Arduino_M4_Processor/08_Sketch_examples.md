@@ -18,10 +18,13 @@ void loop() {
 }
 ```
 
-## Ultrasound distance - SFR05
+## Digial Sensor 
+
+### Ultrasound distance - SFR05
 
 
-## Analog Input Sensors
+
+## Analog Sensors
 
 ### Adafruit gas sensor v2
 

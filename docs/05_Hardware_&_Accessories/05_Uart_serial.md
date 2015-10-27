@@ -76,5 +76,28 @@ This uart is connectet to Texas Instruments WL1835 chip for Bluetooh data commun
 [screenshot schematics]
 
 ### UART 5
+This is the serial controlled by M4 connected on pins 0 /1 of the external pinout. In UDOO Neo pinout serial and the serial connected to A9 are separated. In Arduino IDE you can access to this uart using object Serial0.
+
+``` bash
+Serial0.begin(115200); // Init the Serial at 115200 baudrate
+
+Serial0.available(); // get the number of incoming bytes
+Serial.read(); // get the first byte in FIFO buffer
+
+Serial0.write(); // write on output buffer byte array
+Serial.print(); // write on output buffer char array
+Serial.println(); // write on output buffer char array plus newline char
+```
 
 ### UART 6
+This uart is user available. By default all the pins are given to A9 in GPIO mode.
+|                | PCB NAME | SCHEMATICS SIGNAL NAME | SCHEMATIC IMX6 PAD NAME | REFERENCE MANUAL PAD NAME        | ALTERNATE            |
+|----------------|----------|------------------------|-------------------------|----------------------------------|----------------------|
+| UART_6_CTS_B   | 33       | CSI0_DAT7              | CSI0_DAT7               | IOMUXC_SW_MUX_CTL_PAD_CSI_DATA07 | ALT4 - UART6_CTS_B   |
+| UART_6_RTS_B   | 32       | CSI0_DAT6              | CSI0_DAT6               | IOMUXC_SW_MUX_CTL_PAD_CSI_DATA06 | ALT4 - UART6_RTS_B   |
+| UART_6_TX_DATA | 31       | CSI0_DAT5              | CSI0_DAT5               | IOMUXC_SW_MUX_CTL_PAD_CSI_DATA05 | ALT4 - UART6_TX_DATA |
+| UART_6_RX_DATA | 30       | CSI0_DAT4              | CSI0_DAT4               | IOMUXC_SW_MUX_CTL_PAD_CSI_DATA04 | ALT4 - UART6_RX_DATA |
+| UART_6_DCD_B   | 29       | CSI0_DAT3              | CSI0_DAT3               | IOMUXC_SW_MUX_CTL_PAD_CSI_DATA03 | ALT4 - UART6_DCD_B   |
+| UART_6_DTR_B   | 28       | CSI0_DAT2              | CSI0_DAT2               | IOMUXC_SW_MUX_CTL_PAD_CSI_DATA02 | ALT4 - UART6_DTR_B   |
+| UART_6_DSR_B   | 27       | CSI0_DAT1              | CSI0_DAT1               | IOMUXC_SW_MUX_CTL_PAD_CSI_DATA01 | ALT4 - UART6_DSR_B   |
+| UART_6_RI_B    | 26       | CSI0_DAT0              | CSI0_DAT0               | IOMUXC_SW_MUX_CTL_PAD_CSI_DATA00 | ALT4 - UART6_RI_B    |

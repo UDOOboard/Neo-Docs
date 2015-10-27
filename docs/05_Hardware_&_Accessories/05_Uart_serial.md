@@ -91,6 +91,7 @@ Serial.println(); // write on output buffer char array plus newline char
 
 ### UART 6
 This uart is user available. By default all the pins are given to A9 in GPIO mode.
+
 |                | PCB NAME | SCHEMATICS SIGNAL NAME | SCHEMATIC IMX6 PAD NAME | REFERENCE MANUAL PAD NAME        | ALTERNATE            |
 |----------------|----------|------------------------|-------------------------|----------------------------------|----------------------|
 | UART_6_CTS_B   | 33       | CSI0_DAT7              | CSI0_DAT7               | IOMUXC_SW_MUX_CTL_PAD_CSI_DATA07 | ALT4 - UART6_CTS_B   |

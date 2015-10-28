@@ -10,4 +10,4 @@ DDR3L SDRAM (1.35V) is a low-voltage version of the DDR3 (1.5V) SDRAM.
 <img style="width:400px;" src="../img/gionji/DOCS_ram_codes.PNG">
 
 ## MicroSD
-the board is equipped with a Micro SD card reader compatible with the most sd card available. The boot procedure should be done from the Micro SD. Boot configuration will be described in section X
+the board is equipped with a Micro SD card reader compatible with the most sd card available. The boot procedure should be done from the Micro SD. 

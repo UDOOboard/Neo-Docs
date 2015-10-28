@@ -8,7 +8,7 @@ The external pinout is organized as follows and all pins are theoretically divid
 * Cortex A9
 * Cortex M4 (Arduino like) 
 
-<img style="width:400px; height:218px" src="../img/gionji/DOCS_internal_external_rows.JPG">
+<img style="width:400px;" src="../img/gionji/DOCS_internal_external_rows.JPG">
 
 External pins (orange) are by default assigned to A9 in GPIO mode. So these pins can be controlled directly from the file system (Linux, Android).
 
@@ -17,7 +17,7 @@ Internal pins (blue) are assigned and controlled by Cortex M4 with the same dime
 Pins functions can dinamically shared ad boot beetwen A9 and M4 core at boot. By default we provide this kind of configuration.
 
 ### Pin Diagram
-<img style="width:400px; height:218px" src="../img/gionji/DOCS_internal_pinout.PNG">
+<img style="width:400px;" src="../img/gionji/DOCS_internal_pinout.PNG">
 
 ## Peripherials
 UDOO Neo replicate also the same pin functions as: pwm (8 instead of 6), spi, i2c and uarts.

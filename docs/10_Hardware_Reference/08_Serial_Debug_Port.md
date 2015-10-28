@@ -7,7 +7,7 @@ Signals can be accessed with a USB to TTL adapter on pins:
 | Cortex M4 | UART2           | 44          | 45          |
 
 
-<img style="width:400px; height:218px" src="../img/10_debug_serials.png">
+<img style="width:400px;" src="../img/gionji/DOCS_uart_serial.PNG">
 
 ## Access serial from microUSB
 Connecting UDOO NEO to a PC (microUSB port) it's possible to access a virtual serial provided by g_multi kernel module.

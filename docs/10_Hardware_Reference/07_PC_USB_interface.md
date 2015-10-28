@@ -4,10 +4,13 @@ The board can be connected to a PC with a MicroUSB port. It can be used in OTG m
 <img style="width:400px; height:218px" src="../img/10_usb_otg_sch.png">
 
 ## PC Connection Interface
-If you connect UDOO Neo to your PC
+If you connect UDOO Neo to your PC, you can:
+* access to a mass storage
+* create a network interface between PC and UDOO Neo
+* create a serial connection
 
 ### g_multi (Multifunction Composite Gadget)
-This module allows to implements 
+To implements these features we use a kernel module called g_multi.
 
 This module include other usefull sub-modules:
 * usb_f_rndis

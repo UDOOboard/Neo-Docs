@@ -1,7 +1,7 @@
 The board is equipped with the Freescale MMPF3000.
 The PF3000 is a Power Management Integrated Circuit (PMIC) designed specifically for use with the Freescale i.MX 7 and i.MX 6SL/SX/UL application processors. With up to four buck converters, six linear regulators, RTC supply, and coin-cell charger, the PF3000 can provide power for a complete system, including applications processors, memory, and system peripherals. This device is powered by SMARTMOS technology.
 
-<img style="width:400px; height:218px" src="../img/10_power_chain.png">
+<img style="width:400px;" src="../img/gionji/DOCS_power_chain.PNG">
 
 The previous picture represents the power supply stages.
 To be fully functional the borad (except for LVDS) needs a 5V clean power (VCC_SW).
@@ -12,3 +12,7 @@ The (A) block is a DC/DC converter to a 5V voltage.
 The (B) block is the uUSB port.
 The (D) block detect witch power supply is connected and eventually send signals to switch the source for VCC_SW
 The (F) block is another DC/DC converter from 5V to 3.3V.
+
+<img style="width:400px;" src="../img/gionji/DOCS_pmic_imx6.PNG">
+
+<img style="width:400px;" src="../img/gionji/DOCS_pmic_pf3000.PNG">

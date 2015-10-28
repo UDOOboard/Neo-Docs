@@ -46,7 +46,4 @@ ECSPI 3 is a full signal SPI including all Select Signal (SS0, SS1, SS2, SS3). B
 #### ECSPI 5
 ECSPI 5 has the same pin order, function, and position as Arduino Uno. By default is assigned to M4 core but configured as Digital Output (GPIO).
 
-### External pinout
-#### Arduino UNO SPI compliant
 
-[arduino image] + [neo spi 5]

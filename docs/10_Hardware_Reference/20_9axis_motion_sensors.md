@@ -3,7 +3,7 @@ Accelerometer and magnetometer are embedded on the same Freescale chip, that is 
 They communicate with i.MX 6SoloX over I2C bus number 4.
 They can be accessed by M4 core and also by A9 core. They can be used in ping mode, to ask the values readed by the sensors and in interrupt mode.
 
-<img style="width:400px; height:218px" src="../img/gionji/DOCS_acc_mag_chip.png">
+<img style="width:400px; height:218px" src="../img/gionji/DOCS_acc_mag_chip.PNG">
 
 ### Usage
 See http://udooboard.github.io/Neo-Docs/Hardware_&_Accessories/Motion_sensor.html .

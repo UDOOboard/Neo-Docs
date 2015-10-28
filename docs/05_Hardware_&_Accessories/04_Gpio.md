@@ -13,6 +13,10 @@ By default the GPIO available from linux kernel ar placed on the external column
 
 The internal columns pins are assigned to M4 core.
 
+<img style="width:400px;" src="../img/gionji/DOCS_internal_pinout.PNG">
+
+<img style="width:400px;" src="../img/gionji/DOCS_external_pinout.PNG">
+
 We will publish how to change this configuration soon.
 
 ### Gpio numbers and IDs

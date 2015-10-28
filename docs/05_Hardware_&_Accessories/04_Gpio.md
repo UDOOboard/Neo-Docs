@@ -23,7 +23,7 @@ First of all you need to export the selected gpio.
 ``` bash
 echo <GPIO_NUMBER> > /sys/class/gpio/export
 ```
-where <GPIO_NUMBER> = ((<BANK> - 1) \* 32 ) + <ID>
+where \<GPIO_NUMBER\> = ((\<BANK\> - 1) \* 32 ) + \<ID\>
 
 
 Example:

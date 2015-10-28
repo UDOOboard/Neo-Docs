@@ -73,7 +73,6 @@ This uart is connectet to Texas Instruments WL1835 chip for Bluetooh data commun
 
 \* For this two signal iMX 6Solox works in DCE mode. 
 
-<img style="width:400px; height:218px" src="../img/05_wl1835_sch.png">
 
 ### UART 5
 This is the serial controlled by M4 connected on pins 0 /1 of the external pinout. In UDOO Neo pinout serial and the serial connected to A9 are separated. In Arduino IDE you can access to this uart using object Serial0.

@@ -5,5 +5,8 @@ A set of extra sensors placed on pcb bricks is provided by the UDOO family like:
 * accelerometer / magnetometer
 * gyroscope
 
-<img style="width:400px; height:218px" src="../img/08_leds.png">
-<img style="width:400px; height:218px" src="../img/08_leds.png">
+<img style="width:400px; height:218px" src="../img/10_bricks_sch.png">
+
+<img style="width:400px; height:218px" src="../img/10_bricks_connector.png">
+
+

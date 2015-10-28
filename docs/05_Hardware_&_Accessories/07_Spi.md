@@ -41,7 +41,7 @@ http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYP
 ECSPI 2 has only for signals (MISO, MOSI, SCLK and SS0); By default these pins are assigned to A9 but in GPIO mode.
 
 #### ECSPI 3
-ECSPI 3 is a full signal SPI including all Select Signal (SS0, SS1, SS2, SS3). By default all pins of this SPI are assigned to A9 in GPIO mode.
+ECSPI 3 is a full signal SPI including  Select Signals (SS0, SS1, SS2). By default all pins of this SPI are assigned to A9 in GPIO mode.
 
 #### ECSPI 5
 ECSPI 5 has the same pin order, function, and position as Arduino Uno. By default is assigned to M4 core but configured as Digital Output (GPIO).

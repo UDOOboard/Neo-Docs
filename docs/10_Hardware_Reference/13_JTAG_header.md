@@ -1,3 +1,3 @@
 The pads to connect a JTAG debugger are embedded on board, placed on the bottom of the board. The connector is not present to reduce the used space and the costs. On these pads the I2C1 is also available. 
 
-<img style="width:400px; height:218px" src="../img/10_jtag_sch.png">
+<img style="width:400px; height:218px" src="../img/gionji/DOCS_jtag_p_mont.png">

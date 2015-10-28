@@ -23,7 +23,6 @@ Some of these pads are connected to external pins to allow the users to connect 
 ### Vision
 Develop a project with UDOO Neo is like to connect an Arduino with an external PC as in UDOO Dual/Quad but now all the computational power is on the same chip.
 
-[Images] arduino + pc / qdl / neo
 
 ## M4 boot process
 Everytime we reset the processor the M4 firmware ( sketch ) were lost, so it will be reloaded by the uboot from the binary present on the "boot" FAT partition. In this way the user can find its sketch on the board running at every boot.

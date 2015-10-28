@@ -2,7 +2,7 @@
 
 Remote Network Driver Interface Specification (RNDIS) is a Microsoft proprietary protocol. Devices using a USB connection for downloading and debugging of OS image from Platform Builder use this driver to emulate a network connection. RNDIS driver is required for this purpose.
 
-RNDIS driver is a part of the Windows 7 operating system, but the OS fails to detect it automatically. The following steps will help the user to install the RNDIS driver.
+RNDIS driver is a part of the Windows operating system, but the OS fails to detect it automatically. The following steps will help the user to install the RNDIS driver.
 
 * After the device is connected to the development PC, OS will automatically search for the RNDIS driver. After it fails to find the driver, the following message will be shown.
 

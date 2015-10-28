@@ -1,7 +1,7 @@
 ## Onboard 9-axis sensors
 UDOO Neo is equipped with 9-axis motion sensor implemented by two Freescale chips.
 
-<img style="width:400px; height:218px" src="../img/i2c_channels.jpeg">
+<img style="width:400px; height:218px" src="../img/gionji/DOCS_i2c_channels.JPG">
 
 ## FXOS8700CQ - Accelerometer/Magnetometer
 FXOS8700CQ is a small, low-power, 3-axis, linear accelerometer and 3-axis, magnetometer combined into a single package. The device features an I2C with 14-bit accelerometer and 16-bit magnetometer ADC resolution along with smart-embedded functions. FXOS8700CQ has dynamically selectable acceleration full scale ranges of ±2g / ±4g /±8g and a fixed magnetic measurement range of ±1200μT. Output data rates (ODR) from 1.563 Hz to 800 Hz are selectable by the user for each sensor. Interleaved magnetic and acceleration data is available at ODR rates of up to 400 Hz. FXOS8700CQ is guaranteed to operate over the extended temperature range of -40 °C to +85 °C.

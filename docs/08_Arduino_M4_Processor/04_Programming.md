@@ -18,9 +18,8 @@ Now the sketch will be run on M4 side.
 It's possible to upload a precompiled binary firmware on the M4 using this command:
 
 ```bash
-fw_uploader.sh <BINARY_PATH>
+udooneo-m4uploader.sh <BINARY_PATH>
 ```
-
 
 ### External Arduino IDE
 External programming mode will be available on half November 2015.

@@ -1,7 +1,6 @@
 ## USB
 The board can be connected to a PC with a MicroUSB port. It can be used in OTG mode and in HOST mode. 
 
-<img style="width:400px; height:218px" src="../img/10_usb_otg_sch.png">
 
 ## PC Connection Interface
 If you connect UDOO Neo to your PC, you can:

@@ -7,7 +7,7 @@ Both memory modules are provided by Micron with a 400 MHz RAM clock.
 
 DDR3L SDRAM (1.35V) is a low-voltage version of the DDR3 (1.5V) SDRAM.
 
-Immagineeeee
+<img style="width:400px; height:218px" src="../img/10_ram_codes.png">
 
 ## MicroSD
 the board is equipped with a Micro SD card reader compatible with the most sd card available. The boot procedure should be done from the Micro SD. Boot configuration will be described in section X

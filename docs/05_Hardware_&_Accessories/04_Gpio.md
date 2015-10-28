@@ -9,7 +9,7 @@ http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYP
 It's possible to read and control digital input/output signals on the compatible Arduino pinout.
 By default the GPIO available from linux kernel ar placed on the external columns. See the picture below.
 
-<img style="width:400px; height:218px" src="../img/gionji/DOCS_internal_external_rows.PNG">
+<img style="width:400px; height:218px" src="../img/gionji/DOCS_internal_external_rows.JPG">
 
 The internal columns pins are assigned to M4 core.
 

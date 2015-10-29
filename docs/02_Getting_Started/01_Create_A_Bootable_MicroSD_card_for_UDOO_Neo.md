@@ -80,7 +80,7 @@ Then run:
 
 The micro SD card is now ready to be used. Simply, insert it in UDOO’s microSD Card slot and boot the system.
 
-Here you can find the video tutorial of [Creating a bootable MicroSD card with Linux Ubuntu from image](/tutorial/creating-bootable-micro-sd-card-linux-ubuntu-image/).
+Here you can find the video tutorial of [Creating a bootable MicroSD card with Linux Ubuntu from image](../02_Getting_Started/01_Create_A_Bootable_MicroSD_card_for_UDOO_Neo).
 
 ###Write the image on micro SD card using Mac OSX
 

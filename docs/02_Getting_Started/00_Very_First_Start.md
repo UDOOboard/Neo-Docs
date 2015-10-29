@@ -10,9 +10,9 @@ This easy step by step guide will lead you through the procedure to boot your UD
 
 <img src="../img/whatdoyouneed1.png">
 
-1. Micro USB Cable: Micro USB to USB cable. You can find it in <a href="http://shop.udoo.org/other/catalog/product/view/id/9/s/cables-kit/category/3/" target="_blank">our shop.</a>
-2. UDOO NEO: Don’t have one? <a href="#" target="_blank">Get it now!.</a>
-3. Micro SD: We suggest you to use a 8GB Micro SD class 10. Like the <a href="http://shop.udoo.org/other/catalog/product/view/id/34/s/starter-kit-usa/category/3/" target="_blank">one we have in our Starter Kit.</a>
+1. Micro USB Cable: Micro USB to USB cable. 
+2. UDOO NEO: Don’t have one? <a href="http://www.udoo.org/mailing-list-udoo-neo/" target="_blank">Get it now!.</a>
+3. Micro SD: We suggest you to use at least a 8GB Micro SD. 
 
 ## 1. Burn UDOO OS
 
@@ -30,7 +30,7 @@ Insert the flashed MicroSD into your UDOO Neo
 
 <img src="../img/neo_microsd1.png">
 
-Then select how to power up the board via a USB to Micro USB cable or a power adapter.  
+Then select how to power up the board via a USB to Micro USB cable or via a power adapter.  
 
 
 #### - Power Up using a USB to Micro USB cable

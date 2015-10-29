@@ -80,7 +80,7 @@ Then run:
 
 The micro SD card is now ready to be used. Simply, insert it in UDOO’s microSD Card slot and boot the system.
 
-Here you can find the video tutorial of [Creating a bootable MicroSD card with Linux Ubuntu from image](../02_Getting_Started/01_Create_A_Bootable_MicroSD_card_for_UDOO_Neo).
+Here you can find the video tutorial of [Creating a bootable MicroSD card with Linux Ubuntu from image](../02_Getting_Started/01_Create_A_Bootable_MicroSD_card_for_UDOO_Neo.html).
 
 ###Write the image on micro SD card using Mac OSX
 
@@ -166,7 +166,7 @@ sudo diskutil eject /dev/rdisk3
 
 The micro SD card is now ready to be used. Simply, insert it in UDOO’s microSD Card slot and boot the system.
 
-Here you can find the video tutorial of [Creating a bootable MicroSD card with Mac OSX from image](/tutorial/creating-bootable-micro-sd-card-mac-os-x-image/).
+Here you can find the video tutorial of [Creating a bootable MicroSD card with Mac OSX from image](http://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-with-mac-os-x-from-image/).
 
 ###Write the image on micro SD card Using Windows
 
@@ -188,6 +188,6 @@ In the Image File box, choose the downloaded .img file and click “Write”. No
 
 The microSD card is now ready to be used. Simply insert it in UDOO’s microSD Card slot and boot the system.
 
-Here you can find the video tutorial of [Creating a bootable MicroSD card using Windows from image](/tutorial/creating-bootable-micro-sd-card-using-windows-image/).
+Here you can find the video tutorial of [Creating a bootable MicroSD card using Windows from image](http://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-using-windows-from-image/).
 
 

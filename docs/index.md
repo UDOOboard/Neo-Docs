@@ -16,14 +16,14 @@ Thanks to its embedded 9-axis motion sensors and Wi-Fi + Bluetooth 4.0 module, t
 
 UDOO NEO retail line up consists of three models
 
-<img src="../img/udoo_neo_versions.jpg" alt="alt text" class="img-responsive" >
+<img src="img/udoo_neo_versions.jpg" alt="alt text" class="img-responsive" >
 
 
 
 <h3>Specifications</h3>
 <hr/>
 
-<img src="../udoo_neo_docs.png" alt="alt text" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
+<img src="img/udoo_neo_docs.png" alt="alt text" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
 
 <br />

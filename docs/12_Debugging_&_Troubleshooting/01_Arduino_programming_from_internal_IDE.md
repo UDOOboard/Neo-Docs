@@ -24,7 +24,7 @@ at processing.app.Serial.touchForCDCReset(Serial.java:86)
 or
 
 ``` bash
-... BUs Error.
+... Bus Error.
 ```
 
 For the moment it's necessary to reboot the board.

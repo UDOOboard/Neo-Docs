@@ -30,7 +30,7 @@ Insert the flashed MicroSD into your UDOO Neo
 
 <img src="../img/neo_microsd1.png">
 
-Then select how to power up the board via a USB to Micro USB cable or via a power adapter.  
+Then choose how to power up the board: via a USB to Micro USB cable, or through a power adapter.  
 
 
 #### - Power Up using a USB to Micro USB cable

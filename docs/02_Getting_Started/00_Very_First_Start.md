@@ -57,20 +57,7 @@ Connect your UDOO Neo via Wi-Fi* or via USB
 
 – Open a Browser
 
-– Go to udoobuntu.local
-
-
-#### Connect Via Wi-Fi*
-
-<img src="../img/connect_via_wifi2.png">
-
-– Power Up the UDOO Neo with the power adapter or a USB cable
-
-– In your computer, select the Wi-Fi: UDOONEO Wi-Fi
-
-– Open a Browser
-
-– Go to udoobuntu.local
+– Go to udooneo.local
 
 
 ## 4. All Done

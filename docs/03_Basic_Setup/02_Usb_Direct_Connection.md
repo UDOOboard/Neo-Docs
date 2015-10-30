@@ -1,10 +1,25 @@
-## How to install Microsoft RNDIS driver for Windows 
+### What is USB Direct Connection
 
-Remote Network Driver Interface Specification (RNDIS) is a Microsoft proprietary protocol. Devices using a USB connection for downloading and debugging of OS image from Platform Builder use this driver to emulate a network connection. RNDIS driver is required for this purpose.
+UDOO NEO's Micro USB port can be used both to power up the board and to connect it to our computer.
 
-RNDIS driver is a part of the Windows operating system, but the OS fails to detect it automatically. The following steps will help the user to install the RNDIS driver.
+Connecting UDOO NEO to your computer will result in:
 
-* After the device is connected to the development PC, OS will automatically search for the RNDIS driver. After it fails to find the driver, the following message will be shown.
+* UDOO NEO powering on, taking power from its USB Port
+* A storage device will be available, containing UDOO NEO'S Kernel and DTB files, together with an offline documentation and quick start guide
+* UDOO NEO will establish a network connection with your Computer, allowing to use it in [headless mode](../Getting_Started/Use_as_an_headless_IoT_Device)
+
+In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install few drivers first. See the Windows\MAC Install section
+
+### Use USB Direct Connection to ccntrol UDOO NEO
+
+* Upon successful connection, UDOO NEO will be available at the address [192.168.7.2](http://192.168.7.2)
+
+
+### Enable USB Connection on Windows
+
+
+
+* Connect UDOO NEO via Micro USB Cable to PC, eventually you'll get the following message
 
 <img style="width:800px;" src="../img/win_drv/wd_01.jpg">
 
@@ -27,6 +42,8 @@ RNDIS driver is a part of the Windows operating system, but the OS fails to dete
 * The RNDIS Kitl device is now installed and ready for use.
 
 <img style="width:800px;" src="../img/win_drv/wd_05.jpg">
+
+### Enable USB Connection on Windows
 
 
 

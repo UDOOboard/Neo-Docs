@@ -30,7 +30,7 @@ The main “Hard Drive” of UDOO NEO is the Micro SD Card. In order to get star
 
 <img src="../img/distros1.png">
 
-Follow the guide to <a href="http://www.udoo.org/docs/Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO">create a bootable Micro SD card for UDOO.</a>
+Follow the guide to <a href="Create_A_Bootable_MicroSD_card_for_UDOO_Neo.html">create a bootable Micro SD card for UDOO NEO.</a>
 
 
 ## 3. Insert the Micro SD card and power up!

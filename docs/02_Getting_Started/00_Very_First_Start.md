@@ -3,64 +3,50 @@
 This easy step by step guide will lead you through the procedure to boot your UDOO for the very first time.
 
 
-
-
-
 ## What do you need?
 
 <img src="../img/whatdoyouneed1.png">
 
-1. Micro USB Cable: Micro USB to USB cable. 
-2. UDOO NEO: Don’t have one? <a href="http://www.udoo.org/mailing-list-udoo-neo/" target="_blank">Get it now!.</a>
-3. Micro SD: We suggest you to use at least a 8GB Micro SD. 
+Use UDOO Neo as a computer
+- A UDOO NEO 
+- MICRO SD at least 8Gb
+- POWER SUPPLY 2A 12V - <a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html" target="_blank">Get it now!.</a> or USB Wall Charger 5V with Micro USB Data Cable  
+- MONITOR or TV HDMI 
+- MOUSE 
+- KEYBOARD 
+- HUB USB or Host OTG Adaptor Cable to add a second USB port (optional)
 
-## 1. Burn UDOO OS
+Use UDOO Neo as an headless IoT device
+- A UDOO NEO 
+- MICRO SD at least 8Gb
+- POWER SUPPLY 2A 12V - <a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html" target="_blank">Get it now!.</a> or USB Wall Charger 5V with Micro USB Data Cable or 
+
+## 1. Download UDOO Neo’s official Operating system:
+
+The main “Hard Drive” of UDOO NEO is the Micro SD Card. In order to get started, you just need to download the official UDOObuntu Operating System and write it to your Micro SD Card.
+- Download any official SD images from the image section of the website http://www.udoo.org/downloads/
+
+## 2. Burn UDOO NEO OS
 
 <img src="../img/distros1.png">
 
-Follow the guide to <a href="http://www.udoo.org/docs-neo/Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_Neo">create a bootable Micro SD card for UDOO Neo.</a>
-
-Are you an expert user? <a href="http://www.udoo.org/docs-neo/Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_Neo">Go to the Download Image Section and have fun.</a>
+Follow the guide to <a href="http://www.udoo.org/docs/Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO">create a bootable Micro SD card for UDOO.</a>
 
 
-
-## 2. Insert the Micro SD card and power up!
-
-Insert the flashed MicroSD into your UDOO Neo
+## 3. Insert the Micro SD card and power up!
 
 <img src="../img/neo_microsd1.png">
 
-Then choose how to power up the board: via a USB to Micro USB cable, or through a power adapter.  
+- Insert into your UDOO Neo the Micro SD Card you just prepared
+- Plug Keyboard and Mouse
+- Connect your monitor via Micro HDMI Cable
+- Power up the board: via a USB to Micro USB cable connected to a computer, or through a power adapter or USB Wall Charger 5V.
+- Connect the Lan cable (opzional)
 
 
-#### - Power Up using a USB to Micro USB cable
+## 4. Ready!
+UDOO Neo will start, and you’ve plenty of options to use it:
 
+### As a computer and developing platform
 
-<img src="../img/standard_img_neo_dwnlod1.png">
-
-
-#### - Power Up using the power adapter
-
-<img src="../img/powerup_padapter1.png">
-
-
-## 3. Connect to your computer
-
-Connect your UDOO Neo via Wi-Fi* or via USB
-
-
-#### Connect Via USB
-
-<img src="../img/connect_via_usb2.png">
-
-– Plug the UDOO Neo via USB
-
-– Open a Browser
-
-– Go to udooneo.local
-
-
-## 4. All Done
-
-Now you can have fun configuring your new UDOO Neo
-
+### Use UDOO Neo as an headless IoT device

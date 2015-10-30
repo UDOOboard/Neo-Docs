@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52993202-86c2-4c30-b2f7-fade1cfc101e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/udoo-web-control-panel1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/udoo-web-control-panel2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/udoo-web-control-panel3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/03_Basic_Setup/03_Remote_Terminal_(SSH).md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/02_Getting_Started/03_Use_as_a_Computer.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/03_Basic_Setup/04_Remote_Desktop_(VNC).md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/02_Getting_Started/04_Use_as_an_Arduino.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Neo-Docs\docs\03_Basic_Setup\01_Usb_Windows_driver_install_guide.md" afterPath="$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Neo-Docs\docs\03_Basic_Setup\02_Section_Title.md" afterPath="$PROJECT_DIR$/docs/02_Getting_Started/02_Use_as_an_headless_IoT_Device.md" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Neo-Docs\docs\index.md" afterPath="$PROJECT_DIR$/docs/_index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/01_Introduction/index.md" afterPath="$PROJECT_DIR$/docs/01_Introduction/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md" afterPath="$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md" />
     </list>
     <ignored path="Neo-Docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -153,8 +140,8 @@
       <file leaf-file-name="02_Usb_Direct_Connection.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44117647">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -872,8 +859,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44117647">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

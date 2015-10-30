@@ -13,7 +13,8 @@ In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install f
 ### Use USB Direct Connection to ccntrol UDOO NEO
 
 * Upon successful connection, UDOO NEO will be available at the address [192.168.7.2](http://192.168.7.2)
-
+* You can establish a [SSH Remote Terminal](03_Remote_Terminal_(SSH)) using the address 192.168.7.2 with credentials udooer/udooer
+* You can establish a [SSH Remote Terminal](03_Remote_Terminal_(SSH)) using the address 192.168.7.2 with credentials udooer/udooer
 
 ### Enable USB Connection on Windows
 

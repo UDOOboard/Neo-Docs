@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52993202-86c2-4c30-b2f7-fade1cfc101e" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\xampp\htdocs\Neo-Docs\docs\_index.md" afterPath="$PROJECT_DIR$/docs/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md" afterPath="$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md" />
     </list>
     <ignored path="Neo-Docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -156,11 +156,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01_Web_Control_Panel.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="01_Web_Control_Panel.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.965517">
-              <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.5588235">
+              <caret line="36" column="140" selection-start-line="36" selection-start-column="140" selection-end-line="36" selection-end-column="140" />
               <folding />
             </state>
           </provider>
@@ -175,10 +175,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03_Remote_Terminal_(SSH).md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="03_Remote_Terminal_(SSH).md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/03_Remote_Terminal_(SSH).md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -229,8 +229,8 @@
         <option value="$PROJECT_DIR$/docs/02_Getting_Started/02_Use_as_an_headless_IoT_Device.md" />
         <option value="$PROJECT_DIR$/docs/02_Getting_Started/03_Use_as_a_Computer.md" />
         <option value="$PROJECT_DIR$/docs/02_Getting_Started/04_Use_as_an_Arduino.md" />
-        <option value="$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md" />
         <option value="$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md" />
+        <option value="$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md" />
       </list>
     </option>
   </component>
@@ -576,10 +576,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -859,23 +859,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.965517">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.4827585">
@@ -897,6 +880,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5588235">
+          <caret line="36" column="140" selection-start-line="36" selection-start-column="140" selection-end-line="36" selection-end-column="140" />
           <folding />
         </state>
       </provider>

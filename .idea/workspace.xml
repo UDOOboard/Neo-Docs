@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52993202-86c2-4c30-b2f7-fade1cfc101e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md" afterPath="$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md" afterPath="$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md" />
     </list>
     <ignored path="Neo-Docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -137,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02_Usb_Direct_Connection.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="02_Usb_Direct_Connection.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.4827585">
-              <caret line="56" column="128" selection-start-line="56" selection-start-column="128" selection-end-line="56" selection-end-column="128" />
+            <state vertical-scroll-proportion="0.61764705">
+              <caret line="54" column="174" selection-start-line="54" selection-start-column="174" selection-end-line="54" selection-end-column="174" />
               <folding />
             </state>
           </provider>
@@ -156,10 +156,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01_Web_Control_Panel.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="01_Web_Control_Panel.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5588235">
+            <state vertical-scroll-proportion="-11.137931">
               <caret line="36" column="140" selection-start-line="36" selection-start-column="140" selection-end-line="36" selection-end-column="140" />
               <folding />
             </state>
@@ -229,8 +229,8 @@
         <option value="$PROJECT_DIR$/docs/02_Getting_Started/02_Use_as_an_headless_IoT_Device.md" />
         <option value="$PROJECT_DIR$/docs/02_Getting_Started/03_Use_as_a_Computer.md" />
         <option value="$PROJECT_DIR$/docs/02_Getting_Started/04_Use_as_an_Arduino.md" />
-        <option value="$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md" />
         <option value="$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md" />
+        <option value="$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md" />
       </list>
     </option>
   </component>
@@ -565,6 +565,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="52993202-86c2-4c30-b2f7-fade1cfc101e" name="Default" comment="" />
@@ -598,6 +601,14 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -859,23 +870,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.4827585">
-          <caret line="56" column="128" selection-start-line="56" selection-start-column="128" selection-end-line="56" selection-end-column="128" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/03_Remote_Terminal_(SSH).md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -895,8 +889,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/01_Web_Control_Panel.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5588235">
+        <state vertical-scroll-proportion="-11.137931">
           <caret line="36" column="140" selection-start-line="36" selection-start-column="140" selection-end-line="36" selection-end-column="140" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/03_Basic_Setup/02_Usb_Direct_Connection.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61764705">
+          <caret line="54" column="174" selection-start-line="54" selection-start-column="174" selection-end-line="54" selection-end-column="174" />
           <folding />
         </state>
       </provider>

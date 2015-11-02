@@ -54,7 +54,7 @@ In order to use the USB Direct Connection, upon first connection you must instal
 
 * Install both of this drivers: [Serial](../driversandtools/Mac%20USB%20Drivers/EnergiaFTDIDrivers2.2.18.pkg) and [Network](../driversandtools/Mac%20USB%20Drivers/HoRNDIS.pkg)
 * Reboot your MAC
-* UDOO NEO will be available either at [192.168.7.2](http://192.168.7.2) or typing   [http://udooneo.local](http://udooneo.local)
+* UDOO NEO will be available at [192.168.7.2](http://192.168.7.2)
 
 
 

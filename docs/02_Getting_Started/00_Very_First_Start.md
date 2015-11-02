@@ -47,6 +47,8 @@ Follow the guide to <a href="Create_A_Bootable_MicroSD_card_for_UDOO_Neo.html">c
 ## 4. Ready!
 UDOO Neo will start, and you’ve plenty of options to use it:
 
-### As a computer and developing platform
+#### <a href="Create_A_Bootable_MicroSD_card_for_UDOO_Neo.html">As a computer and developing platform</a>
 
-### Use UDOO Neo as an headless IoT device
+#### <a href="Use_as_a_Computer.html">Use UDOO Neo as an headless IoT device</a>
+
+#### <a href="Use_as_an_Arduino.html">Use UDOO Neo as an Arduino</a>

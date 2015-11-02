@@ -9,21 +9,21 @@ This easy step by step guide will lead you through the procedure to boot your UD
 
 Use UDOO Neo as a computer
 - A UDOO NEO 
-- MICRO SD at least 8Gb
-- POWER SUPPLY 2A 12V - <a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html" target="_blank">Get it now!.</a> or USB Wall Charger 5V with Micro USB Data Cable  
-- MONITOR or TV HDMI 
-- MOUSE 
-- KEYBOARD 
+- Micro SD card at least 8Gb
+- Power supply 2A 12V (<a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html" target="_blank">Get it now!</a>) or USB Wall Charger 5V with Micro USB Data Cable  
+- HDMI monitor or TV 
+- Mouse 
+- Keyboard 
 - HUB USB or Host OTG Adaptor Cable to add a second USB port (optional)
 
 Use UDOO Neo as an headless IoT device
 - A UDOO NEO 
-- MICRO SD at least 8Gb
-- POWER SUPPLY 2A 12V - <a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html" target="_blank">Get it now!.</a> or USB Wall Charger 5V with Micro USB Data Cable or 
+- Micro SD card at least 8Gb
+- Power supply 2A 12V (<a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html" target="_blank">Get it now!</a>) or USB Wall Charger 5V with Micro USB Data Cable or 
 
 ## 1. Download UDOO Neo’s official Operating system:
 
-The main “Hard Drive” of UDOO NEO is the Micro SD Card. In order to get started, you just need to download the official UDOObuntu Operating System and write it to your Micro SD Card.
+The main “Hard Drive” of UDOO NEO is the Micro SD card. In order to get started, you just need to download the official UDOObuntu Operating System and write it to your Micro SD card.
 - Download any official SD images from the image section of the website http://www.udoo.org/downloads/
 
 ## 2. Burn UDOO NEO OS
@@ -37,11 +37,11 @@ Follow the guide to <a href="Create_A_Bootable_MicroSD_card_for_UDOO_Neo.html">c
 
 <img src="../img/neo_microsd1.png">
 
-- Insert into your UDOO Neo the Micro SD Card you just prepared
+- Insert into your UDOO Neo the Micro SD card you just prepared
 - Plug Keyboard and Mouse
 - Connect your monitor via Micro HDMI Cable
 - Power up the board: via a USB to Micro USB cable connected to a computer, or through a power adapter or USB Wall Charger 5V.
-- Connect the Lan cable (opzional)
+- Connect the LAN cable (optional)
 
 
 ## 4. Ready!

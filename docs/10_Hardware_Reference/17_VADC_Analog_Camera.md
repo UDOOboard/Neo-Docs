@@ -11,11 +11,12 @@ Exported channels are:
 
 ### Connector Signals
 
-<img style="width:200px;" src="../img/gionji/DOCS_vadc_piamont.PNG">
-
 <img style="width:200px;" src="../img/gionji/DOCS_vadc_piamont2.PNG">
 
+
 ### JST Connector
+
+<img style="width:200px;" src="../img/gionji/DOCS_vadc_piamont.PNG">
 
 
 ### How to create your connector

@@ -25,3 +25,6 @@ This section is work in progress.
 ### Update the system
 
 ### Install VMware tools
+
+### Install required packages
+

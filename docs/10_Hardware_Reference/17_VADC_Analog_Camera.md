@@ -1,20 +1,20 @@
-## Video Analog to Digital Converter (Analog camera)
+# Video Analog to Digital Converter (Analog camera)
 iMX 6soloX processor implements a 4 channel Video ADC blocks. Two of these are exorted on external pinout on J12 JST connector.
 Exported channels are:
 * VADC_IN0
 * VADC_IN1
 
-### Schematics
+## Schematics
 
 <img style="width:800px;" src="../img/gionji/DOCS_vadc_sch.PNG">
 
 
-### JST Connector
+## JST Connector
 The two VACS signals are available on J12 connector including a ground reference.
 <img style="width:200px;" src="../img/gionji/DOCS_vadc_piamont.PNG">
 
 
-### Connector Signals
+## Connector Signals
 Related to this image the signals are:
 * RED: analog Video Input channel 0
 * GRAY: ground signals
@@ -23,7 +23,7 @@ Related to this image the signals are:
 <img style="width:200px;" src="../img/gionji/DOCS_vadc_piamont2.PNG">
 
 
-### How to create your connector
+## How to create your connector
 As soon as possible you'll be able to buy a specific cable on the shop.
 
 For the moment it's possible to create an RCA cable as in the following picture. 
@@ -33,5 +33,5 @@ For the moment it's possible to create an RCA cable as in the following picture.
 <img style="width:400px;" src="../img/gionji/DOCS_vadc_rca.PNG">
 
 
-### Usage
+## Usage
 coming soon

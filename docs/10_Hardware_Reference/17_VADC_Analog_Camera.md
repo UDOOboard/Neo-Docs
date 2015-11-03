@@ -1,4 +1,3 @@
-# Video Analog to Digital Converter (Analog camera)
 iMX 6soloX processor implements a 4 channel Video ADC blocks. Two of these are exorted on external pinout on J12 JST connector.
 Exported channels are:
 * VADC_IN0

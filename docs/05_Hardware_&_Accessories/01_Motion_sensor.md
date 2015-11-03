@@ -9,7 +9,7 @@ FXOS8700CQ is a small, low-power, 3-axis, linear accelerometer and 3-axis, magne
 * I2C address: 0x1E
 * Datasheet: http://cache.freescale.com/files/sensors/doc/data_sheet/FXOS8700CQ.pdf
 
-### Read sensors data
+### Read accelleration and magnetic field data
 To enable accelerometer you need to write "1" in file below:
 ``` bash
 echo 1 > /sys/class/misc/FreescaleAccelerometer/enable

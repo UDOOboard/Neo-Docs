@@ -48,7 +48,7 @@ This is an output example:
 ``` bash
 udooer@udooneo$ echo 1 > /sys/class/misc/FreescaleMagnetometer/enable
 udooer@udooneo$ cat /sys/class/misc/FreescaleMagnetometer/data
--6948,344,-14472
+-225,257,1372
 udooer@udooneo$ _
 ```
 

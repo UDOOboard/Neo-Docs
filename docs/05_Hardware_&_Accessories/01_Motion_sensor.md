@@ -9,7 +9,30 @@ FXOS8700CQ is a small, low-power, 3-axis, linear accelerometer and 3-axis, magne
 * I2C address: 0x1E
 * Datasheet: http://cache.freescale.com/files/sensors/doc/data_sheet/FXOS8700CQ.pdf
 
-### Direct I2C register access
+### Read sensors data
+To enable accelerometer you need to write "1" in file below:
+``` bash
+echo 1 > /sys/class/misc/FreescaleAccelerometer/enable
+```
+
+It's possible to read accelerometer data from file:
+``` bash
+/sys/class/misc/FreescaleAccelerometer/data
+```
+
+To enable magnetometer you need to write "1" in file below:
+``` bash
+echo 1 > /sys/class/misc/FreescaleMagnetometer/enable
+```
+
+It's possible to read magnetometer data from file:
+``` bash
+/sys/class/misc/FreescaleMagnetometer/data
+```
+
+
+#### Direct I2C register access
+It' also possible to read direcly from I2C register. But we suggest to use previous method.
 
 ``` bash
 \#!/bin/sh
@@ -33,26 +56,7 @@ while [ 1 ]; do
 done
 ```
 
-### Driver data
-To enable accelerometer you need to write "1" in file below:
-``` bash
-echo 1 > /sys/class/misc/FreescaleAccelerometer/enable
-```
 
-It's possible to read accelerometer data from file:
-``` bash
-/sys/class/misc/FreescaleAccelerometer/data
-```
-
-To enable magnetometer you need to write "1" in file below:
-``` bash
-echo 1 > /sys/class/misc/FreescaleMagnetometer/enable
-```
-
-It's possible to read magnetometer data from file:
-``` bash
-/sys/class/misc/FreescaleMagnetometer/data
-```
 
 ## FXAS21002 - Gyroscope
 3-Axis Digital Angular Rate Gyroscope FXAS21002C is a small, low-power, yaw, pitch, and roll angular rate gyroscope with 16 bit ADC resolution. The full-scale range is adjustable from ±250°/s to ±2000°/s. It features I2C interface. FXAS21002C is capable of measuring angular rates up to ±2000°/s, with output data rates (ODR) from 12.5 to 800 Hz. An integrated Low-Pass Filter (LPF) allows the host application to limit the digital signal bandwidth. The device may be configured to generate an interrupt when a user-programmable angular rate threshold is crossed on any one of the enabled axes.
@@ -62,7 +66,20 @@ range of –40 °C to +85 °C
 * I2C address: 0x20
 * Datasheet: http://cache.freescale.com/files/sensors/doc/data_sheet/FXAS21002.pdf
 
-### Direct I2C register access
+
+### Read angular speed data
+To enable gyroscope you need to write "1" in file below:
+``` bash
+echo 1 > /sys/class/misc/FreescaleGyroscope/enable
+```
+
+It's possible to read gyroscope data from file:
+``` bash
+/sys/class/misc/FreescaleGyroscope/data
+```
+
+#### Direct I2C register access
+It' also possible to read direcly from I2C register. But we suggest to use previous method.
 
 ``` bash
 \#!/bin/sh
@@ -80,13 +97,3 @@ while [ 1 ]; do
 done
 ```
 
-### Driver data
-To enable gyroscope you need to write "1" in file below:
-``` bash
-echo 1 > /sys/class/misc/FreescaleGyroscope/enable
-```
-
-It's possible to read gyroscope data from file:
-``` bash
-/sys/class/misc/FreescaleGyroscope/data
-```

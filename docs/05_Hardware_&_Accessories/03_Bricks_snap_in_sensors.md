@@ -71,6 +71,12 @@ sudo modprobe mpl3115
 ### TMP75b - Temperature
 
 #### Usage
+Enable the sensor:
+``` bash
+sudo sh -c 'echo lm75 0x48 >/sys/class/i2c-dev/i2c-1/device/new_device'
+```
+(sudo sh -c is required to execute a command as root user)
+
 In this file there is the temp value in milli-degree Celsius
 ``` bash
 /sys/class/i2c-dev/i2c-1/device/1-0048/temp1_input 

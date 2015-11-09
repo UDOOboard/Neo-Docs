@@ -1,7 +1,10 @@
-## Requirement
+## Requirements
 A first condition to establish a SSH connection with your UDOO Neo is to have previously completed the tutorial about the 
 [USB Direct Connection](http://www.udoo.org/docs-neo/Basic_Setup/Usb_Direct_Connection.html).
 A second condition is to download and install an SSH Client for your system, like [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+
+
+## Connection via SSH
 Once you have completed these steps, open your SSH client. For the sake of this example, we consider you're using PuTTY. 
 If you're using PuTTY a window, named PuTTY Configuration, will pop up, asking you to specify the destination you want to connect to.
 In the first blank space, named "Host Name or IP address", type: 

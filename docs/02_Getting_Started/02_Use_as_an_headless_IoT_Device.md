@@ -1,5 +1,7 @@
 ## What is an headless device and why do I want to use my NEO this way?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s4y_yZ802Ac" frameborder="0" allowfullscreen></iframe>
+
 Typically an headless device is a computer that is used without the need of Monitor, Keyboard and mouse. Typical examples
 of this configuration include
 

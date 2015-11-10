@@ -2,21 +2,20 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s4y_yZ802Ac" frameborder="0" allowfullscreen></iframe>
 
-Typically a headless device is a computer that is used without the need of Monitor, Keyboard and mouse. Typical examples
+Typically a headless device is a computer that is used without the need of monitor, keyboard and mouse. Typical examples
 of this configuration include
 
 * Web Servers
 * Network Attached Storage (NAS)
-* Internet of things Gateway or sensor 
-* Rover or Drone 
+* Internet of Things Gateway or sensors 
+* Rovers or Drones 
 
 Those configurations are pretty common and they are required when space and mobility are the first concerns.
-In order to use your UDOO Neo in such ways, you have plenty of options.
+To use your UDOO Neo in such ways you have plenty of options.
 
 ### USB Headless Device
 
-This mode is particularly handy if you don't have any available network or if you wish to use your NEO with your computer, for example at 
-hackatons. Thanks to its integrated USB Tethering module, UDOO NEO will create a USB Network Upon Connection with your Computer.
+This mode is particularly handy if you don't have any available network or if you wish to use your NEO with your computer, for example at hackatons. Thanks to its integrated USB Tethering module, UDOO NEO will create a USB Network Upon Connection with your Computer.
 
 To achieve this:
 
@@ -34,7 +33,6 @@ To achieve this:
 
 Your UDOO Neo will be available in your Network.
 You can now use it using SSH Remote Terminal, VNC Remote Desktop or trough Web Control Panel.
-
 
 ### Wireless Network Connected Headless Device
 

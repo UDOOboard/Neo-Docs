@@ -29,3 +29,17 @@ Everytime we reset the processor the M4 firmware ( sketch ) were lost, so it wil
 
 Also at boot M4 requires the resources descripted in a configuration file. This configuration must agree with the A9 kernel configuration to avoid conflits. We provide default "safe" configuration. 
 
+### Last Sketch used
+When the system boot check if it's present an old sketch compiled in:
+
+``` bash
+\/var\/opt\/m4\/m4last.fw
+```
+
+then it loads the sketch on M4 core and start its execution.
+
+Otherwise it loads the sketch located in:
+
+``` bash
+\/boot\/m4startup.fw
+```

@@ -33,7 +33,7 @@ Also at boot M4 requires the resources descripted in a configuration file. This 
 When the system boot check if it's present an old sketch compiled in:
 
 ``` bash
-\/var\/opt\/m4\/m4last.fw
+/var/opt/m4/m4last.fw
 ```
 
 then it loads the sketch on M4 core and start its execution.
@@ -41,5 +41,5 @@ then it loads the sketch on M4 core and start its execution.
 Otherwise it loads the sketch located in:
 
 ``` bash
-\/boot\/m4startup.fw
+/boot/m4startup.fw
 ```

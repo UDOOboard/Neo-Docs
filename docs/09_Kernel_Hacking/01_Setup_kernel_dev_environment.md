@@ -1,8 +1,9 @@
 This section is work in progress.
 
 ## Overview
-
-
+In this section we provide a guide to setup a clean and dedicted environment for UDOO Development as:
+* compile kernel
+* compile MQX libreries
 
 ## Download resources
 
@@ -84,4 +85,4 @@ sudo apt-get update
 ```
 
 ### Install required packages
-
+See specific task sections.

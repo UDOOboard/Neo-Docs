@@ -22,17 +22,13 @@ get the sources:
 git clone https://github.com/UDOOboard/linux_kernel
 ```
 
-Go to the last kernel branch:
+Switch to the last kernel branch:
 
 ``` bash
 cd linux_kernel
-git checkout -b imx_3.14.28_1.0.0_ga_neo_dev
+git checkout imx_3.14.28_1.0.0_ga_neo
+git pull origin imx_3.14.28_1.0.0_ga_neo
 ```
 
-If everything done
-
-```bash
-Switched to a new branch 'imx_3.14.28_1.0.0_ga_neo_dev'
-```
 
 

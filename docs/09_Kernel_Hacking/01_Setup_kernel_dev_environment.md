@@ -17,7 +17,7 @@ In this section we provide a guide to setup a clean and dedicted environment for
 
 <img style="width:800px;" src="../img/gionji/DOCS_dev_env_dwl_02.PNG">
 
-<img style="width:800px;" src="../img/gionji/DOCS_dev_env_dwl_03.PNG">
+<img style="width:300px;" src="../img/gionji/DOCS_dev_env_dwl_03.PNG">
 
 
 ### Operating System
@@ -33,22 +33,22 @@ In this section we provide a guide to setup a clean and dedicted environment for
 
 ### Ubuntu 14.04 32 bit
 Open VMware Player and choose "Create a New Virtual Machine"
-<img style="width:800px;" src="../img/gionji/DOCS_dev_env_01.PNG">
+<img style="width:500px;" src="../img/gionji/DOCS_dev_env_01.PNG">
 
 Select "installer disc image (iso)" option and Browse the Ubuntu 14.04 32 image. Click Next.
-<img style="width:800px;" src="../img/gionji/DOCS_dev_env_02.PNG">
+<img style="width:400px;" src="../img/gionji/DOCS_dev_env_02.PNG">
 
 Choose the user full name, username and password.
-<img style="width:800px;" src="../img/gionji/DOCS_dev_env_03.PNG">
+<img style="width:400px;" src="../img/gionji/DOCS_dev_env_03.PNG">
 
 Choose the Virtual machine name and its location. It's recomended to put it into a drive with 30GB free at least.
-<img style="width:800px;" src="../img/gionji/DOCS_dev_env_04.PNG">
+<img style="width:400px;" src="../img/gionji/DOCS_dev_env_04.PNG">
 
 Choose the maximum virtual hard disk size (20 GB is ok) but 30 is recomended. Space is allocated when is needed.
-<img style="width:800px;" src="../img/gionji/DOCS_dev_env_05.PNG">
+<img style="width:400px;" src="../img/gionji/DOCS_dev_env_05.PNG">
 
 Customize hardware.
-<img style="width:800px;" src="../img/gionji/DOCS_dev_env_06.PNG">
+<img style="width:400px;" src="../img/gionji/DOCS_dev_env_06.PNG">
 
 Depending on your host computer choose the amount of ram memory. 1GB should be ok, but 2 is better :)
 <img style="width:800px;" src="../img/gionji/DOCS_dev_env_07.PNG">
@@ -76,8 +76,8 @@ If the system ask for install VMware tools we suggest to accept. It provides use
 ### Update the system
 Open a terminal.
 
-<img style="width:800px;" src="../img/gionji/DOCS_dev_env_13.PNG">
-<img style="width:800px;" src="../img/gionji/DOCS_dev_env_14.PNG">
+<img style="width:100px;" src="../img/gionji/DOCS_dev_env_13.PNG">
+<img style="width:150px;" src="../img/gionji/DOCS_dev_env_14.PNG">
 <img style="width:800px;" src="../img/gionji/DOCS_dev_env_15.PNG">
 
 ``` bash

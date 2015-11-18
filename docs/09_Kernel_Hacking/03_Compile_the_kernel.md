@@ -59,3 +59,17 @@ make dtbs -j 5 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
 ``` bash
 make modules -j 5 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
 ```
+
+### Install modules
+To install compiled modules create a destination folder
+
+``` bash
+mkdir MODULES
+```
+
+Then 
+
+``` bash
+make modules_install INSTALL_MOD_PATH=./MODULES ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
+```
+

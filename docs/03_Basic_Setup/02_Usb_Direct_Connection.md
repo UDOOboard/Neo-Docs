@@ -47,8 +47,8 @@ In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install f
 ## Use USB Direct Connection to control UDOO NEO
 
 * Upon successful connection, UDOO NEO will be available at the address [192.168.7.2](http://192.168.7.2)
-* You can establish a <a href="/Basic_Setup/Remote_Terminal_(SSH).html">SSH Remote Terminal</a> using the address 192.168.7.2 with credentials udooer/udooer
-* You can establish a <a href="/Basic_Setup/Remote_Desktop_(VNC).html">VNC Remote Desktop</a> Session using the address 192.168.7.2 and port 5900 (192.168.7.2:5900). The default password is udooer.
+* You can establish a <a href="../Basic_Setup/Remote_Terminal_(SSH).html">SSH Remote Terminal</a> using the address 192.168.7.2 with credentials udooer/udooer
+* You can establish a <a href="../Basic_Setup/Remote_Desktop_(VNC).html">VNC Remote Desktop</a> Session using the address 192.168.7.2 and port 5900 (192.168.7.2:5900). The default password is udooer.
 * You can configure UDOO NEO via the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html)
 
 

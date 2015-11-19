@@ -49,10 +49,7 @@
     
     @media screen and (max-width: 650px) {
      
-         .button_docs {
-             display: none;
-             
-         }
+         
         
         .wrapper_docs {
             display: none;

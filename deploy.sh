@@ -17,6 +17,9 @@ git init
 git config user.name "Travis CI"
 git config user.email "social@udoo.org"
 
+# Add drivers and tools
+cp -rp ../driversandtools . 
+
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
 git add .

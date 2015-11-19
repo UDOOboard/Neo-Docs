@@ -10,7 +10,7 @@
     "breadcrumbs": false,
     "breadcrumb_separator": "Chevrons",
     "date_modified": false,
-    "float": false,
+    "float": true,
     "file_editor": false,   
     "repo": "UDOOboard/Neo-Docs",
     "ignore": {

@@ -1,5 +1,7 @@
 ## Using UDOO NEO as a Computer
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_tUa99dseOc" frameborder="0" allowfullscreen></iframe>
+
 A typical usage scenario is when you use your NEO as it was an ordinary desktop computer, with mouse, keyboard and a monitor.
 
 Usually, this configuration can be found:

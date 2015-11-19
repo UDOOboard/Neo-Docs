@@ -6,7 +6,7 @@ Connecting UDOO NEO to your computer will result in:
 
 * UDOO NEO powering on, taking power from its USB Port
 * A storage device will be available, containing UDOO NEO'S Kernel and DTB files, together with an offline documentation and quick start guide
-* UDOO NEO will establish a network connection with your Computer, allowing to use it in [headless mode](../Getting_Started/Use_as_an_headless_IoT_Device.html)
+* UDOO NEO will establish a network connection with your Computer, allowing to use it in [headless mode](../Getting_Started/Use_as_a_headless_IoT_Device.html)
 
 In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install few drivers first as described below:
 
@@ -47,9 +47,9 @@ In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install f
 ## Use USB Direct Connection to control UDOO NEO
 
 * Upon successful connection, UDOO NEO will be available at the address [192.168.7.2](http://192.168.7.2)
-* You can establish a [SSH Remote Terminal](03_Remote_Terminal_(SSH).html) using the address 192.168.7.2 with credentials udooer/udooer
-* You can establish a [VNC Remote Desktop Session](04_Remote_Desktop_(VNC).html) using the address 192.168.7.2 and port 5900 (192.168.7.2:5900). The default password is udooer.
-* You can configure UDOO NEO via the [Web Control Panel](01_Web_Control_Panel.html)
+* You can establish a [SSH Remote Terminal](03_Remote_Terminal_(SSH)) using the address 192.168.7.2 with credentials udooer/udooer
+* You can establish a [VNC Remote Desktop Session](04_Remote_Desktop_(VNC)) using the address 192.168.7.2 and port 5900 (192.168.7.2:5900). The default password is udooer.
+* You can configure UDOO NEO via the [Web Control Panel](01_Web_Control_Panel)
 
 ## Ok, and now?
 What you should do now is downloading a suitable VNC client, like [VNC Viewer](https://www.realvnc.com/download/viewer/) 

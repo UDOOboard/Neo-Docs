@@ -44,3 +44,23 @@
 .button_docs:hover:focus {
     color: #ec008c;
     }
+    
+    
+    
+    @media screen and (max-width: 600px) {
+     
+         .button_docs {
+             display: none;
+             
+         }
+        
+        .wrapper_docs {
+            display: none;
+            
+        }
+        
+        
+    }
+    
+    
+    

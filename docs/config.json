@@ -17,8 +17,6 @@
             "files": ["Work_In_Progress.md"],
             "folders": ["99_Not_Ready"]
     },
-    "twitter": ["UDOO_Board"],
-    "google_analytics": "UA-40057783-1",
     "links": {
         "Home": "http://udoo.org",
         "Downloads": "http://udoo.org/downloads",

@@ -48,3 +48,4 @@ Create a directory and decompress the source code:
 ```
 
 # Apply patches
+coming soon

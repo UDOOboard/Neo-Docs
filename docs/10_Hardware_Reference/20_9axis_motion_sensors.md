@@ -6,5 +6,5 @@ They can be accessed by M4 core and also by A9 core. They can be used in ping mo
 <img style="width:400px; height:218px" src="../img/gionji/DOCS_acc_mag_chip.PNG">
 
 ### Usage
-See the [Motion Sensor Section] (../Hardware_&_Accessories/Motion_sensor.html).
+See the [Motion Sensor Section](../Hardware_&_Accessories/Motion_sensor.html).
 

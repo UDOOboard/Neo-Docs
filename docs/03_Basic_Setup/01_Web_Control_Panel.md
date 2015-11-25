@@ -1,13 +1,13 @@
-## UDOO Neo Web Control Panel
+## UDOO NEO Web Control Panel
 
-UDOO Neo Control Panel is a utiliy designed to:
+The UDOO NEO's Web Control Panel is a utility designed to:
 
-* Easily configure your UDOO Neo, from Wireless Connection to the UDOO Neo's hostname
-* Check its connection status
-* Learn how to develop basic projects
-* Expose the Documentation
+* Easily configure your UDOO NEO, from Wireless Connection to the UDOO NEO's hostname;
+* Check its connection status;
+* Learn how to develop basic projects;
+* Expose the Documentation;
 
-PLEASE NOTE: UDOO Neo Web Control Panel is currently in alpha state.
+PLEASE NOTE: The UDOO NEO's Web Control Panel is currently in alpha state.
 
 ### Overview 
 
@@ -15,8 +15,8 @@ PLEASE NOTE: UDOO Neo Web Control Panel is currently in alpha state.
 
 The Overview Tab will give you a quick insight on the Status of your UDOO NEO:
 
-* On top left side, you'll find 3 graphical indicators, showing the magnitude of change state in Accelerometer, Gyroscope and Magnetometer
-* On top right side, you'll find an overview of NEO's connectivity, indicating whether Ethernet, USB, Wlan and Bluetooth are connected, and their IP address
+* On top left side you'll find 3 graphical indicators, showing the magnitude of change state in Accelerometer, Gyroscope and Magnetometer;
+* On top right side you'll find an overview of NEO's connectivity, indicating whether Ethernet, USB, Wlan and Bluetooth are connected, and their IP address
 * The other tiles will be your starting point on discovering UDOO NEO's capabilities
 
 

@@ -17,7 +17,7 @@ To use UDOO NEO as a computer you need:
 - Keyboard; 
 - HUB USB or Host OTG Adaptor Cable to add a second USB port (optional);
 
-To use UDOO Neo as an headless IoT device you need:
+To use UDOO Neo as a headless IoT device you need:
 - [UDOO NEO](http://shop.udoo.org/neo.html);
 - Micro SD card (at least 8GB), eventually [preloaded with the Operating System](http://shop.udoo.org/eu/catalog/product/view/id/43/s/micro-sd-with-pre-loaded-linux-os-for-neo-extended-full/category/5/);
 - [12V 2A Power supply](http://shop.udoo.org/accessories/power-adapter-eu.html) or USB Wall Charger 5V with Micro USB Data Cable.  
@@ -50,6 +50,6 @@ UDOO Neo will start, and you’ve plenty of options to use it:
 
 #### <a href="Use_as_a_Computer.html">As a computer and developing platform</a>
 
-#### <a href="Use_as_an_headless_IoT_Device.html">Use UDOO Neo as an headless IoT device</a>
+#### <a href="Use_as_a_headless_IoT_Device.html">Use UDOO Neo as a headless IoT device</a>
 
 #### <a href="Use_as_an_Arduino.html">Use UDOO Neo as an Arduino</a>

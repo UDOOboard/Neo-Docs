@@ -9,23 +9,23 @@ This easy step by step guide will lead you through the procedure to boot your UD
 
 To use UDOO NEO as a computer you need:
 
-- [UDOO NEO](http://shop.udoo.org/neo.html)
-- Micro SD card (at least 8GB), eventually [preloaded with the Operating System](http://shop.udoo.org/eu/catalog/product/view/id/43/s/micro-sd-with-pre-loaded-linux-os-for-neo-extended-full/category/5/)
-- Power supply 2A 12V (<a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html" target="_blank">Get it now!</a>) or USB Wall Charger 5V with Micro USB Data Cable  
-- HDMI monitor or TV 
-- Mouse 
-- Keyboard 
-- HUB USB or Host OTG Adaptor Cable to add a second USB port (optional)
+- [UDOO NEO](http://shop.udoo.org/neo.html);
+- Micro SD card (at least 8GB), eventually [preloaded with the Operating System](http://shop.udoo.org/eu/catalog/product/view/id/43/s/micro-sd-with-pre-loaded-linux-os-for-neo-extended-full/category/5/);
+- [12V 2A Power supply](http://shop.udoo.org/accessories/power-adapter-eu.html) or USB Wall Charger 5V with Micro USB Data Cable;  
+- HDMI monitor or TV; 
+- Mouse;
+- Keyboard; 
+- HUB USB or Host OTG Adaptor Cable to add a second USB port (optional);
 
-Use UDOO Neo as an headless IoT device
-- A UDOO NEO 
-- Micro SD card at least 8Gb
-- Power supply 2A 12V (<a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html" target="_blank">Get it now!</a>) or USB Wall Charger 5V with Micro USB Data Cable or 
+To use UDOO Neo as an headless IoT device you need:
+- [UDOO NEO](http://shop.udoo.org/neo.html);
+- Micro SD card (at least 8GB), eventually [preloaded with the Operating System](http://shop.udoo.org/eu/catalog/product/view/id/43/s/micro-sd-with-pre-loaded-linux-os-for-neo-extended-full/category/5/);
+- [12V 2A Power supply](http://shop.udoo.org/accessories/power-adapter-eu.html) or USB Wall Charger 5V with Micro USB Data Cable.  
 
 ## 1. Download UDOO Neo’s official Operating system:
 
-The main “Hard Drive” of UDOO NEO is the Micro SD card. In order to get started, you just need to download the official UDOObuntu Operating System and write it to your Micro SD card.
-- Download any official SD images from the image section of the website http://www.udoo.org/downloads/
+The main “Hard Drive” of UDOO NEO is the Micro SD card. In order to get started you just need to download the official UDOObuntu Operating System and write it to your Micro SD card.
+- Download any official Micro SD image from the image section of the website: http://www.udoo.org/downloads/
 
 ## 2. Burn UDOO NEO OS
 
@@ -41,8 +41,8 @@ Follow the guide to <a href="Create_A_Bootable_MicroSD_card_for_UDOO_Neo.html">c
 - Insert into your UDOO Neo the Micro SD card you just prepared
 - Plug Keyboard and Mouse
 - Connect your monitor via Micro HDMI Cable
-- Power up the board: via a USB to Micro USB cable connected to a computer, or through a power adapter or USB Wall Charger 5V.
-- Connect the LAN cable (optional)
+- Power up the board via a USB to Micro USB cable connected to a computer, or through a power adapter or through USB Wall Charger 5V.
+- Connect the LAN cable (optional) 
 
 
 ## 4. Ready!

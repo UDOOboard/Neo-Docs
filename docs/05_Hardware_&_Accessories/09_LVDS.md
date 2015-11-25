@@ -2,6 +2,7 @@
 
 ## 7 inches LVDS panel
 First of all, make sure you are powering UDOO NEO with [a 12V power supply](http://shop.udoo.org/eu/accessories/power-adapter-eu.html).
+
 To configure UDOO NEO for use of 7" panels you need to modify a file located in the /boot directory.
 You can do it two ways:
 * Accessing a console (connected to HDMI, connected in SSH, connected via uart serial)

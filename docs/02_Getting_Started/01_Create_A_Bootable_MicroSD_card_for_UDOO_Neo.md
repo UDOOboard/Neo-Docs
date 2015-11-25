@@ -1,6 +1,6 @@
 ## Overview
 
-The following paragraphs will guide you through the creation of a bootable Micro SD card for UDOO NEO, starting from a precompiled image file containing the UDOObuntu 2 or Android Lollipop Operating system, which runs on the i.MX6 processor. The procedure is quite easy: simply unzip the image and write it on the Micro SD card using the dd tool for UNIX/MAC users or Win32DiskImager for Windows users. It is not possible to create a bootable Micro SD card with drag and drop. Please consider that the size of a Micro SD card must be at least 8GB; higher capacity Micro SD memory cards (tested up to 64GB) may be used but only 8GB will be available at the end of the procedure.
+The following paragraphs will guide you through the creation of a bootable Micro SD card for UDOO NEO, starting from a precompiled image file containing the UDOObuntu 2 or Android Lollipop Operating system, which runs on the i.MX6 processor. The procedure is quite easy: simply unzip the image and write it on the Micro SD card using the dd tool for UNIX/MAC users or Win32DiskImager for Windows users. It is not possible to create a bootable Micro SD card with drag and drop. Please consider that the size of a Micro SD card must be at least 8GB; Micro SD memory cards with a higher capacity (tested up to 64GB) may be used but only 8GB will be available at the end of the procedure.
 
 Here is the full guide for Windows with a videotutorial: http://www.udoo.org/tutorial/creating-bootable-micro-sd-card-using-windows-image/
 
@@ -40,7 +40,7 @@ The Micro SD card is now ready to be used. Simply insert it in UDOO’s Micro SD
 Here you can find the video tutorial of [Creating a bootable MicroSD card using Windows from image](http://www.udoo.org/tutorial/creating-a-bootable-micro-sd-card-using-windows-from-image/).
 
 
-###Write the image on micro SD card using Mac OSX
+###Write the image on the Micro SD card using Mac OSX
 
 <img style="width:400px; height:218px" src="../img/Box4_Tutorials_UdooSite.png">
 
@@ -57,7 +57,7 @@ df -h
 ```
 
 
-If the Mac has a slot for SD cards (Micro SD to SD adapter needed), insert the card. If not, insert the card into any SD card reader and then connect it to the Mac. Note: the microSD card must be formatted using FAT32 File System!
+If the Mac has a slot for SD cards (Micro SD to SD adapter needed), insert the card. If not, insert the card into any SD card reader and then connect it to the Mac. Note: the Micro SD card must be formatted using FAT32 File System!
 
 Run again
 
@@ -69,7 +69,7 @@ df -h
 
 ```
 
-The device that wasn't listed before is the Micro SD card just inserted. The name shown will be the one of the filesystem’s partition, for example, /dev/disk3s1. Now consider the raw device name for using the entire disk, by omitting the final “s1″ and replacing “disk” with “rdisk” (considering the previous example, use rdisk3, not disk3 nor rdisk3s1). This is very important, since it could result in the loss of all data of the disk of the Mac used, when referring to the wrong device name. Since there could be other Micro SD with different drive names/numbers, like rdisk2 or rdisk4, etc. check again the correct name of the MicroSD card by using the df -h command both before & after the insertion of the microSD card into the Mac used.
+The device that wasn't listed before is the Micro SD card just inserted. The name shown will be the one of the filesystem’s partition, for example, /dev/disk3s1. Now consider the raw device name for using the entire disk, by omitting the final “s1″ and replacing “disk” with “rdisk” (considering the previous example, use rdisk3, not disk3 nor rdisk3s1). This is very important, since it could result in the loss of all data of the disk of the Mac used, when referring to the wrong device name. Since there could be other Micro SD cards with different drive names/numbers, like rdisk2 or rdisk4, etc. check again the correct name of the MicroSD card by using the df -h command both before & after the insertion of the Micro SD card into the Mac used.
 
 e.g. 
 

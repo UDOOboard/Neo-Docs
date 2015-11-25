@@ -8,7 +8,7 @@ UDOO NEO embeds two cores on the same processor: a powerful 1GHz ARM® Cortex-A9
 <BR>
 While the Cortex-A9 can run both Android Lollipop and UDOObuntu 2 - a dedicated Ubuntu-based Linux distro - the Cortex-M4 allows easy access to a full-stack ArduinoTM environment. The snap-in connector ensures a plug-and-play interaction with most sensors and actuators.
 <BR>
-Thanks to its embedded 9-axis motion sensors and Wi-Fi + Bluetooth 4.0 module, the board is ideal to create robots, drones and rovers as well as any Mobile IoT project you can imagine.
+Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module, the board is ideal to create robots, drones and rovers as well as any Mobile IoT project you can imagine.
 </p>
 <hr/>
 
@@ -74,10 +74,10 @@ The UDOO NEO retail lineup consists of three models
 
 The official UDOO forum can be found at http://www.udoo.org/forum
 
-The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
+The search function has been tweaked to allow more general queries. <b>Please</b> do a research before making a post as the issue may already have been raised and answered.
 
-
-IRC There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: irc.freenode.net. Room name is #udoo.
+# IRC 
+There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: irc.freenode.net. The name of the room is #udoo.
 
 <hr/>
 <h3>Home Site & Community</h3>
@@ -85,7 +85,7 @@ IRC There is an (unofficial) UDOO discussion channel on IRC. Using the IRC clien
 
 Official website: http://www.udoo.org
 
-Official forum http://www.udoo.org/forum/index.php
+Official forum: http://www.udoo.org/forum/index.php
 
 <hr/>
 <h3>Home Site & Community</h3>

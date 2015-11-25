@@ -6,7 +6,7 @@ A typical usage scenario is when you use your NEO as it was an ordinary desktop 
 
 Usually, this configuration is typical for:
 
-* Computer Labs \ Phisical Computing Labs;
+* Computer Labs \ Physical Computing Labs;
 * Development Stations;
 * Low Cost Desktop Replacement.
 

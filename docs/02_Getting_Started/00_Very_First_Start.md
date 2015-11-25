@@ -7,9 +7,10 @@ This easy step by step guide will lead you through the procedure to boot your UD
 
 <img src="../img/whatdoyouneed1.png">
 
-Use UDOO Neo as a computer
-- A UDOO NEO 
-- Micro SD card at least 8Gb
+To use UDOO NEO as a computer you need:
+
+- [UDOO NEO](http://shop.udoo.org/neo.html)
+- Micro SD card (at least 8GB), eventually [preloaded with the Operating System](http://shop.udoo.org/eu/catalog/product/view/id/43/s/micro-sd-with-pre-loaded-linux-os-for-neo-extended-full/category/5/)
 - Power supply 2A 12V (<a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html" target="_blank">Get it now!</a>) or USB Wall Charger 5V with Micro USB Data Cable  
 - HDMI monitor or TV 
 - Mouse 

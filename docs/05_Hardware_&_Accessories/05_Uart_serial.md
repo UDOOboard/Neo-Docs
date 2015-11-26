@@ -12,7 +12,7 @@ Table below gives a short UARTS description
 
 | Name   | Function                | Description                                                        |
 |--------|-------------------------|--------------------------------------------------------------------|
-| UART_1 | Cortex A9 serial debug  | On this serial it's possible to have access to a Linux console     |
+| UART_1 | Cortex A9 serial debug  | On this serial it's possible [to have access to a Linux console](http://udoo.org/docs-neo/Hardware_Reference/External_Arduino_Pinout.html)     |
 | UART_2 | Cortex M4 MQX debug     | Freescale MQX real-time OS library uses this serial for debug info |
 | UART_3 | WL1835 Bluetooth chip   | Used to communicate with Bluetooth chip mounted on the board       |
 | UART_4 | n.c.                    | n.a.                                                               |

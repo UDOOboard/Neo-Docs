@@ -14,7 +14,7 @@ Table below gives a short UARTS description
 |--------|-------------------------|--------------------------------------------------------------------|
 | UART_1 | Cortex A9 serial debug  | On this serial it's possible [to have access to a Linux console](http://udoo.org/docs-neo/Hardware_Reference/External_Arduino_Pinout.html)     |
 | UART_2 | Cortex M4 MQX debug     | Freescale MQX real-time OS library uses this serial for debug info |
-| UART_3 | WL1835 Bluetooth chip   | Used to communicate with Bluetooth chip mounted on the board       |
+| UART_3 | WL1831 Bluetooth chip   | Used to communicate with Bluetooth chip mounted on the board       |
 | UART_4 | n.c.                    | n.a.                                                               |
 | UART_5 | Arduino pin 0 /1 serial | It can be used by M4 microcontroller through the Serial0 object    |
 | UART_6 | Cortex A9 user serial   | Not enabled by default. It can be enabled on external A9 pinout    |
@@ -58,7 +58,7 @@ These are a set of libraries created for these Freescale microprocessors family.
 * Device kernel name: n.a. kernel can't access this serial
 
 ### UART 3
-This uart is connectet to Texas Instruments WL1835 chip for Bluetooh data communication. It uses four signals at 1.8 Volts:
+This uart is connectet to Texas Instruments WL1831 chip for Bluetooh data communication. It uses four signals at 1.8 Volts:
 * RX
 * TX
 * CTS

@@ -8,6 +8,8 @@
 
 ### MPL3115A2 - Barometer
 
+Datasheet: http://www.adafruit.com/datasheets/1893_datasheet.pdf
+
 #### Usage
 In this file you can find temperature scale
 /sys/class/i2c-dev/i2c-1/device/1-0060/iio\:device0/in_temp_scale

@@ -37,7 +37,7 @@ A light-emitting diode (LED) is a two-lead semiconductor light source. It is a p
 * Blue brightness @ ~20mA: 800-1000 mcd
 * Green brightness @ ~20mA: 1500-2000mcd
 
-<img style="width:400px;" src="../img/gionji/m4_cookbook/rgb_led_02.jpg">
+<img style="width:400px;" src="../img/gionji/m4_cookbook/rgb_led_02.gif">
 
 A Hall generator is a solid state sensor which provides an output voltage...
 

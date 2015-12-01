@@ -1,4 +1,7 @@
 # Description
+The Hall effect is the production of a voltage difference (the Hall voltage) across an electrical conductor, transverse to an electric current in the conductor and a magnetic field perpendicular to the current. It was discovered by Edwin Hall in 1879.[1]
+
+The Hall coefficient is defined as the ratio of the induced electric field to the product of the current density and the applied magnetic field. It is a characteristic of the material from which the conductor is made, since its value depends on the type, number, and properties of the charge carriers that constitute the current.
 
 <img style="width:300px;" src="../img/gionji/m4_cookbook/hall_effect.gif">
 

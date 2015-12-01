@@ -22,7 +22,7 @@ A Hall generator is a solid state sensor which provides an output voltage when i
 
 ## 49E-416BG
 
-<img style="width:400px;" src="../img/gionji/m4_cookbook/49E-416BG_01.PNG">
+<img style="width:400px;" src="../img/gionji/m4_cookbook/49e416BG_01.PNG">
 
 49E Linear Hall-effect sensor is small, versatile linear Hall-effect device that is operated by the magnetic field from a permanent magnet or an electromagnet. The linear sourcing output voltage is set by the supply voltage and varies in proportion to the strength of the magnetic field.  The integrated circuitry features low noise output, which makes it 
 unnecessary to use external filtering. It also includes thin film resistors to provide increased temperature stability and accuracy. The linear Hall sensor has an operating temperature range of -40 °C to 85 °C appropriate for commercial, consumer and industrial environments. 

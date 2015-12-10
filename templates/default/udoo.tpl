@@ -114,7 +114,7 @@
     <!-- Homepage -->
         <div class="navbar navbar-fixed-top hidden-print">
             <div class="container">
-				<a href="http://udoo.org" title="UDOO">
+				<a href="/" title="UDOO">
 						<img src="udoo/img/logo_docs.png" alt="" />
 				</a>
                 <a class="brand navbar-brand pull-left" href="<?php echo $index; ?>">Docs</a>

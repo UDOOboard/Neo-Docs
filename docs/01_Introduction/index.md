@@ -3,6 +3,7 @@
 <hr/>
 <p>
 	<strong>UDOO NEO</strong> is an all-in-one open hardware low-cost computer equipped with a FreescaleTM i.MX 6SoloX applications processor for Android and Linux.
+	
 <BR>
 UDOO NEO embeds two cores on the same processor: a powerful 1GHz ARM® Cortex-A9, and up to a 200Mhz Cortex-M4 I/O real-time co-processor.
 <BR>

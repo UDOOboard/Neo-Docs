@@ -2,7 +2,7 @@
 <h1>UDOO NEO</h1>
 <hr/>
 <p>
-	<strong>UDOO NEO</strong> is an all-in-one open hardware low-cost computer equipped with a FreescaleTM i.MX 6SoloX applications processor for Android and Linux.
+<strong>UDOO NEO</strong> is an all-in-one open hardware low-cost computer equipped with a FreescaleTM i.MX 6SoloX applications processor for Android and Linux.
 <BR>
 UDOO NEO embeds two cores on the same processor: a powerful 1GHz ARM® Cortex-A9, and an ARM Cortex-M4 I/O real-time co-processor that can run up to 200Mhz.
 <BR>
@@ -12,15 +12,16 @@ Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module,
 </p>
 <hr/>
 
-<h3>What you must not do with UDOO NEO</h3>:
+<h3>What you must not do with UDOO NEO:</h3>
 
 <ul><li>Never provide the GPIOs with more than 3.3V in input</li>
 <li>Never keep the board in touch with metal while it's powered up</li>
 </ul>
 
+
 <h3>Lineup</h3>
 
-The UDOO NEO retail lineup consists of three models
+UDOO NEO retail line up consists of three models
 
 <img src="../img/udoo_neo_versions.jpg" alt="alt text" class="img-responsive" >
 
@@ -33,9 +34,9 @@ The UDOO NEO retail lineup consists of three models
 
 
 <br />
-* Freescale™ i.MX 6SoloX applications processor with an embedded ARM Cortex-A9 core and an embedded ARM Cortex-M4 Core
-* 512MB RAM (Basic) or 1GB RAM (only Extended and Full)
-* Integrated 2D/3D graphics controller
+* Freescale™ i.MX 6SoloX applications processor with an embedded ARM Cortex-A9 core and a Cortex-M4 Core
+* 512MB (Basic) or 1GB (only Extended and Full)
+* Integrated 2d/3d graphics controller
 * Micro HDMI interface
 * LVDS interface + touch (I2C signals)
 * Analog camera connection supporting NTSC and PAL
@@ -45,7 +46,7 @@ The UDOO NEO retail lineup consists of three models
 * 1x USB 2.0 Type A ports
 * 1x USB OTG (micro-AB connector)
 * Fast ethernet RJ45 – 10/100Mbps (only Basic and Full)
-* Wi-Fi 802.11 b/g/n, Wi-Fi Direct SmartConfig and Bluetooth 4.0 (only Extended and Full)
+* Wi-Fi 802.11 b/g/n,Direct Mode SmartConfig and Bluetooth 4.0 Low Energy (only Extended and Full)
 * 3x UART ports*
 * 2x CAN Bus interfaces*
 * 8x PWM signals*
@@ -62,13 +63,13 @@ The UDOO NEO retail lineup consists of three models
 * 3-Axis Digital Gyroscope (only Extended and Full)
 * 1x Sensor Snap-In I2C connector (only Extended and Full)
 * 89mm x59mm (3.50″ x 2.32″)
-* Arduino-Compatible through the standard Arduino Pins layout and compatible with most Arduino shields (as long as they are 3.3V compliant)
+* Arduino-Compatible through the standard Arduino Pins layout and compatible with Arduino shields.
 * 32 extended GPIOs (A9 dedicated)
 * 22 Arduino GPIOs (M4 dedicated)
 * 6 available Pins
 * Android Lollipop & Linux UDOObuntu2 (14.04 LTS)
 
-*Available on Pin Header
+&#42;Available on Pin Header
 
 
 <br />
@@ -78,23 +79,27 @@ The UDOO NEO retail lineup consists of three models
 <h2>Community</h2>
 <hr/>
 
-The official UDOO forum can be found at http://www.udoo.org/forum
+<h3>Forums</h3>
+<hr/>
+The official UDOO forums can be found at http://www.udoo.org/forum
 
-The search function has been tweaked to allow more general queries. <b>Please</b> do a research before making a post as the issue may already have been raised and answered.
+The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
 
-# IRC 
-There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: irc.freenode.net. The name of the room is #udoo.
+<hr/>
+<h3>IRC</h3>
+<hr/>
+There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: irc.freenode.net. Room name is #udoo.
 
 <hr/>
 <h3>Home Site & Community</h3>
 <hr/>
 
-Official website: http://www.udoo.org
+Official web site http://www.udoo.org
 
-Official forum: http://www.udoo.org/forum/index.php
+Official forum http://www.udoo.org/forum/index.php
 
 <hr/>
-<h3>Home Site & Community</h3>
+<h3>Social</h3>
 <hr/>
 
 Facebook fan page http://www.facebook.com/udooboard

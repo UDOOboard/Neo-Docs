@@ -4,15 +4,16 @@
 <p>
 	<strong>UDOO NEO</strong> is an all-in-one open hardware low-cost computer equipped with a FreescaleTM i.MX 6SoloX applications processor for Android and Linux.
 <BR>
-UDOO NEO embeds two cores on the same processor: a powerful 1GHz ARM® Cortex-A9, and up to a 200Mhz Cortex-M4 I/O real-time co-processor.
+UDOO NEO embeds two cores on the same processor: a powerful 1GHz ARM® Cortex-A9, and an ARM Cortex-M4 I/O real-time co-processor that can run up to 200Mhz.
 <BR>
-While the Cortex-A9 can run both Android Lollipop and UDOObuntu 2, a dedicated Ubuntu-based Linux distro, the Cortex-M4 allows easy access to a full-stack ArduinoTM environment. The snap-in connector ensure a plug-and-play interaction with most sensors and actuators.
+While the Cortex-A9 can run both Android Lollipop and UDOObuntu 2 - a dedicated Ubuntu-based Linux distro - the Cortex-M4 allows easy access to a full-stack ArduinoTM environment. The snap-in connector ensures a plug-and-play interaction with most sensors and actuators.
 <BR>
-Thanks to its embedded 9-axis motion sensors and Wi-Fi + Bluetooth 4.0 module, the board is ideal to create robots, drones and rovers as well as any Mobile IoT project your imagination desires.
+Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module, the board is ideal to create robots, drones and rovers as well as any Mobile IoT project you can imagine.
 </p>
 <hr/>
 
-<h3>Line Up</h3>
+
+<h3>Lineup</h3>
 
 UDOO NEO retail line up consists of three models
 

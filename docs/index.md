@@ -12,6 +12,12 @@ Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module,
 </p>
 <hr/>
 
+<h3>What you must not do with UDOO NEO</h3>:
+
+<ul><li>Never provide the GPIOs with more than 3.3V in input</li>
+<li>Never keep the board in touch with metal while it's powered up</li>
+</ul>
+
 
 <h3>Lineup</h3>
 

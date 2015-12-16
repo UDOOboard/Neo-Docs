@@ -15,6 +15,8 @@ In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install f
 ### Installing Drivers on Mac OS X 
 
 * Install both of this drivers: [Serial](../driversandtools/Mac%20USB%20Drivers/EnergiaFTDIDrivers2.2.18.pkg) and [Network](../driversandtools/Mac%20USB%20Drivers/HoRNDIS.pkg)
+NOTE: If you're using the Newest OSX EL CAPITAN please install this [network driver](http://nyus.joshuawise.com/HoRNDIS-rel8pre1.pkg) insted.
+
 * Reboot your MAC
 * UDOO NEO will be available at [192.168.7.2](http://192.168.7.2)
 

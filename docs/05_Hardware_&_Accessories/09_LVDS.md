@@ -9,7 +9,10 @@ You can do it two ways:
 * Connected with microUSB port
 
 ### Boot UDOO NEO connected to HDMI, keyboard
-Open a Terminal. In the /boot directory there's a file named uEnv.txt 
+Open a Terminal. In the /boot directory there's a file named uEnv.txt, if not create it.
+
+#### Very very important!!!
+To open the file you need to use an editor like [Notepad++](https://notepad-plus-plus.org/download/)
 
 Open the file and you'll find this line:
 
@@ -29,7 +32,10 @@ Now the video should appaire in the LVDS display. You cannot use the HDMI and th
 
 
 ### Boot UDOO NEO connected microUSB to PC
-In the /boot partition there's a file named uEnv.txt 
+In the /boot partition there's a file named uEnv.txt, if not create it.
+
+#### Very very important!!!
+To open the file you need to use an editor like [Notepad++](https://notepad-plus-plus.org/download/)
 
 <img style="width:200px; " src="../img/gionji/DOCS_lvds_via_usb_01.PNG">
 

@@ -12,7 +12,7 @@ You can do it two ways:
 Open a Terminal. In the /boot directory there's a file named uEnv.txt, if not create it.
 
 #### Very very important!!!
-To open the file you need to use an editor like [Notepad++](https://notepad-plus-plus.org/download/)
+To open the file you need to use an editor like [Notepad++](https://notepad-plus-plus.org/download/) beacause the standard Windows Notepad uses wrong new line character and UDOO NEO won't recognize it.
 
 Open the file and you'll find this line:
 
@@ -35,7 +35,7 @@ Now the video should appaire in the LVDS display. You cannot use the HDMI and th
 In the /boot partition there's a file named uEnv.txt, if not create it.
 
 #### Very very important!!!
-To open the file you need to use an editor like [Notepad++](https://notepad-plus-plus.org/download/)
+To open the file you need to use an editor like [Notepad++](https://notepad-plus-plus.org/download/) beacause the standard Windows Notepad uses wrong new line character and UDOO NEO won't recognize it.
 
 <img style="width:200px; " src="../img/gionji/DOCS_lvds_via_usb_01.PNG">
 

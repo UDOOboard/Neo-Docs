@@ -8,7 +8,7 @@ After you connected the board and you boot the desktop environment:
 1. Start -> Programming -> Arduino IDE
 2. File -> Examples -> Basics -> Blink
 3. Click on "Upload" button.
-4. Save the sketch if you want
+4. Save the sketch if you wantpro
 5. Wait "Compiling sketch..." until "Uploadin complete".
 
 Now the sketch will be run on M4 side.
@@ -33,7 +33,7 @@ To use the External Arduino IDE follow the instructions below:
 
 ### Install UDOO NEO FOTA
 
-NOTE: If you use UDOOBuntu BETA 5 or previous versions you need to install the UDOO NEO FOTA (Firmware over the Air) Server Package while if you use UDOOBuntu BETA 6 or later versions sikp this step.
+NOTE: If you use UDOOBuntu2 BETA 5 or previous versions you need to install the UDOO NEO FOTA (Firmware over the Air) Server Package while if you use UDOOBuntu2 BETA 6 or later versions sikp this step.
 
 * To Install the UDOO NEO FOTA you need to connect the board to internet using it either as a Computer or a Headless Device:
 

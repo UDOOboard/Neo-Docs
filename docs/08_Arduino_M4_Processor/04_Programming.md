@@ -1,8 +1,8 @@
-## Arduino IDE
+# Arduino IDE
 To develop sketches for M4 cores we provide the same way to program Arduino Uno.
 We can use the internal Arduino IDE or connect the board and use an IDE running on external PC.
 
-### Internal Arduino IDE
+## Internal Arduino IDE
 After you connected the board and you boot the desktop environment:
 
 1. Start -> Programming -> Arduino IDE
@@ -21,9 +21,9 @@ It's possible to upload a precompiled binary firmware on the M4 using this comma
 udooneo-m4uploader.sh <BINARY_PATH>
 ```
 
-### External Arduino IDE
+## External Arduino IDE
 
-#### Connect UDOO NEO
+### Connect UDOO NEO
 
 To use the External Arduino IDE follow the instructions below:
 
@@ -31,7 +31,7 @@ To use the External Arduino IDE follow the instructions below:
 
 * In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install few drivers first as described here: /Basic_Setup/Usb_Direct_Connection.html
 
-#### Install UDOO NEO FOTA
+### Install UDOO NEO FOTA
 
 NOTE: If you use UDOOBuntu BETA 5 or previous versions you need to install the UDOO NEO FOTA (Firmware over the Air) Server Package while if you use UDOOBuntu BETA 6 or later versions sikp this step.
 
@@ -50,7 +50,7 @@ sudo apt-get install udoofota-server
 
 ```
 
-#### Install and configure the Arduino IDE
+### Install and configure the Arduino IDE
 
 * From your computer go to the Arduino website and downlaod the 1.6.5 version of the IDE: https://www.arduino.cc/en/Main/OldSoftwareReleases#previous
 

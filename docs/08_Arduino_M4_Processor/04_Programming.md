@@ -60,9 +60,13 @@ sudo apt-get install udoofota-server
 
 <img width="550" height="447" src="../img/ext_ard_07.png">
 
+
 * Go to Tools -> Boards and open the Board Manager.
 
 * Wait few seconds 'till the end of the "index download" then look for UDOO NEO (iMX6 SoloX) and install it.
+
+<img width="550" height="415" src="../img/xt_ard_08.png">
+
 
 * Now in Tools -> Boards you should see the UDOO NEO (Cortex M4), if so Click on it. Leave the Tools -> Ports unselected.
 

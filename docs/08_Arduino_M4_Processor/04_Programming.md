@@ -58,6 +58,8 @@ sudo apt-get install udoofota-server
 
 * Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs: https://udooboard.github.io/arduino-board-package/package_udoo_index.json , then click Ok.
 
+<img src="../img/ext_ard_07.png">
+
 * Go to Tools -> Boards and open the Board Manager.
 
 * Wait few seconds 'till the end of the "index download" then look for UDOO NEO (iMX6 SoloX) and install it.

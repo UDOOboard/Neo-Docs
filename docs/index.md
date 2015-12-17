@@ -2,7 +2,7 @@
 <h1>UDOO NEO</h1>
 <hr/>
 <p>
-	<strong>UDOO NEO</strong> is an all-in-one open hardware low-cost computer equipped with a FreescaleTM i.MX 6SoloX applications processor for Android and Linux.
+<strong>UDOO NEO</strong> is an all-in-one open hardware low-cost computer equipped with a FreescaleTM i.MX 6SoloX applications processor for Android and Linux.
 <BR>
 UDOO NEO embeds two cores on the same processor: a powerful 1GHz ARM® Cortex-A9, and an ARM Cortex-M4 I/O real-time co-processor that can run up to 200Mhz.
 <BR>
@@ -12,7 +12,7 @@ Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module,
 </p>
 <hr/>
 
-<h3>What you must not do with UDOO NEO</h3>:
+<h3>What you must not do with UDOO NEO:</h3>
 
 <ul><li>Never provide the GPIOs with more than 3.3V in input</li>
 <li>Never keep the board in touch with metal while it's powered up</li>
@@ -65,11 +65,11 @@ UDOO NEO retail line up consists of three models
 * 89mm x59mm (3.50″ x 2.32″)
 * Arduino-Compatible through the standard Arduino Pins layout and compatible with Arduino shields.
 * 32 extended GPIOs (A9 dedicated)
-* 22 arduino GPIOs (M4 dedicated)
+* 22 Arduino GPIOs (M4 dedicated)
 * 6 available Pins
 * Android Lollipop & Linux UDOObuntu2 (14.04 LTS)
 
-*Available on Pin Header
+&#42;Available on Pin Header
 
 
 <br />
@@ -79,12 +79,16 @@ UDOO NEO retail line up consists of three models
 <h2>Community</h2>
 <hr/>
 
-Forums The official UDOO forums can be found at http://www.udoo.org/forum
+<h3>Forums</h3>
+<hr/>
+The official UDOO forums can be found at http://www.udoo.org/forum
 
 The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
 
-
-IRC There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: irc.freenode.net. Room name is #udoo.
+<hr/>
+<h3>IRC</h3>
+<hr/>
+There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: irc.freenode.net. Room name is #udoo.
 
 <hr/>
 <h3>Home Site & Community</h3>
@@ -95,7 +99,7 @@ Official web site http://www.udoo.org
 Official forum http://www.udoo.org/forum/index.php
 
 <hr/>
-<h3>Home Site & Community</h3>
+<h3>Social</h3>
 <hr/>
 
 Facebook fan page http://www.facebook.com/udooboard
@@ -110,5 +114,3 @@ YouTube http://www.youtube.com/channel/UCXv5UyGn5jArK8xOAmuSeHg
 
 <div class="clear"></div>
 <hr/>
-
-

@@ -54,4 +54,14 @@ NOTE: If you're using the Newest OSX EL CAPITAN please install this [Network Dri
 * You can establish a <a href="../Basic_Setup/Remote_Desktop_(VNC).html">VNC Remote Desktop</a> Session using the address 192.168.7.2 and port 5900 (192.168.7.2:5900). The default password is udooer.
 * You can configure UDOO NEO via the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html)
 
+## Troubleshooting
+
+* If your UDOO NEO doesn't appear as a mass storage or is not recognized by your MAC\Pc, this may be due to insufficient power output from the USB port it is attached to. Therefore, try to:
+
+- Change the USB port it is plugged into, to be on the safe side plug UDOO NEO to USB 3.0
+- If you're on a Laptop, disable USB Power Saving mode
+- Try to use a powered USB HUB
+
+
+
 

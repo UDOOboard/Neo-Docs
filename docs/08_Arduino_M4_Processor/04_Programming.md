@@ -58,7 +58,7 @@ sudo apt-get install udoofota-server
 
 * Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs: https://udooboard.github.io/arduino-board-package/package_udoo_index.json , then click Ok.
 
-<img src="../img/ext_ard_07.png">
+<img width="400" height="325" src="../img/ext_ard_07.png">
 
 * Go to Tools -> Boards and open the Board Manager.
 

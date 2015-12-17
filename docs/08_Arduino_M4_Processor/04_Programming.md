@@ -33,14 +33,14 @@ To use the External Arduino IDE follow the instructions below:
 
 #### Install UDOO NEO FOTA
 
-NOTE: If you use UDOOBuntu BETA 6 or later versions sikp the "Install UDOO NEO FOTA" step
+NOTE: If you use UDOOBuntu BETA 5 or previous versions you need to install the UDOO NEO FOTA (Firmware over the Air) Server Package while if you use UDOOBuntu BETA 6 or later versions sikp this step.
 
-If you use UDOOBuntu BETA 5 or previous versions you need to install the UDOO NEO FOTA (Firmware over the Air) Server Package. To do so you need to connect the board to internet using it either as a Computer or a Headless Device:
+* To Install the UDOO NEO FOTA you need to connect the board to internet using it either as a Computer or a Headless Device:
 
-* Use as a Headless Device: /Getting_Started/Use_as_a_headless_IoT_Device.html
-* Use as a Computer: /Getting_Started/Use_as_a_Computer.html
+-Use as a Headless Device: /Getting_Started/Use_as_a_headless_IoT_Device.html
+-Use as a Computer: /Getting_Started/Use_as_a_Computer.html
 
-Once you board is connected to internet open a terminal and type:
+* Once you board is connected to internet open a terminal and type:
 
 ```bash
 

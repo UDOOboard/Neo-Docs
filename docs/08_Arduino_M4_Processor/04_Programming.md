@@ -31,11 +31,11 @@ To use the External Arduino IDE follow the instructions below:
 
 * In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install few drivers first as described [here](../Basic_Setup/Usb_Direct_Connection.html).
 
-### Install UDOO NEO FOTA
+### Install UDOO FOTA
 
-NOTE: If you use UDOOBuntu2 BETA 5 or previous versions you need to install the UDOO NEO FOTA (Firmware over the Air) Server Package while if you use UDOOBuntu2 BETA 6 or later versions sikp this step.
+NOTE: If you use UDOOBuntu2 BETA 5 or previous versions you need to install the UDOO FOTA (Firmware over the Air) Server Package while if you use UDOOBuntu2 BETA 6 or later versions skip this step.
 
-* To Install the UDOO NEO FOTA you need to connect the board to internet using it either as a Computer or a Headless Device:
+* To Install the UDOO FOTA you need to connect the board to internet using it either as a Computer or a Headless Device:
 
 1. [Use as a Headless Device](../Getting_Started/Use_as_a_headless_IoT_Device.html)
 

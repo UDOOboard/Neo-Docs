@@ -28,5 +28,5 @@ Enter in the kernel folder created:
 cd linux_kernel
 ```
 
-The default branch "3.14-1.0.x-udoo" is the one where we are working on for the UDOO NEO. 
+The default branch "3.14-1.0.x-udoo" is the one where we are working on for the UDOO NEO. It is based on 3.14.56 Freescale community kernel.
 

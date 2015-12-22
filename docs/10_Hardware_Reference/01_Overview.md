@@ -1,4 +1,8 @@
-I.MX 6SoloX embedded on single chip a single core ARM Cortex A9 and a ARM cortex M4 microcontroller. They can use and share lot of hardware implemented features provided by the architecture as:
+i.MX 6SoloX embeds on a single chip a single core ARM Cortex A9 and a ARM cortex M4 microcontroller. 
+
+For any deep inquiry regarding i.MX 6SoloX, please have a look at [the dedicated reference manual made by Freescale](http://grathio.com/2009/11/secret_knock_detecting_door_lock/).
+
+They can use and share lot of hardware implemented features provided by the architecture as:
 * gpios
 * uarts
 * i2c

@@ -22,13 +22,11 @@ get the sources:
 git clone https://github.com/UDOOboard/linux_kernel
 ```
 
-Switch to the last kernel branch:
+Enter in the kernel folder created:
 
 ``` bash
 cd linux_kernel
-git checkout imx_3.14.28_1.0.0_ga_neo
-git pull origin imx_3.14.28_1.0.0_ga_neo
 ```
 
-
+The default branch "3.14-1.0.x-udoo" is the one where we are working on for the UDOO NEO. 
 

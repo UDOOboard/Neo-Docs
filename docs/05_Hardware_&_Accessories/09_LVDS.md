@@ -17,13 +17,13 @@ To open the file you need to use an editor like [Notepad++](https://notepad-plus
 Open the file and you'll find this line:
 
 ``` bash
-fdt_file=dts/imx6sx-udoo-neo-hdmi-m4.dtb
+video_output=hdmi
 ```
 
 Substitute the word "hdmi" with the word "lvds7" in this way:
 
 ``` bash
-fdt_file=dts/imx6sx-udoo-neo-lvds7-m4.dtb
+video_output=lvds7
 ```
 
 Restart the board.
@@ -44,7 +44,7 @@ To open the file you need to use an editor like [Notepad++](https://notepad-plus
 Open the file and you'll find this line:
 
 ``` bash
-fdt_file=dts/imx6sx-udoo-neo-hdmi-m4.dtb
+video_output=hdmi
 ```
 
 <img style="width:800px; " src="../img/gionji/DOCS_lvds_via_usb_03.PNG">
@@ -52,7 +52,7 @@ fdt_file=dts/imx6sx-udoo-neo-hdmi-m4.dtb
 Substitute the word "hdmi" with the word "lvds7" in this way:
 
 ``` bash
-fdt_file=dts/imx6sx-udoo-neo-lvds7-m4.dtb
+video_output=lvds7
 ```
 
 <img style="width:800px; " src="../img/gionji/DOCS_lvds_via_usb_04.PNG">

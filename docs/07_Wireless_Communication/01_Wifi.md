@@ -16,3 +16,11 @@ WiLink8 General Features
 
 #### Texas Instruments documentation
 http://processors.wiki.ti.com/index.php/WL18xx
+
+
+# iwconfig not working
+Texas Instruments WL1831 driver doesn't support iwconfig command.  You should use iw command instead. 
+
+this is the [Official Ubuntu Reference](http://manpages.ubuntu.com/manpages/vivid/man8/iw.8.html)
+
+

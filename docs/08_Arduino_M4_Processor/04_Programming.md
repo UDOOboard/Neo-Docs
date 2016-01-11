@@ -74,7 +74,7 @@ sudo apt-get install udoofota-server
 
 * Done, now you're ready to use your UDOO NEO with the Arduino IDE installed on your Computer.
 * 
-*N.B:* in order to get it working on Linux 64 bit you need compatibility packages:
+**N.B:** in order to get it working on Linux 64 bit you need compatibility packages:
 $ sudo apt-get -y install lib32z1 lib32ncurses5 lib32bz2-1.0
 
 

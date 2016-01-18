@@ -14,7 +14,7 @@ Once you followed the [USB Direct Connection](http://www.udoo.org/docs-neo/Basic
 
 1) connect UDOO NEO to your computer via USB, then open a browser on your computer and type 192.168.7.2   
 2) open a browser and type the IP address of UDOO NEO if you know it and if NEO is connected to the same network of your host computer.
-3) open a browser and type udooneo.local. Beware to have installed [Bonjour](https://developer.apple.com/bonjour/) on your Windows computer. On Mac and Linux you should have what you need pre-installed: Bonjour on Mac OS and [Avahi](http://www.avahi.org/) on Linux. This is a beta feature, thus we suggest to go for the first two methods.
+3) open a browser and type udooneo.local. Beware to have installed [Bonjour](https://support.apple.com/kb/DL999) on your Windows computer. On Mac and Linux you should have what you need pre-installed: Bonjour on Mac OS and [Avahi](http://www.avahi.org/) on Linux. This is a beta feature, thus we suggest to go for the first two methods.
 
 ### Overview 
 

@@ -1,5 +1,7 @@
 ## Arduino programming from internal IDE
 
+A first consideration: to download the Arduino IDE do not download it from the Arduino website. Follow [this guide](http://www.udoo.org/docs-neo/Getting_Started/Use_as_an_Arduino.html) instead
+
 If you get this error while the IDE is uploading the sketch:
 
 ``` bash

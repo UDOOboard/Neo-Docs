@@ -1,5 +1,5 @@
 <h2>WARNING</h2>
-Download <strong>Arduino IDE 1.6.5.</strong>, from this website or from Arduino.cc
+Download <strong>Arduino IDE 1.6.5.</strong> from this website or from Arduino.cc
 Other versions don't work for the moment.
 
 All the versions of the UDOO Neo board are equipped with a Freescale iMX 6SoloX processor. 

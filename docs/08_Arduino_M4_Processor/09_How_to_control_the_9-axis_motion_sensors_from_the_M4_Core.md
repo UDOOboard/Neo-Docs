@@ -15,33 +15,33 @@ Update the system by typing
 
 Load the example:
 
-``` #include <Wire.h>
-#include <FXOS8700CQ.h>
-#include <FXAS21002C.h>
+    #include <Wire.h>
+    #include <FXOS8700CQ.h>
+    #include <FXAS21002C.h>
 
-FXAS21002C gyroSensor   = FXAS21002C(0x20); 
-FXOS8700CQ accMagSensor = FXOS8700CQ(0x1E);
-bool stopLoop = false;
+    FXAS21002C gyroSensor   = FXAS21002C(0x20); 
+    FXOS8700CQ accMagSensor = FXOS8700CQ(0x1E);
+    bool stopLoop = false;
 
-void setup() {
-  Serial.begin(9600);
-  Wire1.begin();
+    void setup() {
+      Serial.begin(9600);
+      Wire1.begin();
 
-  // Initialize the FXOS8700CQ
-  accMagSensor.init();
-  // Initialize the FXAS21002C
-  gyroSensor.init();
-}
+       // Initialize the FXOS8700CQ
+      accMagSensor.init();
+       // Initialize the FXAS21002C
+       gyroSensor.init();
+    }
 
-void loop() {
-  // Query the sensor
-  if (!stopLoop) {
+    void loop() {
+      // Query the sensor
+      if (!stopLoop) {
     accMagSensor.readAccelData();
     accMagSensor.readMagData();
 
-    gyroSensor.getGres();
-     // Query the sensor
-    gyroSensor.readGyroData();
+        gyroSensor.getGres();
+         // Query the sensor
+        gyroSensor.readGyroData();
 
     // Print out the data
     // Accelerometer
@@ -53,26 +53,26 @@ void loop() {
     Serial.print("  ");
     Serial.println((int)accMagSensor.accelData.z);
 
-    // Magnometer
-    Serial.print("    Mag ");
-    Serial.print(" ");
-    Serial.print((int)accMagSensor.magData.x);
-    Serial.print(" ");
-    Serial.print((int)accMagSensor.magData.y);
-    Serial.print(" ");
-    Serial.println((int)accMagSensor.magData.z);
+        // Magnometer
+        Serial.print("    Mag ");
+        Serial.print(" ");
+        Serial.print((int)accMagSensor.magData.x);
+        Serial.print(" ");
+        Serial.print((int)accMagSensor.magData.y);
+        Serial.print(" ");
+        Serial.println((int)accMagSensor.magData.z);
 
-      // Gyroscope
-    Serial.print("    Gyro ");
-    Serial.print(" ");
-    Serial.print((int)gyroSensor.gyroData.x);
-    Serial.print(" ");
-    Serial.print((int)gyroSensor.gyroData.y);
-    Serial.print(" ");
-    Serial.println((int)gyroSensor.gyroData.z);
+          // Gyroscope
+        Serial.print("    Gyro ");
+        Serial.print(" ");
+        Serial.print((int)gyroSensor.gyroData.x);
+        Serial.print(" ");
+        Serial.print((int)gyroSensor.gyroData.y);
+        Serial.print(" ");
+        Serial.println((int)gyroSensor.gyroData.z);
 
-    delay(100);
-  }
-}
-```
+        delay(100);
+      }
+    }
+
 

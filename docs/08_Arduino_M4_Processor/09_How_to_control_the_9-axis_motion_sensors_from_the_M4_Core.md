@@ -8,13 +8,14 @@ After reboot it will be possible to connect to I2C-4 pins an external I2C device
 <h2>Step by step</h2>
 [screenshot is coming soon]
 
-Load the example
-Update the system
-sudo apt-get update
+<h2>Load the example</h2>
+Update the system by typing
+
+<code>sudo apt-get update</code>
 
 Load the example:
 
-#include <Wire.h>
+<code>#include <Wire.h>
 #include <FXOS8700CQ.h>
 #include <FXAS21002C.h>
 
@@ -73,5 +74,5 @@ void loop() {
     delay(100);
   }
 }
-
+</code>
 

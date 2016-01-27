@@ -1,4 +1,4 @@
-# Install required package
+## Install required package
 The package is istalled by default in UDOObuntu distro greather or equals to RC1.
 Otherwise be sure to be connected to Internet and type in a terminal:
 

@@ -1,3 +1,7 @@
+<h2>WARNING</h2>
+Download <strong>Arduino IDE 1.6.5.</strong>, from this website or from Arduino.cc
+Other versions don't work for the moment.
+
 All the versions of the UDOO Neo board are equipped with a Freescale iMX 6SoloX processor. 
 I.MX 6SoloX embedded on single chip a single core ARM Cortex A9 and a ARM cortex M4 microcontroller. They can use and share lot of hardware implemented features provided by the architecture as:
 * gpios

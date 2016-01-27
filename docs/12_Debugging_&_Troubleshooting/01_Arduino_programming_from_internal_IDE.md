@@ -2,6 +2,25 @@
 
 A first consideration: to download the Arduino IDE do not download it from the Arduino website. Follow [this guide](http://www.udoo.org/docs-neo/Getting_Started/Use_as_an_Arduino.html) instead
 
+
+## flash: uploading input firmware failed
+If you get this error while the IDE is uploading the sketch from internal IDE:
+
+``` bash
+/usr/bin/udooneo-m4uploader: line 86: 11091 Bus
+error              $up "$INPUT" 2>&1
+flash: uploading input firmware failed
+```
+
+Type this command in a terminal and reboot the board.
+
+``` bash
+rm /var/opt/m4/m4last.fw
+sudo reboot
+```
+
+
+##
 If you get this error while the IDE is uploading the sketch:
 
 ``` bash

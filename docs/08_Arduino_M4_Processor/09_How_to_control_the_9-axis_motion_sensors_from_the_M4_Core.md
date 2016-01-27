@@ -15,7 +15,7 @@ Update the system by typing
 
 Load the example:
 
-<code>#include <Wire.h>
+``` #include <Wire.h>
 #include <FXOS8700CQ.h>
 #include <FXAS21002C.h>
 
@@ -74,5 +74,5 @@ void loop() {
     delay(100);
   }
 }
-</code>
+```
 

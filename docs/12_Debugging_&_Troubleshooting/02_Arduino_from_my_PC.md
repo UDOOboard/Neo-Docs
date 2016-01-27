@@ -2,7 +2,7 @@
 What's your IDE version?
 
 ## I'm using Arduino IDE 1.6.6
-For the moment you should use the (1.6.5 IDE version)[https://www.arduino.cc/en/Main/OldSoftwareReleases#previous].
+For the moment you should use the [1.6.5 IDE version](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous).
 
 ## I'm using Arduino IDE 1.6.7
 For the moment you should use the (1.6.5 IDE version)[https://www.arduino.cc/en/Main/OldSoftwareReleases#previous].

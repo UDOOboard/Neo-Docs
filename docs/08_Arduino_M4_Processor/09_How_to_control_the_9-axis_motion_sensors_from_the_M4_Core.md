@@ -11,7 +11,7 @@ After reboot it will be possible to connect to I2C-4 pins an external I2C device
 <h2>Load the example</h2>
 Update the system by typing
 
-<code>sudo apt-get update</code>
+    sudo apt-get update
 
 Load the example:
 

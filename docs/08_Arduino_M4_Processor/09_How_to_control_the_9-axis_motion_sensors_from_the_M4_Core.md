@@ -1,4 +1,3 @@
-<h2>How to control the 9-axis motion sensors from the M4 Core</h2>
 Before this section, you may want to take a look at (Introduction to Pinmuxing)[].
 I2C-4 Motion Sensor Connector
 By default the internal 9-axis motions sensors are assigned to A9 and it’s possible to control them by Linux driver. The I2C signals are also available on pins 32/33 and 34/35.

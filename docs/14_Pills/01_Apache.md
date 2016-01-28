@@ -7,7 +7,7 @@ The easiest way is to install a preconfigured LAMP environment using Tasksel.
     sudo apt-get update
     sudo apt-get install tasksel
 
-<strong>2 - Install LAMP following the instruction:</strong>
+<strong>2 - Install LAMP following this instruction:</strong>
 
     sudo tasksel install lamp-server 
 

@@ -1,4 +1,4 @@
-<h1>Install apache and avoid conflicts with the Web Configuration Panel</h1>
+<h1>Install Apache and avoid conflicts with the Web Configuration Panel</h1>
 
 The easiest way is to install a preconfigured LAMP environment using Tasksel.
 

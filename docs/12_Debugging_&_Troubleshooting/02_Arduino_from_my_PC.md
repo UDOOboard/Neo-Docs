@@ -8,4 +8,4 @@ For the moment you should use the [1.6.5 IDE version](https://www.arduino.cc/en/
 For the moment you should use the [1.6.5 IDE version](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous).
 
 ## Why?
-Arduino IDE changed in the last two version its Board Manager. It will become compatible with the lastest versions as soon as possible.
+Arduino IDE changed in the last two version its Board Manager. It will become compatible with the latest versions as soon as possible.

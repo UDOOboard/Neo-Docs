@@ -36,14 +36,14 @@ It also includes Java‬ client for the ‪#‎REST‬ service, ‪#‎UDOONEO�
 Rest API for interacting with UDOO Neo GPIOs, motion sensors and brick sensors.
 <ul><li>Link: <a href="https://rubygems.org/gems/udooneorest" target="_blank">https://rubygems.org/gems/udooneorest</a></li></ul>
 
-<h2>Debian Jessie, by Igor Pečovnik</h2>
+<h2>Debian Jessie, by <a href="http://www.igorpecovnik.com/" target="_blank">Igor Pečovnik</a></h2>
 Legacy
 CLI
 Debian jessie
 Board: Kernel 3.14.55 (development version) with some hardware support, headers and some firmware included.
 <ul><li>Link: <a href="http://www.armbian.com/udoo-neo/" target="_blank">http://www.armbian.com/udoo-neo/</a></li></ul>
 
-<h2>Node JS module for Barometric Sensor by fabdrol aka Fabian Tollenaar</h2>
+<h2>Node JS module for Barometric Sensor by fabdrol aka <a href="https://github.com/fabdrol" target="_blank">Fabian Tollenaar</a></h2>
 Node.js module for retrieving data from the barometer brick for the UDOO Neo. Gets atmospheric pressure in pascals, temperature in kelvin and altitude in meters.
 <ul><li>Github link: <a href="https://github.com/fabdrol" target="_blank">https://github.com/fabdrol</a></li></ul>
 

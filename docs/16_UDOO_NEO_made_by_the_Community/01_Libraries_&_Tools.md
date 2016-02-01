@@ -8,6 +8,11 @@ A library that makes the Linux side act like a shield to the Arduino side (TCP, 
 A Python library to control the Gpios, Accel, Gyro, Temp, Baro, Magno sensors/pins easily.
 <ul><li>Github link: <a href="https://github.com/smerkousdavid/Neo.GPIO" target="_blank">https://github.com/smerkousdavid/Neo.GPIO</a></li></ul>
 
+<h2>ServoCardboard UDOO, by <a href="https://twitter.com/harlem88_gis" target="_blank">harlem88_gis</a> aka <a href="https://www.hackster.io/harlem88" target="_blank">Antonio Gisondi</h2>
+Move servo cam on UDOO with Google Cardboard.
+<ul><li>YouTube video: <a href="https://www.youtube.com/watch?v=BDFrv2x50Lw" target="_blank">https://www.youtube.com/watch?v=BDFrv2x50Lw</li>
+<li>Github link: <a href="https://github.com/harlem88/ServoCardboardUdoo" target="_blank">https://github.com/harlem88/ServoCardboardUdoo</a></li></ul>
+
 <h2>Linux Driver 3 Interfaces, by <a href="http://udoo.org/forum/members/tcmichals.37111/" target="_blank">tcmichals</a> aka <a href="https://plus.google.com/111340284289449817690" target="_blank">Tim Michals</a></h2>
 Linux‬ driver that exposes 3 interfaces to user space. Allows user space apps to use epoll for async type of applications.
 <ul><li><a href="http://allthingsembedded.blogspot.it/" target="_blank">All Things Embedded</a> link: <a href="http://allthingsembedded.blogspot.it/2015/12/udoo.html

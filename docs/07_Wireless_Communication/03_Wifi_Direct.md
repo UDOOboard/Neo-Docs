@@ -1,4 +1,4 @@
-# Wifi Direct
+# Wi-Fi Direct
 
 According to the Texas Instrument forum, "Failed to update rate sets in kernel module" is a related to an old hostapd version. 
 Thus, in order to get the Access Point up and running you have to upgrade hostapd to v2.6-devel and also build the libnl again.

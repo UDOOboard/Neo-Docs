@@ -20,10 +20,9 @@ On UDOO NEO these pins can be connected to the Cortex-A9 core (the one that runs
 
 The picture reports the default core assignment.
 
-[...]
+<img style="width:400px;" src="../img/gionji/DOCS_default_pins_assignment.PNG">
 
 UDOO Neo provides a graphical tool to change this configuration called Device Tree editor
-
 
 START menu --> Preferences --> Device Tree editor
 

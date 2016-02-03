@@ -5,7 +5,7 @@ A too intensive* use may cause malfunctioning.
 <h3>Case 1</h3>
 It happens each time the 
 <code>Serial.print</code> 
-method is called, a new buffer is used each time, up to a maximum of 10 buffers.
+method is called. When a <code>Serial.print</code> method is called a new buffer is used each time, up to a maximum of 10 buffers.
 If there is no consumer process that empties each buffer A9-side, when 10 buffers get used, it hangs with various consequences.
 
 <h3>Case 2</h3>

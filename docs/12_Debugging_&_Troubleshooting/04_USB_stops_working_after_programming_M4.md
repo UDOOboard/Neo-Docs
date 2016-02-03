@@ -7,7 +7,7 @@ method is called, a new buffer is used each time, up to a maximum of 10 buffers.
 If there is no consumer process that empties each buffer A9-side, when 10 buffers get used, it hangs with various consequences.
 
 <h2>Solution</h2>
-To solve this problem, [connect via Mini USB](http://www.udoo.org/docs-neo/Basic_Setup/Remote_Desktop_(VNC).html). Once connected open the terminal and remove this files:
+To solve this problem, [connect via Mini USB](http://www.udoo.org/docs-neo/Basic_Setup/Remote_Desktop_(VNC).html). Once connected open the terminal and remove this file:
 
     rm /var/opt/m4/m4last.fw
     sudo reboot

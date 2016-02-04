@@ -16,7 +16,7 @@ The internal columns pins are assigned to M4 core.
 
 <img style="width:800px;" src="../img/gionji/DOCS_external_pinout.PNG">
 
-We will publish how to change this configuration soon.
+To change this configuration follow this [guide](http://www.udoo.org/docs-neo/Pinmuxing/Introduction_to_pinmuxing.html).
 
 ### Gpio numbers and IDs
 

@@ -22,7 +22,7 @@ We will publish how to change this configuration soon.
 
 #### Export 
 First of all you need to export the selected gpio. 
-<GPIO_NUMBER> is not the number written on the PCB. You need to control the number written in the round label close to the PCB number.
+\<GPIO_NUMBER\> is not the number written on the PCB. You need to control the number written in the round label close to the PCB number.
 
 EXAMPLE: If you want to control the pin 24 (PCB NAME) you should read GPIO_25.
 

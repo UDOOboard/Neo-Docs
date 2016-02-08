@@ -18,7 +18,7 @@ Once you followed the [USB Direct Connection](http://www.udoo.org/docs-neo/Basic
 
 ### Overview 
 
-<img style="width:700px;" src="../img/udoo-web-control-panel1.jpg">
+<a href="../img/udoo-web-control-panel1.jpg" target="_blank"><img style="width:700px;" src="../img/udoo-web-control-panel1.jpg"></a>
 
 The Overview Tab will give you a quick insight on the Status of your UDOO NEO:
 
@@ -29,13 +29,13 @@ The Overview Tab will give you a quick insight on the Status of your UDOO NEO:
 
 ### Arduino
 
-<img style="width:500px;" src="../img/udoo-web-control-panel2.jpg">
+<a href="../img/udoo-web-control-panel2.jpg" target="_blank"><img style="width:500px;" src="../img/udoo-web-control-panel2.jpg"></a>
 
 On this section you can try the integrated Arduino M4 Processor. You can upload two simple Hello World sketches, Fade and Blink.
 
 ### First Config Wizard 
 
-<img style="width:500px;" src="../img/udoo-web-control-panel3.jpg">
+<a href="../img/udoo-web-control-panel3.jpg" target="_blank"><img style="width:500px;" src="../img/udoo-web-control-panel3.jpg"></a>
 
 This section helps you configure your UDOO NEO and connect it to a wireless network.
 To complete the configuration you need to fill all the blanks, and then hit next. Once finished, hit "finished" and your settings will be applied.  

@@ -71,26 +71,29 @@ UDOO NEO retail line up consists of three models
 <h2>Community</h2>
 <h3>Forums</h3>
 <hr/>
+
 The official UDOO forums can be found at [www.udoo.org/forum](http://www.udoo.org/forum)
 
 The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
 
 <h3>IRC</h3>
 <hr/>
+
 There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: `irc.freenode.net`. Room name is `#udoo`.
 
 <h3>Home Site & Community</h3>
 <hr/>
+
  * Official web site [www.udoo.org](http://www.udoo.org)
  * Official forum [www.udoo.org/forum](http://www.udoo.org/forum/index.php)
 
 <h3>Social</h3>
 <hr/>
 
-* [Facebook fan page](http://www.facebook.com/udooboard)
-* [Twitter](http://twitter.com/UDOO_Board)
-* [Google+](https://plus.google.com/u/0/110742692974455430878/posts)
-* [YouTube](http://www.youtube.com/channel/UCXv5UyGn5jArK8xOAmuSeHg)
+ * [Facebook fan page](http://www.facebook.com/udooboard)
+ * [Twitter](http://twitter.com/UDOO_Board)
+ * [Google+](https://plus.google.com/u/0/110742692974455430878/posts)
+ * [YouTube](http://www.youtube.com/channel/UCXv5UyGn5jArK8xOAmuSeHg)
 
 
 <!-- Google Code -->

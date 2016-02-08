@@ -1,7 +1,7 @@
 ## Onboard 9-axis sensors
 UDOO Neo is equipped with 9-axis motion sensor implemented by two Freescale chips.
 
-<img style="width:400px; height:218px" src="../img/gionji/DOCS_i2c_channels.JPG">
+<a href="../img/gionji/DOCS_i2c_channels.JPG" target="_blank"><img style="width:400px; height:218px" src="../img/gionji/DOCS_i2c_channels.JPG"></a>
 
 ### Remember
 Only EXENDED and FULL board version are equipped with embedded motion sensors.

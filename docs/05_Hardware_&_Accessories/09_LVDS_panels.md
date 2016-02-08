@@ -2,9 +2,9 @@ By default, UDOO Neo displays the graphical user interface on the micro-HDMI por
 LVDS screens can be connected to the `CN3` port. Before the screen can be used, it must be enabled as it follows. You cannot use the HDMI and the LVDS7 video outputs simultaneously.
 
 <div class="alert alert-danger" role="alert">
-    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-    <span class="sr-only">Warning!</span>
-    Make sure you are powering your UDOO Neo with a [12V power supply](http://shop.udoo.org/eu/accessories/power-adapter-eu.html) when using LVDS screens.
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Warning!</span>
+  Make sure you are powering your UDOO Neo with a <a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html">12V power supply</a> when using LVDS screens.
 </div>
 
 

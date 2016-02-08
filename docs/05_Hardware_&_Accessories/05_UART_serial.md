@@ -1,14 +1,12 @@
+## UART Serials
+Universal Asynchronous Receiver/Transmitter (UART) provides serial communication capability with external devices through a level converter and an RS-232 cable or through the use of external circuitry that converts infrared signals to electrical signals (for reception) or transforms electrical signals to signals that drive an infrared LED (for transmission) in order to provide low speed IrDA compatibility.
 
-## Uart Serials
-Universal Asynchronous Receiver/Transmitter (UART) provides serial communication capability with external devices through a level converter and an RS-232 cable or through use of external circuitry that converts infrared signals to electrical signals (for reception) or transforms electrical signals to signals that drive an infrared LED (for transmission) toprovide low speed IrDA compatibility.
+To see more detailed information look at the Chapter 65 on the [iMX 6SoloX Reference Manual](http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYPE=Reference%20Manuals&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation&fileExt=.pdf).
 
-To see more detailed information look at iMX 6SoloX Reference Manual Chapter 65.
 
-http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYPE=Reference%20Manuals&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation&fileExt=.pdf
+### UDOO Neo UART ports
 
-### UDOO Neo Uart Functions
-
-Table below gives a short UARTS description
+Table below gives a short description of the UART ports:
 
 | Name   | Function                | Description                                                        |
 |--------|-------------------------|--------------------------------------------------------------------|
@@ -20,11 +18,9 @@ Table below gives a short UARTS description
 | UART_6 | Cortex A9 user serial   | Not enabled by default. It can be enabled on external A9 pinout    |
 
 
-## Detailed description
-
 ### UART 1
-This uart is assigned to A9 core as Debug Serial. Over this serial it's possible to access a terminal console to login on Linux shell.
-It can be accesed by external pinout on these pins
+This UART is assigned to the A9 core as Debug Serial port. Over this serial it is possible to access a terminal console to login on a Linux shell.
+It can be accessed over the external pinout on the following pins:
 
 |           | PCB NAME | SCHEMATICS SIGNAL NAME | SCHEMATIC IMX6 PAD NAME | REFERENCE MANUAL Pad Mux Register| ALTERNATE            |
 |-----------|----------|------------------------|-------------------------|----------------------------------|----------------------|
@@ -37,12 +33,12 @@ It can be accesed by external pinout on these pins
 * Parity: none
 * Stop: 1 bit
 * Flow control: none
-* Device kernel name: /dev/ttymxc0
+* Kernel device name: /dev/ttymxc0
+
 
 ### UART 2
-This serial is controlled by M4. This core runs code based on MQX real time OS/libraries. 
-( http://www.freescale.com/tools/embedded-software-and-tools/run-time-software/freescale-mqx-software-solutions/freescale-mqx-real-time-operating-system-rtos:MQXRTOS )
-These are a set of libraries created for these Freescale microprocessors family. They can explit at best M4 architecture, avoiding a raw port of Arduino libraries. They use UART_2 for debug info.
+This serial is controlled by the M4 core. This core runs code based on [MQX real time OS/libraries](http://www.freescale.com/tools/embedded-software-and-tools/run-time-software/freescale-mqx-software-solutions/freescale-mqx-real-time-operating-system-rtos:MQXRTOS).
+These are a set of libraries developed by Freescale. They can exploit at best the M4 architecture, avoiding a raw port of Arduino libraries. The UART_2 port is used for debug purposes. It can be accessed over the external pinout on the following pins:
 
 |           | PCB NAME | SCHEMATICS SIGNAL NAME | SCHEMATIC IMX6 PAD NAME | REFERENCE MANUAL PAD NAME        | ALTERNATE            |
 |-----------|----------|------------------------|-------------------------|----------------------------------|----------------------|
@@ -55,10 +51,11 @@ These are a set of libraries created for these Freescale microprocessors family.
 * Parity: none
 * Stop: 1 bit
 * Flow control: none
-* Device kernel name: n.a. kernel can't access this serial
+* No kernel device (the kernel can't access this serial)
+
 
 ### UART 3
-This uart is connectet to Texas Instruments WL1831 chip for Bluetooh data communication. It uses four signals at 1.8 Volts:
+This UART is connected to the Texas Instruments WL1831 chip for Bluetooh data communication purposes. It uses four signals at 1.8 Volts:
 * RX
 * TX
 * CTS
@@ -71,11 +68,11 @@ This uart is connectet to Texas Instruments WL1831 chip for Bluetooh data commun
 | UART_3_RTS | -        | BT_HCI_RTS_1V8         | SD3_DAT6                | IOMUXC_SW_MUX_CTL_PAD_SD3_DATA6 | ALT3 - UART3_RTS_B \* |
 | UART_3_CTS | -        | BT_HCI_CTS_1V8         | SD3_DAT7                | IOMUXC_SW_MUX_CTL_PAD_SD3_DATA7 | ALT3 - UART3_CTS_B \* |
 
-\* For this two signal iMX 6Solox works in DCE mode. 
+\* For these two signals the iMX 6Solox processor works in DCE mode. 
 
 
 ### UART 5
-This is the serial controlled by M4 connected on pins 0 /1 of the external pinout. In UDOO Neo pinout serial and the serial connected to A9 are separated. In Arduino IDE you can access to this uart using object Serial0.
+This is the serial controlled by the M4 core, available on the pins `0` and `1` on the external pinout. In the Arduino IDE you can access to this UART using the object `Serial0`.
 
 ``` bash
 Serial0.begin(115200); // Init the Serial at 115200 baudrate
@@ -89,7 +86,7 @@ Serial.println(); // write on output buffer char array plus newline char
 ```
 
 ### UART 6
-This uart is user available. By default all the pins are given to A9 in GPIO mode.
+This UART is user available, but it must be included in the [device tree](http://www.udoo.org/docs-neo/Pinmuxing/Device_Tree_Editor.html) before the use. By default all of its pins are given to A9 in GPIO mode.
 
 |                | PCB NAME | SCHEMATICS SIGNAL NAME | SCHEMATIC IMX6 PAD NAME | REFERENCE MANUAL PAD NAME        | ALTERNATE            |
 |----------------|----------|------------------------|-------------------------|----------------------------------|----------------------|

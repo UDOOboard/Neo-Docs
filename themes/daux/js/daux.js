@@ -80,11 +80,7 @@ $(function () {
     codeBlockView = $('.right-column');
     if (!codeBlockView.size()) return;
 
-    codeBlockState = localStorage.getItem("codeBlockState");
-    if (!codeBlockState) {
-        codeBlockState = 2;
-        localStorage.setItem("codeBlockState", codeBlockState);
-    } else codeBlockState = parseInt(codeBlockState);
+    codeBlockState = 1;
 
     setCodeBlockStyle(codeBlockState);
 });

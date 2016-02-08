@@ -3,6 +3,11 @@
     "tagline": "UDOO Board Documentation",
     "author": "UDOO Team",   
     "image": "/udoo/images/logoogo.png",
+    "ignore": {
+        "files": [
+            "02_Digital_camera.md"
+        ]
+    },
     "html": {
 	    "theme": "daux-navy",
 	    "toggle_code": false,

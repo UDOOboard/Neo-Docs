@@ -10,21 +10,29 @@ Only EXENDED and FULL board version are equipped with embedded motion sensors.
 FXOS8700CQ is a small, low-power, 3-axis, linear accelerometer and 3-axis, magnetometer combined into a single package. The device features an I2C with 14-bit accelerometer and 16-bit magnetometer ADC resolution along with smart-embedded functions. FXOS8700CQ has dynamically selectable acceleration full scale ranges of ±2g / ±4g /±8g and a fixed magnetic measurement range of ±1200μT. Output data rates (ODR) from 1.563 Hz to 800 Hz are selectable by the user for each sensor. Interleaved magnetic and acceleration data is available at ODR rates of up to 400 Hz. FXOS8700CQ is guaranteed to operate over the extended temperature range of -40 °C to +85 °C.
 
 * I2C address: 0x1E
-* Datasheet: http://cache.freescale.com/files/sensors/doc/data_sheet/FXOS8700CQ.pdf
+* [Download datasheet](http://cache.freescale.com/files/sensors/doc/data_sheet/FXOS8700CQ.pdf)
 
 ### Read accelleration and magnetic field data
-To enable accelerometer you need to write "1" in file below:
-``` bash
-echo 1 > /sys/class/misc/FreescaleAccelerometer/enable
-```
+To enable accelerometer you need to write `1` in file below:
 
-It's possible to read accelerometer data from file:
-``` bash
-/sys/class/misc/FreescaleAccelerometer/data
-```
+    echo 1 > /sys/class/misc/FreescaleAccelerometer/enable
 
-#### Usage example
-This is an output example:
+Accelerometer data is then available from file:
+
+    /sys/class/misc/FreescaleAccelerometer/data
+
+
+To enable magnetometer you need to write `1` in file below:
+
+    echo 1 > /sys/class/misc/FreescaleMagnetometer/enable
+
+Magnetometer data is then available from file:
+
+    /sys/class/misc/FreescaleMagnetometer/data
+
+
+#### Accelerometer example
+This example prints accelerometer data into the terminal:
 ``` bash
 udooer@udooneo$ echo 1 > /sys/class/misc/FreescaleAccelerometer/enable
 udooer@udooneo$ cat /sys/class/misc/FreescaleAccelerometer/data
@@ -32,19 +40,8 @@ udooer@udooneo$ cat /sys/class/misc/FreescaleAccelerometer/data
 udooer@udooneo$ _
 ```
 
-
-To enable magnetometer you need to write "1" in file below:
-``` bash
-echo 1 > /sys/class/misc/FreescaleMagnetometer/enable
-```
-
-It's possible to read magnetometer data from file:
-``` bash
-/sys/class/misc/FreescaleMagnetometer/data
-```
-
-#### Usage example
-This is an output example:
+#### Magnetometer example
+This example prints magnetometer data into the terminal:
 ``` bash
 udooer@udooneo$ echo 1 > /sys/class/misc/FreescaleMagnetometer/enable
 udooer@udooneo$ cat /sys/class/misc/FreescaleMagnetometer/data
@@ -58,31 +55,29 @@ FXAS21002C is guaranteed to operate over the extended temperature.
 range of –40 °C to +85 °C
 
 * I2C address: 0x20
-* Datasheet: http://cache.freescale.com/files/sensors/doc/data_sheet/FXAS21002.pdf
+* [Download datasheet](http://cache.freescale.com/files/sensors/doc/data_sheet/FXAS21002.pdf)
 
 
 ### Read angular speed data
-To enable gyroscope you need to write "1" in file below:
-``` bash
-echo 1 > /sys/class/misc/FreescaleGyroscope/enable
-```
+To enable gyroscope you need to write `1` in file below:
 
-It's possible to read gyroscope data from file:
-``` bash
-/sys/class/misc/FreescaleGyroscope/data
-```
+    echo 1 > /sys/class/misc/FreescaleGyroscope/enable
+
+Gyroscope data is then available from file:
+
+    /sys/class/misc/FreescaleGyroscope/data
 
 ## Direct I2C register access
-It' also possible to read direcly from I2C register. But we suggest to use previous methods.
+It' also possible to read direcly from I2C register. However, for novice users we suggest to use previous methods.
 
-### Accelerometer/magnetometer
+### Read accelerometer/magnetometer data via I2C
 
 ``` bash
-\#!/bin/sh
+#!/bin/sh
 
-\# set to active mode
-i2cset -f -y 3 0x1e 0x2a 1 
-\# enable both accelerometer and magnetometer
+# set to active mode
+i2cset -f -y 3 0x1e 0x2a 1
+# enable both accelerometer and magnetometer
 i2cset -f -y 3 0x1e 0x5b 3
 
 while [ 1 ]; do
@@ -99,7 +94,7 @@ while [ 1 ]; do
 done
 ```
 
-### Gyroscope
+### Read gyroscope via I2C
 
 ``` bash
 \#!/bin/sh
@@ -116,4 +111,3 @@ while [ 1 ]; do
   echo "$g_x/$g_y/$g_z"
 done
 ```
-

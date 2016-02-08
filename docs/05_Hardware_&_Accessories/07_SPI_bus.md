@@ -1,8 +1,8 @@
 ## SPI
-The Serial Peripheral Interface (SPI) bus is a synchronous serial communication interface specification used for short distance communication, primarily in embedded systems. The interface was developed by Motorola and has become a de facto standard. Typical applications include sensors, Secure Digital cards, and liquid crystal displays.
+The [Serial Peripheral Interface bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) (SPI) is a synchronous serial communication interface specification used for short distance communication, primarily in embedded systems. The interface was developed by Motorola and has become a de facto standard. Typical applications include sensors, Secure Digital cards, and liquid crystal displays.
 
 SPI devices communicate in full duplex mode using a master-slave architecture with a single master. The master device originates the frame for reading and writing. Multiple slave devices are supported through selection with individual slave select (SS) lines.
-( https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus )
+
 
 ### ECSPI
 The Enhanced Configurable Serial Peripheral Interface (ECSPI) is a full-duplex, synchronous, four-wire serial communication block.
@@ -24,7 +24,7 @@ The ECSPI supports the modes described in the indicated sections:
 * Low Power Modes
 
 ### UDOO Neo SPI channels
-UDOO Neo exposes 3 ECSPI channels. 
+UDOO Neo exposes 3 ECSPI channels:
 
 |         | MISO       | MOSI    | CLOCK   | SS0        | SS1 | SS2 | SS3 | Default core at boot |
 |---------|------------|---------|---------|------------|-----|-----|-----|----------------------|
@@ -32,18 +32,18 @@ UDOO Neo exposes 3 ECSPI channels.
 | ECSPI_3 | 18 / A1 \* | A0 \*   | A4 \*   | 19 / A5 \* | 21  | 20  | -   | A9 (gpio mode)       |
 | ECSPI_5 | 12 / 40    | 11 / 43 | 13 / 42 | 10 / 41    | -   | -   | -   | M4 (digital io mode) |
 
-\* Analogs pin can also be connected to A9 core using phisical signal mux 74VHC4053AFT (U12, U13). Configure guide coming soon.
+\* Analogs pin can also be connected to A9 core using phisical signal mux 74VHC4053AFT (U12, U13).
 
-To see more detailed information look at iMX 6SoloX Reference Manual Chapter 22.
-http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYPE=Reference%20Manuals&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation&fileExt=.pdf
+For more detailed information look at the Chapter 22 of the [iMX 6SoloX Reference Manual](http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYPE=Reference%20Manuals&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation&fileExt=.pdf).
+
+By default the SPI buses are assigned to A9 in GPIO mode. In order to enable ECSPI, follow this [guide](http://www.udoo.org/docs-neo/Pinmuxing/Device_Tree_Editor.html).
 
 #### ECSPI 2
-ECSPI 2 has only for signals (MISO, MOSI, SCLK and SS0); By default these pins are assigned to A9 but in GPIO mode.
+ECSPI 2 has only for signals (MISO, MOSI, SCLK and SS0);
 
 #### ECSPI 3
-ECSPI 3 is a full signal SPI including  Select Signals (SS0, SS1, SS2). By default all pins of this SPI are assigned to A9 in GPIO mode.
+ECSPI 3 is a full SPI, including Select Signals (SS0, SS1, SS2).
 
 #### ECSPI 5
-ECSPI 5 has the same pin order, function, and position as Arduino Uno. By default is assigned to M4 core but configured as Digital Output (GPIO).
-
+ECSPI 5 has the same pin order, function, and position as Arduino UNO. By default it is assigned to the M4 core, but configured as digital input/output (GPIO).
 

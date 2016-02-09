@@ -3,18 +3,19 @@
  
 Get the [sources](http://www.udoo.org/docs-neo/Kernel_Hacking/Get_the_sources.html)
 
-## Edit files
-
-### Turn off M4 core
+## Turn off M4 core
 Follow this [guide](http://www.udoo.org/docs-neo/Advanced_Hardware_Operations/Turn_off_M4_Arduino_core.html) how to turn off M4 startup at boot.
 
 
-### Enable ADC on A9 side
+## Enable or disable ADC on A9 side (by default are active)
+by default they are active, and the only thing you need to do tu use ADCs from A9 is to disable M4.
+
+
 Open the file 
 
     <KERNEL_ROOT>/arch/arm/boot/dts/imx6sx-udoo-neo.dtsi
     
-and make this changes.
+and make this changes to enable them:
 
 ``` bash
 &adc1 {
@@ -28,9 +29,22 @@ and make this changes.
 };
 ```
 
-This make ADCs accessible via A9 core.
+    
+or disable them:
 
-## Recompile Device Tree dts files
+``` bash
+&adc1 {
+    vref-supply = <&reg_vref_3v3>;
+    status = "disabled";
+};
+
+&adc2 {
+    vref-supply = <&reg_vref_3v3>;
+    status = "disabled";
+};
+```
+
+### Recompile Device Tree dts files
 Follow this [guide](http://www.udoo.org/docs-neo/Kernel_Hacking/Compile_the_kernel.html) to recompile the dts.
 
 

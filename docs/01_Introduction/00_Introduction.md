@@ -1,35 +1,32 @@
 
-<h1>UDOO NEO</h1>
-<hr/>
-<strong>UDOO NEO</strong> is an all-in-one open hardware low-cost computer equipped with a FreescaleTM i.MX 6SoloX applications processor for Android and Linux.
+# UDOO NEO
+**UDOO NEO** is an all-in-one open hardware low-cost computer equipped with a Freescale&trade; i.MX 6SoloX applications processor for Android and Linux.
 
 UDOO NEO embeds two cores on the same processor: a powerful 1GHz ARM® Cortex-A9, and an ARM Cortex-M4 I/O real-time co-processor that can run up to 200Mhz.
 
-While the Cortex-A9 can run both Android Lollipop and UDOObuntu 2 - a dedicated Ubuntu-based Linux distro - the Cortex-M4 allows easy access to a full-stack ArduinoTM environment. The snap-in connector ensures a plug-and-play interaction with most sensors and actuators.
+While the Cortex-A9 can run both Android Lollipop and [UDOObuntu](http://udoo.org/docs-neo/Software_&_Operating_Systems/UDOObuntu.html) 2 - a dedicated Ubuntu-based Linux distro - the Cortex-M4 allows easy access to a full-stack Arduino&trade; environment. The snap-in connector ensures a plug-and-play interaction with most sensors and actuators.
 
 Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module, the board is ideal to create robots, drones and rovers as well as any Mobile IoT project you can imagine.
 
 <hr/>
 
-<h3>What you must not do with UDOO NEO:</h3>
+<span class="label label-warning">Heads up!</span> In order to prevent damages to your board, remember to:
 
-* Never provide the GPIOs with more than 3.3V in input
-* Never keep the board in touch with metal while it's powered up
+* Never provide more than 3.3V in input to the GPIOs
+* Never keep the board in touch with metal objects or surfaces while it is powered up
 
 
-<h3>Lineup</h3>
-
+### Lineup
 UDOO NEO retail line up consists of three models
 
 <img src="../img/udoo_neo_versions.jpg" alt="UDOO versions" class="img-responsive" >
 
 
 
-<h3>Specifications</h3>
+### Technical specifications
+
 <hr/>
-
-<img src="../img/udoo_neo_docs.png" alt="alt text" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
-
+<img src="../img/udoo_neo_docs.png" alt="UDOO Boards" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
 * Freescale™ i.MX 6SoloX applications processor with an embedded ARM Cortex-A9 core and a Cortex-M4 Core
 * 512MB (Basic) or 1GB (only Extended and Full)
@@ -68,26 +65,28 @@ UDOO NEO retail line up consists of three models
 
 &#42;Available on Pin Header
 
-<h2>Community</h2>
-<h3>Forums</h3>
+## Community
+
+* Official web site [www.udoo.org](http://www.udoo.org)
+* Official forum [www.udoo.org/forum](http://www.udoo.org/forum/index.php)
+
+### Forums
+
 <hr/>
 
 The official UDOO forums can be found at [www.udoo.org/forum](http://www.udoo.org/forum)
 
 The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
 
-<h3>IRC</h3>
+### IRC channel
+
 <hr/>
 
 There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: `irc.freenode.net`. Room name is `#udoo`.
 
-<h3>Home Site & Community</h3>
-<hr/>
 
- * Official web site [www.udoo.org](http://www.udoo.org)
- * Official forum [www.udoo.org/forum](http://www.udoo.org/forum/index.php)
+### Social networks
 
-<h3>Social</h3>
 <hr/>
 
  * [Facebook fan page](http://www.facebook.com/udooboard)

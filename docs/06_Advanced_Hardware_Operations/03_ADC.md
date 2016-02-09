@@ -1,7 +1,7 @@
 ## Preliminary operations
-(Setup the kernel development)[http://www.udoo.org/docs-neo/Kernel_Hacking/Setup_kernel_dev_environment.html] 
+[Setup the kernel development](http://www.udoo.org/docs-neo/Kernel_Hacking/Setup_kernel_dev_environment.html)
  
-(Get the sources)[http://www.udoo.org/docs-neo/Kernel_Hacking/Get_the_sources.html] 
+Get the [sources](http://www.udoo.org/docs-neo/Kernel_Hacking/Get_the_sources.html)
 
 ## Edit files
 

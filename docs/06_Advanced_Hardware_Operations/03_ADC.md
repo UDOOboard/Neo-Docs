@@ -31,7 +31,7 @@ and make this changes.
 This make ADCs accessible via A9 core.
 
 ## Recompile Device Tree dts files
-Follow this (guide)[http://www.udoo.org/docs-neo/Kernel_Hacking/Compile_the_kernel.html] to recompile the dts.
+Follow this [guide](http://www.udoo.org/docs-neo/Kernel_Hacking/Compile_the_kernel.html) to recompile the dts.
 
 
 # Read ADC Data

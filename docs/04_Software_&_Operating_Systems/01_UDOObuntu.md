@@ -33,6 +33,13 @@ The distribution uses the official Ubuntu repository and the UDOO repository, so
 Instructions to download and flash the SD card image are available on [this page](http://udoo.org/docs-neo/Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_Neo.html).
 
 
+## Default passwords
+
+The default user account is named `udooer`, and its password is `udooer`.
+
+The root password is `ubuntu`.
+
+
 ## Under the hood
 
 The UDOObuntu image available on UDOO website is a full image of an SD card with the following partition scheme:

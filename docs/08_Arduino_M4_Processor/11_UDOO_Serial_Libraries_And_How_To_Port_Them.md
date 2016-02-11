@@ -1,6 +1,6 @@
-<h2>UDOO SERIAL LIBRARIES EXAMPLES</h2>
+<h2>UDOO NEO SERIAL LIBRARIES EXAMPLES</h2>
 
-```C Serial Libraries for UDOO```<br/>
+```C Serial Libraries for UDOO NEO```<br/>
 
 The format of the file is .c<br/>
 
@@ -30,9 +30,9 @@ for c_serial_example_bidirectional.c:
 
 ```./c_serial_example_bidirectional    ```
 
-<h2>JAVA Serial Libraries for UDOO</h2>
+<h2>JAVA Serial Libraries for UDOO NEO</h2>
 
-* If you are using other UDOO distributions use the standard Vanilla JAVA Libraries.
+* If you are using other UDOO NEO distributions use the standard Vanilla JAVA Libraries.
 
 Install librxtx-java from repositories
 
@@ -46,7 +46,7 @@ Copy appropriate libraries and symlink them
 
 ```sudo ln -s librxtxSerial-2.2pre1.so librxtxSerial.so```
 
-Now symlink them to allow UDOO’s /dev/ttyMCC serial port binding
+Now symlink them to allow UDOO NEO’s /dev/ttyMCC serial port binding
 
 ```sudo ln -s /dev/ttyMCC /dev/ttyS0```
 
@@ -62,7 +62,7 @@ Now symlink them to allow UDOO’s /dev/ttyMCC serial port binding
 
 ```java -Djava.library.path=/usr/lib/jni -cp /usr/share/java/RXTXcomm.jar:. Java_serial_example```
 
-```PHP Serial Libraries for UDOO```
+```PHP Serial Libraries for UDOO NEO```
 
 This part describes how to run the PHP examples contained in this folder. To run these PHP examples you need a PHP interpreter and a Web Server. 
 
@@ -104,7 +104,7 @@ for php_serial_example_bidirectional.php:
 
 ```localhost/php_serial_example_bidirectional.php```
 
-```Python Serial Libraries for UDOO```
+```Python Serial Libraries for UDOO NEO```
 
 * Install the Python library to manage the serial:
 

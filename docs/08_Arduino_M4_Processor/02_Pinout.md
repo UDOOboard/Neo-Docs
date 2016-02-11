@@ -1,29 +1,32 @@
-UDOO Neo replicates the same external pinout of Arduino Uno, extended with two parallel pin rows.
-Internal pins are mechanically compatible with all the Arduino shields with Arduino Udo design.
+UDOO Neo replicates the same external pinout of Arduino UNO, extended with two parallel pin rows.
+Internal pins are mechanically compatible with all the Arduino shields with Arduino UNO design.
 
-All the hardware features block can be accessed and connected via processors pad with a editable muxing. So the functions are not fixed but can accessed on different pads.
-Some of these pads are connected to external pins to allow the users to connect their stuff.
+All the hardware features can be accessed and connected via processors pad with an editable muxing. So the functions are not fixed but can by accessed on different pads.
+Some of these pads are connected to the external pins, allowing the users to connect their own stuff.
 
-The external pinout is organized as follows and all pins are theoretically divided in two groups:
+The external pinout is organized as follows, all pins are conceptually divided in two groups:
 * Cortex A9
 * Cortex M4 (Arduino like) 
 
 <img style="width:400px;" src="../img/gionji/DOCS_internal_external_rows.JPG">
 
-External pins (orange) are by default assigned to A9 in GPIO mode. So these pins can be controlled directly from the file system (Linux, Android).
+External pins (in orange) are by default assigned to A9 in GPIO mode. So these pins can be controlled directly from the `sysfs` file system in Linux and Android.
 
-Internal pins (blue) are assigned and controlled by Cortex M4 with the same dimensions of Arduino UNO pinout. All the arduino shields compatible can be plugged directly on UDOO Neo board.
+Internal pins (in blue) are assigned and controlled by Cortex M4. All the compatible Arduino shields can be plugged directly on the UDOO Neo board.
 
-Pins functions can dinamically shared ad boot beetwen A9 and M4 core at boot. By default we provide this kind of configuration.
+Pins functions can be dynamically shared at boot time between the A9 and M4 cores. By default we provide *split* configuration.
 
-### Pin Diagram
+
+### Pinout diagram
+
 <img style="width:400px;" src="../img/gionji/DOCS_internal_pinout.PNG">
 
-## Peripherials
-UDOO Neo replicate also the same pin functions as: pwm (8 instead of 6), spi, i2c and uarts.
 
-## Logic
+## Arduino peripherals
+UDOO Neo replicates also the same pin functions of Arduino UNO: PWMs (8 instead of 6), SPI, I2C and UARTs.
+
+
+## Pin logic
 Freescale iMX 6soloX is 3.3 Volts compliant. Analog reference voltage is GROUND and AREF is set to 3.3 Volts.
-M4 architecture as more ADC and PWM resolution with more configuration mode.
-
+The M4 architecture has more ADC and PWM resolution (compared to Arduino UNO) with more configuration mode.
 

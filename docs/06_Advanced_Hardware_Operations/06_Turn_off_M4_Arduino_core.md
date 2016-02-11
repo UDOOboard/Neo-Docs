@@ -1,36 +1,20 @@
-## Install required package
-The package is istalled by default in UDOObuntu distro greather or equals to RC1.
-Otherwise be sure to be connected to Internet and type in a terminal:
+Sometimes it may be convenient to disable the M4 core. Doing this, all the devices normally used by M4 can be used under Linux from the A9 core.
 
-``` bash
-sudo apt-get install dtweb
-```
-
-If it's not at lastest version plaese update the system.
-
-``` bash
-sudo apt-get update
-sudo apt-get upgrade
-```
+Possible use cases for disabling the M4 core are:
+ * you want to use of `A0`-`A5` analog inputs from Linux;
+ * Arduino is not needed.
 
 
-## Get M4 Arduino status at boot
+## Disable the M4 Arduino core
 
-``` bash
-sudo udoom4ctl status
-```
+    sudo udoom4ctl disable
 
 
-## Disable M4 Arduino core at boot
+## Enable the M4 Arduino core
 
-``` bash
-sudo udoom4ctl disable
-```
+    sudo udoom4ctl enable
 
-## Enable M4 Arduino core at boot
+## Get the M4 Arduino core status
 
-``` bash
-sudo udoom4ctl enable
-```
-
+    sudo udoom4ctl status
 

@@ -8,7 +8,7 @@ The external pinout is organized as follows, all pins are conceptually divided i
 * Cortex A9
 * Cortex M4 (Arduino like) 
 
-<img style="width:400px;" src="../img/gionji/DOCS_internal_external_rows.JPG">
+<a href="../img/gionji/DOCS_internal_external_rows.JPG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_internal_external_rows.JPG"></a>
 
 External pins (in orange) are by default assigned to A9 in GPIO mode. So these pins can be controlled directly from the `sysfs` file system in Linux and Android.
 
@@ -19,7 +19,7 @@ Pins functions can be dynamically shared at boot time between the A9 and M4 core
 
 ### Pinout diagram
 
-<img style="width:400px;" src="../img/gionji/DOCS_internal_pinout.PNG">
+<a href="../img/gionji/DOCS_internal_pinout.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_internal_pinout.PNG"></a>
 
 
 ## Arduino peripherals

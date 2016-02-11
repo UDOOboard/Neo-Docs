@@ -1,51 +1,27 @@
-## Install required package
-The package is istalled by default in UDOObuntu distro greather or equals to RC1.
-Otherwise be sure to be connected to Internet and type in a terminal:
+## Set video output to HDMI
+Open a terminal and run this command as super user:
 
-``` bash
-sudo apt-get install dtweb
-```
+    sudo udooscreenctl set hdmi
 
-If it's not at lastest version plaese update the system.
 
-``` bash
-sudo apt-get update
-sudo apt-get upgrade
-```
+## Set video output to LVDS 7-inches panel
+Open a terminal and run this command as super user:
+
+    sudo udooscreenctl set lvds7
+
+
+## Set as headless device (disable video output)
+This is useful to disable the HDMI chip, saving power. Open a terminal and run this command as super user:
+
+    sudo udooscreenctl set headless
 
 
 ## Get current output
 Open a terminal and run this command as super user:
 
-``` bash
-sudo udooscreenctl get
-```
+    sudo udooscreenctl get
 
 to get current output device. Possible outputs are:
-- hdmi
-- lvds7
-- headless
-
-
-## Set hdmi output
-Open a terminal and run this command as super user:
-
-``` bash
-sudo udooscreenctl set hdmi
-```
-
-
-## Set lvds 7 inches panel output
-Open a terminal and run this command as super user:
-
-``` bash
-sudo udooscreenctl set lvds7
-```
-
-
-## Set as headless device - no output
-Open a terminal and run this command as super user:
-
-``` bash
-sudo udooscreenctl set headless
-```
+- `hdmi`
+- `lvds7`
+- `headless`

@@ -59,7 +59,7 @@ There are two ADC banks corresponding (adc1 e adc2):
     adc1 -> /sys/bus/iio/devices/iio\:device0/
     adc2 -> /sys/bus/iio/devices/iio\:device1/
 
-quindi i corrispondenti valori dei pin sono:
+so the corresponding pins' values are:
 
 ``` bash
 A0 ->  /sys/bus/iio/devices/iio\:device0/in_voltage0_raw

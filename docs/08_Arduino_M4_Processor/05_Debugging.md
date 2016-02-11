@@ -1,9 +1,20 @@
-## Internal Serial
-To use serials see section.
+## Top Men debugging
+Enabling the MQX debug serial port, it is possible to  to see more detailed information on the running code.
 
-## M4 Mqx Debug Serial
-The M4 microcontroller is based on Freescale MQX libraries.
-It possible to enable an MQX debug serial to se more detailed info on code running.
+[Top Men](https://www.youtube.com/watch?v=yoy4_h7Pb3M) can use the MQX debug serial available on the pins `44` and `45` of the `J7` connector after enabling the debug port, adding the line
 
-## Pin 13 Led
-This is a very dirty way to debug but maybe the most used for simple sketches, control the digital pin 13 to get information on code running on M4 sketch.
+    #define MQX_LOG
+
+at the begin of the Arduino sketch.
+
+
+## Old school debugging
+It is possible to use following old-school debugging techniques.
+
+### Serial port
+Use the [internal or the external serial port](http://www.udoo.org/docs-neo/Arduino_M4_Processor/Communication.html) to dump on Linux debug messages.
+
+### Pin 13 LED
+This is a very dirty way to debug, but useful for simple sketches since it takes no time to setup.
+
+Just control the digital pin 13 to get information on code running on M4 sketch.

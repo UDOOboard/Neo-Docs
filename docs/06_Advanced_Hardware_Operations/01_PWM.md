@@ -44,8 +44,6 @@ Select the desired frequency and duty cycle:
 
 
 <link rel="stylesheet" href="../themes/daux/css/slider.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
 <script>
 navigator.sayswho = (function(){
     var ua= navigator.userAgent, tem, 
@@ -62,9 +60,7 @@ navigator.sayswho = (function(){
     if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
     return M[0];
 })();
-
 var browser = navigator.sayswho.toLowerCase();
-
 function nFormatter(num, digits) {
     var si = [
       { value: 1E18, symbol: "E" },
@@ -81,27 +77,22 @@ function nFormatter(num, digits) {
     }
     return num.toString();
 }
-
 function onHzChange() {
     var showValue = nFormatter(parseInt($("input[type=range][data-type=hz]").val()), 3) + "Hz";
     $(".indicator[data-type=hz]").html(showValue);
     updateCode();
 }
-
 function onPcChange() {
     var showValue = parseInt($("input[type=range][data-type=pc]").val()) + "%";
     $(".indicator[data-type=pc]").html(showValue);
     updateCode();
 }
-
 function updateCode() {
     var period = Math.round(1000000000/parseInt($("input[type=range][data-type=hz]").val()));
     var duty = Math.round(period*parseInt($("input[type=range][data-type=pc]").val())/100);
-    
     $(".pwm-generated .hljs-number").first().html(period);
     $(".pwm-generated .hljs-number").last().html(duty);
 }
-
 $(window).load(function(){
 	$('body').addClass(browser);
     $("input[type=range][data-type=hz]").on("change mousemove", onHzChange);
@@ -110,7 +101,6 @@ $(window).load(function(){
         onHzChange();
         onPcChange();
     }, 100);
-    
 });
 </script>
 

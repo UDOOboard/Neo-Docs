@@ -1,65 +1,21 @@
-## Preliminary operations
-[Setup the kernel development](http://www.udoo.org/docs-neo/Kernel_Hacking/Setup_kernel_dev_environment.html)
- 
-Get the [sources](http://www.udoo.org/docs-neo/Kernel_Hacking/Get_the_sources.html)
-
 ## Turn off M4 core
-Follow this [guide](http://www.udoo.org/docs-neo/Advanced_Hardware_Operations/Turn_off_M4_Arduino_core.html) how to turn off M4 startup at boot.
+By default, ADC pins (`A0`-`A5`) are assigned to the M4 core, so they can be used by Arduino.
+
+If you want, you can use the ADC pins from Linux; however you must disable the M4 core. Follow this [guide](http://www.udoo.org/docs-neo/Advanced_Hardware_Operations/Turn_off_M4_Arduino_core.html) to disable the M4 core startup.
 
 
-## Enable or disable ADC on A9 side (by default are active)
-by default they are active, and the only thing you need to do tu use ADCs from A9 is to disable M4.
-
-
-Open the file 
-
-    <KERNEL_ROOT>/arch/arm/boot/dts/imx6sx-udoo-neo.dtsi
-    
-and make this changes to enable them:
-
-``` bash
-&adc1 {
-    vref-supply = <&reg_vref_3v3>;
-    status = "okay";
-};
-
-&adc2 {
-    vref-supply = <&reg_vref_3v3>;
-    status = "okay";
-};
-```
-
-    
-or disable them:
-
-``` bash
-&adc1 {
-    vref-supply = <&reg_vref_3v3>;
-    status = "disabled";
-};
-
-&adc2 {
-    vref-supply = <&reg_vref_3v3>;
-    status = "disabled";
-};
-```
-
-### Recompile Device Tree dts files
-Follow this [guide](http://www.udoo.org/docs-neo/Kernel_Hacking/Compile_the_kernel.html) to recompile the dts.
-
-
-# Read ADC Data
-We can read single adc value from two files there 
+## Read ADC Data
+You can read ADC values from virtual files in the `sysfs`:
 
     /sys/bus/iio/devices/
 
 
-There are two ADC banks corresponding (adc1 e adc2):
+UDOO Neo has ADC banks, `adc1` and `adc2`:
 
     adc1 -> /sys/bus/iio/devices/iio\:device0/
     adc2 -> /sys/bus/iio/devices/iio\:device1/
 
-so the corresponding pins' values are:
+The corresponding pin values are located in:
 
 ``` bash
 A0 ->  /sys/bus/iio/devices/iio\:device0/in_voltage0_raw
@@ -70,10 +26,60 @@ A4 ->  /sys/bus/iio/devices/iio\:device1/in_voltage0_raw
 A5 ->  /sys/bus/iio/devices/iio\:device1/in_voltage1_raw
 ```
 
+If you want to read the `A0` pin numeric value, access its file:
+
+    cat /sys/bus/iio/devices/iio\:device0/in_voltage0_raw
+
+If you want the analogic value expressed in millivolts instead of int, you can multiply the `in_voltageX_raw` file for the `in_voltage_scale` file
+
+
+### Example: read A0
+
+The following examples read the A0 integer values, multiplies it for the ADC scale and prints the result to the console:
+
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#bash-example" aria-controls="bash" role="tab" data-toggle="tab">Bash</a></li>
+  <li role="presentation"><a href="#php-example" aria-controls="php" role="tab" data-toggle="tab">PHP</a></li>
+ </ul>
+
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="bash-example">
+
+``` bash
+raw=$(</sys/bus/iio/devices/iio\:device0/in_voltage0_raw)
+scale=$(</sys/bus/iio/devices/iio\:device0/in_voltage_scale)
+echo "$raw * $scale" | bc -l 
+3299.194333890
+```
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="php-example">
+
+``` php
+<?php
+$raw = file_get_contents("/sys/bus/iio/devices/iio:device0/in_voltage0_raw");
+$scale = file_get_contents("/sys/bus/iio/devices/iio:device0/in_voltage_scale");
+echo $raw*$scale . PHP_EOL;
+```
+
+  </div>
+ </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+<script>
+$('#adc-examples a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+
+
+
+
+
+
+
+
 ## Precision 
-Analogs has a 12 bit precision (from 0 to 4095)
-
-## Get voltage
-To get milliVolts value you can multiply the \_raw file with the in\_voltage\_scale file.
-
-eg. 4095 * 0.805664062 = 3,299 mV
+Analog inputs have a 12 bit precision (from `0` to `4095`)

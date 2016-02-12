@@ -1,32 +1,21 @@
-# Get the sources
-
 ## Install git
-Open a terminal and write:
+If you do not have git installed, ppen a terminal and type:
 
-``` bash
-sudo apt-get update
-sudo apt-get install git
-```
+    sudo apt-get update
+    sudo apt-get install git
+
 
 ## Get kernel sources
 Create a develop folder
 
-``` bash
-mkdir udooneo-dev
-cd udooneo-dev
-```
+    mkdir udooneo-dev
+    cd udooneo-dev
 
-get the sources:
+then download the sources:
 
-``` bash
-git clone https://github.com/UDOOboard/linux_kernel
-```
+    git clone https://github.com/UDOOboard/linux_kernel
+    cd linux_kernel
 
-Enter in the kernel folder created:
 
-``` bash
-cd linux_kernel
-```
-
-The default branch "3.14-1.0.x-udoo" is the one where we are working on for the UDOO NEO. It is based on 3.14.56 Freescale community kernel.
+The default branch `3.14-1.0.x-udoo` is the one where we are working on for the UDOO NEO. It is based on 3.14.56 Freescale community kernel.
 

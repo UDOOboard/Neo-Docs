@@ -1,31 +1,29 @@
-# Compile the kernel
+Enter in the kernel sources directory:
 
-Go to the kernel sources directory.
-``` bash
-cd udooneo-dev/linux_kernel
-```
+    cd udooneo-dev/linux_kernel
 
-## Install required packages
 
-``` bash 
-sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm picocom
-```
+## Install the required packages
 
-``` bash
-sudo apt-get install gcc-arm-linux-gnueabihf lzop
-```
-## Load UDOO NEO defconfig file
+    sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
+         build-essential chrpath socat libsdl1.2-dev xterm picocom lzop \
+         gcc-arm-linux-gnueabihf
 
-``` bash
-make udoo_neo_defconfig ARCH=arm
-```
+
+## Load the default kernel configuration
+UDOO Neo has a dedicated default kernel configuration that you can import with:
+
+    ARCH=arm make udoo_neo_defconfig
+
 
 ## Compile sources
+To build the kernel image, type:
 
-``` bash
-make zImage -j 5 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
-```
-Operation can take about 5/15 minutes, depending on your PC host or VM configuration.
+    ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make zImage -j5
+
+You can safely tweak the `-jX` parameter. For instance, on quad core CPUs with two threads per core, you can use `-j8`.
+
+The build can take several minutes, approximately from 2 to 15, depending on your PC host or VM configuration.
 
 ``` bash
   Kernel: arch/arm/boot/Image is ready
@@ -44,32 +42,24 @@ Operation can take about 5/15 minutes, depending on your PC host or VM configura
   LD      arch/arm/boot/compressed/vmlinux
   OBJCOPY arch/arm/boot/zImage
   Kernel: arch/arm/boot/zImage is ready
-
 ```
 
-## Compile dts
+## Compile Device Trees
 
-``` bash
-make dtbs -j 5 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
-```
+    ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make dtbs -j5
+
 
 ## Compile modules
 
+    ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make modules -j5
 
-``` bash
-make modules -j 5 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
-```
 
-### Install modules
-To install compiled modules create a destination folder
+### Copy the kernel to the SD card
 
-``` bash
-mkdir MODULES
-```
-
-Then 
-
-``` bash
-make modules_install INSTALL_MOD_PATH=./MODULES ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
-```
+    BOOT_PARTITION=/path/to/boot-partition
+    ROOT_PARTITION=/path/to/root-partition
+    
+    cp arch/arm/boot/zImage $BOOT_PARTITION
+    cp arch/arm/boot/dts/\*.dtb $BOOT_PARTITION/dts
+    ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make firmware_install modules_install INSTALL_MOD_PATH=$ROOT_PARTITION
 

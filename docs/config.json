@@ -5,7 +5,8 @@
     "image": "/udoo/images/logoogo.png",
     "ignore": {
         "files": [
-            "02_Digital_camera.md"
+            "02_Digital_camera.md",
+            "05_Recompile_Freescale_MQX_Libraries.md"
         ]
     },
     "html": {

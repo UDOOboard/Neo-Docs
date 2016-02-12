@@ -1,9 +1,11 @@
-This section is work in progress.
+The recommended OS for developing UDOO Neo is Ubuntu. If you do not use Ubuntu, you will need to install a virtual machine, as indicated in this section.
+
+If you are already running Ubuntu on your development computer, you can safely skip this section.
 
 ## Overview
-In this section we provide a guide to setup a clean and dedicted environment for UDOO Development as:
+In this section we provide a guide to setup a clean and dedicated environment for UDOO Development as:
 * compile kernel
-* compile MQX libreries
+* compile MQX libraries
 
 ## Download resources
 
@@ -43,11 +45,11 @@ Choose the user full name, username and password.
 
 <img style="width:400px;" src="../img/gionji/DOCS_dev_env_03.PNG">
 
-Choose the Virtual machine name and its location. It's recomended to put it into a drive with 30GB free at least.
+Choose the Virtual machine name and its location. It's recommended to put it into a drive with 30GB free at least.
 
 <img style="width:400px;" src="../img/gionji/DOCS_dev_env_04.PNG">
 
-Choose the maximum virtual hard disk size (20 GB is ok) but 30 is recomended. Space is allocated when is needed.
+Choose the maximum virtual hard disk size (20 GB is ok) but 30 is recommended. Space is allocated when is needed.
 
 <img style="width:400px;" src="../img/gionji/DOCS_dev_env_05.PNG">
 
@@ -90,9 +92,5 @@ Open a terminal.
 <img style="width:150px;" src="../img/gionji/DOCS_dev_env_14.PNG">
 <img style="width:800px;" src="../img/gionji/DOCS_dev_env_15.PNG">
 
-``` bash
-sudo apt-get update
-```
+    sudo apt-get update
 
-### Install required packages
-See specific task sections.

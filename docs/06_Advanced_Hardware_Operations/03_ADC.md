@@ -41,6 +41,7 @@ The following examples read the A0 integer values, multiplies it for the ADC sca
  <ul id="adc-examples" class="nav nav-tabs" role="tablist">
   <li role="presentation" class="active"><a href="#bash-example" aria-controls="bash" role="tab" data-toggle="tab">Bash</a></li>
   <li role="presentation"><a href="#php-example" aria-controls="php" role="tab" data-toggle="tab">PHP</a></li>
+  <li role="presentation"><a href="#python-example" aria-controls="python" role="tab" data-toggle="tab">Python</a></li>
  </ul>
 
  <div class="tab-content">
@@ -61,6 +62,16 @@ echo "$raw * $scale" | bc -l
 $raw = file_get_contents("/sys/bus/iio/devices/iio:device0/in_voltage0_raw");
 $scale = file_get_contents("/sys/bus/iio/devices/iio:device0/in_voltage_scale");
 echo $raw*$scale . PHP_EOL;
+```
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="python-example">
+
+``` python
+raw = int(open("/sys/bus/iio/devices/iio:device0/in_voltage0_raw").read())
+scale = float(open("/sys/bus/iio/devices/iio:device0/in_voltage_scale").read())
+
+print raw*scale
 ```
 
   </div>

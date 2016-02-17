@@ -9,19 +9,19 @@ A good document explaining how this effect works is available [here](http://sens
 
 ## Tested devices
 
+<img style="width:350px; float: right;" src="../img/gionji/m4_cookbook/44e938.jpg">
+
 ### 44E-938
-
-<img style="width:400px; float: right;" src="../img/gionji/m4_cookbook/44e938.jpg">
-
 A Hall generator is a solid state sensor which provides an output voltage when it detects magnetic flux. As implied by its name, this device relies on the Hall effect. The [Hall effect](https://en.wikipedia.org/wiki/Hall_effect) is the development of a voltage across a sheet of conductor when current is flowing and the conductor is placed in a magnetic field.
 
+
+<img style="width:350px; float: right; clear: both;" src="../img/gionji/m4_cookbook/49e416BG_01.PNG">
+
 ### 49E-416BG
-
-<img style="width:400px; float: right;" src="../img/gionji/m4_cookbook/49e416BG_01.PNG">
-
 49E Linear Hall-effect sensor is small, versatile linear Hall-effect device that is operated by the magnetic field from a permanent magnet or an electromagnet. The linear sourcing output voltage is set by the supply voltage and varies in proportion to the strength of the magnetic field.  The integrated circuitry features low noise output, which makes it 
 unnecessary to use external filtering. It also includes thin film resistors to provide increased temperature stability and accuracy. The linear Hall sensor has an operating temperature range of -40 °C to 85 °C appropriate for commercial, consumer and industrial environments. 
 
+<br style="clear:both;">
 
 ## Examples
 

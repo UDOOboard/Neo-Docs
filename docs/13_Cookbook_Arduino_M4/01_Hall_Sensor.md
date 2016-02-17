@@ -1,39 +1,38 @@
-# Description
-The Hall effect is the production of a voltage difference (the Hall voltage) across an electrical conductor, transverse to an electric current in the conductor and a magnetic field perpendicular to the current. It was discovered by Edwin Hall in 1879.[1]
+## Description
+The [Hall effect](https://en.wikipedia.org/wiki/Hall_effect) is the production of a voltage difference (the Hall voltage) across an electrical conductor, transverse to an electric current in the conductor and a magnetic field perpendicular to the current. It was discovered by Edwin Hall in 1879.
 
 The Hall coefficient is defined as the ratio of the induced electric field to the product of the current density and the applied magnetic field. It is a characteristic of the material from which the conductor is made, since its value depends on the type, number, and properties of the charge carriers that constitute the current.
 
 <img style="width:300px;" src="../img/gionji/m4_cookbook/hall_effect.gif">
 
-[Hall Effect fro Wikipedia](https://en.wikipedia.org/wiki/Hall_effect)
+A good document explaining how this effect works is available [here](http://sensing.honeywell.com/honeywell-sensing-sensors-magnetoresistive-hall-effect-applications-005715-2-en.pdf).
 
-## How it works
-[Hall Effect Sensing by Honeywell](http://sensing.honeywell.com/honeywell-sensing-sensors-magnetoresistive-hall-effect-applications-005715-2-en.pdf)
+## Tested devices
 
-# Device information
-<img style="width:300px;" src="../img/gionji/m4_cookbook/44e938_02.jpg">
+### 44E-938
 
-
-## 44E-938
-
-<img style="width:400px;" src="../img/gionji/m4_cookbook/44e938.jpg">
+<img style="width:400px; float: right;" src="../img/gionji/m4_cookbook/44e938.jpg">
 
 A Hall generator is a solid state sensor which provides an output voltage when it detects magnetic flux. As implied by its name, this device relies on the Hall effect. The [Hall effect](https://en.wikipedia.org/wiki/Hall_effect) is the development of a voltage across a sheet of conductor when current is flowing and the conductor is placed in a magnetic field.
 
-## 49E-416BG
+### 49E-416BG
 
-<img style="width:400px;" src="../img/gionji/m4_cookbook/49e416BG_01.PNG">
+<img style="width:400px; float: right;" src="../img/gionji/m4_cookbook/49e416BG_01.PNG">
 
 49E Linear Hall-effect sensor is small, versatile linear Hall-effect device that is operated by the magnetic field from a permanent magnet or an electromagnet. The linear sourcing output voltage is set by the supply voltage and varies in proportion to the strength of the magnetic field.  The integrated circuitry features low noise output, which makes it 
 unnecessary to use external filtering. It also includes thin film resistors to provide increased temperature stability and accuracy. The linear Hall sensor has an operating temperature range of -40 °C to 85 °C appropriate for commercial, consumer and industrial environments. 
 
-## Signals
 
+## Examples
 
-# Sketches
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#44e938-example" aria-controls="bash" role="tab" data-toggle="tab">44e-938</a></li>
+  <li role="presentation"><a href="#49E416BG-example" aria-controls="php" role="tab" data-toggle="tab">49E-416BG</a></li>
+ </ul>
 
-## 44e-938
-
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="44e938-example">
 
 ``` bash
 int val = 0; // This holds the read value.
@@ -57,8 +56,8 @@ void loop(){
 After copying and uploading this code your LED should be off. Whenever a magnet approaches the sensor, it will allow the electricity to flow and the LED will turn on.
 If it doesn't work on the first time, try using a bigger and stronger magnet, it could make a difference. Also, the sensor is very sensitive to polarity, so try moving the magnet around it. And last, don't forget the reach isn't too big, so make sure that the magnet is close to the sensor.
 
-
-## 49E-416BG
+  </div>
+  <div role="tabpanel" class="tab-pane" id="49E416BG-example">
 
 ``` bash
 int sensorPin = A5;    // select the input pin for the potentiometer
@@ -72,15 +71,14 @@ void setup() {
 
 void loop() 
 { 
-  sensorValue = analogRead(sensorPin);    
-  digitalWrite(ledPin, HIGH);  
-  delay(sensorValue);          
-  digitalWrite(ledPin, LOW);   
+  sensorValue = analogRead(sensorPin);
+  digitalWrite(ledPin, HIGH);
   delay(sensorValue);
-  Serial.println(sensorValue, DEC);  
+  digitalWrite(ledPin, LOW);
+  delay(sensorValue);
+  Serial.println(sensorValue, DEC);
 }
 ``` 
-
 
 
 ``` bash
@@ -104,3 +102,16 @@ void loop()
   Serial.println(digitalVal);
 }
 ```
+
+  </div>
+ </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+<script>
+$('#adc-examples a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+
+

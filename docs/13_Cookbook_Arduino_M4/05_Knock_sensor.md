@@ -1,4 +1,4 @@
-# Description 
+## Description 
 Knock sensor module and a digital 13 interface, built-in LED build a simple circuit to produce percussion flasher. 
 Interface comes with digital LED, will knock sensor connected digital 3 interface, when percussion sensor senses measure to 
 percussive signals, LED flashing light.
@@ -8,7 +8,6 @@ To keep the LED on, the button state change codes should be used. So the sensor 
 
 <img style="width:400px;" src="../img/gionji/m4_cookbook/knock_sensor_01.jpg">
 
-# Device
 
 ## KY-031 (Knock Sensor)
 The switch primarily consists of a terminal that forms a center post and a second terminal that is a spring that surrounds the center post.
@@ -25,7 +24,9 @@ Positioning of the switch is also important.   Generally speaking the switch sho
 
 An exception to this rule may be where you find that the switch is too sensitive for your application.  In this case, moving the switch further away from the area of interest may make it less sensitive.
 
-# Sketches
+
+## Examples
+
 ``` bash 
 const int knockPin = 3;     // the number of the knock sensor pin
 const int ledPin =  13;      // the number of the LED pin

@@ -86,7 +86,7 @@ Serial.println(); // write on output buffer char array plus newline char
 ```
 
 ### UART 6
-This UART is user available, but it must be included in the [device tree](http://www.udoo.org/docs-neo/Pinmuxing/Device_Tree_Editor.html) before the use. By default all of its pins are given to A9 in GPIO mode.
+This UART is user available, but it must be included in the [device tree](http://www.udoo.org/docs-neo/Cookbook_Linux/Device_Tree_Editor.html) before the use. By default all of its pins are given to A9 in GPIO mode.
 
 |                | PCB NAME | SCHEMATICS SIGNAL NAME | SCHEMATIC IMX6 PAD NAME | REFERENCE MANUAL PAD NAME        | ALTERNATE            |
 |----------------|----------|------------------------|-------------------------|----------------------------------|----------------------|

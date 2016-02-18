@@ -10,7 +10,7 @@ PWM signals can be used to:
 
 ### Step 1: enable PWM outputs
 
-Enable the PWM features on the external pinout using the [device tree editor](http://www.udoo.org/docs-neo/Pinmuxing/Device_Tree_Editor.html).
+Enable the PWM features on the external pinout using the [device tree editor](http://www.udoo.org/docs-neo/Cookbook_Linux/Device_Tree_Editor.html).
 
 
 ### Step 2: configure the outputs

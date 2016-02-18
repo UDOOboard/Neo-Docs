@@ -36,7 +36,7 @@ UDOO Neo exposes 3 ECSPI channels:
 
 For more detailed information look at the Chapter 22 of the [iMX 6SoloX Reference Manual](http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYPE=Reference%20Manuals&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation&fileExt=.pdf).
 
-By default the SPI buses are assigned to A9 in GPIO mode. In order to enable ECSPI, follow this [guide](http://www.udoo.org/docs-neo/Pinmuxing/Device_Tree_Editor.html).
+By default the SPI buses are assigned to A9 in GPIO mode. In order to enable ECSPI, follow this [guide](http://www.udoo.org/docs-neo/Cookbook_Linux/Device_Tree_Editor.html).
 
 #### ECSPI 2
 ECSPI 2 has only for signals (MISO, MOSI, SCLK and SS0);

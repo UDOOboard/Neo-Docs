@@ -19,7 +19,7 @@ Most of the pins are exported by default as GPIO; however the UDOO Neo CPU is ab
 
 <a href="../img/gionji/DOCS_external_pinout.PNG" target="_blank"><img style="width:800px;" src="../img/gionji/DOCS_external_pinout.PNG"></a>
 
-To change this configuration follow this [guide](http://www.udoo.org/docs-neo/Pinmuxing/Device_Tree_Editor.html).
+To change this configuration follow this [guide](http://www.udoo.org/docs-neo/Cookbook_Linux/Device_Tree_Editor.html).
 
 ### GPIOs numbers and IDs
 

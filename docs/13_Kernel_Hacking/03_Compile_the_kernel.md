@@ -60,6 +60,6 @@ The build can take several minutes, approximately from 2 to 15, depending on you
     ROOT_PARTITION=/path/to/root-partition
     
     cp arch/arm/boot/zImage $BOOT_PARTITION
-    cp arch/arm/boot/dts/\*.dtb $BOOT_PARTITION/dts
+    cp arch/arm/boot/dts/*.dtb $BOOT_PARTITION/dts
     ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make firmware_install modules_install INSTALL_MOD_PATH=$ROOT_PARTITION
 

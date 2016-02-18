@@ -3,28 +3,23 @@ i.MX 6SoloX embeds on a single chip a single core ARM Cortex A9 and a ARM cortex
 For any deep inquiry regarding i.MX 6SoloX, please have a look at [the dedicated reference manual made by Freescale](http://cache.nxp.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYPE=Reference%20Manuals&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation&fileExt=.pdf).
 
 They can use and share lot of hardware implemented features provided by the architecture as:
-* gpios
-* uarts
-* i2c
-* spi
+* GPIOs
+* UARTs
+* I2Cs
+* SPIi
 * analogs ADCs
 
-These two processors are connected to all interfaces and peripherials through an high speed AXI bus. It’s up to the programmer or the "system" admin to define witch features are assigned to each processors.
+These two processors are connected to all interfaces and peripherals through an high speed AXI bus. It’s up to the programmer or the "system" admin to define witch features are assigned to each processors.
 
 All the hardware features block can be accessed and connected via processors pad with a editable muxing. So the functions are not fixed but can accessed on different pads.
 Some of these pads are connected to external pins to allow the users to connect their stuff.
 
-The external pinout is organized as follows and all pins are theoretically divided in two groups:
-* Cortex A9
-* Cortex M4 (Arduino like) 
-
-Immagineeee
-
 External pins (orange) are by default assigned to A9 in GPIO mode. So these pins can be controlled directly from the file system (Linux, Android).
-Internal pins (blue) are assigned and controlled by Cortex M4 with the same dimensions of Arduino UNO pinout. All the arduino shields compatible can be plugged directly on UDOO Neo board.
+Internal pins (blue) are assigned and controlled by Cortex M4 with the same dimensions of Arduino UNO pinout. All the Arduino shields compatible can be plugged directly on UDOO Neo board.
+
+<a href="../img/gionji/DOCS_block_diagram.PNG" target="_blank"><img style="width:800px;" src="../img/gionji/DOCS_block_diagram.PNG"></a>
 
 ## Pinout Available features
-
 I.MX 6SoloX provides the following functions, part of them are fully available on the pinout. 
 
 ## Hardware features

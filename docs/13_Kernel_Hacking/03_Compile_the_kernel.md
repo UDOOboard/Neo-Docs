@@ -6,7 +6,7 @@ Enter in the kernel sources directory:
 ## Install the required packages
 
     sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
-         build-essential chrpath socat libsdl1.2-dev xterm picocom lzop \
+         build-essential chrpath socat libsdl1.2-dev xterm picocom ncurses-dev lzop \
          gcc-arm-linux-gnueabihf
 
 
@@ -15,6 +15,10 @@ UDOO Neo has a dedicated default kernel configuration that you can import with:
 
     ARCH=arm make udoo_neo_defconfig
 
+## (optional) Personalize the kernel configuration
+Add or remove kernel modules to fit your project:
+
+    ARCH=arm make menuconfig
 
 ## Compile sources
 To build the kernel image, type:
@@ -60,6 +64,6 @@ The build can take several minutes, approximately from 2 to 15, depending on you
     ROOT_PARTITION=/path/to/root-partition
     
     cp arch/arm/boot/zImage $BOOT_PARTITION
-    cp arch/arm/boot/dts/\*.dtb $BOOT_PARTITION/dts
+    cp arch/arm/boot/dts/*.dtb $BOOT_PARTITION/dts
     ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make firmware_install modules_install INSTALL_MOD_PATH=$ROOT_PARTITION
 

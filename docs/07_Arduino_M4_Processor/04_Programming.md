@@ -22,6 +22,9 @@ udooneo-m4uploader.sh <BINARY_PATH>
 ```
 
 ## External Arduino IDE
+# Warning
+For external programming the serial monitor doesn’t work yet.
+
 
 ### Connect UDOO NEO
 

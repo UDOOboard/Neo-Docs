@@ -57,5 +57,5 @@ The root partition is automatically expanded at the first boot to the size of th
 
 UDOObuntu image is generated automatically from the build script [mkudoobuntu](https://github.com/UDOOboard/mkudoobuntu). This tool builds *recipes* for different boards and image types (eg. with GUI or headless).
 
-The first step is to *debootstrap* a bese Ubuntu armhf system. Then some configuration files are patches and UDOO specific packages are installed from the UDOO repository.
+The first step is to *debootstrap* a base Ubuntu armhf system. Then some configuration files are patches and UDOO specific packages are installed from the UDOO repository.
 

@@ -1,6 +1,6 @@
 <h2>UDOO NEO SERIAL LIBRARIES EXAMPLES</h2>
 
-```C Serial Libraries for UDOO NEO```<br/>
+<h2>C Serial Libraries for UDOO NEO</h2>
 
 The format of the file is .c<br/>
 

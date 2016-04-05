@@ -1,4 +1,3 @@
-## Onboard 9-axis sensors
 UDOO Neo is equipped with 9-axis motion sensors: accelerometer, magnetometer and gyroscope.
 
 Accelerometer and magnetometer are embedded on the same Freescale chip, that is FXOS8700CQ, the gyroscope is a single FXAS21002C chip.

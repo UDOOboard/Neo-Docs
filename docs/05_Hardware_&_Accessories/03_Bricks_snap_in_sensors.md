@@ -1,11 +1,3 @@
-## I2C Snap-in connector for UDOO Bricks
-
-
-<img style="width:400px; height:218px" src="../img/gionji/DOCS_i2c_channels.JPG">
-
-## Available Bricks
-
-
 ### MPL3115A2 - Barometer
 Download the IC [datasheet](http://www.adafruit.com/datasheets/1893_datasheet.pdf)
 
@@ -109,3 +101,8 @@ If the sensor is already connected at boot the kernel automatically recognizes t
 
     sudo rmmod lm75
     sudo modprobe lm75
+
+
+## I2C Snap-in connector for UDOO Bricks
+
+<img style="width:400px; height:218px" src="../img/gionji/DOCS_i2c_channels.JPG">

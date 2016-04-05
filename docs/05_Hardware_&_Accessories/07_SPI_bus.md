@@ -1,4 +1,3 @@
-## SPI
 The [Serial Peripheral Interface bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) (SPI) is a synchronous serial communication interface specification used for short distance communication, primarily in embedded systems. The interface was developed by Motorola and has become a de facto standard. Typical applications include sensors, Secure Digital cards, and liquid crystal displays.
 
 SPI devices communicate in full duplex mode using a master-slave architecture with a single master. The master device originates the frame for reading and writing. Multiple slave devices are supported through selection with individual slave select (SS) lines.

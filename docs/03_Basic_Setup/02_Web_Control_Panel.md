@@ -1,19 +1,17 @@
-## UDOO NEO Web Control Panel
+The UDOO Neo's Web Control Panel is a utility designed to:
 
-The UDOO NEO's Web Control Panel is a utility designed to:
-
-* Easily configure your UDOO NEO, from the Wireless Connection to the UDOO NEO's hostname;
+* Easily configure your UDOO Neo, from the Wireless Connection to the UDOO Neo's hostname;
 * Check its connection status;
 * Learn how to develop basic projects;
 * Test simple Arduino sketches on the fly;
 * Expose the Documentation;
 
-### How to connect to the UDOO NEO Web Control Panel
+### How to connect to the UDOO Neo Web Control Panel
 
-Once you followed the [USB Direct Connection](http://www.udoo.org/docs-neo/Basic_Setup/Usb_Direct_Connection.html) guide and installed all the necessary drivers you can connect to the UDOO NEO Web Control Panel through one of these ways:
+Once you followed the [USB Direct Connection](http://www.udoo.org/docs-neo/Basic_Setup/Usb_Direct_Connection.html) guide and installed all the necessary drivers you can connect to the UDOO Neo Web Control Panel through one of these ways:
 
-1) connect UDOO NEO to your computer via USB, then open a browser on your computer and type `192.168.7.2`
-2) open a browser and type the IP address of UDOO NEO if you know it and if NEO is connected to the same network of your host computer.
+1) connect UDOO Neo to your computer via USB, then open a browser on your computer and type `192.168.7.2`
+2) open a browser and type the IP address of UDOO Neo if you know it and if Neo is connected to the same network of your host computer.
 3) open a browser and type udooneo.local. Beware to have installed [Bonjour](https://support.apple.com/kb/DL999) on your Windows computer. On Mac and Linux you should have what you need pre-installed: Bonjour on Mac OS and [Avahi](http://www.avahi.org/) on Linux. N.B: This is a beta feature, thus we suggest to go for the first two methods.
 
 #### Dashboard

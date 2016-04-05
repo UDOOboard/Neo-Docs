@@ -1,7 +1,7 @@
 ## Turn off M4 core
 By default, ADC pins (`A0`-`A5`) are assigned to the M4 core, so they can be used by Arduino.
 
-If you want, you can use the ADC pins from Linux; however you must disable the M4 core. Follow this [guide](http://www.udoo.org/docs-neo/Advanced_Hardware_Operations/Turn_off_M4_Arduino_core.html) to disable the M4 core startup.
+If you want, you can use the ADC pins from Linux; however you must disable the M4 core. Follow this [guide](../Cookbook_Linux/Turn_off_M4_Arduino_core.html) to disable the M4 core startup.
 
 
 ## Read ADC Data

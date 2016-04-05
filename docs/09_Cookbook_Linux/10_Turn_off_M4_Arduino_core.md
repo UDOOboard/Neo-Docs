@@ -5,16 +5,21 @@ Possible use cases for disabling the M4 core are:
  * Arduino is not needed.
 
 
-## Disable the M4 Arduino core
+## Using the Web Configuration Tool
+
+You can disable the M4 core using the GUI provided by the [Web Configuration Tool](../Basic_Setup/Web_Control_Panel.html), in *Configuration*/*Advanced settings*.
+
+## Using the terminal/SSH
+
+### Disable the M4 Arduino core
 
     sudo udoom4ctl disable
 
-
-## Enable the M4 Arduino core
+### Enable the M4 Arduino core
 
     sudo udoom4ctl enable
 
-## Get the M4 Arduino core status
+### Get the M4 Arduino core status
 
     sudo udoom4ctl status
 

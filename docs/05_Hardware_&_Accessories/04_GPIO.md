@@ -19,17 +19,55 @@ Most of the pins are exported by default as GPIO; however the UDOO Neo CPU is ab
 
 <a href="../img/gionji/DOCS_external_pinout.PNG" target="_blank"><img style="width:800px;" src="../img/gionji/DOCS_external_pinout.PNG"></a>
 
-To change this configuration follow this [guide](http://www.udoo.org/docs-neo/Cookbook_Linux/Device_Tree_Editor.html).
+To change this configuration, please follow this [guide](http://www.udoo.org/docs-neo/Cookbook_Linux/Device_Tree_Editor.html).
 
-### GPIOs numbers and IDs
 
-#### Export 
-Before a GPIO can be used, it must be exported with the following command:
+### Using GPIOs
+By default (for safety reasons), all GPIOs are exported in *input* configuration. This means the board CPU can read the value of the voltage connected to the pins. The other possible configuration is *output*, which forces a pin to take a specific voltage.
+
+<span class="label label-warning">Heads up!</span> When using the *output* configuration, be sure to avoid short-circuits!
+
+It is possible to switch a pin in *input* or *output* mode with the following commands:
+
+    # set pin 25 to input
+    echo in > /gpio/pin25/direction
+
+    # set pin 25 to output
+    echo out > /gpio/pin25/direction
+
+To verify the voltage direction, just read the same file:
+
+    cat /gpio/pin25/direction
+
+
+#### Write values
+To write a low or high value on a GPIO, you need to write `0` or `1` in the *value* file:
+
+    # set GPIO 25 to low value - 0 volts
+    echo 0 > /gpio/pin25/value
+
+    # set GPIO 25 to high value - 3.3 volts
+    echo 1 > /gpio/pin25/value
+
+In order to set the value, the GPIO must be in the `out` direction.
+
+
+#### Read values
+If the direction is set to `in`, it is possible to read the GPIO value reading the same file:
+
+    cat /gpio/pin25/value
+
+If the direction is set to `out` and you try to read the value, is not guaranteed that the value is coherent with the voltage found on the external pinout.
+
+
+### Advances usage
+GPIO management is made simple by the `udoo-gpio-export` package, which comes preinstalled in UDOObuntu Linux. This package takes care of exporting all GPIOs in input mode, and creates the symlinks from the `/sys/class/gpio` entries to the `/gpio` directory.
+
+If you want, you can directly use the `/sys/class/gpio` entries. For example, to export a GPIO use:
 
     echo GPIO_NUMBER > /sys/class/gpio/export
 
-Please note `GPIO_NUMBER` is not the number written on the PCB. Instead, it is the number written in the round label close to the PCB number in the previous two images.
-For example, if you want to control the pin 24 (PCB name) you should read `GPIO_25`.
+Please note that `GPIO_NUMBER` is not the number written on the PCB. Instead, it is the number written in the round label close to the PCB number in the previous two images. For example, if you want to control the pin 24 (PCB name) you should read `GPIO_25`.
 
 `GPIO_NUMBER` can be calculated with the following relation:
 
@@ -40,40 +78,3 @@ For example, if you want to export the GPIO1_IO_25;
     # GPIO1_IO_25 means BANK=1 and ID=25
     # GPIO_NUMBER = ((1 - 1) * 32 ) + 25 = 25
     echo 25 > /sys/class/gpio/export
-
-
-#### Set direction
-It is possible to switch a pin in *input* or *output* mode with the following commands:
-
-    # set GPIO 25 to input
-    echo in > /sys/class/gpio/gpio25/direction
-
-    # set GPIO 25 to output
-    echo out > /sys/class/gpio/gpio25/direction
-
-Please note by default, for safety reasons, all pins are exported in input.
-
-To verify the direction just read the same file:
-
-    cat /sys/class/gpio/gpio25/direction
-
-
-#### Write value
-To write a low or high value on a GPIO you need to write `0` or `1` in the *value* file:
-
-    # set GPIO 25 to low value - 0 volts
-    echo 0 > /sys/class/gpio/gpio25/value
-
-    # set GPIO 25 to high value - 3.3 volts
-    echo 1 > /sys/class/gpio/gpio25/value
-
-In order to set the value, the GPIO must be in the `out` direction.
-
-
-#### Read value
-If the direction is set to `in` it is possible to read the GPIO value reading the same file:
-
-    /sys/class/gpio/gpio25/value
-
-If the direction is set to `out` and you try to read the value, is not guaranteed that the value is coherent with the voltage found on the external pinout.
-

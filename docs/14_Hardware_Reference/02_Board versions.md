@@ -1,3 +1,5 @@
+<img src="../img/udoo_neo_versions.jpg" alt="UDOO versions" class="img-responsive" >
+
 ## Basic
 
 * 512 MB DDR3 RAM

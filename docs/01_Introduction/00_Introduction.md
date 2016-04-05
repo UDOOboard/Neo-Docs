@@ -17,7 +17,7 @@ Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module,
 
 
 ### Lineup
-UDOO NEO retail line up consists of three models
+UDOO NEO retail line up consists of [three models](../Hardware_Reference/Board%20versions.html).
 
 <img src="../img/udoo_neo_versions.jpg" alt="UDOO versions" class="img-responsive" >
 
@@ -65,30 +65,22 @@ UDOO NEO retail line up consists of three models
 
 &#42;Available on Pin Header
 
-## Community
+<hr/>
 
+## Community
 * Official web site [www.udoo.org](http://www.udoo.org)
 * Official forum [www.udoo.org/forum](http://www.udoo.org/forum/index.php)
 
 ### Forums
-
-<hr/>
-
 The official UDOO forums can be found at [www.udoo.org/forum](http://www.udoo.org/forum)
 
 The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
 
 ### IRC channel
-
-<hr/>
-
 There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: `irc.freenode.net`. Room name is `#udoo`.
 
 
 ### Social networks
-
-<hr/>
-
  * [Facebook fan page](http://www.facebook.com/udooboard)
  * [Twitter](http://twitter.com/UDOO_Board)
  * [Google+](https://plus.google.com/u/0/110742692974455430878/posts)

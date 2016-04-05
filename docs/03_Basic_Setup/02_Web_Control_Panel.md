@@ -12,39 +12,40 @@ The UDOO NEO's Web Control Panel is a utility designed to:
 
 Once you followed the [USB Direct Connection](http://www.udoo.org/docs-neo/Basic_Setup/Usb_Direct_Connection.html) guide and installed all the necessary drivers you can connect to the UDOO NEO Web Control Panel through one of these ways:
 
-1) connect UDOO NEO to your computer via USB, then open a browser on your computer and type 192.168.7.2   
+1) connect UDOO NEO to your computer via USB, then open a browser on your computer and type `192.168.7.2`
 2) open a browser and type the IP address of UDOO NEO if you know it and if NEO is connected to the same network of your host computer.
 3) open a browser and type udooneo.local. Beware to have installed [Bonjour](https://support.apple.com/kb/DL999) on your Windows computer. On Mac and Linux you should have what you need pre-installed: Bonjour on Mac OS and [Avahi](http://www.avahi.org/) on Linux. N.B: This is a beta feature, thus we suggest to go for the first two methods.
 
-### Overview 
+#### Dashboard
 
-<a href="../img/udoo-web-control-panel1.jpg" target="_blank"><img style="width:700px;" src="../img/udoo-web-control-panel1.jpg"></a>
+<a href="../img/webconf/home.png" target="_blank"><img style="width:700px;" src="../img/webconf/home.png"></a>
 
-The Overview Tab will give you a quick insight on the Status of your UDOO NEO:
+The Dashboard gives you a quick insight on the status of your UDOO Neo:
 
-* At the top left you'll find 3 graphical indicators, showing the magnitude of change state in Accelerometer, Gyroscope and Magnetometer;
-* At the top right you'll find an overview of NEO's connectivity, indicating whether Ethernet, USB, Wlan and Bluetooth are connected, and their IP address;
-* The other tiles will be your starting point on discovering UDOO NEO's capabilities.
+ * At the top, you'll find an overview of board's connectivity, indicating whether Ethernet, USB, Wlan and Bluetooth are connected, and their IP address;
+ * In the center, you can find board model and unique ID. On the right, there are axis and modulus values for the Accelerometer, Gyroscope and Magnetometer;
+ * The other tiles are the starting point on discovering UDOO Neo's capabilities.
 
 
-### Arduino
+#### Arduino
 
-<a href="../img/udoo-web-control-panel2.jpg" target="_blank"><img style="width:500px;" src="../img/udoo-web-control-panel2.jpg"></a>
+<a href="../img/webconf/webide.png" target="_blank"><img style="width:700px;" src="../img/webconf/webide.png"></a>
 
-On this section you can try the integrated Arduino M4 Processor. You can upload two simple Hello World sketches, Fade and Blink.
+On this section you can try the integrated Arduino M4 Processor. You can upload two simple Hello World sketches, Fade and Blink (from the Samples section) or code your own sketch using th Web IDE.
 
-### First Config Wizard 
+Ardublockly allows to build Arduino sketches graphically, interconnecting logic blocks, without writing any code.
 
-<a href="../img/udoo-web-control-panel3.jpg" target="_blank"><img style="width:500px;" src="../img/udoo-web-control-panel3.jpg"></a>
 
-This section helps you configure your UDOO NEO and connect it to a wireless network.
-To complete the configuration you need to fill all the blanks, and then hit next. Once finished, hit "finished" and your settings will be applied.  
+#### Configuration
 
-* Board Name: this will change your hostname, and therefore the address:
-If you call it myneo, it will be reachable trough http://myneo.local
-This can help you identifying various NEOs on the same network
+This section helps you to configure your board and connect it to a wireless network:
 
-* Keyboard layout: pretty explanatory, change the keyboard layout 
-* Wireless Network: connects to your wireless Network. This setting is persistent across reboot. To verify the Wireless Network connection status return on overview page where you will also discover its IP.
+ * On "Password and hostname", you can change your passwords and set a name for your board;
+ * On "Network settings", you can connect to Wi-Fi networks;
+ * On "Regional settings" you can set the locale, timezone and regional settings;
+ * On "Advanced settings" you can change the main video output device (e.g. HDMI or LVDS), enable/disable the Arduino core and change the TCP port where the Web Configuration Tool operates (so you can, for example, install a webserver on your board, like Apache or nginx),
 
+ <a href="../img/webconf/wifi.png" target="_blank"><img style="width:700px;" src="../img/webconf/wifi.png"></a>
+ 
+ <a href="../img/webconf/regional.png" target="_blank"><img style="width:700px;" src="../img/webconf/regional.png"></a>
 

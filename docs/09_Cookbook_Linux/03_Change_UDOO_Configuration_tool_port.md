@@ -1,43 +1,22 @@
-To avoid port conflicts with the Web Control Panel you should change its port.
-You should edit this file:
+If you want to install a webserver, in order to avoid port conflicts, you need to change the port used by the Web Control Panel.
 
-    /opt/udoo-web-conf/bin/www
+## Using the Web Configuration Tool
 
-Open the file and change
-    udooer@udooneo:$ vim /opt/udoo-web-conf/bin/www
- 
-     #!/usr/bin/env node
-    var app = require('../app');
-    var debug = require('debug')('udoo-cfg:server');
-    var http = require('http');
-    var server = http.createServer(app);
-    // Utilities
-    var ifconfig = require('wireless-tools/ifconfig');
-    var exec = require('child_process').exec;
-    var fs = require('fs');
-    var port = normalizePort(process.env.PORT || '80');
-    var isOnline = require('is-online');
-    var fs = require('fs');
-    app.set('port', port);
+You can change the port using the GUI provided by the [Web Configuration Tool](../Basic_Setup/Web_Control_Panel.html) itself, in *Configuration*/*Advanced settings*.
 
-Change this line
+Reboot your board to apply the settings.
 
-    var port = normalizePort(process.env.PORT || '80');
+## Using the terminal/SSH
 
-to
+To change the default port, run in a terminal:
 
-    var port = normalizePort(process.env.PORT || '<NEW_PORT>');
+     echo 8080 | sudo tee /etc/udoo-web-conf/port
 
-for example 3001
+If you want to disable the tool completely, run
 
-    var port = normalizePort(process.env.PORT || '3001');
+     echo manual | sudo tee /etc/init/udoo-web-conf.override
 
-save, exit and type this command:
+Enable it again removing the override file:
 
-    killall node
-
-to reboot the node service.
-
-Now if you want to open the Web Control Panel you should go to:
-
-    192.168.7.2:3001
+     sudo rm /etc/init/udoo-web-conf.override
+     

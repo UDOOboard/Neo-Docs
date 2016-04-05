@@ -1,4 +1,3 @@
-# M4 Arduino PWM Issue
 There is a little change to use PWM on M4 sketches.
 
 ## Don't need to declare pinMode() for PWM

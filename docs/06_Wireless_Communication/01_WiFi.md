@@ -13,9 +13,13 @@ WiLink8 General Features:
 * Commercial Modules Operating Temperature: –20°C to 70°C
 * Small Form Factor: 13.4 × 13.3 × 2 mm
 
-#### Texas Instruments documentation
 More information are available on [TI Wiki](http://processors.wiki.ti.com/index.php/WL18xx).
 
+## Connecting to Wi-Fi networks
+
+You can connect to wireless networks by:
+ * using the [Web Configuration Tool](../Basic_Setup/Web_Control_Panel.html), in *Configuration*/*Network settings*;
+ * using the network utility in the UDOObuntu desktop environment (in the bottom-right corner).
 
 ## Known issues
 

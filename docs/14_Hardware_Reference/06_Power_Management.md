@@ -14,3 +14,12 @@ To be fully functional, the board needs a 5V clean power (VCC_SW). If an LVDS pa
 * The (F) block is another DC/DC converter from 5V to 3.3V.
 
 <a href="../img/gionji/DOCS_pmic_imx6.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_pmic_imx6.PNG"></a> <a href="../img/gionji/DOCS_pmic_pf3000.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_pmic_pf3000.PNG"></a>
+
+### Power sources
+You can power up the board in 3 ways
+
+* DC-jack: internal positive, Voltage 6 to 15.
+* microUsb: 5 Volts up to 2 Ampere
+* Vin / GND pin on external pinout
+
+Providing higher voltages could damage the board!

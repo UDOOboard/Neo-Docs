@@ -1,7 +1,12 @@
 ## Onboard 9-axis sensors
-UDOO Neo is equipped with 9-axis motion sensor implemented by two Freescale chips.
+UDOO Neo is equipped with 9-axis motion sensors: accelerometer, magnetometer and gyroscope.
 
-<a href="../img/gionji/DOCS_i2c_channels.JPG" target="_blank"><img style="width:400px; height:218px" src="../img/gionji/DOCS_i2c_channels.JPG"></a>
+Accelerometer and magnetometer are embedded on the same Freescale chip, that is FXOS8700CQ, the gyroscope is a single FXAS21002C chip.
+They communicate with i.MX 6SoloX over I2C bus number 4.
+
+They can be accessed by M4 core and also by A9 core. They can be used in ping mode, asking the values to the sensors, or in interrupt mode.
+
+<a href="../img/gionji/DOCS_acc_mag_chip.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_acc_mag_chip.PNG"></a> <a href="../img/gionji/DOCS_i2c_channels.JPG" target="_blank"><img style="width:400px; height:218px" src="../img/gionji/DOCS_i2c_channels.JPG"></a>
 
 <span class="label label-warning">Heads up!</span> Only EXENDED and FULL board versions are equipped with embedded motion sensors.
 

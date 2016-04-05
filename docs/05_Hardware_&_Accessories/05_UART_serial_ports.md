@@ -18,6 +18,12 @@ Table below gives a short description of the UART ports:
 | UART_6 | Cortex A9 user serial   | Not enabled by default. It can be enabled on external A9 pinout    |
 
 
+### Debug UART ports
+
+The serial debug ports (UART_1 and UART_2) are available on the external pinout. Signals can be accessed with a USB to TTL adapters.
+
+<img style="width:400px;" src="../img/gionji/DOCS_uart_serial.PNG">
+
 ### UART 1
 This UART is assigned to the A9 core as Debug Serial port. Over this serial it is possible to access a terminal console to login on a Linux shell.
 It can be accessed over the external pinout on the following pins:

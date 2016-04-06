@@ -29,6 +29,8 @@ To use an External Arduino IDE (eg., on your computer) follow the instructions b
 
 ### Install and configure the Arduino IDE
 
+<span class="label label-warning">Heads up!</span> You **must** use exactly Arduino IDE 1.6.5. For the moment, other versions are not supported.
+
 * From your computer go to the Arduino website and [downlaod the 1.6.5 version of the IDE](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous)
 * Select the OS you have in your computer and download the IDE then install it
 * Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs: https://udooboard.github.io/arduino-board-package/package_udoo_index.json , then click Ok.

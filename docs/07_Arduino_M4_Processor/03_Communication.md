@@ -43,7 +43,7 @@ Access the Arduino capabilities of the board in one of the following ways:
  * use the web control panel
   * connect to the board (eg. [192.168.7.2](http://192.167.7.2/) if you are using the USB port);
   * click on *Arduino Editor* on the left
- * use the Arduino IDE installed [on your computer](http://udoo.org/docs-neo/Arduino_M4_Processor/Programming.html)
+ * use the Arduino IDE installed [on your computer](../Arduino_M4_Processor/Programming.html)
 
 
 Then, copy and paste the following sketch in the IDE:
@@ -78,7 +78,7 @@ Click the *Upload* button and wait untile the message *Done uploading* appears o
 Now, connect to the serial ports, to get the strings.
 
 ### Read the internal serial port
-Open a terminal in UDOO Neo (using the Teminal application on the Desktop, or a [SSH connection[(http://udoo.org/docs-neo/Basic_Setup/Remote_Terminal_(SSH).html)])
+Open a terminal in UDOO Neo (using the Teminal application on the Desktop, or a [SSH connection](../Basic_Setup/Remote_Terminal_(SSH).html))
 
     minicom -D /dev/ttyMCC
 

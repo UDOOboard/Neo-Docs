@@ -1,4 +1,4 @@
-Before this section, you may want to take a look at [Introduction to Pinmuxing](http://www.udoo.org/docs-neo/Cookbook_Linux/Device_Tree_Editor.html).
+Before this section, you may want to take a look at [Introduction to Pinmuxing](../docs-neo/Cookbook_Linux/Device_Tree_Editor.html).
 I2C-4 Motion Sensor Connector
 By default the internal 9-axis motions sensors are assigned to A9 and it’s possible to control them by Linux driver. The I2C signals are also available on pins 32/33 and 34/35.
 If you need to use them by the M4 Arduino core you need to remove them from the A9 core, right-clicking on the Snap-in connector on the right panel and removing it.

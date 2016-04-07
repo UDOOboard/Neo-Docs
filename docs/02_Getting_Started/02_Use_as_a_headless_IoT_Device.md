@@ -23,7 +23,7 @@ To achieve this:
 * Connect the Micro USB Cable to UDOO NEO and then to your PC: UDOO NEO will take its power from USB port;
 * If its the first time you proceed this way, configure your PC as described in the <a href="../Basic_Setup/Usb_Direct_Connection.html">configure Usb Direct Connection</a>;
 * Done! Your UDOO NEO is available at the address [192.168.7.2](http://192.168.7.2);
-* You can use it via <a href="http://www.udoo.org/docs-neo/Basic_Setup/Remote_Terminal_(SSH).html">SSH Remote Terminal</a>, <a href="http://www.udoo.org/docs-neo/Basic_Setup/Remote_Desktop_(VNC).html">VNC Remote Desktop</a> or through [Web Control Panel](http://www.udoo.org/docs-neo/Basic_Setup/Web_Control_Panel.html).
+* You can use it via <a href="../docs-neo/Basic_Setup/Remote_Terminal_(SSH).html">SSH Remote Terminal</a>, <a href="../docs-neo/Basic_Setup/Remote_Desktop_(VNC).html">VNC Remote Desktop</a> or through [Web Control Panel](../docs-neo/Basic_Setup/Web_Control_Panel.html).
 
 ### Network Connected Headless Device
 

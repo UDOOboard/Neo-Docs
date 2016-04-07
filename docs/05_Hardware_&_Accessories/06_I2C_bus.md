@@ -31,7 +31,7 @@ The I2C 1 bus is available also on the user-accessible pinout:
 
 
 ### I2C 2
-Channel 2 is by default assigned to A9. It's possible to change this assignment following this [guide](http://www.udoo.org/docs-neo/Cookbook_Linux/Device_Tree_Editor.html).
+Channel 2 is by default assigned to A9. It's possible to change this assignment following this [guide](../docs-neo/Cookbook_Linux/Device_Tree_Editor.html).
 
 #### Snan-ip Brisks connector
 On the J10 connector it is possible to connect UDOO Bricks sensors to the I2C 2 bus.

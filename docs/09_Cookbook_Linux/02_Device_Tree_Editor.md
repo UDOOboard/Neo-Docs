@@ -15,26 +15,23 @@ UDOObuntu provides out-of-the-box device tree blobs, available in `/boot/dts/`, 
     imx6sx-udoo-neo-basic-m4.dtb
     imx6sx-udoo-neo-basic.dtb
 
-The[boot loader](http://udoo.org/docs-neo/Software_&_Operating_Systems/Boot_Process.html) loads the correct `dtb` file, depending on the board.
+The[boot loader](../Software_&_Operating_Systems/Boot_Process.html) loads the correct `dtb` file, depending on the board.
 
 
 ## Custom device trees
-While the board can be used with the default device tree, which exports most of the external pins as GPIO, it is also possible to export more features on the external pinout. See the section [Pinmuxing](http://udoo.org/docs-neo/Hardware_&_Accessories/GPIO.html) to discover all the exportable configurations.
+While the board can be used with the default device tree, which exports most of the external pins as GPIO, it is also possible to export more features on the external pinout. See the section [Pinmuxing](../Hardware_&_Accessories/GPIO.html) to discover all the exportable configurations.
 
 On UDOO NEO the external pins can be connected to the Cortex-A9 core (the one that runs the Operative System) or to the Cortex-M4 core (the one that implements the Arduino microcontroller).
 
 UDOO Neo provides a graphical tool to change this configuration called **Device Tree editor**. Open if from the START menu -> Preferences -> Device Tree editor.
 
-![devicetreeeditor_01](https://cloud.githubusercontent.com/assets/10534600/12679622/7a559434-c6a5-11e5-98a0-331cc6bc67fd.png)
-
-![devicetreeeditor4](https://cloud.githubusercontent.com/assets/10534600/12679330/e43a8064-c6a3-11e5-8028-a7ff5fa15948.png)
-
+<img src="../img/dtweb/gui.png"><br>
 
 To remove the feature you need to right-click on a dark orange pin in the right panel.
 
 After the functions are selected you can save by clicking on the top Save button, and then reboot the board.
 
-![devicetreeeditor_03](https://cloud.githubusercontent.com/assets/10534600/12679303/b3804896-c6a3-11e5-88f8-74c406bcac72.png)
+<img src="../img/dtweb/save.png">
 
 
 ### I2C-2: SNAP-IN Bricks connector

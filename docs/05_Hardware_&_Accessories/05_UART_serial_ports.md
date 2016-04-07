@@ -9,7 +9,7 @@ Table below gives a short description of the UART ports:
 
 | Name   | Function                | Description                                                        |
 |--------|-------------------------|--------------------------------------------------------------------|
-| UART_1 | Cortex A9 serial debug  | On this serial it's possible [to have access to a Linux console](http://udoo.org/docs-neo/Hardware_Reference/External_Arduino_Pinout.html)     |
+| UART_1 | Cortex A9 serial debug  | On this serial it's possible [to have access to a Linux console](../Hardware_Reference/External_Arduino_Pinout.html)     |
 | UART_2 | Cortex M4 MQX debug     | Freescale MQX real-time OS library uses this serial for debug info |
 | UART_3 | WL1831 Bluetooth chip   | Used to communicate with Bluetooth chip mounted on the board       |
 | UART_4 | n.c.                    | n.a.                                                               |
@@ -91,7 +91,7 @@ Serial.println(); // write on output buffer char array plus newline char
 ```
 
 ### UART 6
-This UART is user available, but it must be included in the [device tree](http://www.udoo.org/docs-neo/Cookbook_Linux/Device_Tree_Editor.html) before the use. By default all of its pins are given to A9 in GPIO mode.
+This UART is user available, but it must be included in the [device tree](../docs-neo/Cookbook_Linux/Device_Tree_Editor.html) before the use. By default all of its pins are given to A9 in GPIO mode.
 
 |                | PCB NAME | SCHEMATICS SIGNAL NAME | SCHEMATIC IMX6 PAD NAME | REFERENCE MANUAL PAD NAME        | ALTERNATE            |
 |----------------|----------|------------------------|-------------------------|----------------------------------|----------------------|

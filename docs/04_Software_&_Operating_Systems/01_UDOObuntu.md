@@ -1,4 +1,4 @@
-UDOObuntu is the official Linux operating system for the UDOO Neo.
+UDOObuntu is the official Linux-based operating system for the UDOO Neo.
 
 ## Technical specifications
 
@@ -14,11 +14,11 @@ Besides the Ubuntu 14.04 specifications, UDOObuntu differs for the following ele
  * Linux kernel version 3.14.56
  * GPU accelerated Xorg 1.15
  * Arduino IDE 1.6.5
- * Chromium browser 40 with WebGL enabled
+ * Chromium browser 48, with WebGL enabled
  * gstreamer, which plays full HD videos via gplay
  * QT 5.2.1 with X11 OpenGL ES2 GPU acceleration
- * Web control panel 
-
+ * [Web Control Panel](../Basic_Setup/Web_Control_Panel.html)
+ * Device Tree Editor, to control [pinmuxing](../Cookbook_Linux/Device_Tree_Editor.html)
 
 ## Updates
 
@@ -45,7 +45,7 @@ The root password is `ubuntu`.
 The UDOObuntu image available on UDOO website is a full image of an SD card with the following partition scheme:
 
  * 1MB of reserved storage for the boot-loader (SPL, executable and environment variables)
- * 32MB FAT partition, mounted in `/boot`, which contains kernel, device tree and the documentation
+ * 32MB FAT partition, mounted in `/boot`, which contains kernel, device trees and the documentation
  * an EXT4 partition, mounted in `/`, the *root filesystem*
 
 <img src="../img/partitions.png">
@@ -57,5 +57,5 @@ The root partition is automatically expanded at the first boot to the size of th
 
 UDOObuntu image is generated automatically from the build script [mkudoobuntu](https://github.com/UDOOboard/mkudoobuntu). This tool builds *recipes* for different boards and image types (eg. with GUI or headless).
 
-The first step is to *debootstrap* a base Ubuntu armhf system. Then some configuration files are patches and UDOO specific packages are installed from the UDOO repository.
+The first step is to *debootstrap* a base Ubuntu armhf system. Then some configuration files are patched and UDOO specific packages are installed from the UDOO repository.
 

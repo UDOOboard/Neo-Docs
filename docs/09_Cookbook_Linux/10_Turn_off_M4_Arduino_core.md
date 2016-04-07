@@ -5,9 +5,9 @@ Possible use cases for disabling the M4 core are:
  * Arduino is not needed.
 
 
-## Using the Web Configuration Tool
+## Using the Web Control Panel
 
-You can disable the M4 core using the GUI provided by the [Web Configuration Tool](../Basic_Setup/Web_Control_Panel.html), in *Configuration*/*Advanced settings*.
+You can disable the M4 core using the GUI provided by the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html), in *Configuration*/*Advanced settings*.
 
 ## Using the terminal/SSH
 

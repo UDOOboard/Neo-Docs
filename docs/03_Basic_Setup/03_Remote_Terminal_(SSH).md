@@ -14,7 +14,7 @@ A new line will appear:
 
     udooer@192.168.7.2's password:
 
-Type `udooer` (if you did not change your default password using the [Web Configuration Tool](../Basic_Setup/Web_Control_Panel.html) yet, then press "Enter". Do not worry if you don't see what you type in the terminal: it's an expedient to hide your password to eventual onlookers.
+Type `udooer` (if you did not change your default password using the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html) yet, then press "Enter". Do not worry if you don't see what you type in the terminal: it's an expedient to hide your password to eventual onlookers.
 
 At this point you can use your terminal:
 

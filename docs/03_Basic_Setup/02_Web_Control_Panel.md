@@ -41,7 +41,7 @@ This section helps you to configure your board and connect it to a wireless netw
  * On "Password and hostname", you can change your passwords and set a name for your board;
  * On "Network settings", you can connect to Wi-Fi networks;
  * On "Regional settings" you can set the locale, timezone and regional settings;
- * On "Advanced settings" you can change the main video output device (e.g. HDMI or LVDS), enable/disable the Arduino core and change the TCP port where the Web Configuration Tool operates (so you can, for example, install a webserver on your board, like Apache or nginx),
+ * On "Advanced settings" you can change the main video output device (e.g. HDMI or LVDS), enable/disable the Arduino core and change the TCP port where the Web Control Panel operates (so you can, for example, install a webserver on your board, like Apache or nginx),
 
  <a href="../img/webconf/wifi.png" target="_blank"><img style="width:700px;" src="../img/webconf/wifi.png"></a>
  

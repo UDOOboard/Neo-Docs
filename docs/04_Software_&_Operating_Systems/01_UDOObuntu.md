@@ -30,7 +30,7 @@ The distribution uses the official Ubuntu repository and the UDOO repository, so
 
 ## Installation
 
-Instructions to download and flash the SD card image are available on [this page](../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_Neo.html).
+Instructions to download and flash the SD card image are available on [this page](../Getting_Started/Create_a_bootable_MicroSD_card_for_UDOO_Neo.html).
 
 
 ## Default passwords

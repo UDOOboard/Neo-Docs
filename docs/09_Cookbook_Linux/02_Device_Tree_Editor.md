@@ -15,7 +15,7 @@ UDOObuntu provides out-of-the-box device tree blobs, available in `/boot/dts/`, 
     imx6sx-udoo-neo-basic-m4.dtb
     imx6sx-udoo-neo-basic.dtb
 
-The[boot loader](../Software_&_Operating_Systems/Boot_Process.html) loads the correct `dtb` file, depending on the board.
+The[boot loader](../Advanced_Topics/Boot_process.html) loads the correct `dtb` file, depending on the board.
 
 
 ## Custom device trees

@@ -29,7 +29,7 @@ You can revert this change by typing:
 
 
 #### Option 2: you can connect via VNC or SSH
-If you can [connect to your board via VNC](../docs-neo/Basic_Setup/Remote_Desktop_(VNC).html) or via SSH (using the USB, WiFi or Ethernet connection), you can follow the steps explained in the previous section.
+If you can [connect to your board via VNC](../Basic_Setup/Remote_Desktop_(VNC).html) or via SSH (using the USB, WiFi or Ethernet connection), you can follow the steps explained in the previous section.
 
 
 #### Option 3: you have neither HDMI nor network

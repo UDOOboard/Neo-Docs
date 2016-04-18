@@ -12,7 +12,7 @@ at the begin of the Arduino sketch.
 It is possible to use following old-school debugging techniques.
 
 ### Serial port
-Use the [internal or the external serial port](../docs-neo/Arduino_M4_Processor/Communication.html) to dump on Linux debug messages.
+Use the [internal or the external serial port](../Arduino_M4_Processor/Communication.html) to dump on Linux debug messages.
 
 ### Pin 13 LED
 This is a very dirty way to debug, but useful for simple sketches since it takes no time to setup.

@@ -42,7 +42,7 @@ E.g.
     }
     
 <h2>Solution</h2>
-To solve this problem, [connect via Mini USB](../docs-neo/Basic_Setup/Remote_Desktop_(VNC).html). Once connected open the terminal and remove this file:
+To solve this problem, [connect via Mini USB](../Basic_Setup/Remote_Desktop_(VNC).html). Once connected open the terminal and remove this file:
 
     rm /var/opt/m4/m4last.fw
     sudo reboot

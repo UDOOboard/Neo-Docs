@@ -8,7 +8,7 @@ The UDOO Neo's Web Control Panel is a utility designed to:
 
 ### How to connect to the UDOO Neo Web Control Panel
 
-Once you followed the [USB Direct Connection](../docs-neo/Basic_Setup/Usb_Direct_Connection.html) guide and installed all the necessary drivers you can connect to the UDOO Neo Web Control Panel through one of these ways:
+Once you followed the [USB Direct Connection](../Basic_Setup/Usb_Direct_Connection.html) guide and installed all the necessary drivers you can connect to the UDOO Neo Web Control Panel through one of these ways:
 
 1) connect UDOO Neo to your computer via USB, then open a browser on your computer and type `192.168.7.2`
 2) open a browser and type the IP address of UDOO Neo if you know it and if Neo is connected to the same network of your host computer.

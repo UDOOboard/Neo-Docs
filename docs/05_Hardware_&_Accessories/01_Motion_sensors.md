@@ -230,27 +230,35 @@ To allow to M4 Arduino core to access these sensors we need to change internal p
 
 
 From start menu runs Preferences --> Device Tree Editor
+
 <a href="../img/gionji/DOCS_9axis_pinmux_01.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_01.PNG"></a>
 
 Insert the root password ( *udooer* by default )
+
 <a href="../img/gionji/DOCS_9axis_pinmux_02.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_02.PNG"></a>
 
 The tool shows all the A9 pins and their functions.
+
 <a href="../img/gionji/DOCS_9axis_pinmux_03.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_03.PNG"></a>
 
 By default the i2c4 channel is highlighted and it means that is assigned ti A9.
+
 <a href="../img/gionji/DOCS_9axis_pinmux_04.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_04.PNG"></a>
 
 Right click on the pins and select *remove*
+
 <a href="../img/gionji/DOCS_9axis_pinmux_05.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_05.PNG"></a>
 
 After that the i2c4 pins are not highlighed
+
 <a href="../img/gionji/DOCS_9axis_pinmux_06.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_061.PNG"></a>
 
 Click on *save* button on the top bar.
+
 <a href="../img/gionji/DOCS_9axis_pinmux_07.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_07.PNG"></a>
 
 Click ok, close the browser and reboot the board.
+
 <a href="../img/gionji/DOCS_9axis_pinmux_08.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_08.PNG"></a>
 
 

@@ -2,6 +2,12 @@
 To develop sketches for M4 cores we provide the same way to program Arduino Uno.
 We can use the internal Arduino IDE or connect the board and use an IDE running on external PC.
 
+<div class="alert alert-danger" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Warning!</span>
+  Udoo Neo works ONLY with Arduino IDE version 1.6.5. Down load it from <a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">here!</a>
+</div>
+
 ## Internal Arduino IDE
 After you connected the board and you boot the desktop environment:
 
@@ -13,7 +19,6 @@ After you connected the board and you boot the desktop environment:
 
 Now the sketch will be run on M4 side.
 
-
 ## Precompiled binary
 It's possible to upload a precompiled binary firmware on the M4 using this command:
 
@@ -21,10 +26,9 @@ It's possible to upload a precompiled binary firmware on the M4 using this comma
 udooneo-m4uploader.sh <BINARY_PATH>
 ```
 
-## External Arduino IDE
-# Warning
-For external programming the serial monitor doesn’t work yet.
+# External Arduino IDE
 
+<span class="label label-warning">Heads up!</span>For external programming the serial monitor doesn’t work yet.
 
 ### Connect UDOO NEO
 
@@ -54,6 +58,12 @@ sudo apt-get install udoofota-server
 ```
 
 ### Install and configure the Arduino IDE
+
+<div class="alert alert-danger" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Warning!</span>
+  Udoo Neo works ONLY with Arduino IDE version 1.6.5. Down load it from <a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">here!</a>
+</div>
 
 * From your computer go to the Arduino website and downlaod the 1.6.5 version of the IDE: https://www.arduino.cc/en/Main/OldSoftwareReleases#previous
 

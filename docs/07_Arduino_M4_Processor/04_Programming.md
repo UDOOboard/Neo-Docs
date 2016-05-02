@@ -62,7 +62,7 @@ sudo apt-get install udoofota-server
 <div class="alert alert-danger" role="alert">
   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
   <span class="sr-only">Warning!</span>
-  Udoo Neo works ONLY with Arduino IDE version 1.6.5. Down load it from <a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">here!</a>
+  Udoo Neo works ONLY with Arduino IDE version 1.6.5. Download it from <a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">here!</a>
 </div>
 
 * From your computer go to the Arduino website and downlaod the 1.6.5 version of the IDE: https://www.arduino.cc/en/Main/OldSoftwareReleases#previous

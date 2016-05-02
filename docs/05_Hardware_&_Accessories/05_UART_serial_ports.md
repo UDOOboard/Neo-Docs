@@ -83,11 +83,11 @@ This is the serial controlled by the M4 core, available on the pins `0` and `1` 
 Serial0.begin(115200); // Init the Serial at 115200 baudrate
 
 Serial0.available(); // get the number of incoming bytes
-Serial.read(); // get the first byte in FIFO buffer
+Serial0.read(); // get the first byte in FIFO buffer
 
 Serial0.write(); // write on output buffer byte array
-Serial.print(); // write on output buffer char array
-Serial.println(); // write on output buffer char array plus newline char
+Serial0.print(); // write on output buffer char array
+Serial0.println(); // write on output buffer char array plus newline char
 ```
 
 ### UART 6

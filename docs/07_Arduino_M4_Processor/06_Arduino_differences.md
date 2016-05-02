@@ -18,6 +18,10 @@ In UDOO Neo there are two different serial ports:
 * `Serial` is the internal serial port "connected" to the A9 core, accessible via `/dev/ttyMCC`.
 
 
+## PWM
+There is litle difference for [PWM pins declaration.](../Debugging_&_Troubleshooting/Arduino_PWM_Issue.html)
+
+
 ## ADC (analog inputs)
 Arduino UNO analogic inputs have a resolution of 10 bit, so `analogRead()` returns values between 0-1023.
 

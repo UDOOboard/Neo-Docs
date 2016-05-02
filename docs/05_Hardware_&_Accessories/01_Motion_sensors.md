@@ -21,12 +21,16 @@ FXOS8700CQ has dynamically selectable acceleration full scale ranges of Â±2g / Â
 To enable the accelerometer, you need to write `1` in the file below:
 
     echo 1 > /sensors/accelerometer/enable
+    
+<span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default! 
 
 Accelerometer data is then available reading the file `/sensors/accelerometer/data`.
 
 To enable the magnetometer, you need to write `1` in the file below:
 
     echo 1 > /sensors/magnetometer/enable
+    
+<span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default! 
 
 Magnetometer data is then available reading the file `/sensors/magnetometer/data`.
 
@@ -44,9 +48,12 @@ An integrated Low-Pass Filter (LPF) allows the host application to limit the dig
 To enable the gyroscope, you need to write `1` in the file below:
 
     echo 1 > /sensors/gyroscope/enable
+        
+<span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default! 
 
 Gyroscope data is then available from reading the file `/sensors/gyroscope/data`.
 
+## Examples
 
 ### Accelerometer examples
 
@@ -216,6 +223,28 @@ while [ 1 ]; do
   echo "$g_x/$g_y/$g_z"
 done
 ```
+
+# Use motion sensors from Arduino M4 core
+By default 9-axis motion sensors are *connected* to A9 core and you can manage by Linux drivers or I2C tools as explainend previously.
+To allow to M4 Arduino core to access these sensors we need to change internal pinmuxing. Udoobuntu provides a graphical tool to change this configuration.
+
+<a href="../img/gionji/DOCS_9axis_pinmux_01.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_01.PNG"></a>
+
+<a href="../img/gionji/DOCS_9axis_pinmux_02.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_02.PNG"></a>
+
+<a href="../img/gionji/DOCS_9axis_pinmux_03.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_03.PNG"></a>
+
+<a href="../img/gionji/DOCS_9axis_pinmux_04.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_04.PNG"></a>
+
+<a href="../img/gionji/DOCS_9axis_pinmux_05.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_05.PNG"></a>
+
+<a href="../img/gionji/DOCS_9axis_pinmux_06.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_061.PNG"></a>
+
+<a href="../img/gionji/DOCS_9axis_pinmux_07.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_07.PNG"></a>
+
+<a href="../img/gionji/DOCS_9axis_pinmux_08.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_08.PNG"></a>
+
+
 
 
 <script>

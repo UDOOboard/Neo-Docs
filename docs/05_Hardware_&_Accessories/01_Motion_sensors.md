@@ -251,7 +251,7 @@ Right click on the pins and select *remove*
 
 After that the i2c4 pins are not highlighed
 
-<a href="../img/gionji/DOCS_9axis_pinmux_06.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_061.PNG"></a>
+<a href="../img/gionji/DOCS_9axis_pinmux_06.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_06.PNG"></a>
 
 Click on *save* button on the top bar.
 

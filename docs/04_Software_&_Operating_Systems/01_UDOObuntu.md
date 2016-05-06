@@ -18,7 +18,7 @@ Besides the Ubuntu 14.04 specifications, UDOObuntu differs for the following ele
  * gstreamer, which plays full HD videos via gplay
  * QT 5.2.1 with X11 OpenGL ES2 GPU acceleration
  * [Web Control Panel](../Basic_Setup/Web_Control_Panel.html)
- * Device Tree Editor, to control [pinmuxing](../Cookbook_Linux/Device_Tree_Editor.html)
+ * [Device Tree Editor](../Cookbook_Linux/Device_Tree_Editor.html), to control pinmuxing
 
 ## Updates
 
@@ -58,4 +58,3 @@ The root partition is automatically expanded at the first boot to the size of th
 UDOObuntu image is generated automatically from the build script [mkudoobuntu](https://github.com/UDOOboard/mkudoobuntu). This tool builds *recipes* for different boards and image types (eg. with GUI or headless).
 
 The first step is to *debootstrap* a base Ubuntu armhf system. Then some configuration files are patched and UDOO specific packages are installed from the UDOO repository.
-

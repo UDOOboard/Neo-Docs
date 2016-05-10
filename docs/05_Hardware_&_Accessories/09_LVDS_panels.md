@@ -1,9 +1,10 @@
-By default, UDOO Neo displays the graphical user interface on the micro-HDMI port. 
+By default, UDOO Neo displays the graphical user interface on the micro-HDMI port.
 LVDS screens can be connected to the `CN3` port. Before the screen can be used, it must be enabled as it follows. You cannot use the HDMI and the LVDS7 video outputs simultaneously.
 
 <div class="alert alert-danger" role="alert">
   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
   <span class="sr-only">Warning!</span>
+  Make sure to plug the display cable when the board is turned off. <br />
   Make sure you are powering your UDOO Neo with a <a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html">12V power supply</a> when using LVDS screens.
 </div>
 
@@ -27,9 +28,11 @@ You can revert this change by typing:
 
     sudo udooscreenctl set hdmi
 
+If you want more info about the *udooscreenctl* command visit the [Set Video Output](../Cookbook_Linux/Set_video_output.html).
+If you prefer a graphical simple way to change the default video output, it is provided by the [UDOO Web Control Panel](../Basic_Setup/Web_Control_Panel.html) in the "Configuration"->"Advanced setting" section.
 
 #### Option 2: you can connect via VNC or SSH
-If you can [connect to your board via VNC](../Basic_Setup/Remote_Desktop_(VNC).html) or via SSH (using the USB, WiFi or Ethernet connection), you can follow the steps explained in the previous section.
+If you can [connect to your board via VNC](../Basic_Setup/Remote_Desktop_(VNC).html) or via [SSH (using the USB, WiFi or Ethernet connection)](../Basic_Setup/Remote_Terminal_(SSH).html) , you can follow the steps explained in the previous section.
 
 
 #### Option 3: you have neither HDMI nor network
@@ -62,4 +65,3 @@ Substitute the word `hdmi` with `lvds7`:
 <img style="width:800px; " src="../img/gionji/DOCS_lvds_via_usb_04.PNG">
 
 Save the file, eject the boot partition and restart the board.
-

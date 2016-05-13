@@ -4,9 +4,6 @@ By default the internal 9-axis motions sensors are assigned to A9 and it’s pos
 If you need to use them by the M4 Arduino core you need to remove them from the A9 core, right-clicking on the Snap-in connector on the right panel and removing it.
 After reboot it will be possible to connect to I2C-4 pins an external I2C device and controll it from Arduino M4 core.
 
-<h2>Step by step</h2>
-[screenshot is coming soon]
-
 <h2>Load the example</h2>
 Update the system by typing
 
@@ -18,7 +15,7 @@ Load the example:
     #include <FXOS8700CQ.h>
     #include <FXAS21002C.h>
 
-    FXAS21002C gyroSensor   = FXAS21002C(0x20); 
+    FXAS21002C gyroSensor   = FXAS21002C(0x20);
     FXOS8700CQ accMagSensor = FXOS8700CQ(0x1E);
     bool stopLoop = false;
 
@@ -73,5 +70,3 @@ Load the example:
         delay(100);
       }
     }
-
-

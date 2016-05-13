@@ -23,33 +23,32 @@ Load the example:
       Serial.begin(9600);
       Wire1.begin();
 
-       // Initialize the FXOS8700CQ
+      // Initialize the FXOS8700CQ
       accMagSensor.init();
-       // Initialize the FXAS21002C
-       gyroSensor.init();
+      // Initialize the FXAS21002C
+      gyroSensor.init();
     }
 
     void loop() {
       // Query the sensor
       if (!stopLoop) {
-    accMagSensor.readAccelData();
-    accMagSensor.readMagData();
+        accMagSensor.readAccelData();
+        accMagSensor.readMagData();
 
         gyroSensor.getGres();
-         // Query the sensor
-        gyroSensor.readGyroData();
+        gyroSensor.readGyroData();  // Query the sensor
 
-    // Print out the data
-    // Accelerometer
-    Serial.print("Accel ");
-    Serial.print("  ");
-    Serial.print((int)accMagSensor.accelData.x);
-    Serial.print("  ");
-    Serial.print((int)accMagSensor.accelData.y);
-    Serial.print("  ");
-    Serial.println((int)accMagSensor.accelData.z);
+        // Print out the data
+        // Accelerometer
+        Serial.print("Accel ");
+        Serial.print("  ");
+        Serial.print((int)accMagSensor.accelData.x);
+        Serial.print("  ");
+        Serial.print((int)accMagSensor.accelData.y);
+        Serial.print("  ");
+        Serial.println((int)accMagSensor.accelData.z);
 
-        // Magnometer
+        // Magnetometer
         Serial.print("    Mag ");
         Serial.print(" ");
         Serial.print((int)accMagSensor.magData.x);
@@ -58,7 +57,7 @@ Load the example:
         Serial.print(" ");
         Serial.println((int)accMagSensor.magData.z);
 
-          // Gyroscope
+        // Gyroscope
         Serial.print("    Gyro ");
         Serial.print(" ");
         Serial.print((int)gyroSensor.gyroData.x);

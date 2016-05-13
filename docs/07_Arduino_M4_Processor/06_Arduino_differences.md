@@ -19,20 +19,19 @@ In UDOO Neo there are two different serial ports:
 
 
 ## PWM
-There is litle difference for [PWM pins declaration.](../Debugging_&_Troubleshooting/Arduino_PWM_Issue.html). If you use a PWM pins you don't need to declare with pinMode(XX, OUTPUT).
+There is a little difference for [PWM pins declaration.](../Debugging_&_Troubleshooting/Arduino_PWM_Issue.html). If you use a PWM pins you don't need to declare with `pinMode(XX, OUTPUT)`.
 
 
 ## ADC (analog inputs)
 Arduino UNO analogic inputs have a resolution of 10 bit, so `analogRead()` returns values between 0-1023.
 
-UDOO Neo has 12-bit ADC capabilities. This will return values from `analogRead()` between 0 and 4095.
+UDOO Neo has 12-bit ADC capabilities. `analogRead()` will return values between 0 and 4095.
 
 
 ## Arduino sketch storage
 On Arduino boards, the sketch is saved in a flash memory.
 
 On UDOO Neo, the sketch is persisted on the SD card. When the board is powered on, the sketch is loaded from the `/var/opt/m4/m4last.fw` file and executed on the M4 core.
-
 
 <!--
 

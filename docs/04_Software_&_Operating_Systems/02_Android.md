@@ -44,4 +44,4 @@ To compile source run the following commands:
     ~$ lunch udooneo_6sx-eng
     ~$ make -jN
 
-N.B. In the make command substitute N with the number of available CPU cores of your building machine. This last command could take several hours.
+N.B. In the `make` command substitute `N` with the number of available CPU cores of your building machine. This last command could take several hours.

@@ -21,16 +21,16 @@ FXOS8700CQ has dynamically selectable acceleration full scale ranges of Â±2g / Â
 To enable the accelerometer, you need to write `1` in the file below:
 
     echo 1 > /sensors/accelerometer/enable
-    
-<span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default! 
+
+<span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default!
 
 Accelerometer data is then available reading the file `/sensors/accelerometer/data`.
 
 To enable the magnetometer, you need to write `1` in the file below:
 
     echo 1 > /sensors/magnetometer/enable
-    
-<span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default! 
+
+<span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default!
 
 Magnetometer data is then available reading the file `/sensors/magnetometer/data`.
 
@@ -48,8 +48,8 @@ An integrated Low-Pass Filter (LPF) allows the host application to limit the dig
 To enable the gyroscope, you need to write `1` in the file below:
 
     echo 1 > /sensors/gyroscope/enable
-        
-<span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default! 
+
+<span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default!
 
 Gyroscope data is then available from reading the file `/sensors/gyroscope/data`.
 
@@ -209,9 +209,9 @@ done
 ### Read gyroscope via I2C
 
 ``` bash
-\#!/bin/sh
+#!/bin/sh
 
-\# set to active mode
+# set to active mode
 i2cset -f -y 3 0x20 0x13 0x16
 
 while [ 1 ]; do
@@ -261,7 +261,7 @@ Click ok, close the browser and reboot the board.
 
 <a href="../img/gionji/DOCS_9axis_pinmux_08.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_08.PNG"></a>
 
-
+For an example sketch of how to catch data from the motion sensors through Arduino M4 go to the [Controlling 9-axis motion sensors](../Arduino_M4_Processor/Controlling_9-axis_motion_sensors.html) section.
 
 
 <script>

@@ -1,5 +1,8 @@
 ## Install the required packages
 
+Some packages are needed to compile the Linux Kernel for UDOO boards.
+E.g. in Ubuntu 14.04 it is necessary to install the following packages:
+
     sudo apt-get update
     sudo apt-get install gawk wget git diffstat unzip texinfo gcc-multilib \
          build-essential chrpath socat libsdl1.2-dev xterm picocom ncurses-dev lzop \
@@ -8,15 +11,15 @@
 ## Get the kernel sources from GitHub
 Create a develop folder
 
-    mkdir udooneo-dev
-    cd udooneo-dev
+    mkdir udoo-dev
+    cd udoo-dev
 
 then download the sources:
 
     git clone https://github.com/UDOOboard/linux_kernel
     cd linux_kernel
 
-The default branch `3.14-1.0.x-udoo` is the one where we are working on for the UDOO NEO. It is based on 3.14.56 Freescale community kernel.
+The default branch [`3.14-1.0.x-udoo`](https://github.com/UDOOboard/linux_kernel) is the one where we are working on for the UDOO QUAD/DUAL. It is based on 3.14.56 Freescale community kernel.
 
 
 ## Load the default kernel configuration

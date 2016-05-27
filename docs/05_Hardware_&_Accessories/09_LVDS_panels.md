@@ -5,7 +5,7 @@ LVDS screens can be connected to the `CN3` port. Before the screen can be used, 
   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
   <span class="sr-only">Warning!</span>
   Make sure to plug the display cable when the board is turned off. <br />
-  Make sure you are powering your UDOO Neo with a <a href="http://shop.udoo.org/eu/accessories/power-adapter-eu.html">12V power supply</a> when using LVDS screens.
+  Make sure you are powering your UDOO Neo with a <a href="http://shop.udoo.org/accessories/power-adapter-eu.html">12V power supply</a> when using LVDS screens.
 </div>
 
 

@@ -47,9 +47,9 @@ const int bluePin = 9;  // B petal on RGB LED module connected to digital pin 10
   
 void setup()
 { 
-         pinMode(redPin, OUTPUT); // sets the redPin to be an output 
-         pinMode(greenPin, OUTPUT); // sets the greenPin to be an output 
-         pinMode(bluePin, OUTPUT); // sets the bluePin to be an output 
+         // pinMode(redPin, OUTPUT); //  Unlike Arduino, no PWM pins declaration needed in UDOO NEO
+         // pinMode(greenPin, OUTPUT);  
+         // pinMode(bluePin, OUTPUT); 
 }    
   
 void loop()  // run over and over again  

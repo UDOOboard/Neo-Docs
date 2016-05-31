@@ -1,4 +1,4 @@
-PHP Serial Libraries for UDOO DUAL/QUAD
+PHP Serial Libraries for UDOO NEO
 --------
 
 This file describes how to run the PHP examples contained in this folder.

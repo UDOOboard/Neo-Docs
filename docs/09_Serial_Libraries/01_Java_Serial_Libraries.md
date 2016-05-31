@@ -1,4 +1,4 @@
-JAVA Serial libraries for UDOO DUAL/QUAD
+JAVA Serial libraries for UDOO NEO
 -----------------
 
 This file describes how to compile and run the Java examples contained in this folder.

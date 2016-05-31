@@ -15,8 +15,8 @@ int greenPin = 10;    // select the pin for the greenLED
 int val = 0;
 
 void setup() {
-  pinMode(redPin, OUTPUT);
-  pinMode(greenPin, OUTPUT);
+  //pinMode(redPin, OUTPUT);    // Unlike Arduino, no PWM pins declaration needed in UDOO NEO
+  //pinMode(greenPin, OUTPUT);
   Serial.begin(9600);
 }
 

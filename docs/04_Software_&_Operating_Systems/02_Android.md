@@ -34,9 +34,9 @@ Next step is downloading the source code. To do so you need the repo tool which 
     ~$ chmod a+x ~/bin/repo
     ~$ cd myandroid
     ~$ ~/bin/repo init -u https://github.com/UDOOboard/android_udoo_platform_manifest -b android-5.1.1
-    ~$ ~/bin/repo sync
+    ~$ ~/bin/repo sync -j5
 
-N.B. the `repo sync` loads the repos needed. Therefore, it can take several hours to load.
+N.B. the `repo sync` loads the repos needed. Therefore, it can take several hours to load. The `-jN` command run `N` job at the same time to speed up this process.
 
 To compile source run the following commands:
 

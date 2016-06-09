@@ -1,12 +1,12 @@
-This describes the necessary steps to start and use the pre-compiled Android software support package for UDOO DUAL/QUAD Board. Moreover, a description of how to rebuild the bootloader, kernel and Android file system is provided. The procedure described in this wiki refers to UDOO DUAL/QUAD.
+This describes the necessary steps to start and use the pre-compiled Android software support package for UDOO NEO Board. Moreover, a description of how to rebuild the bootloader, kernel and Android file system is provided. The procedure described in this wiki refers to UDOO NEO.
 
 ## System Requirements
 
-Android system for UDOO DUAL/QUAD board is provided as precompiled images or as source code to be customized and rebuilt. Running the full procedure described in this wiki, rebuilding the Android system from source files, it is necessary to have an host PC (or Virtual Machine) running Ubuntu Linux 14.04 64bit with at least 40 GB of free disk space, configured in the set up the work environment section below. The host PC should also include:
+Android system for UDOO NEO board is provided as precompiled images or as source code to be customized and rebuilt. Running the full procedure described in this wiki, rebuilding the Android system from source files, it is necessary to have an host PC (or Virtual Machine) running Ubuntu Linux 14.04 64bit with at least 40 GB of free disk space, configured in the set up the work environment section below. The host PC should also include:
 
 * an SD/µSD card reader;
 * an host pc with internet connection;
-* a microUSB cable to connect UDOO DUAL/QUAD to host and access debug serial (optional);
+* a microUSB cable to connect UDOO NEO to host and access debug serial (optional);
 
 ### Terminology
 
@@ -18,7 +18,7 @@ Regarding the development environment, you need to first make sure to comply wit
 
 We suggest to use a Virtual Machine environment to create a close and dedicated workspace. It reduce risks of procedure and libraries mismatching or to corrupt other working enviroments present on the host machine.
 
-Building 5.x Lollipop and 6.0.x Marshmallow versions for UDOO QUAD/DUAL only requires to have `OpenJDK v7` (the v8 as specified in the official Android docs is required only to compile the next Android N).
+Building 5.x Lollipop and 6.0.x Marshmallow versions for UDOO NEO only requires to have `OpenJDK v7` (the v8 as specified in the official Android docs is required only to compile the next Android N).
 
     ~$ sudo apt-get install openjdk-7-jdk
 
@@ -33,7 +33,7 @@ At this page you can find how to [create a Virtual Machine for Development](../A
 
 ## Serial communication
 
-While not exactly necessary, serial communication with UDOO DUAL/QUAD is strongly recommended as the first debug method. In order to use the serial debug port on UDOO DUAL/QUAD, after connecting the board and host PC ports, it is necessary to install and setup an application for serial communication, such as minicom. At this page you can find how to [Conecting via Serial Cable](../Basic_Setup/Connecting_Via_Serial_Cable.html).
+While not exactly necessary, serial communication with UDOO NEO is strongly recommended as the first debug method. In order to use the serial debug port on UDOO NEO, after connecting the board and host PC ports, it is necessary to install and setup an application for serial communication, such as minicom. At this page you can find how to [Conecting via Serial Cable](../Basic_Setup/Serial_Debug_Console.html).
 
 The serial debug port is used for two different reasons: The bootloader and kernel send debug messages via serial port, so that the user can monitor the low level system state; a root console is opened on the serial port, allowing bootloader configuration and system control.
 
@@ -43,13 +43,17 @@ The number of messages sent via serial port can be very high. For this reason, i
 
 Next step is downloading the source code. To do so you need the [`repo`](https://source.android.com/source/using-repo.html) tool which has been developed especially for Android in order to manage the hundreds of Git repositories this project contains:
 
-    ~$ cd ~
-    ~$ mkdir myandroid bin
-    ~$ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-    ~$ chmod a+x ~/bin/repo
-    ~$ cd myandroid
-    ~$ ~/bin/repo init -u https://github.com/UDOOboard/android_udoo_platform_manifest -b android-6.0.1
-    ~$ ~/bin/repo sync -j5
+```bash
+
+~$ cd ~
+~$ mkdir myandroid bin
+~$ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+~$ chmod a+x ~/bin/repo
+~$ cd myandroid
+~$ ~/bin/repo init -u https://github.com/UDOOboard/android_udoo_platform_manifest -b android-5.1.1
+~$ ~/bin/repo sync -j5
+
+```
 
 N.B. the `repo sync` loads the repos needed. Therefore, it can take several hours to load. The `-jN` command run `N` tasks at the same time to speed up this process.
 
@@ -74,20 +78,20 @@ Finally, it is necessary to choose which target to build. The command below show
 
 For each possible target, the first part of the name indicates the board you are building for, while the second part selects the build type, as described [here](http://source.android.com/source/building.html).
 
-In particular, valid options to build for UDOO DUAL/QUAD board are:
+In particular, valid options to build for UDOO NEO board are:
 
-* udoo_6dq-user: build for production, with limited access
-* udoo_6dq-eng: build for development, with root access and additional debugging tools
+* udooneo_6sx-user: build for production, with limited access
+* udooneo_6sx-eng: build for development, with root access and additional debugging tools
 
 The target selection can alternatively be done directly at command line, calling for example
 
 ```bash
 
-~$ lunch udoo_6dq-eng
+~$ lunch udooneo_6sx-eng
 
 ```
 
-Once all these steps are done, several environment variables are set. Among the rest, it is worth noting the environment variable OUT, automatically set to `udoo-android-dev]/out/target/product/udoo_6dq`, that is the folder where Android system is actually built, and where object files, folders and system images are created. From now on, this folder is called [OUT].
+Once all these steps are done, several environment variables are set. Among the rest, it is worth noting the environment variable OUT, automatically set to `udoo-android-dev]/out/target/product/udooneo_6sx`, that is the folder where Android system is actually built, and where object files, folders and system images are created. From now on, this folder is called [OUT].
 
 ## Build Android system image
 
@@ -124,11 +128,11 @@ Several files and folders are created in [OUT]. Among the rest we underline:
 * recovery.img: kernel and initial root ramdisk used in recovery mode, generated from kernel and ramdisk-recovery.img
 * u-boot.imx: the U-Boot bootloader. This is the first executed binary that loads the kernel and all the system.
 
-The images are sufficient to boot UDOO DUAL/QUAD board with the default kernel configuration.
+The images are sufficient to boot UDOO NEO board with the default kernel configuration.
 
 ## Create a microSD from the Android built files
 
-Once the new Android system images are created, it is necessary to prepare a µSD card with the images and boot UDOO DUAL/QUAD board. A script is provided to help with this step. In a way similar to what is described in the Run Android section, the script will partition and format the SD card and then copies the new Android images into the correct partitions, reading them directly from [$OUT]. It is sufficient to follow the next steps.
+Once the new Android system images are created, it is necessary to prepare a µSD card with the images and boot UDOO NEO board. A script is provided to help with this step. In a way similar to what is described in the Run Android section, the script will partition and format the SD card and then copies the new Android images into the correct partitions, reading them directly from [$OUT]. It is sufficient to follow the next steps.
 
 Connect the SD card to your host PC, and use the `dmesg` or `fdisk -l` commands to find the device name; we suppose it is /dev/sdc.
 
@@ -136,13 +140,13 @@ Launch the script to prepare the SD
 
 ```bash
 
-~# cp make_sd.sh $OUT
-~# cd $OUT
-~# sudo -E ./make_sd.sh /dev/sdc
+~$ cp make_sd.sh $OUT
+~$ cd $OUT
+~$ sudo -E ./make_sd.sh /dev/sdc
 
 ```
 
-When this is done, the SD card containing the images is ready to boot UDOO DUAL/QUAD as described in the Boot Android from SD section.
+When this is done, the SD card containing the images is ready to boot UDOO NEO as described in the Boot Android from SD section.
 
 ## Prepare a Distro
 
@@ -164,7 +168,7 @@ When the `make_sd` script ends, insert the SD into the SD card slot and power up
 
 ### Build Kernel
 
-The kernel is built together with the rest of the Android system. However, it is also possible to modify the configuration and rebuild it separately. As for the bootloader, the kernel can be configured and customized for a very wide range of boards and peripherals. Linux kernel customization is a very complex task, an in-depth description is out of the scope of this document. Here we consider only the default configuration to run linux kernel on UDOO DUAL/QUAD board.
+The kernel is built together with the rest of the Android system. However, it is also possible to modify the configuration and rebuild it separately. As for the bootloader, the kernel can be configured and customized for a very wide range of boards and peripherals. Linux kernel customization is a very complex task, an in-depth description is out of the scope of this document. Here we consider only the default configuration to run linux kernel on UDOO NEO board.
 
 It is possible to configure (or restore) the kernel to the default configuration for the Module calling the command below:
 
@@ -172,7 +176,7 @@ The command:
 
 ```bash
 
-~$ make -C kernel_imx udoo_quad_dual_android_defconfig
+~$ make -C kernel_imx udoo_neo_android_defconfig
 
 ```
 

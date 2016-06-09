@@ -36,7 +36,7 @@ To use the External Arduino IDE follow the instructions below:
 
 * Connect UDOO NEO via Micro USB Cable to your PC
 
-* In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install few drivers first as described [here](../Basic_Setup/Usb_Direct_Connection.html).
+* In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install few drivers first as described in the [USB Direct Connection](../Basic_Setup/Usb_Direct_Connection.html).
 
 ### Install UDOO FOTA
 

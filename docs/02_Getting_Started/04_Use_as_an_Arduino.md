@@ -1,3 +1,4 @@
+# Arduino IDE
 To develop sketches for M4 cores we provide the same way to program Arduino Uno.
 We can use the internal Arduino IDE or connect the board and use an IDE running on external PC.
 
@@ -6,44 +7,78 @@ After you connected the board and you boot the desktop environment:
 
 1. Start -> Programming -> Arduino IDE
 2. File -> Examples -> Basics -> Blink
-3. Save the sketch if you want
-4. Click on "Upload" button.
-5. Wait "Compiling sketch..." until "Upload complete".
+3. Click on "Upload" button.
+4. Wait "Compiling sketch..." until "Upload is complete".
 
 Now the sketch will be run on M4 side.
-
 
 ## Precompiled binary
 It's possible to upload a precompiled binary firmware on the M4 using this command:
 
-    udooneo-m4uploader.sh <BINARY_PATH>
+```bash
+udooneo-m4uploader.sh <BINARY_PATH>
+```
 
-## External Arduino IDE
+# External Arduino IDE
 
-### Connect UDOO Neo
+<span class="label label-warning">Heads up!</span>For external programming the serial monitor doesn’t work yet.
 
-To use an External Arduino IDE (eg., on your computer) follow the instructions below:
+### Connect UDOO NEO
 
-* Connect UDOO Neo via Micro USB Cable to your PC;
-* Installed USB drivers as described [here](../Basic_Setup/Usb_Direct_Connection.html).
+To use the External Arduino IDE follow the instructions below:
+
+* Connect UDOO NEO via Micro USB Cable to your PC
+
+* In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install few drivers first as described in the [USB Direct Connection](../Basic_Setup/Usb_Direct_Connection.html).
+
+### Install UDOO FOTA
+
+NOTE: If you use UDOOBuntu2 BETA 5 or previous versions you need to install the UDOO FOTA (Firmware over the Air) Server Package while if you use UDOOBuntu2 BETA 6 or later versions skip this step.
+
+* To Install the UDOO FOTA you need to connect the board to internet using it either as a Computer or a Headless Device:
+
+1. [Use as a Headless Device](../Getting_Started/Use_as_a_headless_IoT_Device.html)
+
+2. [Use as a Computer](../Getting_Started/Use_as_a_Computer.html)
+
+* Once you board is connected to internet open a terminal and type:
+
+```bash
+
+sudo apt-get update
+sudo apt-get install udoofota-server
+
+```
 
 ### Install and configure the Arduino IDE
 
-<span class="label label-warning">Heads up!</span> You **must** use exactly Arduino IDE 1.6.5. For the moment, other versions are not supported.
+* From your computer go to the Arduino website and downlaod the last Arduino IDE version (currently 1.6.9): [Arduino IDE 1.6.9](https://www.arduino.cc/en/Main/Software)
 
-* From your computer go to the Arduino website and [downlaod the 1.6.5 version of the IDE](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous)
 * Select the OS you have in your computer and download the IDE then install it
-* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs: https://udooboard.github.io/arduino-board-package/package_udoo_index.json , then click Ok.
+
+* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs:
+    https://udooboard.github.io/arduino-board-package/package_udoo_index.json
+then click `OK`.
 
 <img width="550" height="447" src="../img/ext_ard_07.png">
 
+<br />
+<br />
+
 * Go to Tools -> Boards and open the Board Manager.
-* Wait few seconds 'till the end of the "index download" then look for UDOO Neo (iMX6 SoloX) and install it.
+
+* Wait few seconds 'till the end of the "index download" then look for `UDOO NEO (iMX6 SoloX) by UDOO Team` and install it.
 
 <img width="550" height="415" src="../img/xt_ard_08.png">
 
-* Now in Tools -> Boards you should see the UDOO Neo (Cortex M4), if so Click on it. Leave the Tools -> Ports unselected.
+<br />
+<br />
+
+* Now in Tools -> Boards you should see the `UDOO NEO (Cortex M4)`, if so Click on it. Leave the Tools -> Ports unselected.
 
 <img width="550" height="587" src="../img/ext_ard_09.png">
 
-* Done, now you're ready to use your UDOO Neo with the Arduino IDE installed on your Computer.
+* Done, now you're ready to use your UDOO NEO with the Arduino IDE installed on your Computer.
+
+**N.B:** in order to get it working on Linux 64 bit you need compatibility packages:
+$ sudo apt-get -y install lib32z1 lib32ncurses5 lib32bz2-1.0

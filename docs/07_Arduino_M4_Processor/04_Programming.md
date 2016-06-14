@@ -2,20 +2,13 @@
 To develop sketches for M4 cores we provide the same way to program Arduino Uno.
 We can use the internal Arduino IDE or connect the board and use an IDE running on external PC.
 
-<div class="alert alert-danger" role="alert">
-  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-  <span class="sr-only">Warning!</span>
-  Udoo Neo works ONLY with Arduino IDE version 1.6.5. Down load it from <a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">here!</a>
-</div>
-
 ## Internal Arduino IDE
 After you connected the board and you boot the desktop environment:
 
 1. Start -> Programming -> Arduino IDE
 2. File -> Examples -> Basics -> Blink
 3. Click on "Upload" button.
-4. Save the sketch if you wantpro
-5. Wait "Compiling sketch..." until "Upload is complete".
+4. Wait "Compiling sketch..." until "Upload is complete".
 
 Now the sketch will be run on M4 side.
 
@@ -59,17 +52,13 @@ sudo apt-get install udoofota-server
 
 ### Install and configure the Arduino IDE
 
-<div class="alert alert-danger" role="alert">
-  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-  <span class="sr-only">Warning!</span>
-  Udoo Neo works ONLY with Arduino IDE version 1.6.5. Download it from <a href="https://www.arduino.cc/en/Main/OldSoftwareReleases#previous">here!</a>
-</div>
-
-* From your computer go to the Arduino website and downlaod the 1.6.5 version of the IDE: [Arduino IDE 1.6.5]https://www.arduino.cc/en/Main/OldSoftwareReleases#previous
+* From your computer go to the Arduino website and downlaod the last Arduino IDE version (currently 1.6.9): [Arduino IDE 1.6.9](https://www.arduino.cc/en/Main/Software)
 
 * Select the OS you have in your computer and download the IDE then install it
 
-* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs: `https://udooboard.github.io/arduino-board-package/package_udoo_index.json` , then click Ok.
+* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs:
+    https://udooboard.github.io/arduino-board-package/package_udoo_index.json
+then click `OK`.
 
 <img width="550" height="447" src="../img/ext_ard_07.png">
 

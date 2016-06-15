@@ -21,6 +21,8 @@ udooneo-m4uploader.sh <BINARY_PATH>
 
 # External Arduino IDE
 
+<span class="label label-warning">Heads up!</span>A microSD with a with UDOOBuntu2 have to be up and running to program the Arduino&trade; M4 from an external PC. Expecially the USB direct Connection(USB OTG Gadget) and the UDOO FOTA server are the software needed.
+
 <span class="label label-warning">Heads up!</span>For external programming the serial monitor doesn’t work yet.
 
 ### Connect UDOO NEO
@@ -33,7 +35,7 @@ To use the External Arduino IDE follow the instructions below:
 
 ### Install UDOO FOTA
 
-NOTE: If you use UDOOBuntu2 BETA 5 or previous versions you need to install the UDOO FOTA (Firmware over the Air) Server Package while if you use UDOOBuntu2 BETA 6 or later versions skip this step.
+<span class="label label-warning">Heads up!</span>NOTE: If you use UDOOBuntu2 BETA 5 or previous versions you need to install the UDOO FOTA (Firmware over the Air) Server Package while if you use UDOOBuntu2 BETA 6 or later versions skip this step.
 
 * To Install the UDOO FOTA you need to connect the board to internet using it either as a Computer or a Headless Device:
 
@@ -56,7 +58,7 @@ sudo apt-get install udoofota-server
 
 * Select the OS you have in your computer and download the IDE then install it
 
-* Open the IDE, go to File -> Preferences and add this link to Additional Boards Manager URLs and then click `OK`:  
+* Open the IDE, go to `File -> Preferences` and add this link to `Additional Boards Manager URLs` and then click `OK`:  
 
       https://udooboard.github.io/arduino-board-package/package_udoo_index.json    
 
@@ -65,7 +67,7 @@ sudo apt-get install udoofota-server
 <br />
 <br />
 
-* Go to Tools -> Boards and open the Board Manager.
+* Go to `Tools -> Boards` and open the `Board Manager`.
 
 * Wait few seconds 'till the end of the "index download" then look for `UDOO NEO (iMX6 SoloX) by UDOO Team` and install it.
 
@@ -74,7 +76,7 @@ sudo apt-get install udoofota-server
 <br />
 <br />
 
-* Now in Tools -> Boards you should see the `UDOO NEO (Cortex M4)`, if so Click on it. Leave the Tools -> Ports unselected.
+* Now in `Tools -> Boards` you should see the `UDOO NEO (Cortex M4)`, if so Click on it. Leave the `Tools -> Ports` unselected.
 
 <img width="550" height="587" src="../img/ext_ard_09.png">
 

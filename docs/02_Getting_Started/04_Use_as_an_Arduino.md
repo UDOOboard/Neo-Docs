@@ -7,7 +7,7 @@ You can use the internal Arduino&trade; IDE preintalled on UDOObuntu 2 running o
 Take a look at the [Arduino M4 Processor](../Arduino_M4_Processor/Overview.html) section to find all the information about the Arduino&trade; side of the UDOO NEO.
 
 ## Internal Arduino IDE
-Follow the guide [Programming Arduino M4 Processor(Cortex-A9)](../Arduino_M4_Processor/Programming_Arduino_M4_from_Internal_Processor\(Cortex-A9\).html) to load a sketch on the Arduino M4 Processor from the Arduino&trade; IDE preintalled on UDOOBuntu 2.
+Follow the guide [Programming Arduino M4 from Internal Processor(Cortex-A9)](../Arduino_M4_Processor/Programming_Arduino_M4_from_Internal_Processor\(Cortex-A9\).html) to load a sketch on the Arduino M4 Processor from the Arduino&trade; IDE preintalled on UDOOBuntu 2.
 
 ## External Arduino IDE
 Follow the guide [Programming Arduino M4 Processor from External PC](../Arduino_M4_Processor/Programming_Arduino_M4_from_External_PC.html) to load a sketch on the Arduino M4 Processor from the Arduino&trade; IDE installed on your External PC.  

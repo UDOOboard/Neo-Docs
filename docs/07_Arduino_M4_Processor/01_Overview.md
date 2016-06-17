@@ -1,4 +1,4 @@
-All the UDOO Neo board versions are equipped with a Freescale iMX 6SoloX processor, which embeds on single chip an ARM Cortex A9 and an ARM Cortex M4 microcontroller. They can use and share lot of hardware implemented features provided by the architecture as:
+All the **UDOO Neo** board versions are equipped with a NXP/Freescale iMX 6SoloX processor, which embeds on single chip an ARM Cortex A9 and an ARM Cortex M4 microcontroller. They can use and share lot of hardware implemented features provided by the architecture as:
 * GPIOs
 * analog inputs
 * PWMs
@@ -33,4 +33,3 @@ Moreover, during the boot the M4 requires the resources described in a configura
 When the system boot, it checks if a sketch compiled with the Arduino IDE is saved in the default location, which is `/var/opt/m4/m4last.fw`.
 
 If the sketch exists, it is loaded and executed on the M4 core; otherwise a default sketch is loaded from `/boot/m4startup.fw` as a workaround in order to prevent possible hangs on the M4.
-

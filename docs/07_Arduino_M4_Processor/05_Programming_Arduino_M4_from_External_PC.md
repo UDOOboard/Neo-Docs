@@ -83,21 +83,15 @@ You need to modify a file in your Arduino package that is named `platform.txt`. 
 
     C:\Users\<user_name>\AppData\Local\Arduino15\packages\UDOO\hardware\solox\<version_number>\platform.txt
 
-`<user_name>` is your User Name. `<version_number>` is the board manager package number version, it can change according to changes in our repositories.  
-
   </div>
   <div role="tabpanel" class="tab-pane" id="mac-example">
 
     /Users/<user_name>/Library/Arduino15/packages/UDOO/hardware/solox/<version_number>/platform.txt
 
-`<user_name>` is your User Name. `<version_number>` is the board manager package number version, can change according to changes in our repositories.
-
   </div>
   <div role="tabpanel" class="tab-pane" id="linux-example">
 
     /home/<user_name>/.arduino15/packages/UDOO/hardware/solox/<version_number>/platform.txt
-
-`<user_name>` is your User Name. `<version_number>` is the board manager package number version, can change according to changes in our repositories.
 
   </div>
  </div>
@@ -108,6 +102,8 @@ e.preventDefault()
 $(this).tab('show')
 })
 </script>
+
+`<user_name>` is your User Name. `<version_number>` is the board manager package number version, can change according to changes in our repositories.
 
 At the end of `platform.txt` you'll find this row:
 

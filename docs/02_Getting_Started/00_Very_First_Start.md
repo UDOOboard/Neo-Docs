@@ -48,6 +48,6 @@ Follow the guide to <a href="Create_a_bootable_MicroSD_card_for_UDOO_Neo.html">c
 ## 4. Ready!
 UDOO Neo will start, and you’ve plenty of options to use it:
 
- * <a href="Use_as_a_Computer.html">Use UDOO Neo as a computer and developing platform</a>
+ * <a href="Use_as_a_Lightweight_Desktop_PC.html">Use UDOO Neo as a lightweight Desktop PC and developing platform</a>
  * <a href="Use_as_a_headless_IoT_Device.html">Use UDOO Neo as a headless IoT device</a>
  * <a href="Use_as_an_Arduino.html">Use UDOO Neo as an Arduino</a>

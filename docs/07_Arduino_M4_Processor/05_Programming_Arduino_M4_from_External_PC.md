@@ -20,7 +20,7 @@ To use the External Arduino IDE follow the instructions below:
 
 1. [Use as a Headless Device](../Getting_Started/Use_as_a_headless_IoT_Device.html)
 
-2. [Use as a Computer](../Getting_Started/Use_as_a_Computer.html)
+2. [Use as a Lightweight Desktop PC](../Getting_Started/Use_as_a_Lightweight_Desktop_PC.html)
 
 * Once you board is connected to internet open a terminal and type:
 

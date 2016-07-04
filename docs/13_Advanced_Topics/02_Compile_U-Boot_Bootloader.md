@@ -1,7 +1,7 @@
 
 From the [Wikipedia page](https://en.wikipedia.org/wiki/Das_U-Boot), the free encyclopedia
 
-Das U-Boot (Universal Bootloader) is an open source, primary boot loader used in embedded devices to package the instructions to boot the device's operating system kernel. It is available for a number of computer architectures, including 68k, ARM, AVR32, Blackfin, MicroBlaze, MIPS, Nios, SuperH, PPC and x86.
+>Das U-Boot (Universal Bootloader) is an open source, primary boot loader used in embedded devices to package the instructions to boot the device's operating system kernel. It is available for a number of computer architectures, including 68k, ARM, AVR32, Blackfin, MicroBlaze, MIPS, Nios, SuperH, PPC and x86.
 
 UDOO QUAD-DUAL ARM boards use Das U-Boot. This bootloader initializes the system, and loads kernel and file system to boot the OS.
 
@@ -26,11 +26,11 @@ cd uboot-imx
 
 ```
 
-To build the U-Boot for UDOO Quad/Dual, use the [`2015.04.imx-neo`](https://github.com/UDOOboard/uboot-imx/tree/2015.04.imx-neo) branch. This branch is based on Freescale Community's U-Boot (uboot-fslc) version 2015.10.
+To build the U-Boot for UDOO Neo, use the [`2015.04.imx-neo`](https://github.com/UDOOboard/uboot-imx/tree/2015.04.imx-neo) branch. This branch is based on Freescale Community's U-Boot (uboot-fslc) version 2015.04.
 
 ```bash
 
-git checkout 2015.10.fslc-qdl
+git checkout 2015.04.imx-neo
 
 ```
 
@@ -67,7 +67,7 @@ lsblk
 
 ```
 
-Flash the files in the SD (e.g. /dev/sdb) card with:
+Flash the files in the SD (e.g. /dev/mmcblk0) card with:
 
 
 ```bash

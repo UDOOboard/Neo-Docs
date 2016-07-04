@@ -33,6 +33,13 @@ On Arduino boards, the sketch is saved in a flash memory.
 
 On UDOO Neo, the sketch is persisted on the SD card. When the board is powered on, the sketch is loaded from the `/var/opt/m4/m4last.fw` file and executed on the M4 core.
 
+## Interrupts
+UDOO NEO has interrupt capability on all digital pins, like Arduino Due.
+
+For now, UDOO NEO does **NOT** manage:
+ - **Interrupts()** / **NoInterrupts()**: functions for disabling/reenabling interrupts
+ - **CHANGE** mode: trigger an interrupt on both *RISING* and *FALLING* edges.
+
 <!--
 
 ## String object

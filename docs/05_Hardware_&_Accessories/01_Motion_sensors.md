@@ -7,7 +7,7 @@ They can be accessed by M4 core and also by A9 core. They can be used in ping mo
 
 <a href="../img/gionji/DOCS_acc_mag_chip.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_acc_mag_chip.PNG"></a> <a href="../img/gionji/DOCS_i2c_channels.JPG" target="_blank"><img style="width:400px; height:218px" src="../img/gionji/DOCS_i2c_channels.JPG"></a>
 
-<span class="label label-warning">Heads up!</span> Only EXENDED and FULL board versions are equipped with embedded motion sensors.
+<span class="label label-warning">Heads up!</span> Only EXTENDED and FULL board versions are equipped with embedded motion sensors.
 
 ## FXOS8700CQ - Accelerometer/Magnetometer
 FXOS8700CQ is a small, low-power, 3-axis, linear accelerometer and 3-axis, magnetometer combined into a single package. The device features an I2C with 14-bit accelerometer and 16-bit magnetometer ADC resolution along with smart-embedded functions.

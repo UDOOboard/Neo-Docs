@@ -8,14 +8,14 @@ String hello = "hello";       // ERROR
 String hi;                  // OK
 
 void setup(){
-    hi = hello;             // OK
+    hi = "hello";             // OK
 }
 
 void loop(){
     // ...
 }
 
-void dummy() {
+void dummy(){
     String bigHello = "HELLO"; // OK
 }
 ```

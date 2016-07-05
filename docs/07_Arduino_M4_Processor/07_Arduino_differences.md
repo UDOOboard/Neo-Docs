@@ -40,6 +40,10 @@ For now, UDOO NEO does **NOT** manage:
  - **Interrupts()** / **NoInterrupts()**: functions for disabling/reenabling interrupts
  - **CHANGE** mode: trigger an interrupt on both *RISING* and *FALLING* edges.
 
+## Strings
+The main problem with String objects is the impossibility to initialize them globally. So just declare globally or initialize them inside a function.
+Refer to this [page](../12_Debugging_&_Troubleshooting/02_Arduino_String_issue.html) for further information about *Strings* issues.
+
 <!--
 
 ## String object

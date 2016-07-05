@@ -1,9 +1,27 @@
-There are rules to obey.
+There are rules to obey due to the different implementation from Arduino.
 
-1) strings that are declared as global - that is, not inside a function - have to be mentioned with <code>nameVariableString.reserve(n)</code>, where n is the size of the String.
+## Global Variables
+Strings that are declared as global - that is, not inside a function - have to be mentioned with `nameVariableString.reserve(n)`, where n is the size of the String, or not initialized with a value.  
+E.g.:
+``` cpp
+String hello = hello;       // ERROR
+String hi;                  // OK
 
-2) Strings that are declared inside a function are allocated automatically at a fixed size. This size is maanged through the STRING_STACK_SIZE define in the Wstring.cpp file, that is by default settings equal to 255.
+void setup(){
+    hi = hello;             // OK
+}
 
-3) while
-```<if (inChar == '\n')>```
-is a non-working syntax, ```(inChar == '0x0D')``` works fine. This is found in several examples that retrieve a String from a serial.
+void loop(){
+    // ...
+}
+
+void dummy() {
+    String bigHello = "HELLO"; // OK
+}
+```
+
+## Fixed size allocation
+Strings that are declared inside a function are allocated automatically at a fixed size. This size is managed through the `STRING_STACK_SIZE` define in the `Wstring.cpp` file, that is by default settings equal to *255*.
+
+## Newline
+While `if (inChar == '\n')` is a non-working syntax, `if (inChar == '0x0D')` works fine. This is found in several examples that retrieve a *String* from a serial.

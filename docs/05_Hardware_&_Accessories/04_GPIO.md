@@ -1,16 +1,16 @@
-## General Purpose Input/Output (GPIO)
-The GPIO general-purpose input/output peripheral provides dedicated general-purpose pins that can be configured as either inputs or outputs.
+## GPIO
+The **GPIO** (*General-Purpose Input/Output*) peripheral provides dedicated general-purpose pins that can be configured as either inputs or outputs.
 When configured as an output, it is possible to write to an internal register to control the state driven on the output pin. When configured as an input, it is possible to detect the state of the input by reading the state of an internal register. In addition, the GPIO peripheral can produce CORE interrupts. The GPIO is one of the blocks controlling the IOMUX of the chip.
 
 More detailed information are available on the Chapter 30 of the [iMX 6SoloX Reference Manual](http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYPE=Reference%20Manuals&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation&fileExt=.pdf).
 
 ### How to access GPIOs from Linux
-It is possible to read and control digital input/output signals on the compatible Arduino pinout (blue pins). The GPIOs available from the Linux kernel are placed on the external pinout headers (in orange):
+The GPIOs available from the Linux kernel are placed on the external pinout headers (in orange).
 
 <a href="../img/gionji/DOCS_internal_external_rows.JPG" target="_blank"><img style="width:400px; " src="../img/gionji/DOCS_internal_external_rows.JPG"></a>
 
-The internal pinout are assigned to the M4 core, the external one to the A9 core.
-
+The internal pinout is assigned to the M4 core (blue pins), the external one to the A9 core.  
+<span class="label label-warning">Heads up!</span>  Disable the M4 core to give A9 control over the inner row (refer to this [guide](../../Cookbook_Linux/Turn_off_M4_Arduino_core.html) on how to do that).
 
 ### Pinmuxing
 Most of the pins are exported by default as GPIO; however the UDOO Neo CPU is able to assign more specialized tasks to the external pins. In the following two images it is reported a list of all the possible behaviours:

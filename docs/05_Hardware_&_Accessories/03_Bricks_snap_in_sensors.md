@@ -6,6 +6,7 @@ By default the the I2C-1 Bus connected to the Brick connector of UDOO NEO is ass
 Here you can find the chip's [datasheet](http://www.adafruit.com/datasheets/1893_datasheet.pdf)
 
 ### Usage
+Barometer Brick is able to return `Temperature` and `Pressure` ambient values.  
 In this file you can find the temperature scale (the sensor resolution):
 
     /sys/class/i2c-dev/i2c-1/device/1-0060/iio\:device0/in_temp_scale
@@ -13,6 +14,14 @@ In this file you can find the temperature scale (the sensor resolution):
 In this file you can find the temperature integer raw value (to be multiplied for the above-mentioned resolution):
 
     /sys/class/i2c-dev/i2c-1/device/1-0060/iio\:device0/in_temp_raw
+
+In this file you can find the pressure scale (the sensor resolution):
+
+    /sys/class/i2c-dev/i2c-1/device/1-0060/iio\:device0/in_pressure_scale
+
+In this file you can find the pressure integer raw value (to be multiplied for the above-mentioned resolution):
+
+    /sys/class/i2c-dev/i2c-1/device/1-0060/iio\:device0/in_pressure_raw
 
 
 ### Barometer example

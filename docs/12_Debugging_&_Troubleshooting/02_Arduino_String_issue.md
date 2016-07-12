@@ -4,18 +4,18 @@ There are rules to obey due to the different implementation from Arduino.
 Strings that are declared as global - that is, not inside a function - have to be mentioned with `nameVariableString.reserve(n)`, where n is the size of the String, or not initialized with a value.  
 E.g.:
 ``` cpp
-String hello = hello;       // ERROR
+String hello = "hello";       // ERROR
 String hi;                  // OK
 
 void setup(){
-    hi = hello;             // OK
+    hi = "hello";             // OK
 }
 
 void loop(){
     // ...
 }
 
-void dummy() {
+void dummy(){
     String bigHello = "HELLO"; // OK
 }
 ```

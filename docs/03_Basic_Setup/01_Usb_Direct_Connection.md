@@ -12,11 +12,13 @@ In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install f
 
 ## Enable USB Direct Connection: Installing Drivers
 
-### Installing Drivers on Mac OS X 
+Linux doesn't need drivers to make USB connection work properly. For other OS follow the instuctions below.
+
+### Installing Drivers on Mac OS X
 
 * Install both of this drivers: [Serial](../driversandtools/Mac%20USB%20Drivers/EnergiaFTDIDrivers2.2.18.pkg) and [Network](../driversandtools/Mac%20USB%20Drivers/HoRNDIS.pkg)
 
-NOTE: If you're using the Newest OSX EL CAPITAN please install this [Network Driver](http://nyus.joshuawise.com/HoRNDIS-rel8pre1.pkg) insted.
+<span class="label label-warning">Heads up!</span> If you're using the Newest `OSX EL CAPITAN` please install this [Network Driver](http://nyus.joshuawise.com/HoRNDIS-rel8pre1.pkg) insted.
 
 * Reboot your MAC
 * UDOO NEO will be available at [192.168.7.2](http://192.168.7.2)
@@ -61,7 +63,3 @@ NOTE: If you're using the Newest OSX EL CAPITAN please install this [Network Dri
 - Change the USB port it is plugged into, to be on the safe side plug UDOO NEO to USB 3.0
 - If you're on a Laptop, disable USB Power Saving mode
 - Try to use a powered USB HUB
-
-
-
-

@@ -3,7 +3,8 @@
 By default the the I2C-1 Bus connected to the Brick connector of UDOO NEO is assigned to Cortex-A9 core and it’s possible to control them by Linux driver. If you would use Bricks from the Arduino&trade; core Cortex-M4 take a look at [Introduction to Pinmuxing](../Cookbook_Linux/Device_Tree_Editor.html).
 
 ## Barometer Brick - MPL3115A2
-Here you can find the chip's [datasheet](http://www.adafruit.com/datasheets/1893_datasheet.pdf)
+
+Here you can find documentation as datasheet, schematics, and montage plane in the [Other Resurces](http://www.udoo.org/other-resources/) page of our website, in the `Accessories` tab.
 
 ### Usage
 Barometer Brick is able to return `Temperature` and `Pressure` ambient values.  
@@ -23,7 +24,7 @@ In this file you can find the pressure integer raw value (to be multiplied for t
 
     /sys/class/i2c-dev/i2c-1/device/1-0060/iio\:device0/in_pressure_raw
 
-<span class="label label-warning">Heads up!</span> If you turn off the M4 the device name can change to 
+<span class="label label-warning">Heads up!</span> If you turn off the M4 the device name can change to
 
     /sys/class/i2c-dev/i2c-1/device/1-0060/iio:device2
 
@@ -81,7 +82,8 @@ If the sensor is already connected at boot the kernel automatically recognizes t
 
 
 ## Temperature Brick - TMP75b
-Here you can find the chip's [datasheet](http://www.ti.com/lit/ds/symlink/lm75b.pdf)
+
+Here you can find documentation as datasheet, schematics, and montage plane in the [Other Resurces](http://www.udoo.org/other-resources/) page of our website, in the `Accessories` tab.
 
 ### Usage
 Enable the sensor via the following command:

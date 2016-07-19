@@ -23,6 +23,7 @@ In this file you can find the pressure integer raw value (to be multiplied for t
 
     /sys/class/i2c-dev/i2c-1/device/1-0060/iio\:device0/in_pressure_raw
 
+<span class="label label-warning">Heads up!</span> If you turn off the M4 the device name can change to 
 
 ### Barometer example
 This example reads data from the Brick sensor and prints the temperature and pressure on the console:

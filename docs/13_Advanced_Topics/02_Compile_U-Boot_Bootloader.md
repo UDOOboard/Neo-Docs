@@ -26,13 +26,8 @@ cd uboot-imx
 
 ```
 
-To build the U-Boot for UDOO Neo, use the [`2015.04.imx-neo`](https://github.com/UDOOboard/uboot-imx/tree/2015.04.imx-neo) branch. This branch is based on Freescale Community's U-Boot (uboot-fslc) version 2015.04.
-
-```bash
-
-git checkout 2015.04.imx-neo
-
-```
+To build the U-Boot for UDOO NEO, you can use the master [`2015.04-imx`](https://github.com/UDOOboard/uboot-imx) branch.
+This branch is based on NXP&trade;/Freescale U-Boot fork project.
 
 ## Compile sources
 

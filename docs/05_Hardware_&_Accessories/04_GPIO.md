@@ -10,7 +10,7 @@ The GPIOs available from the Linux kernel are placed on the external pinout head
 <a href="../img/gionji/DOCS_internal_external_rows.JPG" target="_blank"><img style="width:400px; " src="../img/gionji/DOCS_internal_external_rows.JPG"></a>
 
 The internal pinout is assigned to the M4 core (blue pins), the external one to the A9 core.  
-<span class="label label-warning">Heads up!</span>  Disable the M4 core to give A9 control over the inner row (refer to this [guide](../../Cookbook_Linux/Turn_off_M4_Arduino_core.html) on how to do that).
+<span class="label label-warning">Heads up!</span>  Disable the M4 core to give A9 control over the inner row (refer to [this guide](http://www.udoo.org/docs-neo/Cookbook_Linux/Turn_off_M4_Arduino_core.html) on how to do that).
 
 ### Pinmuxing
 Most of the pins are exported by default as GPIO; however the UDOO Neo CPU is able to assign more specialized tasks to the external pins. In the following two images it is reported a list of all the possible behaviours:

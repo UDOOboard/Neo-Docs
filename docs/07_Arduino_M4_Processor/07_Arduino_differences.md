@@ -39,8 +39,6 @@ UDOO NEO has interrupt capability on all digital pins, like Arduino Due.
 For now, UDOO NEO does **NOT** manage:
  - **Interrupts()** / **NoInterrupts()**: functions for disabling/reenabling interrupts
 
- - **CHANGE** mode: *CHANGE* mode is not supported by the core Arduino&trade; Cortex-M4 of UDOO NEO. A workaround can be found in the [Arduino Interrupt Issue](../Debugging_&_Troubleshooting/Arduino_Interrupt_Issue.html) page.
-
 ## Strings
 The main problem with String objects is the impossibility to initialize them globally. So just declare globally or initialize them inside a function.
 Refer the page [Arduino String Issue](../Debugging_&_Troubleshooting/Arduino_String_issue.html) for further information about *Strings* issues.

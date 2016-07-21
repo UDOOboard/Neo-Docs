@@ -19,7 +19,7 @@ In UDOO Neo there are two different serial ports:
 
 
 ## PWM
-There is a little difference for [PWM pins declaration.](../Debugging_&_Troubleshooting/Arduino_PWM_Issue.html). If you use a PWM pins you don't need to declare with `pinMode(XX, OUTPUT)`.
+There is a little difference for PWM pins declaration. If you use a PWM pins you don't need to declare with `pinMode(XX, OUTPUT)`.
 
 
 ## ADC (analog inputs)

@@ -46,7 +46,7 @@ sudo apt-get install udoofota-server
 <br />
 <br />
 
-* Go to `Tools -> Boards` and open the `Board Manager`.
+* Go to `Tools -> Boards` and open the `Board Manager`. If you don't manage to install the Board Manager delete the folder .arduino15 
 
 * Wait few seconds 'till the end of the "index download" then look for `UDOO NEO (iMX6 SoloX) by UDOO Team` and install it.
 

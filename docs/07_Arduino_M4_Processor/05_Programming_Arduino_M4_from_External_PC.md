@@ -46,9 +46,9 @@ sudo apt-get install udoofota-server
 <br />
 <br />
 
-* Go to `Tools -> Boards` and open the `Board Manager`. If you don't manage to install the Board Manager delete the folder .arduino15 
+* Go to `Tools -> Boards` and open the `Board Manager`. 
 
-* Wait few seconds 'till the end of the "index download" then look for `UDOO NEO (iMX6 SoloX) by UDOO Team` and install it.
+* Wait few seconds 'till the end of the "index download" then look for `UDOO NEO (iMX6 SoloX) by UDOO Team` and install it.  
 
 <img width="550" height="415" src="../img/xt_ard_08.png">
 
@@ -61,9 +61,42 @@ sudo apt-get install udoofota-server
 
 * Done, now you're ready to use your UDOO NEO with the Arduino IDE installed on your Computer as you usually do with a standard Arduino. Press the button `Upload` to load a sketch.
 
-**N.B:** in order to get it working on `Linux 64bit` you need compatibility packages:  
+<span class="label label-warning">Heads up!</span> In order to get it working on `Linux 64bit` you need compatibility packages:  
 
       $ sudo apt-get -y install lib32z1 lib32ncurses5 lib32bz2-1.0
+
+<span class="label label-warning">Heads up!</span> If you don't manage to install/update the Board Manager try to delete the Arduino IDE preferences folder.
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#windows-example" aria-controls="windows" role="tab" data-toggle="tab">Windows</a></li>
+  <li role="presentation"><a href="#mac-example" aria-controls="mac" role="tab" data-toggle="tab">OS X</a></li>
+  <li role="presentation"><a href="#linux-example" aria-controls="linux" role="tab" data-toggle="tab">Linux</a></li>
+ </ul>
+
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="windows-example">
+
+    C:\Users\<user_name>\AppData\Local\Arduino15\
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="mac-example">
+
+    /Users/<user_name>/Library/Arduino15/
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="linux-example">
+
+    /home/<user_name>/.arduino15/
+
+  </div>
+ </div>
+</div>
+<script>
+$('#adc-examples a').click(function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+</script>
 
 ## Upload a sketch over Network
 

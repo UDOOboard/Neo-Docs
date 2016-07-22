@@ -108,6 +108,7 @@ You need to modify a file in your Arduino package that is named `platform.txt`. 
  <ul id="adc-examples" class="nav nav-tabs" role="tablist">
   <li role="presentation" class="active"><a href="#windows2" aria-controls="windows" role="tab" data-toggle="tab">Windows</a></li>
   <li role="presentation"><a href="#mac2" aria-controls="mac" role="tab" data-toggle="tab">OS X</a></li>
+  <li role="presentation"><a href="#linux2" aria-controls="linux" role="tab" data-toggle="tab">Linux</a></li>
  </ul>
 
  <div class="tab-content">

@@ -46,7 +46,7 @@ sudo apt-get install udoofota-server
 <br />
 <br />
 
-* Go to `Tools -> Boards` and open the `Board Manager`. 
+* Go to `Tools -> Boards` and open the `Board Manager`.
 
 * Wait few seconds 'till the end of the "index download" then look for `UDOO NEO (iMX6 SoloX) by UDOO Team` and install it.  
 
@@ -106,23 +106,22 @@ You need to modify a file in your Arduino package that is named `platform.txt`. 
 
 <div>
  <ul id="adc-examples" class="nav nav-tabs" role="tablist">
-  <li role="presentation" class="active"><a href="#windows-example" aria-controls="windows" role="tab" data-toggle="tab">Windows</a></li>
-  <li role="presentation"><a href="#mac-example" aria-controls="mac" role="tab" data-toggle="tab">OS X</a></li>
-  <li role="presentation"><a href="#linux-example" aria-controls="linux" role="tab" data-toggle="tab">Linux</a></li>
+  <li role="presentation" class="active"><a href="#windows2" aria-controls="windows" role="tab" data-toggle="tab">Windows</a></li>
+  <li role="presentation"><a href="#mac2" aria-controls="mac" role="tab" data-toggle="tab">OS X</a></li>
  </ul>
 
  <div class="tab-content">
-  <div role="tabpanel" class="tab-pane active" id="windows-example">
+  <div role="tabpanel" class="tab-pane active" id="windows2">
 
     C:\Users\<user_name>\AppData\Local\Arduino15\packages\UDOO\hardware\solox\<version_number>\platform.txt
 
   </div>
-  <div role="tabpanel" class="tab-pane" id="mac-example">
+  <div role="tabpanel" class="tab-pane" id="mac2">
 
     /Users/<user_name>/Library/Arduino15/packages/UDOO/hardware/solox/<version_number>/platform.txt
 
   </div>
-  <div role="tabpanel" class="tab-pane" id="linux-example">
+  <div role="tabpanel" class="tab-pane" id="linux2">
 
     /home/<user_name>/.arduino15/packages/UDOO/hardware/solox/<version_number>/platform.txt
 
@@ -130,7 +129,7 @@ You need to modify a file in your Arduino package that is named `platform.txt`. 
  </div>
 </div>
 <script>
-$('#adc-examples a').click(function (e) {
+$('#path2 a').click(function (e) {
 e.preventDefault()
 $(this).tab('show')
 })

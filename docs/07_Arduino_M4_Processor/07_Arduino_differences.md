@@ -37,7 +37,7 @@ On UDOO Neo, the sketch is persisted on the SD card. When the board is powered o
 UDOO NEO has interrupt capability on all digital pins, like Arduino Due.
 
 For now, UDOO NEO does **NOT** manage:
- - **Interrupts()** / **NoInterrupts()**: functions for disabling/reenabling interrupts
+ - **Interrupts()** / **NoInterrupts()**: functions for disabling/reenabling interrupts at the same time. Alternatively you can use *attachInterrupt()*/*detachInterrupt()* on all the pins one by one.
 
 ## Strings
 The main problem with String objects is the impossibility to initialize them globally. So just declare globally or initialize them inside a function.

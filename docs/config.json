@@ -1,11 +1,10 @@
 {
     "title": "UDOO Neo Docs",
     "tagline": "UDOO Board Documentation",
-    "author": "UDOO Team",   
+    "author": "UDOO Team",
     "image": "/udoo/images/logoogo.png",
     "ignore": {
         "files": [
-            "02_Digital_camera.md",
             "05_Recompile_Freescale_MQX_Libraries.md"
         ]
     },

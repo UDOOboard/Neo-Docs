@@ -1,4 +1,5 @@
-When the board is powered on, the CPU executes code in its internal ROM, loading the first sectors of the SD card. In this way the [U-Boot boot-loader](https://github.com/UDOOboard/uboot-imx) is loaded and executed.
+When the board is powered on, the CPU executes code in its internal ROM, loading the first sectors of the SD card.  
+In this way the [U-Boot boot-loader](https://github.com/UDOOboard/uboot-imx) is loaded and executed.
 
 ## The boot-loader
 
@@ -50,4 +51,3 @@ Starting kernel ...
 [    0.000000] Booting Linux on physical CPU 0x0
 [    0.000000] Linux version 3.14.56-udooneo-01989-.....
 ```
-

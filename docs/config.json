@@ -5,7 +5,6 @@
     "image": "/udoo/images/logoogo.png",
     "ignore": {
         "files": [
-            "05_Recompile_Freescale_MQX_Libraries.md"
         ]
     },
     "html": {

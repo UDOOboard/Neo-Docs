@@ -2,7 +2,7 @@ The Arduino software stack runs on a base real-time operating system (RTOS) inst
 
 This section help you to compile the [MQX&trade;](http://www.nxp.com/products/software-and-tools/run-time-software/mqx-software-solutions/mqx-real-time-operating-system-rtos/mqx-classic-software-solutions:MQX#) software stacks.
 
-First of all you need to download and uncompress the [**MQX 4.1 for i.MX6SX**](https://community.nxp.com/external-link.jspa?url=http%3A%2F%2Fwww.freescale.com%2Fwebapp%2Fsps%2Fsite%2Fprod_summary.jsp%3Fcode%3DMQX) (Linux hosted).
+First of all you need to download and uncompress the [**MQX 4.1 for i.MX6SX**](https://community.nxp.com/external-link.jspa?url=http%3A%2F%2Fwww.freescale.com%2Fwebapp%2Fsps%2Fsite%2Fprod_summary.jsp%3Fcode%3DMQX) (Linux hosted). You need to have an NXP account to accept the license and download the source package.
 
 <span class="label label-warning">Heads up!</span> Be sure to download this version `MQX RTOS for i.MX 6SoloX v4.1.0 releases and patches` specific for i.MX 6SoloX processor. You can download from the `Previous` section.
 

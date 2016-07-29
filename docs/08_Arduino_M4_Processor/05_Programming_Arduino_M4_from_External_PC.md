@@ -111,13 +111,16 @@ In order to reach the internal serial between M4 and A9 from outside, you must c
 
  <div class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="windows2">
-<br>
+  <br>
+
 Download [VirtualCommPort][VCP] and install it. Then add `COM99` and set `host=<udooneo_ip>`. You should be able to access the serial port through _Arduino IDE Serial Monitor_ or a custom application.
 
 [VCP]: ../driversandtools/VirtualCommPort-2.0.zip
+
   </div>
   <div role="tabpanel" class="tab-pane" id="mac2">
-<br>
+  <br>
+
 Install [socat][socat] from the official website or like described in [here](http://macappstore.org/socat/). Then open a terminal and run:
 
     socat  pty,link=path/to/newtty,raw,echo=0  tcp:<udooneo_ip>:5151
@@ -128,7 +131,8 @@ e.g:
 
   </div>
   <div role="tabpanel" class="tab-pane" id="linux2">
-<br>
+  <br>
+
 Download and install [socat][socat] through your favorite package manager (e.g: `apt install socat`) and then open a terminal and run:
 
     socat  pty,link=path/to/newtty,raw,echo=0  tcp:<udooneo_ip>:5151
@@ -138,6 +142,7 @@ e.g:
     socat  pty,link=$HOME/mytty,raw,echo=0  tcp:192.168.7.2:5151
 
 [socat]: http://www.dest-unreach.org/socat/
+
   </div>
  </div>
 </div>

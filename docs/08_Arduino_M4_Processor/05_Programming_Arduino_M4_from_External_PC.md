@@ -118,7 +118,7 @@ In order to reach the internal serial between M4 and A9 from outside, you must c
 
  <div class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="windows2">
-  <br>
+  <br />
 
 Download [VirtualCommPort][VCP] and install it. Then add `COM99` and set `host=<udooneo_ip>`. You should be able to access the serial port through _Arduino IDE Serial Monitor_ or a custom application.
 
@@ -126,7 +126,7 @@ Download [VirtualCommPort][VCP] and install it. Then add `COM99` and set `host=<
 
   </div>
   <div role="tabpanel" class="tab-pane" id="mac2">
-  <br>
+  <br />
 
 Install [socat][socat] from the official website or like described in [here](http://macappstore.org/socat/). Then open a terminal and run:
 
@@ -138,7 +138,7 @@ e.g:
 
   </div>
   <div role="tabpanel" class="tab-pane" id="linux2">
-  <br>
+  <br />
 
 Download and install [socat][socat] through your favorite package manager (e.g: `apt install socat`) and then open a terminal and run:
 

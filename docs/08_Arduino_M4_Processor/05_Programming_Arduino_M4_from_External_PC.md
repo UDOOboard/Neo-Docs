@@ -100,7 +100,14 @@ $(this).tab('show')
 
 ## Remote Serial Monitor
 
-In order to reach the internal serial between M4 and A9 from outside, you must connect to UDOO Neo TCP/IP serial socket (port 5151) and bind it to a virtual serial port. Depending on your OS, the procedure and the application to use may vary.
+Now you can access the serial device __ttyMCC__ from outside installing `udoofota-serial` package on your UDOO NEO
+
+```
+sudo apt update
+sudo apt install udoofota-serial
+```
+
+In order to reach the internal serial between M4 and A9 from outside, you must connect to UDOO Neo TCP/IP serial socket (port *5151*) and bind it to a virtual serial port. Depending on your OS, the procedure and the application to use may vary.
 
 <div>
  <ul id="adc-examples" class="nav nav-tabs" role="tablist">

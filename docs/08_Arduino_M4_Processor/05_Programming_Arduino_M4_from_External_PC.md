@@ -98,6 +98,57 @@ $(this).tab('show')
 })
 </script>
 
+## Remote Serial Monitor
+
+In order to reach the internal serial between M4 and A9 from outside, you must connect to UDOO Neo TCP/IP serial socket (port 5151) and bind it to a virtual serial port. Depending on your OS, the procedure and the application to use may vary.
+
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#windows2" aria-controls="windows" role="tab" data-toggle="tab">Windows</a></li>
+  <li role="presentation"><a href="#mac2" aria-controls="mac" role="tab" data-toggle="tab">OS X</a></li>
+  <li role="presentation"><a href="#linux2" aria-controls="linux" role="tab" data-toggle="tab">Linux</a></li>
+ </ul>
+
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="windows2">
+
+Download [VirtualCommPort][VCP] and install it. Then add `COM99` and set `host=<udooneo_ip>`. You should be able to access the serial port through _Arduino IDE Serial Monitor_ or a custom application.
+
+[VCP]: ../driversandtools/VirtualCommPort-2.0.zip
+  </div>
+  <div role="tabpanel" class="tab-pane" id="mac2">
+
+Install [socat][socat] from the official website or like described in [here](http://macappstore.org/socat/). Then open a terminal and run:
+
+    socat  pty,link=path/to/newtty,raw,echo=0  tcp:<udooneo_ip>:5151
+
+e.g:
+
+    socat  pty,link=$HOME/mytty,raw,echo=0  tcp:192.168.7.2:5151
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="linux2">
+
+Download and install [socat][socat] through your favorite package manager (e.g: `apt install socat`) and then open a terminal and run:
+
+    socat  pty,link=path/to/newtty,raw,echo=0  tcp:<udooneo_ip>:5151
+
+e.g:
+
+    socat  pty,link=$HOME/mytty,raw,echo=0  tcp:192.168.7.2:5151
+
+[socat]: http://www.dest-unreach.org/socat/
+  </div>
+ </div>
+</div>
+<script>
+$('#path2 a').click(function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+</script>
+
+
 ## Upload a sketch over Network
 
 You could also upload sketch Over Network from an external PC using the functionalities of the [UDOO FOTA (Firmware over the Air) Server](https://github.com/UDOOboard/udoofota) Package installed on the UDOObuntu 2 distro. You just need to know the IP Address of UDOO NEO and be in its same network. The Arduino Board Manager of UDOO NEO installs the `udooclient` in you external PC, this little tool interacts with the FOTA server running on the UDOO NEO.  

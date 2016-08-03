@@ -18,6 +18,14 @@ In UDOO Neo there are two different serial ports:
 * `Serial` is the internal serial port "connected" to the A9 core, accessible via `/dev/ttyMCC`.
 
 
+### MCC
+
+MCC (*Multi-Core Communication*) is a protocol that emulate a serial port between the two cores. The driver uses a shared memory in DDR that it's used for mutual communication. It's implementation has some limitation:
+
+* When launching a sketch that uses "`Serial.print()`" it's important to keep open the `/dev/ttyMCC` device, otherwise the M4 side will timeout at each call, slowing the sketch.
+* Don't use "`Serial.write()`", just `print` and `println` methods.
+
+
 ## PWM
 There is a little difference for PWM pins declaration. If you use a PWM pins you don't need to declare with `pinMode(XX, OUTPUT)`.
 
@@ -40,7 +48,6 @@ For now, UDOO NEO does **NOT** manage:
  - **Interrupts()** / **NoInterrupts()**: functions for disabling/reenabling interrupts at the same time. Alternatively you can use *attachInterrupt()*/*detachInterrupt()* on all the pins one by one.
 
 ## Strings
-The main problem with String objects is the impossibility to initialize them globally. So just declare globally or initialize them inside a function.
 Refer the page [Arduino String Issue](../Debugging_&_Troubleshooting/Arduino_String_issue.html) for further information about *Strings* issues.
 
 <!--

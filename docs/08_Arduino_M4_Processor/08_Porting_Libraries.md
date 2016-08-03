@@ -41,7 +41,3 @@ const PROGMEM uint16_t DACLookup_FullSine_5Bit[32] =
 
 UDOO Neo M4 processor don't have flash memory, but it can access lots of DDR RAM, so just get rid of those statements.
 
-## PWM
-There is a little difference for [PWM pins declaration](../Debugging_&_Troubleshooting/Arduino_PWM_Issue.html). 
-If you use a PWM pin don't declare it with `pinMode(XX, OUTPUT)`.
-

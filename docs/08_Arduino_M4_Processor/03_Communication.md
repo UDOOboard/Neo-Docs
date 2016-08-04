@@ -2,6 +2,8 @@
 To communicate between the two SoloX cores we implemented the dedicated `Serial` object.
 It is a virtualized serial that uses the shared memory to exchange datas on chip.
 
+<span class="label label-warning">Heads up!</span> When you have a sketch that sends data to the serial device (/dev/ttyMCC) it has to be read by the A9 part otherwise it will slow down the execution: it will time out every Serial.println().
+
 <img style="width:228px; height:218px" src="../img/gionji/DOCS_a9_m4_serial.PNG">
 
 ```bash
@@ -52,7 +54,7 @@ Then, copy and paste the following sketch in the IDE:
 void setup(){
     Serial.begin(115200);
     Serial0.begin(115200);
-    
+
     pinMode(13, OUTPUT);
 }
 
@@ -60,14 +62,14 @@ void loop(){
     Serial.print("Hello");
     Serial.print(" ");
     Serial.println("A9!");
-   
+
     digitalWrite(13, HIGH);
     delay(1000);
-    
+
     Serial0.print("Hello");
     Serial0.print(" ");
     Serial0.println("world!");
-    
+
     digitalWrite(13, LOW);
     delay(1000);
 }
@@ -91,4 +93,3 @@ Connect a Serial Adapter to the `0` and `1` Arduino pins and to your computer. T
     minicom -D /dev/ttyUSB0
 
 You will read `Hello world!`
-

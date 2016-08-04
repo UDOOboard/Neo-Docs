@@ -17,6 +17,7 @@ In UDOO Neo there are two different serial ports:
 * `Serial0` can read and write data on pins `0` and `1` of the external pinout.
 * `Serial` is the internal serial port "connected" to the A9 core, accessible via `/dev/ttyMCC`.
 
+<span class="label label-warning">Heads up!</span> When you have a sketch that sends data to the internal serial device (Serial) it has to be read by the A9 part otherwise it will slow down the execution: it will time out every Serial.println().
 
 ## PWM
 There is a little difference for PWM pins declaration. If you use a PWM pins you don't need to declare with `pinMode(XX, OUTPUT)`.

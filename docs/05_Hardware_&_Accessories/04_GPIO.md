@@ -60,7 +60,7 @@ If the direction is set to `in`, it is possible to read the GPIO value reading t
 If the direction is set to `out` and you try to read the value, is not guaranteed that the value is coherent with the voltage found on the external pinout.
 
 
-### Advances usage
+### Advanced usage
 GPIO management is made simple by the `udoo-gpio-export` package, which comes preinstalled in UDOObuntu Linux. This package takes care of exporting all GPIOs in input mode, and creates the symlinks from the `/sys/class/gpio` entries to the `/gpio` directory.
 
 If you want, you can directly use the `/sys/class/gpio` entries. For example, to export a GPIO use:

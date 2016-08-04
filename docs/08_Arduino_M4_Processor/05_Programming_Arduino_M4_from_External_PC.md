@@ -98,11 +98,16 @@ $(this).tab('show')
 })
 </script>
 
-## Upload a sketch over Network
+## Remote Serial Monitor
 
-You could also upload sketch Over Network from an external PC using the functionalities of the [UDOO FOTA (Firmware over the Air) Server](https://github.com/UDOOboard/udoofota) Package installed on the UDOObuntu 2 distro. You just need to know the IP Address of UDOO NEO and be in its same network. The Arduino Board Manager of UDOO NEO installs the `udooclient` in you external PC, this little tool interacts with the FOTA server running on the UDOO NEO.  
+Now you can access the serial device __ttyMCC__ from outside installing `udoofota-serial` package on your UDOO NEO
 
-You need to modify a file in your Arduino package that is named `platform.txt`. For example, in Arduino IDE 1.6.9 the file is located here:
+```
+sudo apt update
+sudo apt install udoofota-serial
+```
+
+In order to reach the internal serial between M4 and A9 from outside, you must connect to UDOO Neo TCP/IP serial socket (port *5151*) and bind it to a virtual serial port. Depending on your OS, the procedure and the application to use may vary.
 
 <div>
  <ul id="adc-examples" class="nav nav-tabs" role="tablist">
@@ -113,16 +118,74 @@ You need to modify a file in your Arduino package that is named `platform.txt`. 
 
  <div class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="windows2">
+  <br />
+
+Download [VirtualCommPort][VCP] and install it. Then add `COM99` and set `host=<udooneo_ip>`. You should be able to access the serial port through _Arduino IDE Serial Monitor_ or a custom application.
+
+[VCP]: ../driversandtools/VirtualCommPort-2.0.zip
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="mac2">
+  <br />
+
+Install [socat][socat] from the official website or like described in [here](http://macappstore.org/socat/). Then open a terminal and run:
+
+    socat  pty,link=path/to/newtty,raw,echo=0  tcp:<udooneo_ip>:5151
+
+e.g:
+
+    socat  pty,link=$HOME/mytty,raw,echo=0  tcp:192.168.7.2:5151
+
+  </div>
+  <div role="tabpanel" class="tab-pane" id="linux2">
+  <br />
+
+Download and install [socat][socat] through your favorite package manager (e.g: `apt install socat`) and then open a terminal and run:
+
+    socat  pty,link=path/to/newtty,raw,echo=0  tcp:<udooneo_ip>:5151
+
+e.g:
+
+    socat  pty,link=$HOME/mytty,raw,echo=0  tcp:192.168.7.2:5151
+
+[socat]: http://www.dest-unreach.org/socat/
+
+  </div>
+ </div>
+</div>
+<script>
+$('#path2 a').click(function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+</script>
+
+
+## Upload a sketch over Network
+
+You could also upload sketch Over Network from an external PC using the functionalities of the [UDOO FOTA (Firmware over the Air) Server](https://github.com/UDOOboard/udoofota) Package installed on the UDOObuntu 2 distro. You just need to know the IP Address of UDOO NEO and be in its same network. The Arduino Board Manager of UDOO NEO installs the `udooclient` in you external PC, this little tool interacts with the FOTA server running on the UDOO NEO.  
+
+You need to modify a file in your Arduino package that is named `platform.txt`. For example, in Arduino IDE 1.6.9 the file is located here:
+
+<div>
+ <ul id="adc-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#windows3" aria-controls="windows" role="tab" data-toggle="tab">Windows</a></li>
+  <li role="presentation"><a href="#mac3" aria-controls="mac" role="tab" data-toggle="tab">OS X</a></li>
+  <li role="presentation"><a href="#linux3" aria-controls="linux" role="tab" data-toggle="tab">Linux</a></li>
+ </ul>
+
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="windows3">
 
     C:\Users\<user_name>\AppData\Local\Arduino15\packages\UDOO\hardware\solox\<version_number>\platform.txt
 
   </div>
-  <div role="tabpanel" class="tab-pane" id="mac2">
+  <div role="tabpanel" class="tab-pane" id="mac3">
 
     /Users/<user_name>/Library/Arduino15/packages/UDOO/hardware/solox/<version_number>/platform.txt
 
   </div>
-  <div role="tabpanel" class="tab-pane" id="linux2">
+  <div role="tabpanel" class="tab-pane" id="linux3">
 
     /home/<user_name>/.arduino15/packages/UDOO/hardware/solox/<version_number>/platform.txt
 

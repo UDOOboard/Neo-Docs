@@ -32,4 +32,4 @@ Moreover, during the boot the M4 requires the resources described in a configura
 ### Last Arduino Sketch
 When the system boot, it checks if a sketch compiled with the Arduino IDE is saved in the default location, which is `/var/opt/m4/m4last.fw`.
 
-If the sketch exists, it is loaded and executed on the M4 core; otherwise a default sketch is loaded from `/boot/m4startup.fw` as a workaround in order to prevent possible hangs on the M4.
+You can modify this behaviour uncommenting and modifying the `m4last` variable in `/boot/uEnv.txt`. 

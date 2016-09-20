@@ -50,7 +50,7 @@ Next step is downloading the source code. To do so you need the [`repo`](https:/
 ~$ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 ~$ chmod a+x ~/bin/repo
 ~$ cd myandroid
-~$ ~/bin/repo init -u https://github.com/UDOOboard/android_udoo_platform_manifest -b android-5.1.1
+~$ ~/bin/repo init -u https://github.com/UDOOboard/android_udoo_platform_manifest -b android-6.0.1
 ~$ ~/bin/repo sync -j5
 
 ```

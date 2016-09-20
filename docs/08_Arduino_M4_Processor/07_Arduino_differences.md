@@ -51,15 +51,13 @@ For now, UDOO NEO does **NOT** manage:
 ## Strings
 Refer the page [Arduino String Issue](../Debugging_&_Troubleshooting/Arduino_String_issue.html) for further information about *Strings* issues.
 
-<!--
+## I2C/Wire
 
-## String object
-[coming soon: frafer]
+UDOO Neo M4 Processor has 2 I2C buses wired to the pinout headers and consequentially have 2 **Wire** objects:
+- **Wire**: on Brick Connector
+- **Wire1**: on SCL SDA pins
 
-## PWM
-[coming soon: frafer]
+Be careful and double check when calling `Wire.begin()` or `Wire1.begin()` in
+sketches or libraries. Also check out to have [I2C-2 disabled on A9][dte] if you use *Wire*.
 
-## ADC
-[coming soon: frafer]
-
--->
+[dte]: ../Cookbook_Linux/Device_Tree_Editor.html

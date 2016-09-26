@@ -28,7 +28,7 @@ UDOO NEO retail line up consists of [three models](../Hardware_Reference/Board%2
 <hr/>
 <img src="../img/udoo_neo_docs.png" alt="UDOO Boards" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
-* Freescale™ i.MX 6SoloX applications processor with an embedded ARM Cortex-A9 core and a Cortex-M4 Core
+* NXP® i.MX 6SoloX applications processor with an embedded ARM Cortex-A9 core and a Cortex-M4 Core
 * 512MB (Basic) or 1GB (only Extended and Full)
 * Integrated 2d/3d graphics controller
 * Micro HDMI interface

@@ -1,4 +1,4 @@
-All the **UDOO Neo** board versions are equipped with a NXP/Freescale iMX 6SoloX processor, which embeds on single chip an ARM Cortex-A9 and an ARM Cortex-M4 microcontroller. The Cortex-M4 allows easy access to a full-stack Arduino&trade; environment
+All the **UDOO Neo** board versions are equipped with a NXP® iMX 6SoloX processor, which embeds on single chip an ARM Cortex-A9 and an ARM Cortex-M4 microcontroller. The Cortex-M4 allows easy access to a full-stack Arduino&trade; environment
 
 To develop sketches for Arduino&trade; M4 cores we provide the same way to program Arduino&trade; Uno.
 You can use the internal Arduino&trade; IDE preinstalled on UDOObuntu 2 running on the Cortex-A9 core of UDOO NEO, or connect the board and use the Arduino&trade; IDE running on external PC.

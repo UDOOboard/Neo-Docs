@@ -1,4 +1,4 @@
-The Arduino software stack runs on a base real-time operating system (RTOS) installed on the Cortex-M4 of i.MX 6SoloX. The RTOS is [MQX&trade;](http://www.nxp.com/products/software-and-tools/run-time-software/mqx-software-solutions/mqx-real-time-operating-system-rtos/mqx-classic-software-solutions:MQX#) from NXP/Freescale.
+The Arduino software stack runs on a base real-time operating system (RTOS) installed on the Cortex-M4 of i.MX 6SoloX. The RTOS is [MQX&trade;](http://www.nxp.com/products/software-and-tools/run-time-software/mqx-software-solutions/mqx-real-time-operating-system-rtos/mqx-classic-software-solutions:MQX#) from NXP.
 
 This section help you to compile the [MQX&trade;](http://www.nxp.com/products/software-and-tools/run-time-software/mqx-software-solutions/mqx-real-time-operating-system-rtos/mqx-classic-software-solutions:MQX#) software stacks.
 

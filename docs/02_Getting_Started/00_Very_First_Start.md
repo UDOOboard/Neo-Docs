@@ -2,7 +2,6 @@
 
 This easy step by step guide will lead you through the procedure to boot your UDOO for the very first time.
 
-
 ## What do you need?
 
 <img src="../img/whatdoyouneed1.png">
@@ -10,7 +9,7 @@ This easy step by step guide will lead you through the procedure to boot your UD
 To use UDOO NEO as a computer you need:
 
 - [UDOO NEO](http://shop.udoo.org/neo.html);
-- Micro SD card (at least 8GB), eventually [preloaded with the Operating System](http://shop.udoo.org/eu/catalog/product/view/id/43/s/micro-sd-with-pre-loaded-linux-os-for-neo-extended-full/category/5/);
+- Micro SD card (at least 8GB), eventually [preloaded with the Operating System](http://shop.udoo.org/accessories/micro-sd-with-pre-loaded-linux-os-for-neo-basic-extended-full.html);
 - [12V 2A Power supply](http://shop.udoo.org/accessories/power-adapter-eu.html) or USB Wall Charger 5V with Micro USB Data Cable;  
 - HDMI monitor or TV;
 - Mouse;
@@ -19,7 +18,7 @@ To use UDOO NEO as a computer you need:
 
 To use UDOO Neo as a headless IoT device you need:
 - [UDOO NEO](http://shop.udoo.org/neo.html);
-- Micro SD card (at least 8GB), eventually [preloaded with the Operating System](http://shop.udoo.org/eu/catalog/product/view/id/43/s/micro-sd-with-pre-loaded-linux-os-for-neo-extended-full/category/5/);
+- Micro SD card (at least 8GB), eventually [preloaded with the Operating System](http://shop.udoo.org/accessories/micro-sd-with-pre-loaded-linux-os-for-neo-basic-extended-full.html);
 - [12V 2A Power supply](http://shop.udoo.org/accessories/power-adapter-eu.html) or USB Wall Charger 5V with Micro USB Data Cable.  
 
 ## 1. Download UDOO Neo’s official Operating system:

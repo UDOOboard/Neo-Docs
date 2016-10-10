@@ -9,7 +9,7 @@ It is a virtualized serial that uses the shared memory to exchange datas on chip
 ```bash
 Serial.begin(115200);
 
-Serial.write('Hello');
+Serial.print('Hello');
 Serial.print(" ");
 Serial.println("A9 core!");
 ```
@@ -29,7 +29,7 @@ The `Serial0` object allows to read and write data on pins `0` and `1` of extern
 ```bash
 Serial0.begin(115200);
 
-Serial0.write('hello');
+Serial0.print('hello');
 Serial0.print(" ");
 Serial0.println("world");
 ```

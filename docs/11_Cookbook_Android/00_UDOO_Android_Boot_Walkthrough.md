@@ -12,7 +12,7 @@ Image and Source already provide some useful features and Apps pre-installed lik
 
 Visiting the pages in this section you can find useful guide about how to use the Android Distro of UDOO and [How to install GApps](http://www.udoo.org/docs-neo/Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android.html).
 
-We are working to solve the current issues to deliver a complete support:
+<span class="label label-warning">Heads up!</span> We are working to solve the current issues to deliver a complete support:
 -bug fix to the Bluetooth stack (audio streaming);
 -Arduino support to Android.
 

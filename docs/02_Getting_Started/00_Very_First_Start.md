@@ -37,11 +37,22 @@ Follow the guide to <a href="Create_a_bootable_MicroSD_card_for_UDOO_Neo.html">c
 
 <img src="../img/neo_microsd1.png">
 
-- Insert into your UDOO Neo the Micro SD card you just prepared
-- Plug Keyboard and Mouse
-- Connect your monitor via Micro HDMI Cable
+<div class="row">
+<div class="col-md-6 col-sm-6">
+### As a Headless Device
+
 - Power up the board via a USB to Micro USB cable connected to a computer, through a power adapter or through a 5V USB Wall Charger.
-- Connect the LAN cable (optional);
+</div>
+<div class="col-md-6 col-sm-6">
+### As a Computer
+
+- Insert into your UDOO Neo the Micro SD card you just prepared;
+- Plug Keyboard and Mouse;
+- Connect your monitor via Micro HDMI Cable;
+- Power up the board via a USB to Micro USB cable connected to a computer, through a power adapter or through a 5V USB Wall Charger;
+- Connect the LAN cable (optional).
+</div>
+</div>
 
 
 ## 4. Ready!

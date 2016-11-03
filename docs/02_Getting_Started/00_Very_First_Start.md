@@ -39,12 +39,12 @@ Follow the guide to <a href="Create_a_bootable_MicroSD_card_for_UDOO_Neo.html">c
 
 <div class="row">
 <div class="col-md-6 col-sm-6">
-## As a Headless Device
+<h3>As a Headless Device </h3>
 
 - Power up the board via a USB to Micro USB cable connected to a computer, through a power adapter or through a 5V USB Wall Charger.
 </div>
 <div class="col-md-6 col-sm-6">
-## As a Computer
+<h3>As a Computer </h3>
 
 - Insert into your UDOO Neo the Micro SD card you just prepared;
 - Plug Keyboard and Mouse;

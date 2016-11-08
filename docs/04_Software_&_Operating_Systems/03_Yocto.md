@@ -29,4 +29,4 @@ To install Yocto type into the terminal:
 ```umount /dev/sd<disk>?; bzcat /tmp/udoo-image-qt5-udooqdl.wic.bz2 | sudo dd of=/dev/<disk> bs=32M```
 
 For more information visit [this Yocto-related topic] (http://www.udoo.org/forum/threads/new-test-releases.5153/) in the UDOO Forum.
-Here instead you can find the [Open Embedded meta-layer for UDOO boards] (https://github.com/graugans/meta-udoo)
+Here instead you can find the [Open Embedded meta-layer for UDOO boards] (https://github.com/graugans/meta-udoo).

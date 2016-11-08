@@ -1,7 +1,7 @@
 Yocto is an unofficial distribution for UDOO boads.
-It is developed maintained by the community, almost entirely by [Christian Ege] (https://github.com/graugans) who also started the porting of Yocto for UDOO boards.
-For problems you may encounter with this distribution your go-to place is the [Yocto Subforum] (http://www.udoo.org/forum/forums/yocto.46/) in UDOO Forum
-Also, Christian Ege is aso a [user] (http://www.udoo.org/forum/members/graugans.37591/) of the UDOO Forum, as well as admin of the Yocto Subforum.
+It is developed maintained by the community, almost entirely by [Christian Ege](https://github.com/graugans) who also started the porting of Yocto for UDOO boards.
+For problems you may encounter with this distribution your go-to place is the [Yocto Subforum](http://www.udoo.org/forum/forums/yocto.46/) in UDOO Forum
+Also, Christian Ege is aso a [user](http://www.udoo.org/forum/members/graugans.37591/) of the UDOO Forum, as well as admin of the Yocto Subforum.
 
 ## What is Yocto
 The Yocto Project is a Linux Foundation workgroup whose goal is to produce tools and processes that will enable the creation of Linux 
@@ -20,7 +20,7 @@ As well as building Linux systems, there is also an ability to generate a toolch
 Within builds, there are options for various build-time sanity/regression tests, and also the option to boot and test certain images under QEMU to validate the build.
 
 ## UDOO Neo
-Download: [udoo-image-qt5-udooneo.wic.bz2] (https://buildr.ege.io/YOCTO/krogoth/udoo/udooneo/udoo-image-qt5-udooneo.wic.bz2)  
+Download: [udoo-image-qt5-udooneo.wic.bz2](https://buildr.ege.io/YOCTO/krogoth/udoo/udooneo/udoo-image-qt5-udooneo.wic.bz2)  
 SHA256: 78f480f091a8d6a0a79c947e407233aac73b01f123b4b766e18e5dd54cd996e0
 
 # Installation

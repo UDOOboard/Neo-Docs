@@ -20,6 +20,6 @@ You can power up the board in 3 ways
 
 * DC-jack: internal positive, Voltage 6 to 15.
 * microUsb: 5 Volts up to 2 Ampere
-* Vin / GND pin on external pinout
+* Vin / GND pin on internal pinout
 
 Providing higher voltages could damage the board!

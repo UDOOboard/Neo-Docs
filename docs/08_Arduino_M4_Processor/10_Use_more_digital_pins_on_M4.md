@@ -13,7 +13,7 @@ To recompile the kernel please follow this guide to set up the kernel compiling 
 
 After that i’ll explain how the gpios configuration dts is organized.
 
-In the file imx6sx-udoo-neo-external.dtsi are listed all the external pins that can be used as gpio by the linux kernel. As tou see some of the macros are commented.
+In the file imx6sx-udoo-neo-external.dtsi are listed all the external pins that can be used as gpio by the linux kernel. As you see some of the macros are commented.
 
 ``` bash
 &iomuxc {

@@ -24,7 +24,7 @@ Download: [udoo-image-qt5-udooneo.wic.bz2](https://buildr.ege.io/YOCTO/krogoth/u
 SHA256: 78f480f091a8d6a0a79c947e407233aac73b01f123b4b766e18e5dd54cd996e0
 
 ## QT5 Toolchain
-poky-glibc-x86_64-udoo-image-qt5-cortexa9hf-neon-toolchain-2.1.1.sh 
+poky-glibc-x86_64-udoo-image-qt5-cortexa9hf-neon-toolchain-2.1.1.sh    
 SHA256: d0189f96e7d9e8cd7e871a4c96fc127262d0c7a161beadd61d9ef823eec7b505
 
 # Installation

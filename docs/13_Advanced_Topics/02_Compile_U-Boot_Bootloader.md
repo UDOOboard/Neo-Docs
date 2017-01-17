@@ -35,7 +35,7 @@ The build can be started with:
 
 ```bash
 
-ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make udoo_neo_config
+ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make udoo_neo_defconfig
 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make
 
 ```

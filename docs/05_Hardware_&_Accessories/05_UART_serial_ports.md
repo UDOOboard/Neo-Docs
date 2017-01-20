@@ -66,6 +66,8 @@ This UART is connected to the Texas Instruments WL1831 chip for Bluetooh data co
 * CTS
 * RTS
 
+* Kernel device name: /dev/ttymxc2
+
 |            | PCB NAME | SCHEMATICS SIGNAL NAME | SCHEMATIC IMX6 PAD NAME | REFERENCE MANUAL PAD NAME       | ALTERNATE             |
 |------------|----------|------------------------|-------------------------|---------------------------------|-----------------------|
 | UART_3_TX  | -        | BT_HCI_TX_1V8          | SD3_DAT4                | IOMUXC_SW_MUX_CTL_PAD_SD3_DATA4 | ALT3 - UART3_RX_DATA  |
@@ -73,7 +75,7 @@ This UART is connected to the Texas Instruments WL1831 chip for Bluetooh data co
 | UART_3_RTS | -        | BT_HCI_RTS_1V8         | SD3_DAT6                | IOMUXC_SW_MUX_CTL_PAD_SD3_DATA6 | ALT3 - UART3_RTS_B \* |
 | UART_3_CTS | -        | BT_HCI_CTS_1V8         | SD3_DAT7                | IOMUXC_SW_MUX_CTL_PAD_SD3_DATA7 | ALT3 - UART3_CTS_B \* |
 
-\* For these two signals the iMX 6Solox processor works in DCE mode. 
+\* For these two signals the iMX 6Solox processor works in DCE mode.
 
 
 ### UART 5
@@ -92,6 +94,8 @@ Serial0.println(); // write on output buffer char array plus newline char
 
 ### UART 6
 This UART is user available, but it must be included in the [device tree](../Cookbook_Linux/Device_Tree_Editor.html) before the use. By default all of its pins are given to A9 in GPIO mode.
+
+* Kernel device name: /dev/ttymxc5
 
 |                | PCB NAME | SCHEMATICS SIGNAL NAME | SCHEMATIC IMX6 PAD NAME | REFERENCE MANUAL PAD NAME        | ALTERNATE            |
 |----------------|----------|------------------------|-------------------------|----------------------------------|----------------------|

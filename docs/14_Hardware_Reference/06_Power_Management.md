@@ -18,7 +18,7 @@ To be fully functional, the board needs a 5V clean power (VCC_SW). If an LVDS pa
 ### Power sources
 You can power up the board in 3 ways
 
-* DC-jack: internal positive, Voltage 6 to 15.
+* DC-jack with a standard 5.5mm/2.1mm barrel jack: internal positive, Voltage 6 to 15.
 * microUsb: 5 Volts up to 2 Ampere
 * Vin / GND pin on internal pinout
 

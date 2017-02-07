@@ -29,20 +29,18 @@ UDOO Neo exposes 3 ECSPI channels:
 |---------|------------|---------|---------|------------|-----|-----|-----|----------------------|
 | ECSPI_2 | 20         | 21      | 38      | 39         | -   | -   | -   | A9 (gpio mode)       |
 | ECSPI_3 | 18 / A1 \* | A0 \*   | A4 \*   | 19 / A5 \* | 21  | 20  | -   | A9 (gpio mode)       |
-| ECSPI_5 | 12 / 40    | 11 / 43 | 13 / 42 | 10 / 41    | -   | -   | -   | M4 (digital io mode) |
+| ECSPI_5 | 12 / 40    | 11 / 43 | 13 / 42 | 10 / 41    | -   | -   | -   | M4                   |
 
 \* Analogs pin can also be connected to A9 core using phisical signal mux 74VHC4053AFT (U12, U13).
 
 For more detailed information look at the Chapter 22 of the [iMX 6SoloX Reference Manual](http://cache.freescale.com/files/32bit/doc/ref_manual/IMX6SXRM.pdf?fpsp=1&WT_TYPE=Reference%20Manuals&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation&fileExt=.pdf).
 
-By default the SPI buses are assigned to A9 in GPIO mode. In order to enable ECSPI, follow this [guide](../Cookbook_Linux/Device_Tree_Editor.html).
-
 #### ECSPI 2
 ECSPI 2 has only for signals (MISO, MOSI, SCLK and SS0);
+By default the ECSPI 2 signals are assigned to A9 in GPIO mode. In order to enable ECSPI, follow this [guide](../Cookbook_Linux/Device_Tree_Editor.html).
 
 #### ECSPI 3
 ECSPI 3 is a full SPI, including Select Signals (SS0, SS1, SS2).
 
 #### ECSPI 5
-ECSPI 5 has the same pin order, function, and position as Arduino UNO. By default it is assigned to the M4 core, but configured as digital input/output (GPIO).
-
+ECSPI 5 has the same pin order, function, and position as Arduino UNO. By default it is assigned to the Arduino 101-compatible M4 core.

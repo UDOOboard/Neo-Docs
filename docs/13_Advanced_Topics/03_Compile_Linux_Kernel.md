@@ -82,3 +82,4 @@ You can overwrite the kernel on a UDOObuntu SD card with the following commands:
     cp arch/arm/boot/dts/*.dtb $BOOT_PARTITION/dts
     ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- make firmware_install modules_install INSTALL_MOD_PATH=$ROOT_PARTITION
 
+<span class="label label-warning">Heads up!</span> Be aware that if you have used the DTEditor previously, u-boot will load DTBs from `/boot/dts-overlay`. Disable this via `/boot/uEnv.txt` or copy your modified DTBs to that directory.

@@ -24,7 +24,7 @@ Developing a project with UDOO Neo is like connecting an Arduino with an externa
 
 
 ### M4 boot process
-Every time the processor is resetted, the M4 firmware (Arduino sketch) would be lost, so it needs to be reloaded by the boot-loader from the SD card. In this way the user can find its sketch on the board running at every boot.
+Every time the processor is resetted, the M4 firmware (Arduino sketch) would be lost, so it needs to be reloaded by the UDOObuntu filesystem from the SD card. In this way the user can find its sketch on the board running at every boot.
 
 Moreover, during the boot the M4 requires the resources described in a configuration file. This configuration must agree with the A9 kernel configuration to avoid conflicts. We provide a default "safe" configuration.
 

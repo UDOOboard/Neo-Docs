@@ -28,11 +28,11 @@ You can revert this change by typing:
 
     sudo udooscreenctl set hdmi
 
-If you want more info about the *udooscreenctl* command visit the [Set Video Output](../Cookbook_Linux/Set_video_output.html).
-If you prefer a graphical simple way to change the default video output, it is provided by the [UDOO Web Control Panel](../Basic_Setup/Web_Control_Panel.html) in the "Configuration"->"Advanced setting" section.
+If you want more info about the *udooscreenctl* command visit the [Set Video Output](!Cookbook_Linux/Set_video_output).
+If you prefer a graphical simple way to change the default video output, it is provided by the [UDOO Web Control Panel](!Basic_Setup/Web_Control_Panel) in the "Configuration"->"Advanced setting" section.
 
 #### Option 2: you can connect via VNC or SSH
-If you can [connect to your board via VNC](../Basic_Setup/Remote_Desktop_(VNC).html) or via [SSH (using the USB, WiFi or Ethernet connection)](../Basic_Setup/Remote_Terminal_(SSH).html) , you can follow the steps explained in the previous section.
+If you can [connect to your board via VNC](!Basic_Setup/Remote_Desktop_(VNC).html) or via [SSH (using the USB, WiFi or Ethernet connection)](../Basic_Setup/Remote_Terminal_(SSH)) , you can follow the steps explained in the previous section.
 
 
 #### Option 3: you have neither HDMI nor network

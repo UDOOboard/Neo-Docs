@@ -3,7 +3,7 @@ UDOO NEO Serial Libraries Examples
 
 Serial Libraries Communication Samples for [UDOO Board](http://www.udoo.org)
 
-Copyright (C) 2014 [Ekironji Solutions](mailto:ekironjisolutions@gmail.com)
+Copyright (C) 2014 <a href="mailto:ekironjisolutions@gmail.com">Ekironji Solutions</a>
 
 These example’s scripts are meant to demonstrate how to implement a uni\bidirectional communication between an Arduino sketch (running on Cortex-M4 Arduino&trade; Compatible processor) and a binary application on iMX6 Linux processor.
 

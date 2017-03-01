@@ -4,17 +4,17 @@ To develop sketches for Arduino&trade; M4 cores we provide the same way to progr
 You can use the internal Arduino&trade; IDE preinstalled on UDOObuntu 2 running on the Cortex-A9 core of UDOO NEO, or connect the board and use the Arduino&trade; IDE running on external PC.
 
 ## Overview
-Take a look at the [Arduino M4 Processor](../Arduino_M4_Processor/Overview.html) section to find all the information about the Arduino&trade; side of the UDOO NEO.
+Take a look at the [Arduino M4 Processor](!Arduino_M4_Processor/Overview) section to find all the information about the Arduino&trade; side of the UDOO NEO.
 
 ## Internal Arduino IDE
-Follow the guide [Programming Arduino M4 from Internal Processor(Cortex-A9)](../Arduino_M4_Processor/Programming_Arduino_M4_from_Internal_Processor\(Cortex-A9\).html) to load a sketch on the Arduino M4 Processor from the Arduino&trade; IDE preinstalled on UDOOBuntu 2.
+Follow the guide [Programming Arduino M4 from Internal Processor(Cortex-A9)](!Arduino_M4_Processor/Programming_Arduino_M4_from_Internal_Processor\(Cortex-A9\)) to load a sketch on the Arduino M4 Processor from the Arduino&trade; IDE preinstalled on UDOOBuntu 2.
 
 ## External Arduino IDE
-Follow the guide [Programming Arduino M4 Processor from External PC](../Arduino_M4_Processor/Programming_Arduino_M4_from_External_PC.html) to load a sketch on the Arduino M4 Processor from the Arduino&trade; IDE installed on your External PC.  
+Follow the guide [Programming Arduino M4 Processor from External PC](!Arduino_M4_Processor/Programming_Arduino_M4_from_External_PC) to load a sketch on the Arduino M4 Processor from the Arduino&trade; IDE installed on your External PC.  
 <span class="label label-warning">Heads up!</span>A microSD with a with UDOOBuntu2 have to be up and running to program the Arduino&trade; M4 from an external PC.
 
 ## Communication and examples
 
-To learn more about the communication between the two SoloX cores take a look to the [Communication](../Arduino_M4_Processor/Communication.html) section.
+To learn more about the communication between the two SoloX cores take a look to the [Communication](!Arduino_M4_Processor/Communication) section.
 
-You can find some example of how to make two software communicate through the two SoloX cores in the [Serial Libraries](../Serial_Libraries/index.html) section.
+You can find some example of how to make two software communicate through the two SoloX cores in the [Serial Libraries](!Serial_Libraries/index) section.

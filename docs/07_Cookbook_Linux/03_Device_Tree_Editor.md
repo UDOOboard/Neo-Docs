@@ -15,11 +15,11 @@ UDOObuntu provides out-of-the-box device tree blobs, available in `/boot/dts/`, 
     imx6sx-udoo-neo-basic-m4.dtb
     imx6sx-udoo-neo-basic.dtb
 
-The[boot loader](../Advanced_Topics/Boot_process.html) loads the correct `dtb` file, depending on the board.
+The[boot loader](!Advanced_Topics/Boot_process) loads the correct `dtb` file, depending on the board.
 
 
 ## Custom device trees
-While the board can be used with the default device tree, which exports most of the external pins as GPIO, it is also possible to export more features on the external pinout. See the section [Pinmuxing](../Hardware_&_Accessories/GPIO.html) to discover all the exportable configurations.
+While the board can be used with the default device tree, which exports most of the external pins as GPIO, it is also possible to export more features on the external pinout. See the section [Pinmuxing](!Hardware_&_Accessories/GPIO) to discover all the exportable configurations.
 
 On UDOO NEO the external pins can be connected to the Cortex-A9 core (the one that runs the Operative System) or to the Cortex-M4 core (the one that implements the Arduino microcontroller).
 

@@ -1,4 +1,4 @@
-Please do not download the Arduino IDE from the Arduino website. Follow [this guide](../Getting_Started/Use_as_an_Arduino.html) instead.
+Please do not download the Arduino IDE from the Arduino website. Follow [this guide](!Getting_Started/Use_as_an_Arduino) instead.
 
 ## flash: uploading input firmware failed
 If you get this error while the IDE is uploading the sketch from internal IDE:

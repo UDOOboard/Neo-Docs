@@ -10,7 +10,7 @@ To use the External Arduino IDE follow the instructions below:
 
 * Connect UDOO NEO via Micro USB Cable to your PC
 
-* In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install few drivers first as described in the [USB Direct Connection](../Basic_Setup/Usb_Direct_Connection.html).
+* In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install few drivers first as described in the [USB Direct Connection](!Basic_Setup/Usb_Direct_Connection).
 
 ## Install UDOO FOTA
 
@@ -18,9 +18,9 @@ To use the External Arduino IDE follow the instructions below:
 
 * To Install the UDOO FOTA you need to connect the board to internet using it either as a Computer or a Headless Device:
 
-1. [Use as a Headless Device](../Getting_Started/Use_as_a_headless_IoT_Device.html)
+1. [Use as a Headless Device](!Getting_Started/Use_as_a_headless_IoT_Device)
 
-2. [Use as a Lightweight Desktop PC](../Getting_Started/Use_as_a_Lightweight_Desktop_PC.html)
+2. [Use as a Lightweight Desktop PC](!Getting_Started/Use_as_a_Lightweight_Desktop_PC)
 
 * Once you board is connected to internet open a terminal and type:
 
@@ -122,7 +122,7 @@ In order to reach the internal serial between M4 and A9 from outside, you must c
 
 Download [VirtualCommPort][VCP] and install it. Then add `COM99` and set `host=<udooneo_ip>`. You should be able to access the serial port through _Arduino IDE Serial Monitor_ or a custom application.
 
-[VCP]: ../driversandtools/VirtualCommPort-2.0.zip
+[VCP]: http://www.udoo.org/docs-neo/driversandtools/VirtualCommPort-2.0.zip
 
   </div>
   <div role="tabpanel" class="tab-pane" id="mac2">

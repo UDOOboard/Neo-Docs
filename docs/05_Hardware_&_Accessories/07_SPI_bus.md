@@ -37,7 +37,7 @@ For more detailed information look at the Chapter 22 of the [iMX 6SoloX Referenc
 
 #### ECSPI 2
 ECSPI 2 has only for signals (MISO, MOSI, SCLK and SS0);
-By default the ECSPI 2 signals are assigned to A9 in GPIO mode. In order to enable ECSPI, follow this [guide](../Cookbook_Linux/Device_Tree_Editor.html).
+By default the ECSPI 2 signals are assigned to A9 in GPIO mode. In order to enable ECSPI, follow this [guide](!Cookbook_Linux/Device_Tree_Editor).
 
 #### ECSPI 3
 ECSPI 3 is a full SPI, including Select Signals (SS0, SS1, SS2).

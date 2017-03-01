@@ -6,7 +6,7 @@ Connecting via serial will practically result in a shell console, the same as th
 
 You can find a useful accessory in the UDOO shop to easy exploit the Serial Debug Console of UDOO Neo: the [USB-to-TTL/Serial Debug Module for UDOO NEO](http://shop.udoo.org/accessories/usb-serial-debug-module-for-neo.html).
 
-The Serial Debug Console is available through UART 1 over the external pinout header `J7` on two pins, `46` and `47` (PCB names). You can find more info useful to locate the pins in the [UART Serial Ports](../Hardware_\&_Accessories/UART_serial_ports.html) section.
+The Serial Debug Console is available through UART 1 over the external pinout header `J7` on two pins, `46` and `47` (PCB names). You can find more info useful to locate the pins in the [UART Serial Ports](!Hardware_\&_Accessories/UART_serial_ports) section.
 
 If you haven't the official UDOO NEO accessory module you can use a any other standard USB-to-TTL/Serial dongle available in the market.
 

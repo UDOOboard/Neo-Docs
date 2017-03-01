@@ -9,7 +9,7 @@ Table below gives a short description of the UART ports:
 
 | Name   | Function                | Description                                                        |
 |--------|-------------------------|--------------------------------------------------------------------|
-| UART_1 | Cortex A9 serial debug  | On this serial it's possible [to have access to a Linux console](../Arduino_M4_Processor/Pinout.html)     |
+| UART_1 | Cortex A9 serial debug  | On this serial it's possible [to have access to a Linux console](!Arduino_M4_Processor/Pinout)     |
 | UART_2 | Cortex M4 MQX debug     | Freescale MQX real-time OS library uses this serial for debug info |
 | UART_3 | WL1831 Bluetooth chip   | Used to communicate with Bluetooth chip mounted on the board       |
 | UART_4 | n.c.                    | n.a.                                                               |
@@ -93,7 +93,7 @@ Serial0.println(); // write on output buffer char array plus newline char
 ```
 
 ### UART 6
-This UART is user available, but it must be included in the [device tree](../Cookbook_Linux/Device_Tree_Editor.html) before the use. By default all of its pins are given to A9 in GPIO mode.
+This UART is user available, but it must be included in the [device tree](!Cookbook_Linux/Device_Tree_Editor) before the use. By default all of its pins are given to A9 in GPIO mode.
 
 * Kernel device name: /dev/ttymxc5
 

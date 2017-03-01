@@ -4,7 +4,7 @@
 
 UDOO NEO embeds two cores on the same processor: a powerful 1GHz ARM® Cortex-A9, and an ARM Cortex-M4 I/O real-time co-processor that can run up to 200Mhz.
 
-While the Cortex-A9 can run both Android Lollipop and [UDOObuntu 2](../Software_&_Operating_Systems/UDOObuntu.html) - a dedicated Ubuntu-based Linux distro - the Cortex-M4 allows easy access to a Arduino&trade; environment. The snap-in connector ensures a plug-and-play interaction with most sensors and actuators.
+While the Cortex-A9 can run both Android Lollipop and [UDOObuntu 2](!Software_&_Operating_Systems/UDOObuntu) - a dedicated Ubuntu-based Linux distro - the Cortex-M4 allows easy access to a Arduino&trade; environment. The snap-in connector ensures a plug-and-play interaction with most sensors and actuators.
 
 Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module, the board is ideal to create robots, drones and rovers as well as any Mobile IoT project you can imagine.
 
@@ -17,7 +17,7 @@ Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module,
 
 
 ### Lineup
-UDOO NEO retail line up consists of [three models](../Hardware_Reference/Board%20versions.html).
+UDOO NEO retail line up consists of [three models](!Hardware_Reference/Board%20versions).
 
 <img src="../img/udoo_neo_versions.jpg" alt="UDOO versions" class="img-responsive" >
 

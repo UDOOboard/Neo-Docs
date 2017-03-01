@@ -261,7 +261,7 @@ Click ok, close the browser and reboot the board.
 
 <a href="../img/gionji/DOCS_9axis_pinmux_08.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_08.PNG"></a>
 
-For an example sketch of how to catch data from the motion sensors through Arduino M4 go to the [Controlling 9-axis motion sensors](../Arduino_M4_Processor/Controlling_9-axis_motion_sensors.html) section.
+For an example sketch of how to catch data from the motion sensors through Arduino M4 go to the [Controlling 9-axis motion sensors](!Arduino_M4_Processor/Controlling_9-axis_motion_sensors) section.
 
 
 <script>

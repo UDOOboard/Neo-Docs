@@ -1,6 +1,6 @@
 ## Introduction
 
-By default the the I2C-1 Bus connected to the Brick connector of UDOO NEO is assigned to Cortex-A9 core and it’s possible to control them by Linux driver. If you would use Bricks from the Arduino&trade; core Cortex-M4 take a look at [Introduction to Pinmuxing](../Cookbook_Linux/Device_Tree_Editor.html).
+By default the the I2C-1 Bus connected to the Brick connector of UDOO NEO is assigned to Cortex-A9 core and it’s possible to control them by Linux driver. If you would use Bricks from the Arduino&trade; core Cortex-M4 take a look at [Introduction to Pinmuxing](!Cookbook_Linux/Device_Tree_Editor).
 
 ## Barometer Brick - MPL3115A2
 

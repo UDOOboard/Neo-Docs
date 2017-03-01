@@ -49,7 +49,7 @@ For now, UDOO NEO does **NOT** manage:
  - **Interrupts()** / **NoInterrupts()**: functions for disabling/reenabling interrupts at the same time. Alternatively you can use *attachInterrupt()*/*detachInterrupt()* on all the pins one by one.
 
 ## Strings
-Refer the page [Arduino String Issue](../Debugging_&_Troubleshooting/Arduino_String_issue.html) for further information about *Strings* issues.
+Refer the page [Arduino String Issue](!Debugging_&_Troubleshooting/Arduino_String_issue) for further information about *Strings* issues.
 
 ## I2C/Wire
 

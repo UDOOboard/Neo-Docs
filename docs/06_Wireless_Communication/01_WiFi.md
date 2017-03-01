@@ -18,7 +18,7 @@ More information are available on [TI Wiki](http://processors.wiki.ti.com/index.
 ## Connecting to Wi-Fi networks
 
 You can connect to wireless networks by:
- * using the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html), in *Configuration*/*Network settings*;
+ * using the [Web Control Panel](!Basic_Setup/Web_Control_Panel), in *Configuration*/*Network settings*;
  * using the network utility in the UDOObuntu desktop environment (in the bottom-right corner).
 
 ## Known issues

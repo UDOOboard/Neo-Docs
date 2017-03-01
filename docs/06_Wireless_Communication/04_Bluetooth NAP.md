@@ -70,7 +70,7 @@ Finally, we need to advertise that NAP services are being provided by our board:
 
 
 ## Pair the clients
-You need to pair and trust the client boards to the server. The easiest way to do this is using the [blueman GUI](../Wireless_Communication/Bluetooth.html). If you prefer, you can use the command line, too.
+You need to pair and trust the client boards to the server. The easiest way to do this is using the [blueman GUI](!Wireless_Communication/Bluetooth). If you prefer, you can use the command line, too.
 
 On each client board, pair and trust the server board (identified by `$MASTER_MAC`):
 

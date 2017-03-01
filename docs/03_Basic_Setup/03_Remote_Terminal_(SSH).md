@@ -1,6 +1,6 @@
 ## Requirements
 A first condition to establish a SSH connection with your UDOO Neo is to have previously completed the tutorial about the
-[USB Direct Connection](../Basic_Setup/Usb_Direct_Connection.html).
+[USB Direct Connection](!Basic_Setup/Usb_Direct_Connection).
 A second condition is to download and install an SSH Client for your system, like [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
 ## Connection via SSH
@@ -14,7 +14,7 @@ A new line will appear:
 
     udooer@192.168.7.2's password:
 
-Type `udooer` (if you did not change your default password using the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html) yet, then press "Enter". Do not worry if you don't see what you type in the terminal: it's an expedient to hide your password to eventual onlookers.
+Type `udooer` (if you did not change your default password using the [Web Control Panel](!Basic_Setup/Web_Control_Panel) yet, then press "Enter". Do not worry if you don't see what you type in the terminal: it's an expedient to hide your password to eventual onlookers.
 
 At this point you can use your terminal:
 

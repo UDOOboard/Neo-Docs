@@ -7,7 +7,7 @@ Possible use cases for disabling the M4 core are:
 
 ## Using the Web Control Panel
 
-You can disable the M4 core using the GUI provided by the [Web Control Panel](../Basic_Setup/Web_Control_Panel.html), in *Configuration*/*Advanced settings*.
+You can disable the M4 core using the GUI provided by the [Web Control Panel](!Basic_Setup/Web_Control_Panel), in *Configuration*/*Advanced settings*.
 
 ## Using the terminal/SSH
 

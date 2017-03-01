@@ -36,14 +36,14 @@ Since Android 6.0 Marshmallow version the UDOO Android distro provides [TWRP rec
 
 Booting Android in Recovery mode allow you to install zip update packages. For example you can install the [Open GApps](http://opengapps.org/) packages to Google Play Services, Play Store and Google Apps.  
 
-You can find an exhaustive guide of [how to install Gapps](../Android/How_To_Install_Gapps_On_UDOO_Running_Android.html) here.
+You can find an exhaustive guide of [how to install Gapps](!Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android) here.
 
 <img src="../img/android_setting/setting_udoo_recovery.png">
 
-Another way to boot the Android Distro in Recovery Mode is run the following command in the `U-Boot console` through the [Serial Connection](../Basic_Setup/Connecting_Via_Serial_Cable.html):
+Another way to boot the Android Distro in Recovery Mode is run the following command in the `U-Boot console` through the [Serial Connection](!Basic_Setup/Serial_Debug_Console):
 
     run recovery cmd
 
-Alternatively you can use `adb` tools in [Adb Debug mode](../Android/Switch_Between_Adb_Debug_And_ADK_Connection.html) from you external PC using the command:
+Alternatively you can use `adb` tools from you external PC using the command:
 
     adb reboot recovery

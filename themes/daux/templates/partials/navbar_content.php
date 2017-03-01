@@ -1,6 +1,6 @@
-<a class="udoologo pull-left" href="<?= $params['base_page'] . $params['index']->getUri(); ?>">
-		<img src="http://www.udoo.org/docs-neo/img/logo_docs_neo.png"> <span>Docs</span>
-		<a class="btn btn-lg button_docs pull-right" href="http://www.udoo.org/docs/">UDOO Quad/Dual Docs</a>
+<img class="pull-left udoologo" src="<?php echo $params['image']; ?>"> 
+<a class="Navbar__brand" href="<?= $params['base_page'] . $params['index']->getUri(); ?>">
+<?php echo $params['tagline']; ?>
 </a>
 
 <?php if ($params['html']['search']) {

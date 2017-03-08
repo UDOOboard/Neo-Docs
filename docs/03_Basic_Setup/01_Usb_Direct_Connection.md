@@ -12,18 +12,22 @@ In order to use UDOO NEO'S USB Connection on Mac and Windows, you must install f
 
 ## Enable USB Direct Connection: Installing Drivers
 
-Linux doesn't need drivers to make USB connection work properly. For other OS follow the instuctions below.
+Choose your OS to install the proper driver to make the USB Direct Connection works.
 
-### Installing Drivers on Mac OS X
+<div>
+ <ul id="driver-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#linux-example" aria-controls="linux" role="tab" data-toggle="tab">Linux</a></li>
+  <li role="presentation"><a href="#windows-example" aria-controls="windows" role="tab" data-toggle="tab">Windows</a></li>
+  <li role="presentation"><a href="#macosx-example" aria-controls="macosx" role="tab" data-toggle="tab">Mac OS X</a></li>
+ </ul>
 
-* Install both of this drivers: [Serial](http://www.udoo.org/docs-neo/driversandtools/Mac%20USB%20Drivers/EnergiaFTDIDrivers2.2.18.pkg) and [Network](http://www.udoo.org/docs-neo/driversandtools/Mac%20USB%20Drivers/HoRNDIS.pkg)
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="linux-example">
 
-<span class="label label-warning">Heads up!</span> If you're using the Newest `OSX EL CAPITAN` please install this [Network Driver](http://nyus.joshuawise.com/HoRNDIS-rel8pre1.pkg) insted.
+Linux doesn't need a specific driver installation to make USB connection work properly. Everything should work out-of-the-box.
 
-* Reboot your MAC
-* UDOO NEO will be available at [192.168.7.2](http://192.168.7.2)
-
-### Installing Drivers on Windows
+  </div>
+  <div role="tabpanel" class="tab-pane" id="windows-example">
 
 * Connect UDOO NEO via Micro USB Cable to PC, eventually you'll get the following message:
 
@@ -49,12 +53,32 @@ Linux doesn't need drivers to make USB connection work properly. For other OS fo
 
 <img style="width:500px;" src="../img/win_drv/wd_05.jpg">
 
+  </div>
+  <div role="tabpanel" class="tab-pane" id="macosx-example">
+
+* Install both of these drivers:
+  * [Serial](http://www.udoo.org/docs-neo/driversandtools/Mac%20USB%20Drivers/EnergiaFTDIDrivers2.2.18.pkg)
+  * [HoRNDIS Network](http://joshuawise.com/horndis#available_versions): download and install the proper driver for your Mac OS X version from the official page.  
+
+* Reboot your MAC
+* UDOO NEO will be available at [192.168.7.2](http://192.168.7.2)
+
+  </div>
+ </div>
+</div>
+<script>
+$('#driver-examples a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+
 ## Use USB Direct Connection to control UDOO NEO
 
 * Upon successful connection, UDOO NEO will be available at the address [192.168.7.2](http://192.168.7.2)
-* You can establish a <a href="../Basic_Setup/Remote_Terminal_(SSH).html">SSH Remote Terminal</a> using the address 192.168.7.2 with credentials udooer/udooer
-* You can establish a <a href="../Basic_Setup/Remote_Desktop_(VNC).html">VNC Remote Desktop</a> Session using the address 192.168.7.2 and port 5900 (192.168.7.2:5900). The default password is udooer.
-* You can configure UDOO NEO via the [Web Control Panel](!Basic_Setup/Web_Control_Panel)
+* You can establish a <a href="../Basic_Setup/Remote_Terminal_(SSH).html">SSH Remote Terminal</a> using the address `192.168.7.2` with credentials user `udooer` and psw `udooer`
+* You can establish a <a href="../Basic_Setup/Remote_Desktop_(VNC).html">VNC Remote Desktop</a> Session using the address `192.168.7.2` and port `5900` (`192.168.7.2:5900`). The default password is `udooer`.
+* You can configure UDOO NEO via the [Web Control Panel](!Basic_Setup/Web_Control_Panel) directly from your browser.
 
 ## Troubleshooting
 

@@ -11,7 +11,7 @@ For comparison, Arduino Due uses an Atmel SAM3X M3 chip, the iMX 6soloX is the n
 Having a single chip with two cores means lower power consumption, lower costs and high speed communication.
 In fact there isn't a shared serial port or a bus between the two cores, but an high speed shared memory. This guarantees better performance, stability and robustness.
 
-High Performances are provided by the real time operativing system developed by Freescale, MQX. The high level Arduino headers are "linked" with low level MQX calls.
+High Performances are provided by the real time operating system developed by Freescale, MQX. The high level Arduino headers are "linked" with low level MQX calls.
 
 These two cores are connected to all interfaces and peripherals through an high speed AXI bus. It’s up to the programmer to define witch features are assigned to each processors.
 

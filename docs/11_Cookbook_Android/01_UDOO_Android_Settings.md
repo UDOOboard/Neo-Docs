@@ -8,14 +8,14 @@ In `General` you can find misc custom options to set video output, processor's g
 
 ## Select Video Output
 
-In UDOO QUAD/DUAL you have three options as video output.
+In UDOO NEO you have three options as video output.
 
  * [LVDS 7"](http://shop.udoo.org/accessories/video-kit-7-touch-for-neo.html)
  * HDMI
 
 The default one at boot is HDMI.
 
-<img style="width:700px; height:281px" src="../img/android_setting/setting_udoo_vidout.png">
+<img style="width:700px; height:281px" src="../img/android_setting/setting_udoo_vidout_neo.png">
 
 ## Select the Processor's Governor
 

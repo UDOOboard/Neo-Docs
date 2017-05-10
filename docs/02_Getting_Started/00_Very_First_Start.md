@@ -24,7 +24,7 @@ To use UDOO Neo as a headless IoT device you need:
 ## 1. Download UDOO Neo’s official Operating system:
 
 The main “Hard Drive” of UDOO NEO is the Micro SD card. In order to get started you just need to download the official UDOObuntu Operating System and write it to your Micro SD card.
-- Download any official Micro SD image from the [image section of the website](http://www.udoo.org/downloads/).
+- Download any official Micro SD image from the [image section of the website](https://www.udoo.org/downloads/).
 
 ## 2. Burn UDOO Neo OS
 

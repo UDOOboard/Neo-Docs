@@ -122,7 +122,7 @@ In order to reach the internal serial between M4 and A9 from outside, you must c
 
 Download [VirtualCommPort][VCP] and install it. Then add `COM99` and set `host=<udooneo_ip>`. You should be able to access the serial port through _Arduino IDE Serial Monitor_ or a custom application.
 
-[VCP]: http://www.udoo.org/docs-neo/driversandtools/VirtualCommPort-2.0.zip
+[VCP]: https://www.udoo.org/docs-neo/driversandtools/VirtualCommPort-2.0.zip
 
   </div>
   <div role="tabpanel" class="tab-pane" id="mac2">

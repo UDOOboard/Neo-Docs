@@ -57,7 +57,7 @@ Linux doesn't need a specific driver installation to make USB connection work pr
   <div role="tabpanel" class="tab-pane" id="macosx-example">
 
 * Install both of these drivers:
-  * [Serial](http://www.udoo.org/docs-neo/driversandtools/Mac%20USB%20Drivers/EnergiaFTDIDrivers2.2.18.pkg)
+  * [Serial](https://www.udoo.org/docs-neo/driversandtools/Mac%20USB%20Drivers/EnergiaFTDIDrivers2.2.18.pkg)
   * [HoRNDIS Network](http://joshuawise.com/horndis#available_versions): download and install the proper driver for your Mac OS X version from the official page.  
 
 * Reboot your MAC

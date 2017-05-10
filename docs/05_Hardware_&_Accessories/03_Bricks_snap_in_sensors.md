@@ -4,7 +4,7 @@ By default the the I2C-1 Bus connected to the Brick connector of UDOO NEO is ass
 
 ## Barometer Brick - MPL3115A2
 
-Here you can find documentation as datasheet, schematics, and montage plane in the [Other Resurces](http://www.udoo.org/other-resources/) page of our website, in the `Accessories` tab.
+Here you can find documentation as datasheet, schematics, and montage plane in the [Other Resurces](https://www.udoo.org/other-resources/) page of our website, in the `Accessories` tab.
 
 ### Usage
 Barometer Brick is able to return `Temperature` and `Pressure` ambient values.  
@@ -83,7 +83,7 @@ If the sensor is already connected at boot the kernel automatically recognizes t
 
 ## Temperature Brick - TMP75b
 
-Here you can find documentation as datasheet, schematics, and montage plane in the [Other Resurces](http://www.udoo.org/other-resources/) page of our website, in the `Accessories` tab.
+Here you can find documentation as datasheet, schematics, and montage plane in the [Other Resurces](https://www.udoo.org/other-resources/) page of our website, in the `Accessories` tab.
 
 ### Usage
 Enable the sensor via the following command:

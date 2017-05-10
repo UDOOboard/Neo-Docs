@@ -4,7 +4,7 @@ Android has been ported to UDOO Neo.
 
 Android for UDOO Neo is based on Android 5.1
 
-SD card images can be downloaded from the [image section of the website](http://www.udoo.org/downloads/).
+SD card images can be downloaded from the [image section of the website](https://www.udoo.org/downloads/).
 
 ## Installation
 

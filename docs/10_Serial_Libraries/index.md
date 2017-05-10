@@ -1,7 +1,7 @@
 UDOO NEO Serial Libraries Examples
 ==========
 
-Serial Libraries Communication Samples for [UDOO Board](http://www.udoo.org)
+Serial Libraries Communication Samples for [UDOO Board](https://www.udoo.org)
 
 These scripts are examples meant to demonstrate how to implement a uni/bidirectional communication between an Arduino sketch (running on Cortex-M4 Arduino&trade; Compatible processor) and a binary application on iMX6 Linux processor.
 

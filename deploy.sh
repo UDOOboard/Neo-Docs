@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
-# Compile 
+# Compile
 ./daux.phar
 
 # go to the out directory and create a *new* Git repo
@@ -12,8 +12,10 @@ git init
 git config user.name "Travis CI"
 git config user.email "social@udoo.org"
 
-# Add drivers and tools
+# Add drivers and tools, delete LESS files
 cp -rp ../driversandtools ../img .
+rm -rf themes/common/less
+rm -rf themes/daux/less/
 
 # The first and only commit to this new Git repo contains all the
 # files present with the commit message "Deploy to GitHub Pages".
@@ -26,7 +28,6 @@ git commit -m "Deploy to GitHub Pages"
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 echo "Deploying"
 git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
-#git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages 
 
 sleep 10
 

@@ -26,24 +26,19 @@ Choose the OS you use.
 
 ## Connecting via Serial from Windows
 
-* Download and install the serial adapter Driver. For the official `USB-to-Serial debug module fo UDOO NEO` you can find Driver here:
-<a href="http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx">http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx</a>
+* Download the serial adapter Driver. For the official `USB-to-Serial debug module for UDOO NEO` you can find the Driver in the [Silabs page](http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx):
+  * Install the proper version for your Operating system (Check [how to define your Windows version](http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions)):
+    * *CP210xVCPInstaller_x86.exe* for 32-bit systems
+    * *CP210xVCPInstaller_x64.exe* for 64-bit system
 
-* Install the proper version for your Operating system:
-CP210xVCPInstaller_x86.exe for 32-bit systems
-CP210xVCPInstaller_x64.exe for 64-bit system
+* Download and install a software to manage the serial like [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
-* How to define your Windows version:
-<a href="http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions">http://windows.microsoft.com/en-us/windows7/32-bit-and-64-bit-windows-frequently-asked-questions</a>
+* Open Putty and configure it as follow:
+  * **Connection type**: `serial`
+  * **Port**: `COM3` (please note that this value may be different, check the number of the COM assigned in Windows Device Manager)
+  * **Speed**: `115200`
 
-* Download and install a software called putty
-<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html</a>
-
-* Open putty and configure it as follow:
-Connection type <strong>“serial”</strong>
-Port: <strong>“COM3”</strong> (please note that this value may be different, check the number of the COM assigned in Windows Device Manager)
-Speed: <strong>“115200”</strong>
-Save it as <strong>“Udoo-serial”</strong> for future uses.
+* Save it the configuration as `Udoo-serial` for future uses.
 
 <br />
 
@@ -52,13 +47,10 @@ Save it as <strong>“Udoo-serial”</strong> for future uses.
 <br />
 <br />
 
-* Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable.
-
-* Power up UDOO DUAL/QUAD
 
 * Click Open
 
-* You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO DUAL/QUAD.
+* You’re in! You’ll be able to see the startup process and access to the remote shell console on UDOO NEO.
 
 <br />
 
@@ -71,7 +63,7 @@ Save it as <strong>“Udoo-serial”</strong> for future uses.
 
 ## Connecting via Serial from Linux
 
-* Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable.
+* Connect the serial port of UDOO NEO to your PC using the micro USB cable.
 
 * Type
 
@@ -135,7 +127,7 @@ Software Flow Control: No (type g key)
 
  ```
 
-* Power cycle UDOO DUAL/QUAD to see the boot process and connect it to serial console shell
+* Power cycle UDOO NEO to see the boot process and connect it to serial console shell
 
 
 </div>
@@ -143,10 +135,9 @@ Software Flow Control: No (type g key)
 
 ## Connecting via Serial from Mac
 
-* Download and install the serial adapter Driver. For the official `USB-to-Serial debug module fo UDOO NEO` you can find Driver here:
-<a href="http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx">http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx</a>
+* Download the serial adapter Driver. For the official `USB-to-Serial debug module for UDOO NEO` you can find the Driver in the [Silabs page](http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx):
 
-* Connect the serial port of UDOO DUAL/QUAD (CN6) to your PC using the micro USB cable.
+* Connect the serial port of UDOO NEO to your PC using the micro USB cable.
 
 * Download and install Serial Tools <a href="https://itunes.apple.com/it/app/serialtools/id611021963">https://itunes.apple.com/it/app/serialtools/id611021963</a> or directly from the Apple Store
 

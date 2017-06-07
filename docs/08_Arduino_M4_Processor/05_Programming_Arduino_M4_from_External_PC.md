@@ -76,6 +76,12 @@ sudo apt-get install udoofota-server
  <div class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="windows-example">
 
+If you are using the Windows App installed from the store this is the path:
+
+    C:\Users\<user_name>\Documents\ArduinoData\
+
+If you are using the Desktop App installed withe the Windows installer this is the path:
+
     C:\Users\<user_name>\AppData\Local\Arduino15\
 
   </div>
@@ -176,6 +182,12 @@ You need to modify a file in your Arduino package that is named `platform.txt`. 
 
  <div class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="windows3">
+
+If you are using the Windows App installed from the store this is the path:
+
+    C:\Users\<user_name>\Documents\ArduinoData\packages\UDOO\hardware\solox\<version_number>\platform.txt
+
+If you are using the Desktop App installed withe the Windows installer this is the path:
 
     C:\Users\<user_name>\AppData\Local\Arduino15\packages\UDOO\hardware\solox\<version_number>\platform.txt
 

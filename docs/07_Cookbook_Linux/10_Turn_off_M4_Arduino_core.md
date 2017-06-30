@@ -23,3 +23,4 @@ You can disable the M4 core using the GUI provided by the [Web Control Panel](!B
 
     sudo udoom4ctl status
 
+After the status has changed, you need to reboot the board to initialize the setting that you configured.

@@ -29,9 +29,19 @@ You should change:
  * `channel` is the frequency channel (it is better to pick the channel least congested);
  * `wpa_passphrase` is the password to connect to the network.
 
-In `/etc/default/hostapd` be sure that `DAEMON_CONF` is uncommented and pointed to the hostapd.conf path:
+In the file `/etc/default/hostapd` uncomment the line `DAEMON_CONF` and set this value to the hostapd.conf path:
 
     DAEMON_CONF="/etc/hostapd/hostapd.conf"
 
 
 <span class="label label-warning">Heads up!</span> When in Soft-AP mode, you cannot connect to wireless networks in client mode! In fact, installing `udoo-softap` you are disabling the `wpa_supplicant` service. Uninstall the Soft-AP metapackage to restore client Wi-Fi connectivity.
+
+## Trubleshooting
+
+To check everything is working fine you can run the command:
+
+    sudo service hostapd status
+
+If is says *"hostapd is not running"* check for possible issues using the command:
+
+    sudo hostapd /etc/hostapd/hostapd.conf

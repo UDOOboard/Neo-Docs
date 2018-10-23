@@ -20,7 +20,7 @@ As well as building Linux systems, there is also an ability to generate a toolch
 Within builds, there are options for various build-time sanity/regression tests, and also the option to boot and test certain images under QEMU to validate the build.
 
 ## UDOO Neo
-Here you can find the [Open Embedded meta-layer for UDOO boards] (https://github.com/graugans/meta-udoo).  
+Here you can find the [Open Embedded meta-layer for UDOO boards](https://github.com/graugans/meta-udoo).  
 
 Follow the instructions in the README of the github project to know how to use it.  
 Thanks to *graugans* for his work.

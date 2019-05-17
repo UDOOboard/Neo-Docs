@@ -6,7 +6,7 @@ To be fully functional, the board needs a 5V clean power (VCC_SW). If an LVDS pa
 ### Power supply stages
 <a href="../img/gionji/DOCS_power_chain.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_power_chain.PNG"></a>
 
-* The (E) block allows to only one wire to arrive at VCC_SW node. this block is controlled by to signals: 5V_PWRG and the output of (D) block. 
+* The (E) block allows to only one wire to arrive at VCC_SW node. this block is controlled by to signals: 5V_PWRG and the output of (D) block.
 * 5V_PWRG is a signal that notify the voltage coming from the (A) block has the right value and eventually the VCC_SW_IN can be used to power the board.
 * The (A) block is a DC/DC converter to a 5V voltage.
 * The (B) block is the uUSB port.
@@ -20,6 +20,6 @@ You can power up the board in 3 ways
 
 * DC-jack with a standard 5.5mm/2.1mm barrel jack: internal positive, Voltage 6 to 15.
 * microUsb: 5 Volts up to 2 Ampere
-* Vin / GND pin on internal pinout
+* Vin / GND pin on internal pinout: from 5V to 12V, min 2A. (If you are having problems powering the board with 5V, there may be a problem of leakage from the power supply. Try with a higher voltage e.g. 6V).
 
 Providing higher voltages could damage the board!

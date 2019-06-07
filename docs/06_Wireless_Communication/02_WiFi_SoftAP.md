@@ -36,7 +36,7 @@ In the file `/etc/default/hostapd` uncomment the line `DAEMON_CONF` and set this
 
 <span class="label label-warning">Heads up!</span> When in Soft-AP mode, you cannot connect to wireless networks in client mode! In fact, installing `udoo-softap` you are disabling the `wpa_supplicant` service. Uninstall the Soft-AP metapackage to restore client Wi-Fi connectivity.
 
-## Trubleshooting
+## Troubleshooting
 
 To check everything is working fine you can run the command:
 
@@ -45,3 +45,60 @@ To check everything is working fine you can run the command:
 If is says *"hostapd is not running"* check for possible issues using the command:
 
     sudo hostapd /etc/hostapd/hostapd.conf
+    
+### Error: Could not configure driver mode
+
+If you encounter this problem, it is probably because the driver of hostapd is 
+clashing with the drivers of network-manager utility.
+
+They are basically fighting to take charge of the wireless device you are trying to configure with hostapd.
+If you notice, when you put the card in monitor mode manually using the following commands:
+
+Note:  *All commands are being run as root*
+
+```bash
+ifconfig wlan0 down
+iwconfig wlan0 mode monitor
+ifconfig wlan0 up
+```
+
+After a few seconds, the card jumps back to `mode:managed`
+
+This is because the card is being managed by network-manager utility. So, there are two ways you can tackle this issue:
+
+    airmon-ng check kill to kill all the potentially troublesome processes, like network-manager, wpa_supplicant, dhclient
+    Make your selected card an exception in network-manager, so that it ignores the card and not mess with it ever.
+
+How to make network-manager ignore your wireless card
+– Get you wireless card’s MAC address/hardware address
+```
+ifconfig wlan0 | grep -i hwaddr
+```
+It will show an output like this:
+```
+wlan0 Link encap:Ethernet HWaddr 7d:e6:d2:30:9f:f2
+```
+– Open the network-manager configuration file: NetworkManager.conf
+
+```
+nano /etc/NetworkManager/NetworkManager.conf
+```
+Add the following code and replace the MAC address with your selected device’s MAC
+```
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=false
+
+[keyfile]
+unmanaged-devices=mac:7d:e6:d2:30:9f:f2
+```
+Hit CTRL + O to save and CTRL + X to exit.
+– Restart network-manager:
+```
+service network-manager restart 
+```
+This must fix the Could not configure driver mode error.
+
+Credits: https://members.rootsh3ll.com/t/nl80211-could-not-configure-driver-mode-hostapd-error/197

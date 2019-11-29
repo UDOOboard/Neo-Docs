@@ -20,7 +20,7 @@ If you want to come back work with a standard TV/monitor you need to revert thes
 
 ## Instructions
 
-Download the package from here:   [udoo-neo_7HDMItouch_dtbs.tar.gz](http://download.udoo.org/files/Neo_img/tools/udoo-neo_7HDMItouch_dtbs.tar.gz)  
+Download the package from here:   [udoo-neo_7HDMItouch_dtbs.tar.gz](https://udoo.org/download/files/UDOO_NEO/tools/udoo-neo_7HDMItouch_dtbs.tar.gz​​)  
 sha1 checksum: `cde95a301d58b86aa086743170fe0d7f8adcd7d2`
 
 Extract the *udoo-neo_7HDMItouch_dtbs.tar.gz* package inside the `/boot/dts/` folder of the UDOObuntu microSD, substituting the files inside. You can use this command:

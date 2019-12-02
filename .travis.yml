@@ -6,4 +6,4 @@ env:
 language: php
 
 php:
-  - 5.5
+  - 7.2

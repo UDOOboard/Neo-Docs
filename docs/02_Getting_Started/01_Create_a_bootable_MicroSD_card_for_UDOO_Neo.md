@@ -16,7 +16,7 @@ Please consider that the size of a Micro SD card must be at least 4/8GB (dependi
 
 ## Step by Step Guide
 
-* Download any official Micro SD image from the [image section of the website](https://www.udoo.org/downloads/).
+* Download any official Micro SD image from the [image section of the website](https://www.udoo.org/resources-neo/).
 * Extract the .img file from the .zip file you downloaded into any folder (this path will be referred to as <img_file_path> in the guide).
 * Follow the instructions below for the OS you use:
 

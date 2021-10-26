@@ -7,7 +7,7 @@ UDOObuntu 2 is based on Ubuntu 14.04. It is provided in two flavours:
  * without any GUI (ideal for headless installations)
  * with a full LXDE desktop environment
 
-Both images can be downloaded from the [image section of the website](https://www.udoo.org/downloads/).
+Both images can be downloaded from the [image section of the website](https://www.udoo.org/resources-neo/).
 
 Besides the Ubuntu 14.04 specifications, UDOObuntu differs for the following elements:
 

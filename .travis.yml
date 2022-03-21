@@ -1,9 +1,0 @@
-script: bash ./deploy.sh
-env:
-  global:
-    - GH_REF: github.com/UDOOboard/Neo-Docs.git
-    - secure: VDqbLzFW0GDMk4BpnezXUwnRAd2BmueDBEVL8seqhPzXGP+AxqTVCCp7MQRHwuFf4IaUMQWRkElSH+hs2nNY+Qe8DCl5z87zPMA/HBBX8WzDMvaeA+E5yPITu6+uxBGpHdR0QUbnKu0dEFD6XvxDAAb2tw50iFFIJLQKax4gzH4YtOcx+U74iRllVHshItQEFPXjfAJQ2hdswcvQlyZ3GVJsYmXPa0kk33iuSCTexbXTo1PLjaNYJLB3oZAeWODzG9rPwUfQ9yp655T3+e48f0LwMPd55t2X4B2BsDMVLMLcnLamB187A5mcKTZblQ/MhS7uM1mfKX+713htq+Wt5/DqUF1Etkz0V9pc2kZE1gmeLQR/brkkzBXyc4Jg4+/e401agI7AT6dlIelch5NIgdn5v/Bhj0szoqA/WOGz0uKHQi5hCpRjcQjgi5CNse3qZiy1LMA78zWPN6j1vGgk0azsjfDa8OVjheWZzOBeNyzGRoyiwxMFzK8/mKbMW9ybdj4oRzR0v1hQ85RW/ViHbcae2qrfI3UEIjhG7huqCKozIBY4XX5FYOMPuZxNVLfQVG+Ex8SSvzvYJ5SYHjMEEMh3n2DP5vZPdN0c3YcG9T41ws1u4TVc2pbQ5zpdKATQa0DZ3SIhAlnaUOuwFjyzK4fEmkvutKyHkV/FueW0Z7g=
-language: php
-
-php:
-  - 7.2

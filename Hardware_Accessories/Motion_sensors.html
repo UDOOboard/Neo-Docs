@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Motion sensors - UDOO Neo Docs</title>
+    <meta name="description" content="UDOO Neo Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="/docs/img/logos/neo.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Neo Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Getting Started</a><ul class='Nav'><li class='Nav__item '><a href="../Getting_Started/Very_First_Start.html">Very First Start</a></li><li class='Nav__item '><a href="../Getting_Started/Create_a_bootable_MicroSD_card_for_UDOO_Neo.html">Create a bootable MicroSD card for UDOO Neo</a></li><li class='Nav__item '><a href="../Getting_Started/Use_as_a_headless_IoT_Device.html">Use as a headless IoT Device</a></li><li class='Nav__item '><a href="../Getting_Started/Use_as_a_Lightweight_Desktop_PC.html">Use as a Lightweight Desktop PC</a></li><li class='Nav__item '><a href="../Getting_Started/Use_as_an_Arduino.html">Use as an Arduino</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Basic Setup</a><ul class='Nav'><li class='Nav__item '><a href="../Basic_Setup/Usb_Direct_Connection.html">Usb Direct Connection</a></li><li class='Nav__item '><a href="../Basic_Setup/Web_Control_Panel.html">Web Control Panel</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Terminal_(SSH).html">Remote Terminal (SSH)</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Desktop_(VNC).html">Remote Desktop (VNC)</a></li><li class='Nav__item '><a href="../Basic_Setup/Serial_Debug_Console.html">Serial Debug Console</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Software & Operating Systems</a><ul class='Nav'><li class='Nav__item '><a href="../Software_Operating_Systems/UDOObuntu.html">UDOObuntu</a></li><li class='Nav__item '><a href="../Software_Operating_Systems/Android.html">Android</a></li><li class='Nav__item '><a href="../Software_Operating_Systems/Yocto.html">Yocto</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware & Accessories</a><ul class='Nav'><li class='Nav__item Nav__item--active'><a href="../Hardware_Accessories/Motion_sensors.html">Motion sensors</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Bricks_snap_in_sensors.html">Bricks snap in sensors</a></li><li class='Nav__item '><a href="../Hardware_Accessories/GPIO.html">GPIO</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UART_serial_ports.html">UART serial ports</a></li><li class='Nav__item '><a href="../Hardware_Accessories/I2C_bus.html">I2C bus</a></li><li class='Nav__item '><a href="../Hardware_Accessories/SPI_bus.html">SPI bus</a></li><li class='Nav__item '><a href="../Hardware_Accessories/CAN_bus.html">CAN bus</a></li><li class='Nav__item '><a href="../Hardware_Accessories/LVDS_panels.html">LVDS panels</a></li><li class='Nav__item '><a href="../Hardware_Accessories/PWM.html">PWM</a></li><li class='Nav__item '><a href="../Hardware_Accessories/ADC.html">ADC</a></li><li class='Nav__item '><a href="../Hardware_Accessories/USB_to_TTL_Serial_Debug_Module.html">USB-to-TTL Serial Debug Module</a></li><li class='Nav__item '><a href="../Hardware_Accessories/I2S.html">I2S</a></li><li class='Nav__item '><a href="../Hardware_Accessories/HDMI_7inch_touch.html">HDMI 7inch touch</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Wireless Communication</a><ul class='Nav'><li class='Nav__item '><a href="../Wireless_Communication/WiFi.html">WiFi</a></li><li class='Nav__item '><a href="../Wireless_Communication/WiFi_SoftAP.html">WiFi SoftAP</a></li><li class='Nav__item '><a href="../Wireless_Communication/Bluetooth.html">Bluetooth</a></li><li class='Nav__item '><a href="../Wireless_Communication/Bluetooth_NAP.html">Bluetooth NAP</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Linux</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Linux/Understanding_Linux_Software_Management_And_Installing.html">Understanding Linux Software Management And Installing</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Linux_Command_Line_Interface.html">Linux Command Line Interface</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Set_video_output.html">Set video output</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Change_Web_Control_Panel_port.html">Change Web Control Panel port</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Turn_off_M4_Arduino_core.html">Turn off M4 Arduino core</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Arduino M4 Processor</a><ul class='Nav'><li class='Nav__item '><a href="../Arduino_M4_Processor/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Pinout.html">Pinout</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Communication.html">Communication</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Programming_Arduino_M4_from_Internal_Processor(Cortex_A9).html">Programming Arduino M4 from Internal Processor(Cortex-A9)</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Programming_Arduino_M4_from_External_PC.html">Programming Arduino M4 from External PC</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Debugging.html">Debugging</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Arduino_differences.html">Arduino differences</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Porting_Libraries.html">Porting Libraries</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Controlling_9_axis_motion_sensors.html">Controlling 9-axis motion sensors</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Use_more_digital_pins_on_M4.html">Use more digital pins on M4</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Arduino M4</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Arduino_M4/Hall_Sensor.html">Hall Sensor</a></li><li class='Nav__item '><a href="../Cookbook_Arduino_M4/RGB_led.html">RGB led</a></li><li class='Nav__item '><a href="../Cookbook_Arduino_M4/Two_color_common_cathode_led.html">Two color common cathode led</a></li><li class='Nav__item '><a href="../Cookbook_Arduino_M4/Knock_sensor.html">Knock sensor</a></li><li class='Nav__item '><a href="../Cookbook_Arduino_M4/Infrared_Transmit.html">Infrared Transmit</a></li></ul></li><li class='Nav__item  has-children'><a href="../Serial_Libraries/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Serial Libraries</a><ul class='Nav'><li class='Nav__item '><a href="../Serial_Libraries/Java_Serial_Libraries.html">Java Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/C_Serial_Libraries.html">C Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/PHP_Serial_Libraries.html">PHP Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/Python_Serial_Libraries.html">Python Serial Libraries</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Android</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Boot_Walkthrough.html">UDOO Android Boot Walkthrough</a></li><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Android Settings</a></li><li class='Nav__item '><a href="../Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android.html">How To Install Gapps On UDOO Running Android</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Debugging & Troubleshooting</a><ul class='Nav'><li class='Nav__item '><a href="../Debugging_Troubleshooting/Arduino_programming_from_internal_IDE.html">Arduino programming from internal IDE</a></li><li class='Nav__item '><a href="../Debugging_Troubleshooting/Arduino_String_issue.html">Arduino String issue</a></li><li class='Nav__item '><a href="../Debugging_Troubleshooting/USB_stops_working_after_programming_M4.html">USB stops working after programming M4</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Topics</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Topics/Setup_development_environment.html">Setup development environment</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_UDOObuntu_(complete_bootable_image).html">Compile UDOObuntu (complete bootable image)</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_U_Boot_Bootloader.html">Compile U-Boot Bootloader</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Linux_Kernel.html">Compile Linux Kernel</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Android_From_Source.html">Compile Android From Source</a></li><li class='Nav__item '><a href="../Advanced_Topics/Recompile_MQX_Libraries.html">Recompile MQX Libraries</a></li><li class='Nav__item '><a href="../Advanced_Topics/Boot_process.html">Boot process</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware Reference</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_Reference/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Hardware_Reference/Resources.html">Resources</a></li><li class='Nav__item '><a href="../Hardware_Reference/Board_versions.html">Board versions</a></li><li class='Nav__item '><a href="../Hardware_Reference/Processor.html">Processor</a></li><li class='Nav__item '><a href="../Hardware_Reference/RAM.html">RAM</a></li><li class='Nav__item '><a href="../Hardware_Reference/Power_Management.html">Power Management</a></li><li class='Nav__item '><a href="../Hardware_Reference/PC_USB_interface.html">PC USB interface</a></li><li class='Nav__item '><a href="../Hardware_Reference/Indicator_LED.html">Indicator LED</a></li><li class='Nav__item '><a href="../Hardware_Reference/JTAG_header.html">JTAG header</a></li><li class='Nav__item '><a href="../Hardware_Reference/VADC_Analog_Camera.html">VADC Analog Camera</a></li><li class='Nav__item '><a href="../Hardware_Reference/Ethernet.html">Ethernet</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>UDOO NEO made by the Community</a><ul class='Nav'><li class='Nav__item '><a href="../UDOO_NEO_made_by_the_Community/Python.html">Python</a></li><li class='Nav__item '><a href="../UDOO_NEO_made_by_the_Community/Java.html">Java</a></li><li class='Nav__item '><a href="../UDOO_NEO_made_by_the_Community/Builds_based_on_other_kernels.html">Builds based on other kernels</a></li><li class='Nav__item '><a href="../UDOO_NEO_made_by_the_Community/Drivers_Modules_And_Tools.html">Drivers Modules And Tools</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Motion sensors</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>UDOO Neo is equipped with 9-axis motion sensors: accelerometer, magnetometer and gyroscope.</p>
+<p>Accelerometer and magnetometer are embedded on the same Freescale chip, that is FXOS8700CQ, the gyroscope is a single FXAS21002C chip.
+They communicate with i.MX 6SoloX over I2C bus number 4.</p>
+<p>They can be accessed by M4 core and also by A9 core. They can be used in ping mode, asking the values to the sensors, or in interrupt mode.</p>
+<p><a href="../img/gionji/DOCS_acc_mag_chip.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_acc_mag_chip.PNG"></a> <a href="../img/gionji/DOCS_i2c_channels.JPG" target="_blank"><img style="width:400px; height:218px" src="../img/gionji/DOCS_i2c_channels.JPG"></a></p>
+<p><span class="label label-warning">Heads up!</span> Only EXTENDED and FULL board versions are equipped with embedded motion sensors.</p>
+<h2 id="page_FXOS8700CQ-Accelerometer-Magnetometer">FXOS8700CQ - Accelerometer/Magnetometer</h2>
+<p>FXOS8700CQ is a small, low-power, 3-axis, linear accelerometer and 3-axis, magnetometer combined into a single package. The device features an I2C with 14-bit accelerometer and 16-bit magnetometer ADC resolution along with smart-embedded functions.</p>
+<p>FXOS8700CQ has dynamically selectable acceleration full scale ranges of ±2g / ±4g /±8g and a fixed magnetic measurement range of ±1200μT. Output data rates (ODR) from 1.563 Hz to 800 Hz are selectable by the user for each sensor. Interleaved magnetic and acceleration data is available at ODR rates of up to 400 Hz. FXOS8700CQ is guaranteed to operate over the extended temperature range of -40 °C to +85 °C.</p>
+<ul>
+<li>I2C address: 0x1E</li>
+<li>
+<a href="http://cache.freescale.com/files/sensors/doc/data_sheet/FXOS8700CQ.pdf" class="Link--external">Download datasheet</a>
+</li>
+</ul>
+<h3 id="page_Read-acceleration-and-magnetic-field-data">Read acceleration and magnetic field data</h3>
+<p>To enable the accelerometer, you need to write <code>1</code> in the file below:</p>
+<pre><code>echo 1 &gt; /sensors/accelerometer/enable
+</code></pre>
+<p><span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default!</p>
+<p>Accelerometer data is then available reading the file <code>/sensors/accelerometer/data</code>.</p>
+<p>To enable the magnetometer, you need to write <code>1</code> in the file below:</p>
+<pre><code>echo 1 &gt; /sensors/magnetometer/enable
+</code></pre>
+<p><span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default!</p>
+<p>Magnetometer data is then available reading the file <code>/sensors/magnetometer/data</code>.</p>
+<h2 id="page_FXAS21002-Gyroscope">FXAS21002 - Gyroscope</h2>
+<p>3-Axis Digital Angular Rate Gyroscope FXAS21002C is a small, low-power, yaw, pitch, and roll angular rate gyroscope with 16 bit ADC resolution. The full-scale range is adjustable from ±250°/s to ±2000°/s. It features I2C interface. FXAS21002C is capable of measuring angular rates up to ±2000°/s, with output data rates (ODR) from 12.5 to 800 Hz.</p>
+<p>An integrated Low-Pass Filter (LPF) allows the host application to limit the digital signal bandwidth. The device may be configured to generate an interrupt when a user-programmable angular rate threshold is crossed on any one of the enabled axes. FXAS21002C is guaranteed to operate over the extended temperature range of –40 °C to +85 °C</p>
+<ul>
+<li>I2C address: 0x20</li>
+<li>
+<a href="http://cache.freescale.com/files/sensors/doc/data_sheet/FXAS21002.pdf" class="Link--external">Download datasheet</a>
+</li>
+</ul>
+<h3 id="page_Read-angular-speed-data">Read angular speed data</h3>
+<p>To enable the gyroscope, you need to write <code>1</code> in the file below:</p>
+<pre><code>echo 1 &gt; /sensors/gyroscope/enable
+</code></pre>
+<p><span class="label label-warning">Heads up!</span>In Udoobuntu versions higher or equals than 2 this sensor is enabled by default!</p>
+<p>Gyroscope data is then available from reading the file <code>/sensors/gyroscope/data</code>.</p>
+<h2 id="page_Examples">Examples</h2>
+<h3 id="page_Accelerometer-examples">Accelerometer examples</h3>
+<div>
+ <ul id="Accelerometer-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#abash-example" aria-controls="abash" role="tab" data-toggle="tab">Bash</a></li>
+  <li role="presentation"><a href="#aphp-example" aria-controls="aphp" role="tab" data-toggle="tab">PHP</a></li>
+ </ul>
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="abash-example">
+<pre><code class="language-bash">#!/bin/bash
+echo 1 &gt; /sensors/accelerometer/enable
+cat /sensors/accelerometer/data
+
+# it will print something like:
+# -6948,344,-14472
+</code></pre>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="aphp-example">
+<pre><code class="language-php">&lt;?php                                                                                       
+file_put_contents(&quot;1&quot;, &quot;/sensors/accelerometer/enable&quot;);                                    
+$data = trim(file_get_contents(&quot;/sensors/accelerometer/data&quot;));                             
+$axis = explode(&quot;,&quot;, $data);                                                                
+echo &quot;X=&quot; . $axis[0] . &quot; Y=&quot; . $axis[1] . &quot; Z=&quot; . $axis[2] . PHP_EOL;                       
+echo &quot;Modulus=&quot; . sqrt($axis[0]*$axis[0] + $axis[1]*$axis[1] + $axis[2]*$axis[2]) . PHP_EOL;
+
+// it will print something like:
+// X=688 Y=-480 Z=-16436
+// Modulus=16457.394690533
+</code></pre>
+  </div>
+ </div>
+</div>
+<h3 id="page_Magnetometer-examples">Magnetometer examples</h3>
+<div>
+ <ul id="Magnetometer-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#mbash-example" aria-controls="mbash" role="tab" data-toggle="tab">Bash</a></li>
+  <li role="presentation"><a href="#mphp-example" aria-controls="mphp" role="tab" data-toggle="tab">PHP</a></li>
+ </ul>
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="mbash-example">
+<pre><code class="language-bash">#!/bin/bash
+echo 1 &gt; /sensors/magnetometer/enable
+cat /sensors/magnetometer/data
+
+# it will print something like:
+# -225,257,1372
+</code></pre>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="mphp-example">
+<pre><code class="language-php">&lt;?php                                                                                       
+file_put_contents(&quot;1&quot;, &quot;/sensors/magnetometer/enable&quot;);                                    
+$data = trim(file_get_contents(&quot;/sensors/magnetometer/data&quot;));                             
+$axis = explode(&quot;,&quot;, $data);                                                                
+echo &quot;X=&quot; . $axis[0] . &quot; Y=&quot; . $axis[1] . &quot; Z=&quot; . $axis[2] . PHP_EOL;                       
+echo &quot;Modulus=&quot; . sqrt($axis[0]*$axis[0] + $axis[1]*$axis[1] + $axis[2]*$axis[2]) . PHP_EOL;
+
+// it will print something like:
+// X=-412 Y=-414 Z=1348
+// Modulus=1469.0963208721
+</code></pre>
+  </div>
+ </div>
+</div>
+<h3 id="page_Gyroscope-examples">Gyroscope examples</h3>
+<div>
+ <ul id="Gyroscope-examples" class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#gbash-example" aria-controls="gbash" role="tab" data-toggle="tab">Bash</a></li>
+  <li role="presentation"><a href="#gphp-example" aria-controls="gphp" role="tab" data-toggle="tab">PHP</a></li>
+ </ul>
+ <div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="gbash-example">
+<pre><code class="language-bash">#!/bin/bash
+echo 1 &gt; /sensors/gyroscope/enable
+cat /sensors/gyroscope/data
+
+# it will print something like:
+# 12,8,4
+</code></pre>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="gphp-example">
+<pre><code class="language-php">&lt;?php                                                                                       
+file_put_contents(&quot;1&quot;, &quot;/sensors/gyroscope/enable&quot;);                                    
+$data = trim(file_get_contents(&quot;/sensors/gyroscope/data&quot;));                             
+$axis = explode(&quot;,&quot;, $data);                                                                
+echo &quot;X=&quot; . $axis[0] . &quot; Y=&quot; . $axis[1] . &quot; Z=&quot; . $axis[2] . PHP_EOL;                       
+echo &quot;Modulus=&quot; . sqrt($axis[0]*$axis[0] + $axis[1]*$axis[1] + $axis[2]*$axis[2]) . PHP_EOL;
+
+// it will print something like:
+// X=19 Y=13 Z=3
+// Modulus=23.2163735
+</code></pre>
+  </div>
+ </div>
+</div>
+<h2 id="page_Direct-I2C-register-access">Direct I2C register access</h2>
+<p>It' also possible to read direcly from I2C register. However, for novice users we suggest to use previous methods.</p>
+<h3 id="page_Read-accelerometer-magnetometer-data-via-I2C">Read accelerometer/magnetometer data via I2C</h3>
+<pre><code class="language-bash">#!/bin/sh
+
+# set to active mode
+i2cset -f -y 3 0x1e 0x2a 1
+# enable both accelerometer and magnetometer
+i2cset -f -y 3 0x1e 0x5b 3
+
+while [ 1 ]; do
+  # accelerometer vector
+  a_x=$(( $( i2cget -f -y 3 0x1e 0x01 ) &lt;&lt; 8 | $( i2cget -f -y 3 0x1e 0x02 ) ))
+  a_y=$(( $( i2cget -f -y 3 0x1e 0x03 ) &lt;&lt; 8 | $( i2cget -f -y 3 0x1e 0x04 ) ))
+  a_z=$(( $( i2cget -f -y 3 0x1e 0x05 ) &lt;&lt; 8 | $( i2cget -f -y 3 0x1e 0x06 ) ))
+
+  # magnetometer vector
+  m_x=$(( $( i2cget -f -y 3 0x1e 0x33 ) &lt;&lt; 8 | $( i2cget -f -y 3 0x1e 0x34 ) ))
+  m_y=$(( $( i2cget -f -y 3 0x1e 0x35 ) &lt;&lt; 8 | $( i2cget -f -y 3 0x1e 0x36 ) ))
+  m_z=$(( $( i2cget -f -y 3 0x1e 0x37 ) &lt;&lt; 8 | $( i2cget -f -y 3 0x1e 0x38 ) ))
+  echo &quot;acc: $a_x/$a_y/$a_z - mag: $m_x/$m_y/$m_z&quot;
+done
+</code></pre>
+<h3 id="page_Read-gyroscope-via-I2C">Read gyroscope via I2C</h3>
+<pre><code class="language-bash">#!/bin/sh
+
+# set to active mode
+i2cset -f -y 3 0x20 0x13 0x16
+
+while [ 1 ]; do
+  # gyro vector
+  g_x=$(( $( i2cget -f -y 3 0x20 0x01 ) &lt;&lt; 8 | $( i2cget -f -y 3 0x20 0x02 ) ))
+  g_y=$(( $( i2cget -f -y 3 0x20 0x03 ) &lt;&lt; 8 | $( i2cget -f -y 3 0x20 0x04 ) ))
+  g_z=$(( $( i2cget -f -y 3 0x20 0x05 ) &lt;&lt; 8 | $( i2cget -f -y 3 0x20 0x06 ) ))
+
+  echo &quot;$g_x/$g_y/$g_z&quot;
+done
+</code></pre>
+<h1 id="page_Use-motion-sensors-from-Arduino-M4-core">Use motion sensors from Arduino M4 core</h1>
+<p>By default 9-axis motion sensors are <em>connected</em> to A9 core and you can manage by Linux drivers or I2C tools as explainend previously.
+To allow to M4 Arduino core to access these sensors we need to change internal pinmuxing. Udoobuntu provides a graphical tool to change this configuration.</p>
+<p>From start menu runs Preferences --&gt; Device Tree Editor</p>
+<p><a href="../img/gionji/DOCS_9axis_pinmux_01.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_01.PNG"></a></p>
+<p>Insert the root password ( <em>udooer</em> by default )</p>
+<p><a href="../img/gionji/DOCS_9axis_pinmux_02.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_02.PNG"></a></p>
+<p>The tool shows all the A9 pins and their functions.</p>
+<p><a href="../img/gionji/DOCS_9axis_pinmux_03.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_03.PNG"></a></p>
+<p>By default the i2c4 channel is highlighted and it means that is assigned ti A9.</p>
+<p><a href="../img/gionji/DOCS_9axis_pinmux_04.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_04.PNG"></a></p>
+<p>Right click on the pins and select <em>remove</em></p>
+<p><a href="../img/gionji/DOCS_9axis_pinmux_05.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_05.PNG"></a></p>
+<p>After that the i2c4 pins are not highlighed</p>
+<p><a href="../img/gionji/DOCS_9axis_pinmux_06.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_06.PNG"></a></p>
+<p>Click on <em>save</em> button on the top bar.</p>
+<p><a href="../img/gionji/DOCS_9axis_pinmux_07.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_07.PNG"></a></p>
+<p>Click ok, close the browser and reboot the board.</p>
+<p><a href="../img/gionji/DOCS_9axis_pinmux_08.PNG" target="_blank"><img style="width:400px;" src="../img/gionji/DOCS_9axis_pinmux_08.PNG"></a></p>
+<p>For an example sketch of how to catch data from the motion sensors through Arduino M4 go to the <a href="../Arduino_M4_Processor/Controlling_9_axis_motion_sensors.html">Controlling 9-axis motion sensors</a> section.</p>
+<script>
+$('#Accelerometer-examples a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+});
+$('#Magnetometer-examples a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+});
+$('#Gyroscope-examples a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+});
+</script>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Software_Operating_Systems/Yocto.html">Previous</a></li>            <li class=Pager--next><a href="../Hardware_Accessories/Bricks_snap_in_sensors.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Friday, June 10, 2022 at 9:21 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

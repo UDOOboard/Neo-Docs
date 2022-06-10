@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Use more digital pins on M4 - UDOO Neo Docs</title>
+    <meta name="description" content="UDOO Neo Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="/docs/img/logos/neo.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Neo Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Getting Started</a><ul class='Nav'><li class='Nav__item '><a href="../Getting_Started/Very_First_Start.html">Very First Start</a></li><li class='Nav__item '><a href="../Getting_Started/Create_a_bootable_MicroSD_card_for_UDOO_Neo.html">Create a bootable MicroSD card for UDOO Neo</a></li><li class='Nav__item '><a href="../Getting_Started/Use_as_a_headless_IoT_Device.html">Use as a headless IoT Device</a></li><li class='Nav__item '><a href="../Getting_Started/Use_as_a_Lightweight_Desktop_PC.html">Use as a Lightweight Desktop PC</a></li><li class='Nav__item '><a href="../Getting_Started/Use_as_an_Arduino.html">Use as an Arduino</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Basic Setup</a><ul class='Nav'><li class='Nav__item '><a href="../Basic_Setup/Usb_Direct_Connection.html">Usb Direct Connection</a></li><li class='Nav__item '><a href="../Basic_Setup/Web_Control_Panel.html">Web Control Panel</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Terminal_(SSH).html">Remote Terminal (SSH)</a></li><li class='Nav__item '><a href="../Basic_Setup/Remote_Desktop_(VNC).html">Remote Desktop (VNC)</a></li><li class='Nav__item '><a href="../Basic_Setup/Serial_Debug_Console.html">Serial Debug Console</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Software & Operating Systems</a><ul class='Nav'><li class='Nav__item '><a href="../Software_Operating_Systems/UDOObuntu.html">UDOObuntu</a></li><li class='Nav__item '><a href="../Software_Operating_Systems/Android.html">Android</a></li><li class='Nav__item '><a href="../Software_Operating_Systems/Yocto.html">Yocto</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware & Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_Accessories/Motion_sensors.html">Motion sensors</a></li><li class='Nav__item '><a href="../Hardware_Accessories/Bricks_snap_in_sensors.html">Bricks snap in sensors</a></li><li class='Nav__item '><a href="../Hardware_Accessories/GPIO.html">GPIO</a></li><li class='Nav__item '><a href="../Hardware_Accessories/UART_serial_ports.html">UART serial ports</a></li><li class='Nav__item '><a href="../Hardware_Accessories/I2C_bus.html">I2C bus</a></li><li class='Nav__item '><a href="../Hardware_Accessories/SPI_bus.html">SPI bus</a></li><li class='Nav__item '><a href="../Hardware_Accessories/CAN_bus.html">CAN bus</a></li><li class='Nav__item '><a href="../Hardware_Accessories/LVDS_panels.html">LVDS panels</a></li><li class='Nav__item '><a href="../Hardware_Accessories/PWM.html">PWM</a></li><li class='Nav__item '><a href="../Hardware_Accessories/ADC.html">ADC</a></li><li class='Nav__item '><a href="../Hardware_Accessories/USB_to_TTL_Serial_Debug_Module.html">USB-to-TTL Serial Debug Module</a></li><li class='Nav__item '><a href="../Hardware_Accessories/I2S.html">I2S</a></li><li class='Nav__item '><a href="../Hardware_Accessories/HDMI_7inch_touch.html">HDMI 7inch touch</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Wireless Communication</a><ul class='Nav'><li class='Nav__item '><a href="../Wireless_Communication/WiFi.html">WiFi</a></li><li class='Nav__item '><a href="../Wireless_Communication/WiFi_SoftAP.html">WiFi SoftAP</a></li><li class='Nav__item '><a href="../Wireless_Communication/Bluetooth.html">Bluetooth</a></li><li class='Nav__item '><a href="../Wireless_Communication/Bluetooth_NAP.html">Bluetooth NAP</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Linux</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Linux/Understanding_Linux_Software_Management_And_Installing.html">Understanding Linux Software Management And Installing</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Linux_Command_Line_Interface.html">Linux Command Line Interface</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Set_video_output.html">Set video output</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Change_Web_Control_Panel_port.html">Change Web Control Panel port</a></li><li class='Nav__item '><a href="../Cookbook_Linux/Turn_off_M4_Arduino_core.html">Turn off M4 Arduino core</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Arduino M4 Processor</a><ul class='Nav'><li class='Nav__item '><a href="../Arduino_M4_Processor/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Pinout.html">Pinout</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Communication.html">Communication</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Programming_Arduino_M4_from_Internal_Processor(Cortex_A9).html">Programming Arduino M4 from Internal Processor(Cortex-A9)</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Programming_Arduino_M4_from_External_PC.html">Programming Arduino M4 from External PC</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Debugging.html">Debugging</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Arduino_differences.html">Arduino differences</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Porting_Libraries.html">Porting Libraries</a></li><li class='Nav__item '><a href="../Arduino_M4_Processor/Controlling_9_axis_motion_sensors.html">Controlling 9-axis motion sensors</a></li><li class='Nav__item Nav__item--active'><a href="../Arduino_M4_Processor/Use_more_digital_pins_on_M4.html">Use more digital pins on M4</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Arduino M4</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Arduino_M4/Hall_Sensor.html">Hall Sensor</a></li><li class='Nav__item '><a href="../Cookbook_Arduino_M4/RGB_led.html">RGB led</a></li><li class='Nav__item '><a href="../Cookbook_Arduino_M4/Two_color_common_cathode_led.html">Two color common cathode led</a></li><li class='Nav__item '><a href="../Cookbook_Arduino_M4/Knock_sensor.html">Knock sensor</a></li><li class='Nav__item '><a href="../Cookbook_Arduino_M4/Infrared_Transmit.html">Infrared Transmit</a></li></ul></li><li class='Nav__item  has-children'><a href="../Serial_Libraries/index.html" class="folder"><i class="Nav__arrow">&nbsp;</i>Serial Libraries</a><ul class='Nav'><li class='Nav__item '><a href="../Serial_Libraries/Java_Serial_Libraries.html">Java Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/C_Serial_Libraries.html">C Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/PHP_Serial_Libraries.html">PHP Serial Libraries</a></li><li class='Nav__item '><a href="../Serial_Libraries/Python_Serial_Libraries.html">Python Serial Libraries</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Cookbook Android</a><ul class='Nav'><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Boot_Walkthrough.html">UDOO Android Boot Walkthrough</a></li><li class='Nav__item '><a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Android Settings</a></li><li class='Nav__item '><a href="../Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android.html">How To Install Gapps On UDOO Running Android</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Debugging & Troubleshooting</a><ul class='Nav'><li class='Nav__item '><a href="../Debugging_Troubleshooting/Arduino_programming_from_internal_IDE.html">Arduino programming from internal IDE</a></li><li class='Nav__item '><a href="../Debugging_Troubleshooting/Arduino_String_issue.html">Arduino String issue</a></li><li class='Nav__item '><a href="../Debugging_Troubleshooting/USB_stops_working_after_programming_M4.html">USB stops working after programming M4</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Topics</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Topics/Setup_development_environment.html">Setup development environment</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_UDOObuntu_(complete_bootable_image).html">Compile UDOObuntu (complete bootable image)</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_U_Boot_Bootloader.html">Compile U-Boot Bootloader</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Linux_Kernel.html">Compile Linux Kernel</a></li><li class='Nav__item '><a href="../Advanced_Topics/Compile_Android_From_Source.html">Compile Android From Source</a></li><li class='Nav__item '><a href="../Advanced_Topics/Recompile_MQX_Libraries.html">Recompile MQX Libraries</a></li><li class='Nav__item '><a href="../Advanced_Topics/Boot_process.html">Boot process</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware Reference</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_Reference/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Hardware_Reference/Resources.html">Resources</a></li><li class='Nav__item '><a href="../Hardware_Reference/Board_versions.html">Board versions</a></li><li class='Nav__item '><a href="../Hardware_Reference/Processor.html">Processor</a></li><li class='Nav__item '><a href="../Hardware_Reference/RAM.html">RAM</a></li><li class='Nav__item '><a href="../Hardware_Reference/Power_Management.html">Power Management</a></li><li class='Nav__item '><a href="../Hardware_Reference/PC_USB_interface.html">PC USB interface</a></li><li class='Nav__item '><a href="../Hardware_Reference/Indicator_LED.html">Indicator LED</a></li><li class='Nav__item '><a href="../Hardware_Reference/JTAG_header.html">JTAG header</a></li><li class='Nav__item '><a href="../Hardware_Reference/VADC_Analog_Camera.html">VADC Analog Camera</a></li><li class='Nav__item '><a href="../Hardware_Reference/Ethernet.html">Ethernet</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>UDOO NEO made by the Community</a><ul class='Nav'><li class='Nav__item '><a href="../UDOO_NEO_made_by_the_Community/Python.html">Python</a></li><li class='Nav__item '><a href="../UDOO_NEO_made_by_the_Community/Java.html">Java</a></li><li class='Nav__item '><a href="../UDOO_NEO_made_by_the_Community/Builds_based_on_other_kernels.html">Builds based on other kernels</a></li><li class='Nav__item '><a href="../UDOO_NEO_made_by_the_Community/Drivers_Modules_And_Tools.html">Drivers Modules And Tools</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/downloads" target="_blank">Downloads</a>
+                        <br />
+                                            <a href="https://www.udoo.org/tutorial" target="_blank">Tutorials</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Use more digital pins on M4</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>As described in this section, all the processor features (gpio, adc, spi, i2c…) can theoretically assigned to both cores.</p>
+<p>For example is possible to assign to M4 core, more than 14 gpio as by default.</p>
+<p>To do this we need to modify the muxing configuration of both cores.</p>
+<p>First of all we need modify the device tree configuration to recompile the dtb, to avoid to assign these pins to A9.
+Than we can assign this pins to the M4 and connect it to Arduino Libraries.</p>
+<h2 id="page_A9-operations">A9 operations</h2>
+<p>To recompile the kernel please follow this guide to set up the kernel compiling enviroment.</p>
+<p>After that i’ll explain how the gpios configuration dts is organized.</p>
+<p>In the file imx6sx-udoo-neo-external.dtsi are listed all the external pins that can be used as gpio by the linux kernel. As you see some of the macros are commented.</p>
+<pre><code class="language-bash">&amp;iomuxc {
+    imx6x-udoo-neo {
+        // External Pinout GPIOs
+        external_hog: hoggrp-2 {
+            fsl,pins = &lt;
+                MX6SX_PAD_NAND_DATA06__GPIO4_IO_10 0x80000000    // {{external-gpio-16}}
+                MX6SX_PAD_NAND_DATA07__GPIO4_IO_11 0x80000000    // {{external-gpio-17}}
+                MX6SX_PAD_SD4_DATA6__GPIO6_IO_20 0x80000000    // {{external-gpio-18}}
+                MX6SX_PAD_SD4_DATA7__GPIO6_IO_21 0x80000000    // {{external-gpio-19}}
+                MX6SX_PAD_SD4_CLK__GPIO6_IO_12 0x80000000    // {{external-gpio-20}}
+                MX6SX_PAD_SD4_CMD__GPIO6_IO_13 0x80000000    // {{external-gpio-21}}
+                MX6SX_PAD_SD4_RESET_B__GPIO6_IO_22 0x80000000    // {{external-gpio-22}}
+                MX6SX_PAD_CSI_PIXCLK__GPIO1_IO_24 0x80000000    // {{external-gpio-23}}
+
+                MX6SX_PAD_CSI_VSYNC__GPIO1_IO_25 0x80000000    // {{external-gpio-24}}
+                MX6SX_PAD_CSI_HSYNC__GPIO1_IO_22 0x80000000    // {{external-gpio-25}}
+                MX6SX_PAD_CSI_DATA00__GPIO1_IO_14 0x80000000    // {{external-gpio-26}}
+                MX6SX_PAD_CSI_DATA01__GPIO1_IO_15 0x80000000    // {{external-gpio-27}}
+                MX6SX_PAD_CSI_DATA02__GPIO1_IO_16 0x80000000    // {{external-gpio-28}}
+                MX6SX_PAD_CSI_DATA03__GPIO1_IO_17 0x80000000    // {{external-gpio-29}}
+                MX6SX_PAD_CSI_DATA04__GPIO1_IO_18 0x80000000    // {{external-gpio-30}}
+                MX6SX_PAD_CSI_DATA05__GPIO1_IO_19 0x80000000    // {{external-gpio-31}}
+                MX6SX_PAD_CSI_DATA06__GPIO1_IO_20 0x80000000    // {{external-gpio-32}}
+                MX6SX_PAD_CSI_DATA07__GPIO1_IO_21 0x80000000    // {{external-gpio-33}}
+
+                //MX6SX_PAD_USB_H_STROBE__GPIO7_IO_11 0x80000000    // {{external-gpio-34}}
+                //MX6SX_PAD_USB_H_DATA__GPIO7_IO_10 0x80000000    // {{external-gpio-35}}
+                MX6SX_PAD_SD4_DATA3__GPIO6_IO_17 0x80000000    // {{external-gpio-36}}
+                MX6SX_PAD_SD4_DATA2__GPIO6_IO_16 0x80000000    // {{external-gpio-37}}
+                MX6SX_PAD_SD4_DATA1__GPIO6_IO_15 0x80000000    // {{external-gpio-38}}
+                MX6SX_PAD_SD4_DATA0__GPIO6_IO_14 0x80000000    // {{external-gpio-39}}
+
+                MX6SX_PAD_QSPI1A_SS1_B__GPIO4_IO_23 0x80000000    // {{external-gpio-40}}
+                MX6SX_PAD_QSPI1B_DQS__GPIO4_IO_28 0x80000000    // {{external-gpio-41}}
+                MX6SX_PAD_QSPI1B_SS1_B__GPIO4_IO_31 0x80000000    // {{external-gpio-42}}
+                MX6SX_PAD_QSPI1A_DQS__GPIO4_IO_20 0x80000000    // {{external-gpio-43}}
+                MX6SX_PAD_GPIO1_IO07__GPIO1_IO_7 0x80000000    // {{external-gpio-44}}
+                MX6SX_PAD_GPIO1_IO06__GPIO1_IO_6 0x80000000    // {{external-gpio-45}}
+                //MX6SX_PAD_GPIO1_IO05__GPIO1_IO_5 0x80000000    // {{external-gpio-46}}
+                //MX6SX_PAD_GPIO1_IO04__GPIO1_IO_4 0x80000000    // {{external-gpio-47}}
+            &gt;;
+        };
+</code></pre>
+<p>This is just because these pins are used as:</p>
+<p>I2C-4 connected also to internal 9axis motion sensor</p>
+<pre><code class="language-bash">//MX6SX_PAD_USB_H_STROBE__GPIO7_IO_11 0x80000000    // {{external-gpio-34}}
+//MX6SX_PAD_USB_H_DATA__GPIO7_IO_10   0x80000000    // {{external-gpio-35}}
+</code></pre>
+<p>UART-1 debug serial</p>
+<pre><code class="language-bash">//MX6SX_PAD_GPIO1_IO05__GPIO1_IO_5    0x80000000    // {{external-gpio-46}}
+//MX6SX_PAD_GPIO1_IO04__GPIO1_IO_4    0x80000000    // {{external-gpio-47}}
+</code></pre>
+<p>So we need to comment all the lines that we need to use by the M4 core.</p>
+<p>Eg.
+If we want to use all the gpio pins closer to UART1 we can comment all the block</p>
+<pre><code class="language-bash">// MX6SX_PAD_USB_H_STROBE__GPIO7_IO_11 0x80000000   // {{external-gpio-34}}
+// MX6SX_PAD_USB_H_DATA__GPIO7_IO_10   0x80000000   // {{external-gpio-35}}
+// MX6SX_PAD_SD4_DATA3__GPIO6_IO_17    0x80000000   // {{external-gpio-36}}
+// MX6SX_PAD_SD4_DATA2__GPIO6_IO_16    0x80000000   // {{external-gpio-37}}
+// MX6SX_PAD_SD4_DATA1__GPIO6_IO_15    0x80000000   // {{external-gpio-38}}
+// MX6SX_PAD_SD4_DATA0__GPIO6_IO_14    0x80000000   // {{external-gpio-39}}
+</code></pre>
+<p>Ok?</p>
+<p>Otherwise, if we are sure that we don’t need any gpio pin from A9 core we can remove the whole block from another file, without touching imx6sx-udoo-neo-external.dtsi.</p>
+<p>Open imx6sx-udoo-neo.dtsi and remove the &amp;external_hog reference.</p>
+<pre><code class="language-bash">&amp;iomuxc {
+    pinctrl-names = &quot;default&quot;;
+    pinctrl-0 = &lt;&amp;pinctrl_hog &amp;external_hog&gt;;
+
+    imx6x-udoo-neo { 
+[ ... ]
+</code></pre>
+<p>becomes</p>
+<pre><code class="language-bash">&amp;iomuxc {
+    pinctrl-names = &quot;default&quot;;
+    pinctrl-0 = &lt;&amp;pinctrl_hog&gt;;
+
+    imx6x-udoo-neo { 
+[ ... ]
+</code></pre>
+<p>Save and close the file an than recompile al the dts files.
+Then copy all of them into the /boot/dts folder in your UDOOBuntu  microSD.</p>
+<p>Arduino M4 side
+To assign all the gpio (digitalOutputs) to M4 cores you need to open edit two files contained on the UDOObuntu filesystem, also directly from UDOO NEO.</p>
+<p>These are:</p>
+<pre><code class="language-bash">/usr/share/arduino/hardware/UDOO/solox/variants/udooneo/wiring_digital.h
+/usr/share/arduino/hardware/UDOO/solox/variants/udooneo/wiring_digital.c
+</code></pre>
+<h3 id="page_wiring_digital-h">wiring_digital.h</h3>
+<p>In this file we only need to change a define containing the maximum number of gpio.</p>
+<pre><code class="language-bash">#define ARD_NMAX_DIO  14
+</code></pre>
+<p>to be changed depending the number of added gpio. If you add 2 gpio it must be 16.</p>
+<pre><code class="language-bash">#define ARD_NMAX_DIO  16
+</code></pre>
+<h3 id="page_wiring_digital-c">wiring_digital.c</h3>
+<p>Then upgrathe this table with correct pin mux end pin control macros.</p>
+<pre><code class="language-bash">// Default Arduino pins
+#define ARD_DIO0                    (LWGPIO_PORT4 | LWGPIO_PIN10)
+#define ARD_DIO0_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN10_GPIO)
+#define ARD_DIO1                    (LWGPIO_PORT4 | LWGPIO_PIN11)
+#define ARD_DIO1_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN11_GPIO)
+#define ARD_DIO2                    (LWGPIO_PORT4 | LWGPIO_PIN8)
+#define ARD_DIO2_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN8_GPIO)
+#define ARD_DIO3                    (LWGPIO_PORT5 | LWGPIO_PIN15)
+#define ARD_DIO3_MUX_GPIO            (LWGPIO_MUX_PORT5_PIN15_GPIO)
+#define ARD_DIO4                    (LWGPIO_PORT5 | LWGPIO_PIN14)
+#define ARD_DIO4_MUX_GPIO            (LWGPIO_MUX_PORT5_PIN14_GPIO)
+#define ARD_DIO5                    (LWGPIO_PORT5 | LWGPIO_PIN13)
+#define ARD_DIO5_MUX_GPIO            (LWGPIO_MUX_PORT5_PIN13_GPIO)
+#define ARD_DIO6                    (LWGPIO_PORT5 | LWGPIO_PIN12)
+#define ARD_DIO6_MUX_GPIO            (LWGPIO_MUX_PORT5_PIN12_GPIO)
+#define ARD_DIO7                    (LWGPIO_PORT5 | LWGPIO_PIN21)
+#define ARD_DIO7_MUX_GPIO            (LWGPIO_MUX_PORT5_PIN21_GPIO)
+#define ARD_DIO8                    (LWGPIO_PORT4 | LWGPIO_PIN9)
+#define ARD_DIO8_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN9_GPIO)
+#define ARD_DIO9                    (LWGPIO_PORT5 | LWGPIO_PIN20)
+#define ARD_DIO9_MUX_GPIO            (LWGPIO_MUX_PORT5_PIN20_GPIO)
+#define ARD_DIO10                (LWGPIO_PORT4 | LWGPIO_PIN5)
+#define ARD_DIO10_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN5_GPIO)
+#define ARD_DIO11                (LWGPIO_PORT4 | LWGPIO_PIN7)
+#define ARD_DIO11_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN7_GPIO)
+#define ARD_DIO12                (LWGPIO_PORT4 | LWGPIO_PIN4)
+#define ARD_DIO12_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN4_GPIO)
+#define ARD_DIO13                (LWGPIO_PORT4 | LWGPIO_PIN6)
+#define ARD_DIO13_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN6_GPIO)
+
+// All gpios exported
+#define ARD_DIO14                (LWGPIO_PORT1 | LWGPIO_PIN3)
+#define ARD_DIO14_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN3_GPIO)
+#define ARD_DIO15                (LWGPIO_PORT1 | LWGPIO_PIN2)
+#define ARD_DIO15_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN2_GPIO)
+#define ARD_DIO16                (LWGPIO_PORT4 | LWGPIO_PIN10)
+#define ARD_DIO16_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN10_GPIO)
+#define ARD_DIO17                (LWGPIO_PORT4 | LWGPIO_PIN11)
+#define ARD_DIO17_MUX_GPIO            (LWGPIO_MUX_PORT4_PIN11_GPIO)
+#define ARD_DIO18                (LWGPIO_PORT6 | LWGPIO_PIN20)
+#define ARD_DIO18_MUX_GPIO            (LWGPIO_MUX_PORT6_PIN20_GPIO)
+#define ARD_DIO19                (LWGPIO_PORT6 | LWGPIO_PIN21)
+#define ARD_DIO19_MUX_GPIO            (LWGPIO_MUX_PORT6_PIN21_GPIO)
+#define ARD_DIO20                (LWGPIO_PORT6 | LWGPIO_PIN12)
+#define ARD_DIO20_MUX_GPIO            (LWGPIO_MUX_PORT6_PIN12_GPIO)
+#define ARD_DIO21                (LWGPIO_PORT6 | LWGPIO_PIN13)
+#define ARD_DIO21_MUX_GPIO            (LWGPIO_MUX_PORT6_PIN13_GPIO)
+#define ARD_DIO22                (LWGPIO_PORT6 | LWGPIO_PIN22)
+#define ARD_DIO22_MUX_GPIO            (LWGPIO_MUX_PORT6_PIN22_GPIO)
+#define ARD_DIO23                (LWGPIO_PORT1 | LWGPIO_PIN24)
+#define ARD_DIO23_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN24_GPIO)
+#define ARD_DIO24                (LWGPIO_PORT1 | LWGPIO_PIN25)
+#define ARD_DIO24_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN25_GPIO)
+#define ARD_DIO25                (LWGPIO_PORT1 | LWGPIO_PIN22)
+#define ARD_DIO25_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN22_GPIO)
+#define ARD_DIO26                (LWGPIO_PORT1 | LWGPIO_PIN14)
+#define ARD_DIO26_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN14_GPIO)
+#define ARD_DIO27                (LWGPIO_PORT1 | LWGPIO_PIN15)
+#define ARD_DIO27_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN15_GPIO)
+#define ARD_DIO28                (LWGPIO_PORT1 | LWGPIO_PIN16)
+#define ARD_DIO28_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN16_GPIO)
+#define ARD_DIO29                (LWGPIO_PORT1 | LWGPIO_PIN17)
+#define ARD_DIO29_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN17_GPIO)
+#define ARD_DIO30                (LWGPIO_PORT1 | LWGPIO_PIN18)
+#define ARD_DIO30_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN18_GPIO)
+#define ARD_DIO31                (LWGPIO_PORT1 | LWGPIO_PIN19)
+#define ARD_DIO31_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN19_GPIO)
+#define ARD_DIO32                (LWGPIO_PORT1 | LWGPIO_PIN20)
+#define ARD_DIO32_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN20_GPIO)
+#define ARD_DIO33                (LWGPIO_PORT1 | LWGPIO_PIN21)
+#define ARD_DIO33_MUX_GPIO            (LWGPIO_MUX_PORT1_PIN21_GPIO)
+#define ARD_DIO34                (LWGPIO_PORT7 | LWGPIO_PIN11)
+#define ARD_DIO34_MUX_GPIO            (LWGPIO_MUX_PORT7_PIN11_GPIO)
+#define ARD_DIO35                (LWGPIO_PORT7 | LWGPIO_PIN10)
+#define ARD_DIO35_MUX_GPIO            (LWGPIO_MUX_PORT7_PIN10_GPIO)
+</code></pre>
+<p>Than you can add these define to this const array.</p>
+<pre><code class="language-bash">const DioPinMap arduinoToMqx_Pin[ARD_NMAX_DIO] = {
+        {ARD_DIO0,            ARD_DIO0_MUX_GPIO},            // 0
+        {ARD_DIO1,            ARD_DIO1_MUX_GPIO},            // 1
+        {ARD_DIO2,            ARD_DIO2_MUX_GPIO},            // 2
+        {ARD_DIO3,            ARD_DIO3_MUX_GPIO},            // 3
+        {ARD_DIO4,            ARD_DIO4_MUX_GPIO},            // 4
+        {ARD_DIO5,            ARD_DIO5_MUX_GPIO},            // 5
+        {ARD_DIO6,            ARD_DIO6_MUX_GPIO},            // 6
+        {ARD_DIO7,            ARD_DIO7_MUX_GPIO},            // 7
+        {ARD_DIO8,            ARD_DIO8_MUX_GPIO},            // 8
+        {ARD_DIO9,            ARD_DIO9_MUX_GPIO},            // 9
+        {ARD_DIO10,        ARD_DIO10_MUX_GPIO},        // 10
+        {ARD_DIO11,        ARD_DIO11_MUX_GPIO},        // 11
+        {ARD_DIO12,        ARD_DIO12_MUX_GPIO},        // 12
+        {ARD_DIO13,        ARD_DIO13_MUX_GPIO},        // 13
+
+        // Pins assigned to A9 (i2C-2)
+         // {ARD_DIO14,         ARD_DIO14_MUX_GPIO},            // 14 SDA
+        // {ARD_DIO15,        ARD_DIO15_MUX_GPIO},            // 15 SCL */
+
+        {ARD_DIO16,        ARD_DIO16_MUX_GPIO},            // 16
+        {ARD_DIO17,        ARD_DIO17_MUX_GPIO},            // 17
+        {ARD_DIO18,        ARD_DIO18_MUX_GPIO},            // 18
+        {ARD_DIO19,        ARD_DIO19_MUX_GPIO},            // 19
+        {ARD_DIO20,        ARD_DIO20_MUX_GPIO},            // 20
+        {ARD_DIO21,        ARD_DIO21_MUX_GPIO},            // 21
+        {ARD_DIO22,        ARD_DIO22_MUX_GPIO},            // 22
+        {ARD_DIO23,         ARD_DIO23_MUX_GPIO},            // 23
+
+        {ARD_DIO24,        ARD_DIO24_MUX_GPIO},        // 24
+        {ARD_DIO25,        ARD_DIO25_MUX_GPIO},        // 25
+        {ARD_DIO26,        ARD_DIO26_MUX_GPIO},        // 26
+        {ARD_DIO27,        ARD_DIO27_MUX_GPIO},        // 27
+        {ARD_DIO28,         ARD_DIO28_MUX_GPIO},            // 28
+        {ARD_DIO29,         ARD_DIO29_MUX_GPIO},            // 29
+        {ARD_DIO30,         ARD_DIO30_MUX_GPIO},            // 30
+        {ARD_DIO31,         ARD_DIO31_MUX_GPIO},            // 31 
+        {ARD_DIO32,        ARD_DIO32_MUX_GPIO},        // 32
+        {ARD_DIO33,        ARD_DIO33_MUX_GPIO},        // 33
+        {ARD_DIO34,        ARD_DIO34_MUX_GPIO},        // 34
+        {ARD_DIO35,        ARD_DIO35_MUX_GPIO},        // 35
+};
+</code></pre>
+<p>ATTENTION: when you call Arduino methods</p>
+<pre><code class="language-bash">pinMode(X, &lt;INPUT/OUTPUT&gt; )
+digitalWrite(X, &lt;LOW/HIGH&gt; )
+digitalRead(X)
+</code></pre>
+<p>pin numbers ( x ) may differ from pcb.</p>
+<p>If you added only the pin 16 gpio, you can access it calling digitalRead(14). Depending the position of the list.</p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Arduino_M4_Processor/Controlling_9_axis_motion_sensors.html">Previous</a></li>            <li class=Pager--next><a href="../Cookbook_Arduino_M4/Hall_Sensor.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Friday, June 10, 2022 at 9:21 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

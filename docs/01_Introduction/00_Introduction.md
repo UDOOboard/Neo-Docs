@@ -55,7 +55,7 @@ UDOO NEO retail line up consists of [three models](!Hardware_Reference/Board%20v
 * 3-Axis Accelerometer (only Extended and Full)
 * 3-Axis Magnetometer (only Extended and Full)
 * 3-Axis Digital Gyroscope (only Extended and Full)
-* 1x Sensor Snap-In I2C connector (only Extended and Full)
+* 1x Sensor Snap-In I2C connector
 * 89mm x59mm (3.50″ x 2.32″)
 * Arduino-Compatible through the standard Arduino Pins layout and compatible with Arduino shields.
 * 32 extended GPIOs (A9 dedicated)
